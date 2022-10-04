@@ -8,7 +8,7 @@
   </head>
   <body>
 <div class="lomakewrapper">
-  <form class="lomake" action="index.html" method="post">
+  <form class="lomake" action="kiitos.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
 <h1>Tietojenkeruulomake</h1>
   <table>
     <tr>
@@ -30,9 +30,9 @@
     </tr>
  </table>
   <p>Valitse näistä toinen:</p>
-    <input type="radio" name="saamainos" value="saamainos">
+    <input type="radio" name="posti" value="saamainos">
     Haluan saada mainospostia.<br>
-    <input type="radio" name="eisaamainos" value="eisaamainos">
+    <input type="radio" name="posti" value="eisaamainos">
     En halua mainospostia. <br>
     <p>Mistä pidät koulussa eniten?</p>
     <input type="checkbox" name="koulu" value="ruoka">
