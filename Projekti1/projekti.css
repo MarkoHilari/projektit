@@ -3,3 +3,16 @@
   background-color: grey;
   color: red;
 }
+.lomakewrapper
+{
+  padding: 20px;
+  margin: 0 auto;
+  border: 5px solid #554900;
+  border-radius: 20px;
+  width: 408px;
+  background-color: #FFF3AA;
+}
+.oikea
+{
+  text-align: right;
+}
