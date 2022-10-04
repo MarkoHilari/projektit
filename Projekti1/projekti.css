@@ -1,7 +1,10 @@
 .kiitos
 {
-  background-color: grey;
+  background-color: black;
   color: red;
+  width: 50%;
+  margin-top: 80px;
+  box-sizing: border-box;
 }
 .lomakewrapper
 {
