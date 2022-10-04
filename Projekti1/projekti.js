@@ -56,12 +56,12 @@ if(sukunimi.lenght < 3)
 }
 if(tarkastavastaus == false)
 {
- alert("Et valinnut, mikÃ¤ on kivaa");
+ alert("Valitse mistä tykkäät!");
  return false;
 }
 else
 {
- alert("Kiitos lomakkeen tÃ¤ytÃ¶stÃ¤");
+ alert("Lomake on tallennettu ja lähetetty");
 
 }
 }
@@ -69,7 +69,7 @@ else
 function tyhjenna(lomake)
 {
 var clean = lomake.value;
-if(!confirm("Oletko varma?"))
+if(!confirm("Oletko varma että haluat tyhjentää lomakkeen!?"))
 {
  return false;
 }
