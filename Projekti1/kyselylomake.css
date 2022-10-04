@@ -1,0 +1,34 @@
+body{
+  margin: 0 auto;
+  font-family: monospace;
+  font: monospace;
+}
+form
+{
+  width: 450px;
+  height: 600px;
+  background-color: #718EA4;
+  padding: 10px;
+  display: inline-block;
+  left-margin: auto;
+  right-margin: auto;
+  text-align: left;
+  margin-top: 50px;
+  border: 2px solid #496D89;
+  border-radius: 10%;
+}
+.lomakeWrapper{
+  text-align: center;
+}
+td
+{
+  width: 50px;
+}
+.oikea
+{
+  text-align: right;
+}
+h1
+{
+  text-align: center;
+}
