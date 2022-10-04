@@ -5,8 +5,10 @@
 }
 .lomakewrapper
 {
+
   padding: 20px;
   margin: 0 auto;
+  margin-top: 50px;
   border: 5px solid #554900;
   border-radius: 20px;
   width: 408px;
