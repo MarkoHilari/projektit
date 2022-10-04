@@ -8,7 +8,41 @@
 <div class="lomakewrapper">
   <form class="lomake" action="index.html" method="post">
 <h1>Tietojenkeruulomake</h1>
-
+  <table>
+    <tr>
+      <td>Anna Etunimi:</td>
+      <td class="oikea"><input type="text" name="enimi" value=""></td>
+    </tr>
+    <tr>
+      <td>Anna sukunimi:</td>
+      <td class="oikea"><input type="text" name="snimi" value=""></td>
+      <tr>
+        <td>Anna sähköposti:</td>
+        <td class="oikea"><input type="text" name="email" value=""></td>
+    </tr>
+    <tr>
+      <td colspan="2">Palautteesi kotisivustani</td>
+    </tr>
+    <tr>
+      <td colspan="2"><textarea name="palaute" rows="8" cols="50"></textarea> </td>
+    </tr>
+ </table>
+  <p>Valitse näistä toinen:</p>
+    <input type="radio" name="saamainos" value="saamainos">
+    Haluan saada mainospostia.<br>
+    <input type="radio" name="eisaamainos" value="eisaamainos">
+    En halua mainospostia. <br>
+    <p>Mistä pidät koulussa eniten?</p>
+    <input type="checkbox" name="koulu" value="ruoka">
+    Ruoasta. <br>
+    <input type="checkbox" name="koulu" value="Ammatti">
+    Ammattiaineista <br>
+    <input type="checkbox" name="koulu" value="YTO">
+    YTO-aineista <br>
+    <input type="checkbox" name="koulu" value="Vapaa">
+    Vapaa-ajasta <br><br>
+    <input type="submit" name="submit" value="Tarkasta lomake">
+    <input type="reset" name="reset" value="Tyhjennä lomake">
   </form>
   </div>
   </body>
