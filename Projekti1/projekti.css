@@ -14,7 +14,7 @@
   margin-top: 50px;
   border: 5px solid #554900;
   border-radius: 20px;
-  width: 408px;
+  width: 430px;
   background-color: #FFF3AA;
 }
 .oikea
@@ -24,4 +24,7 @@
 textarea
 {
     resize: none;
+}
+h1{
+  text-align: center;
 }
