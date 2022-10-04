@@ -33,9 +33,9 @@ if(sukunimi.length < 3)
         return false;
       }
   var vastaus = false;
-  for(var i = 0; i < posti.length; i++)
+  for(var i = 0; i < mainos.length; i++)
 {
-  if(posti[i].checked == true)
+  if(mainos[i].checked == true)
     {
       vastaus = true;
     }
@@ -46,9 +46,9 @@ if(sukunimi.length < 3)
   return false;
 }
   var tarkastavastaus = false;
-  for(var j = 0; j < check.length; j++)
+  for(var j = 0; j < koulu.length; j++)
 {
-  if(check[j].checked == true)
+  if(koulu[j].checked == true)
 
     {
        tarkastavastaus = true;
