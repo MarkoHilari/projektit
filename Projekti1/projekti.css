@@ -1,9 +1,14 @@
+.foto
+{
+
+  box-shadow: 10px 10px 20px lightgray;
+}
 .kiitos
 {
   background-color: black;
   color: red;
-  width: 50%;
-  margin-top: 80px;
+  width: 30%;
+  margin: 50px;
   box-sizing: border-box;
 }
 .lomakewrapper
