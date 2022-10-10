@@ -1,13 +1,17 @@
 .foto
 {
+  border-radius: 10px;
+  width: 70%;
+  height: 70%;
+  box-shadow: 0 0 5px 5px white;
 
-  box-shadow: 10px 10px 20px lightgray;
 }
 .kiitos
 {
-  background-color: black;
+  background-image: url("money.gif");
   color: red;
   width: 30%;
+  padding: 3px;
   margin: 50px;
   box-sizing: border-box;
 }
