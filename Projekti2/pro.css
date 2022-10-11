@@ -1,17 +1,28 @@
-<<<<<<< HEAD
+
+table
+{
+  margin: 54px 100px 100px 72px;
+  background-image: url(button.gif);
+
+}
+
 
 body
-=======
-table
->>>>>>> cc6d1f26b94fb91664d26f765942cecdd465a231
 {
+
   background-image: url(3ds.png);
-  background-size: 60%;
+  background-size: 300px;
   background-repeat: no-repeat;
 }
 
 button
 {
+
   width: 100%;
+  height: 15px;
+}
+tr, td
+{
+  width: 43px;
 
 }
