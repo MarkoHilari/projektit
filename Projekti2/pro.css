@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 table
+=======
+
+body
+>>>>>>> f15abed2134456a86996fb3701cd59e2e62fcf40
 {
-  border: 2px solid black;
+  background-image: url(3ds.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+button
+{
+  width: 100%;
+
 }
