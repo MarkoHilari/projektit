@@ -5,6 +5,7 @@ table
   margin: 54px 100px 100px 72.5px;
   background-image: url(button.gif);
   width: 140px;
+  border-radius: 4px;
 }
 
 
@@ -25,6 +26,7 @@ button
 tr, td
 {
   width: 43px;
+
 }
 
 #nolla
