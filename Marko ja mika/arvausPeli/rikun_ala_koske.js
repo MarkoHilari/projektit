@@ -19,7 +19,7 @@ else if(arvo.value >= arvattavaNro){    //Tarkistetaan onko klikattu nappi suure
   arvatutNrot.push(arvo.value); // lisätään arvattu numero "arvatutNrot" arrayhin
   kerrat++ // lisätään 1 klikkaus "kerrat" muuttujaan
 
-document.getElementById("m3").innerHTML = "Liian suuri!"; 
+document.getElementById("m3").innerHTML = "Liian suuri!";
 }
 else if(arvo.value <= arvattavaNro){
   arvatutNrot.push(arvo.value);
@@ -34,9 +34,6 @@ document.getElementById("m3").innerHTML = "Better luck next time......";
 alert("Hävisit!!");
 
 document.getElementById("reload").disabled = false;
-
-
-
 
 }
 console.log(kerrat);
