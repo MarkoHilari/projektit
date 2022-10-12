@@ -4,7 +4,7 @@ table
 {
   margin: 54px 100px 100px 72px;
   background-image: url(button.gif);
-
+  width: 140px;
 }
 
 
@@ -20,10 +20,16 @@ button
 {
 
   width: 100%;
-  height: 15px;
+  height: 17px;
+
 }
 tr, td
 {
   width: 43px;
 
+}
+
+#nolla
+{
+  text-align: center;
 }
