@@ -34,9 +34,10 @@ tr, td
   text-align: center;
 }
 
-#m1, m2, m3
+#m1, #m2, #m3
 {
-
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Silkscreen', cursive;
 }
 main
 {
