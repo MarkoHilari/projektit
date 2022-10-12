@@ -53,13 +53,18 @@ article
   width: 270px;
 }
 
+.nappi
+
+}
+
 .nappi:disabled,
 .nappi.disabled{
   color:#fff;
   border-color: #a0a0a0;
   background-color: #a0a0a0;
 }
-
+.nappi:disabled:hover,
+.nappi:disabled:focus,
 .nappi.disabled:hover,
 .nappi.disabled:focus {
   color:#fff;
