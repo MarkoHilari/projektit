@@ -1,12 +1,18 @@
 table
 
 {
-  margin: 54px 100px 100px 72.5px;
-  background-image: url(button.gif);
-  width: 140px;
-  border-radius: 4px;
+  margin: 25px 100px 50px 72.5px;
+  background-image: url(Matrixcode.gif);
+  width: 135px;
+  border-radius: 5px;
 }
-
+#ylän
+{
+  border-radius: 4px;
+  margin: 56px 0px 0px 71px;
+  width: 135px;
+  height: 77px;
+}
 
 body
 {
@@ -35,8 +41,17 @@ tr, td
 
 #m1, #m2, #m3
 {
+  color: #ffffff;
+  font-size: 8px;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
   font-family: 'Silkscreen', cursive;
+}
+article
+{
+  margin: 0 auto;
+  padding: 4px;
+  background-image: url(Matrixcode.gif);
+  width: 270px;
 }
 main
 {
@@ -45,13 +60,7 @@ main
   background-color: yellow;
   padding: 20px;
 }
-article
-{
-  margin: 0 auto;
-  padding: 20px;
-  background-color: pink;
-  width: 270px;
-}
+
 
 .nappi
 
