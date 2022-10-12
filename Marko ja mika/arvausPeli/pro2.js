@@ -7,7 +7,7 @@ var arvaustenLukumaara = 1;
 let arvatutNumerot = [];
 var voitot = 0;
 var tappiot = 0;
-//
+
 
 function arvaa(arvo)
 {
@@ -15,7 +15,7 @@ function arvaa(arvo)
   if(arvaustenLukumaara >= 3)
   {
     arvatutNumerot.push(arvo.value);
-    for (var n = 1; n <= 10; n++)
+    for (var n = 0; n <= 10; n++)
     {
       document.getElementById(n).classList.add("disabled");
       document.getElementById(n).disabled = true;
@@ -69,6 +69,7 @@ function arvaa(arvo)
       document.getElementById(k).disabled = true;
     }
   }
+
   m2.innerHTML = "Arvausten lukumäärä: " + arvaustenLukumaara;
   m3.innerHTML = "Arvatut numerot ovat: " + arvatutNumerot;
   arvaustenLukumaara++;
