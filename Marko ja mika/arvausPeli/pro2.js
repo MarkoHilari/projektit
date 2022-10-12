@@ -7,7 +7,7 @@ var arvaustenLukumaara = 1;
 let arvatutNumerot = [];
 var voitot = 0;
 var tappiot = 0;
-
+//
 
 function arvaa(arvo)
 {
