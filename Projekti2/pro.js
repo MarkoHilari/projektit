@@ -1,48 +1,75 @@
-var arvattava = Math.floor(Math.random()*10)+1;
-var kerrat = 0;
+var rivi1 = document.getElementById('m1');
+var rivi2 = document.getElementById('m2');
+var rivi3 = document.getElementById('m3');
 
-window.onload= function ponnahdusIkkuna()
+var arvattava = Math.floor(Math.random()*10) + 1;
+var arvaustenLukumaara = 1;
+let arvatutNumerot = [];
+var voitot = 0;
+var tappiot = 0;
+
+
+function arvaa(arvo)
 {
-
-alert(arvattava);
-
-}
-
-//arpa funktion parametriin haetaan value ->= buttonvalue html:ssä
-function arvaa(arpa)
-{
-  //joka kerta kun funktio ajetaan, lisätään "kerrat" muuttujan arvoon +1
-  kerrat++;
-  var arvaus = arpa.value;// <-- tähän siis parametrinä htmlstä button value
-
-// jos kokeilet 3 kertaa
-  if(kerrat <= 3)
+  if(arvaustenLukumaara >= 3)
   {
-// jos arvaat vähemmän kun arvattava = (mathrandometc....)
-    if(arvaus < arvattava)
+  //  arvatutNumerot.push(arvo.value);
+    //for (var n = 1; n <= 10; n++)
+    //{
+      //document.getElementById(n).classList.add("disabled");
+      //document.getElementById(n).disabled = true;
+    //}
+    //m2.innerHTML = "Arvausten lukumäärä: " + arvaustenLukumaara;
+    //m3.innerHTML = "Arvatut numerot ovat: " + arvatutNumerot;
+  }
+  else
+  {
+    arvatutNumerot.push(arvo.value);
+  }
+  if(arvo.value < arvattava)
+  {
+    m1.innerHTML = "Annoit liian pienen numeron!";
+    for(var i = 1; i <= arvo.value; i++)
     {
-      alert('Valitsit liian pienen numeron');
-
-
-      var x = '';
-      for(var luvut = 1; luvut < arvaus; luvut++)
-      {
-        x = document.getElementsByName('' + luvut+ '');
-
-        console.log(x);
-        x.style.nayta = "none";
-      }
+      document.getElementById(i).classList.add("disabled");
+      document.getElementById(i).disabled = true;
     }
-    else if(arvaus > arvattava)
+    if(arvaustenLukumaara >= 3)
     {
-      alert('Valitsit liian suuren numeron');
-    }
-    else if (arvaus == arvattava){
-      alert('Oikein, kÃ¤ytit ' + kerrat + ' kertaa');
-    }
-    else {
-      alert('KÃ¤ytit kaikki kertasi');
+      tappiot++;
     }
   }
-
+  else if(arvo.value > arvattava)
+  {
+    m1.innerHTML = "Annoit liian suuren numeron!";
+    for(var j = arvo.value; j <= 10; j++)
+    {
+      document.getElementById(j).classList.add("disabled");
+      document.getElementById(j).disabled = true;
+    }
+    if(arvaustenLukumaara >= 3)
+    {
+      tappiot++;
+    }
+  }
+  else
+  {
+    m1.innerHTML = "Oikein, tämä oli koneen arpoma numero";
+    document.getElementById(arvo.value).classList.add("oikein");
+    document.getElementById(arvo.value).disabled = true;
+    voitot++;
+    for(var k = 1; k <= 10; k++)
+    {
+      if(k == arvo.value && arvo.value !=10)
+      {
+        k++;
+      }
+      document.getElementById(k).classList.add("disabled");
+      document.getElementById(k).disabled = true;
+    }
+  }
+  m2.innerHTML = "Arvausten lukumäärä: " + arvaustenLukumaara;
+  m3.innerHTML = "Arvatut numerot ovat: " + arvatutNumerot;
+  arvaustenLukumaara++;
+  document.getElementById('tilanne').innerHTML = "voitot: " + voitot + ' / tappiot: ' + tappiot;
 }
