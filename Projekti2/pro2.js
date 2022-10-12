@@ -11,7 +11,7 @@ var tappiot = 0;
 
 function arvaa(arvo)
 {
-  
+
   if(arvaustenLukumaara >= 3)
   {
     arvatutNumerot.push(arvo.value);
