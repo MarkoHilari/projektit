@@ -17,7 +17,7 @@ body
   background-repeat: no-repeat;
 }
 
-button
+.nappi
 {
   width: 100%;
   height: 13px;
@@ -52,16 +52,6 @@ article
   padding: 20px;
   background-color: pink;
   width: 270px;
-}
-.nappi
-{
-  width: 50px;
-  height: 50px;
-  margin-top: 3px;
-  font-size: 16px;
-  background-color: blue;
-  color: yellow;
-  border-radius: 15px;
 }
 
 .nappi:disabled,
