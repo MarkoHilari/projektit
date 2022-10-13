@@ -1,11 +1,14 @@
-table
 
+table
 {
-  margin: 25px 100px 50px 72.5px;
+  margin: 13px 100px 0px 69px;
   background-image: url(Matrixcode.gif);
-  width: 135px;
-  border-radius: 5px;
-}
+  height: 95px;
+  width: 146px;
+  border-radius: 4px;
+  transform:  perspective(120px) rotateX(10deg);
+  transform-origin: bottom center;
+  transform-style: preserve-3d;}
 #ylän
 {
   border-radius: 4px;
@@ -21,7 +24,20 @@ body
   background-size: 300px;
   background-repeat: no-repeat;
 }
+#reload
+{
 
+  color: white;
+
+  width: 35.5px;
+  height: 23px;
+  border-radius: 100%;
+  font-size: 7px;
+  float: left;
+  margin-top: -72px;
+  margin-left: 29px;
+
+}
 .nappi
 {
   width: 100%;
@@ -64,19 +80,19 @@ main
 
 .nappi
 
-}
+{
+
 
 .nappi:disabled,
 .nappi.disabled{
-  color:#fff;
+  color: #fff;
   border-color: #a0a0a0;
   background-color: #a0a0a0;
 }
-.nappi:disabled:hover,
-.nappi:disabled:focus,
+
 .nappi.disabled:hover,
 .nappi.disabled:focus {
-  color:#fff;
+  color: red;
   border-color: #a0a0a0;
   background-color: #a0a0a0;
 }
