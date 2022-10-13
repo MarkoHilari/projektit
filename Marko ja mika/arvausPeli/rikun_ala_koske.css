@@ -31,22 +31,20 @@ body
 {
   background-color: gray;
 }
-#reload.focus.disabled
-{
-  color: black;
-}
+
 #reload
 {
 
   color: red;
-  width: 27px;
-  height: 20px;
-  border-radius: 100%;
+  width: 28.5px;
+  height: 19.5px;
+  border-radius: 60%;
   font-size: 5px;
   float: left;
-  margin-top: -75px;
-  margin-left: 29px;
+  margin-top: -71.8px;
+  margin-left: 32.6px;
   border-style: ridge;
+  border: 3px solid lightgray;
 }
 
 
