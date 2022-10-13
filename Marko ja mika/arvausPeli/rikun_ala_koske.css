@@ -8,13 +8,16 @@ table
   border-radius: 4px;
   transform:  perspective(120px) rotateX(10deg);
   transform-origin: bottom center;
-  transform-style: preserve-3d;}
+  transform-style: preserve-3d;
+    border-style: ridge;
+}
 #ylän
 {
-  border-radius: 4px;
-  margin: 56px 0px 0px 71px;
+  border-radius: 3px;
+  margin: 55px 0px 0px 70px;
   width: 135px;
   height: 77px;
+  border-style: ridge;
 }
 
 body
@@ -36,7 +39,7 @@ body
   float: left;
   margin-top: -72px;
   margin-left: 29px;
-
+  border-style: ridge;
 }
 .nappi
 {
