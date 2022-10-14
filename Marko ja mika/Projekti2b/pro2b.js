@@ -1,4 +1,3 @@
-function lahetaVastaus()
 var yhteensa = 5;
 var pisteet = 0;
 var huom = 0;
@@ -11,14 +10,15 @@ for(i = 1; i <= yhteensa; i++)
 {
    if(eval('k'+i) == null || eval ('k'+i) == '')
    {
-     alert('Et vastannut kysymykseen numero' + i);
+     alert('Et vastannut kysymykseen numero: ' + i);
      huom = 1;
    }
-   if(huom == 1) return false;
-   var vastaukset = ["b", "a", "d", "b", "d"];
+      if(huom == 1) return false;
+    }
+  var vastaukset = ["b", "a", "d", "b", "d"];
    for(i = 1; i <= yhteensa; i++)
    {
-       if(eval('k'+i) == vastaukset[i-1])
+  if(eval('k'+i) == vastaukset[i-1])
        {
          pisteet++;
        }
