@@ -1,4 +1,5 @@
-// Use insert() function to insert the number in textview.
+// insert() functio lisää btn arvon textview kohtaan
+
 function insert(num)
 {
 document.form1.textview.value = document.form1.textview.value + num;
