@@ -15,7 +15,7 @@ background-color: grey;
 h1 {
     text-align: center;
     padding: 23px;
-    background-color: skyblue;
+    background-color: black;
     color: white;
     }
 input:hover
@@ -35,7 +35,7 @@ height: 50px;
 font-size: 25px;
 margin: 2px;
 cursor: pointer;
-background-color: red;
+background-color: #949494;
 color: white;
 
 }
@@ -47,4 +47,4 @@ margin: 5px;
 font-size: 25px;
 padding: 5px;
 background-color: lightgreen;
-}     
+}
