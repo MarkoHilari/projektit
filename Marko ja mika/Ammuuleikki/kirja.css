@@ -1,1 +1,16 @@
 
+img
+{
+  width: 15rem;
+  height: 15rem;
+  padding: 1.50rem;
+  }
+  table
+  {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+figcaption
+{
+  text-align: center;
+}
