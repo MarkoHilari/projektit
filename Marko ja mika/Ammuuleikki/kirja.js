@@ -1,5 +1,5 @@
-var audio = $("#kissa.mp3")[0];
+var aani = $("#audio")[0];
 $("#kissa").mouseenter(function()
 {
-audio.play();
+aani.play();
 });

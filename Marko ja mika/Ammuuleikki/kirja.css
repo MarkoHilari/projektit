@@ -1,12 +1,13 @@
 
 img
 {
+  transition: 1.5s ease;
   width: 15rem;
   height: 15rem;
   padding: 1.50rem;
-  }
+}
   table
-  {
+{
     margin: 0 auto;
     margin-top: 2.5rem;
   }
@@ -16,6 +17,19 @@ figcaption
 }
 img:hover
 {
-  opacity: 0.5;
-  transition: 1s ease;
+  opacity: 0.2;
+
+}
+#speaker:hover
+{
+  opacity: 1;
+}
+#speaker
+{
+  transition: 1.5s ease;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  padding: 1.50rem;
+  opacity: 0;
 }
