@@ -1,5 +1,8 @@
-var aani = $("#audio")[0];
-$("#kissa").mouseenter(function()
+var audio = new Audio("kissa.mp3");
+function kissa()
 {
-aani.play();
-});
+    audio.play();
+}
+  onmouseout= function(){
+		audio.pause();
+}

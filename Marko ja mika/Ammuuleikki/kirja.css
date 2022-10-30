@@ -10,7 +10,7 @@ img
 {
     margin: 0 auto;
     margin-top: 2.5rem;
-  }
+}
 figcaption
 {
   text-align: center;
@@ -20,11 +20,11 @@ img:hover
   opacity: 0.2;
 
 }
-#speaker:hover
+.speaker:hover
 {
-  opacity: 1;
+  opacity: .7;
 }
-#speaker
+.speaker
 {
   transition: 1.5s ease;
   position: absolute;
