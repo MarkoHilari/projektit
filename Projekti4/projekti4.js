@@ -25,7 +25,7 @@ function luoLista()
    }
    li.addEventListener("click", valmis);
    let poisto = document.createElement("button");
-   poisto.appendChild(document.TextNode("xxx"));
+   poisto.appendChild(document.createTextNode("xxx"));
    li.appendChild(poisto);
    poisto.addEventListener("click", vahennaTaakkaa);
    function vahennaTaakkaa()
