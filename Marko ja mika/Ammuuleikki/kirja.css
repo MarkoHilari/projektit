@@ -3,14 +3,18 @@ body
 {
   background-color: #758DC3;
 }
+
 img
 {
+
   transition: 1.5s ease;
   width: 15rem;
   height: 15rem;
   padding: 1.50rem;
   border-radius: 20%;
+
 }
+
   table
 {
     margin: 0 auto;
@@ -23,20 +27,7 @@ figcaption
 }
 img:hover
 {
-  opacity: ;
-  transform: scale(2);
-  border-radius: 50%;
-}
-.speaker:hover
-{
-  opacity: .7;
-}
-.speaker
-{
-  transition: 1.5s ease;
-  position: absolute;
-  width: 15rem;
-  height: 15rem;
-  padding: 1.50rem;
-  opacity: 0;
+  opacity: .8;
+  transform: scale(1.5);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50% );
 }
