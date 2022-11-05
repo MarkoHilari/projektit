@@ -28,6 +28,7 @@ figcaption
 img:hover
 {
   opacity: .8;
-  transform: scale(1.5);
+  transform: scale(1.4);
   clip-path: polygon(0% 0%, 0% 100%, 100% 50% );
+  border-radius: 0%;
 }
