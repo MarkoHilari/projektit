@@ -78,7 +78,7 @@ body{
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .card .front-view img{
-  max-width: 17px;
+  max-width: 50px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
