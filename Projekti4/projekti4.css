@@ -113,6 +113,7 @@ input {
 .done {
 	background: #00C923;
 	color: black;
+	text-decoration: line-through;
 }
 
 .delete {
