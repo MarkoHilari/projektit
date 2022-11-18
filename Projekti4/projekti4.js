@@ -1,7 +1,7 @@
-let painallus = document.getElementById('painike');
+let painallus = document.getElementById("painike");
 painallus.addEventListener("click", lisaaLista);
 
-let syotto = document.getElementById('syotto');
+let syotto = document.getElementById("syotto");
 syotto.addEventListener("keypress", lisaaListaanE);
 
 let ul = document.querySelector("ul");
@@ -13,7 +13,7 @@ function inputLength()
 function luoLista()
 {
    let li = document.createElement("li");
-   if(syotto.value != '')
+   if(syotto.value != "")
    {
      li.appendChild(document.createTextNode(syotto.value));
      ul.appendChild(li);
