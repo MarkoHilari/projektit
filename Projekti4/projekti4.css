@@ -1,65 +1,66 @@
 body {
-	background: #04A1BF;
+
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-}
-.container{
-	margin: 0 auto;
-	width: 800px;
+	background: linear-gradient(270deg, #0ff3b9, #9df30f, #970ff3, #f30fe0);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
 }
 
-.intro {
-	margin: 30px 0px;
-	font-weight: bold;
+@-webkit-keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+.kontti{
+	margin: 0 auto;
+	width: 50rem;
 }
 
 h1 {
 	color: #ffffff;
 	text-transform: uppercase;
-	font-weight: 800;
+	font-size: 3rem;
 }
 
-p {
-	font-weight: 600;
+h3{
+	font-family: 'Combo', cursive;
+	font-size: 2rem;
 }
-
-#first {
-	margin-top: 10px;
-	color: #FFCD5D;
-}
-
-#second {
-	color: #51DF70;
-
-}
-
-#third {
-	color: #025F70;
-	margin-bottom: 30px;
-}
-
-
 #painike {
 	border: none;
 	padding: 5px 15px;
 	border-radius: 5px;
-	color: #04A1BF;
+	color: black;
 	background-color: #025F70;
-	transition: all 0.75s ease;
-	-webkit-transition: all 0.75s ease;
-	-moz-transition: all 0.75s ease;
-	-ms-transition: all 0.75s ease;
-	-o-transition: all 0.75 ease;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	font-weight: normal;
 }
 
 #painike:hover{
 	background-color: #02798F;
-	color: #FFCD5D;
+
 }
 
 ul {
-	text-align: left;
+	text-align: center;
 	margin-top: 20px;
 	padding-left: 20px;
 }
@@ -67,25 +68,28 @@ ul {
 
 li {
 	height: 20px;
-	width: 700px;
+	width: 40rem;
 	list-style: none;
 	padding: 10px 20px;
-	color: #ffffff;
+	color: black;
 	text-transform: capitalize;
 	font-weight: 600;
 	border: 2px solid #025f70;
-	border-radius: 5px;
+	border-radius: 1.75rem;
 	margin-bottom: 10px;
 	background: #4EB9CD;
 	transition: all 10s ease;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5 ease;
+	-o-transition: all 0.5s ease;
+	text-align: center;
+	margin-left: 2rem;
 }
 
 li:hover {
-	background: red;
+	background: lightblue;
+	color: black;
 }
 
 li > button {
@@ -93,22 +97,22 @@ li > button {
 	background: none;
 	border: none;
 	float: right;
-	color: #025f70;
+	color: red;
 	font-weight: 800;
 }
 
 input {
-	border-radius: 5px;
-	min-width: 65%;
-	padding: 5px;
+	border-radius: 15px;
+	min-width: 75%;
+	padding: 0.4rem;
 	border: none;
-	width: 400px;
+	width: 22.22rem;
 }
 
 
 .done {
-	background: #51DF70;
-	color: #00891E;
+	background: #00C923;
+	color: black;
 }
 
 .delete {
