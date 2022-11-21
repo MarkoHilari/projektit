@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+main{
+  width: 80%;
+  margin: 1rem auto 0;
+}
+#opelForm input[name="model"]{
+  grid-area: model;
+}
+#opelForm input[name="fault"]{
+  grid-area: fault;
+}
+#opelForm input[name="type"]{
+  grid-area: type;
+}
+#opelForm button{
+  grid-area: button;
+}
+#opelForm{
+  grid-area: fault;
+}
+#opelForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+  "model model"
+  "fault fault"
+  "type type"
+  "button button";
+}
+#opelForm *{
+  margin: 7px;
+  padding: 7px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#opelForm button {
+  outline: none;
+  background-color: lightblue;
+  color: white;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#opelForm input {
+  border: 3px solid lightblue;
+  outline: none;
+}
+#opelForm input:focus {
+  border: 3px solid blue;
+}
+#opelForm button:active {
+  border-color: blue;
+}
+.model{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid grey;
+  background-color: red;
+  color: lightgreen;
+  border-radius: 15px;
+}
+.model div{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.model div *{
+  margin: 5px;
+}
