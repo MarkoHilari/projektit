@@ -6,15 +6,15 @@
     <title>localStorage</title>
   </head>
   <body>
-    <form id="opel" action="ls1.html" method="post">
-      <input type="text" name="model" value="" placeholder="Syötä tähän malli">
-      <input type="text" name="fault" value="" placeholder="Syötä tähän vika">
-      <input type="text" name="type" value="" placeholder="Syötä tähän tyyppi">
-      <input type="submit" name="send" value="Send" onsubmit="faultCode()">
+    <form id="opel">
+      <input type="text" id="brand" value="" placeholder="Syötä tähän merkki">
+      <input type="text" id="model" value="" placeholder="Syötä tähän malli">
+      <input type="text" id="fault" value="" placeholder="Syötä tähän vika">
+      <input type="text" id="type" value="" placeholder="Syötä tähän tyyppi">
+      <input type="submit" name="" value="send" onclick="faultCode()">
+      <!--<button type="button" name="button" onclick="faultCode()">Send</button>-->
     </form>
   </body>
     <p id="tulos"></p>
-    <script>
-      faultCode();
-    </script>
+
 </html>
