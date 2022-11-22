@@ -43,7 +43,7 @@ opels.forEach(createModelElement);
 opelForm.onsubmit = (e) => {
   e.preventDefault();
 
-  const = newModel = addModel(
+  const newModel = addModel(
     modelInput.value,
     faultInput.value,
     typeInput.value
