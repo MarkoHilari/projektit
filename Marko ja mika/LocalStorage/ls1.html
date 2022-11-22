@@ -2,9 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="ls1.js" charset="utf-8"></script>
     <title>localStorage</title>
   </head>
   <body>
-
+    <form id="opel" action="ls1.html" method="post">
+      <input type="text" name="model" value="" placeholder="Syötä tähän malli">
+      <input type="text" name="fault" value="" placeholder="Syötä tähän vika">
+      <input type="text" name="type" value="" placeholder="Syötä tähän tyyppi">
+      <input type="submit" name="send" value="Send" onsubmit="faultCode()">
+    </form>
   </body>
+    <p id="tulos"></p>
+    <script>
+      faultCode();
+    </script>
 </html>
