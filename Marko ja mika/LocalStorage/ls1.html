@@ -35,9 +35,16 @@
     </form>
 
       <div class="search">
-            <p>Anna hakuavain</p>
-            <input type="text" name="" id="retrieveKey" value="" placeholder="anna id" required>
-            <button type="button" name="button" id="searchButton" onclick="key()">Hae</button>
+        <label for="retrieveKey" >Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <button id="retrieveButton">Retrieve records</button>
+        <br>
+        <div id="retrieve"></div>
+        <label for="removeKey" >Enter Key to delete item</label>
+        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <button id="removeButton">Remove record</button>
+<br>
+         <button id="clearButton">Clear all records</button>
       </div>
   </body>
     <p id="tulos"></p>

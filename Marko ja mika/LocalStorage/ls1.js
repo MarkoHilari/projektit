@@ -14,7 +14,7 @@ function faultCode() {
   let model = document.getElementById('model').value;
   let fault = document.getElementById('fault').value;
   let type = document.getElementById('type').value;
-  let tulosta =  "<b>ID: </b>" + id + "<b>Merkki: </b>" + brand + " <br> <b>Malli: </b>" + model +  "<br><b> Vika: </b>" + fault + "<br><b> Tyyppi: </b>" + type;
+  let tulosta =  "<b>ID: </b>" + id + "<br> <b>Merkki: </b>" + brand + " <br> <b>Malli: </b>" + model +  "<br><b> Vika: </b>" + fault + "<br><b> Tyyppi: </b>" + type;
 
   document.getElementById('tulos').innerHTML = tulosta;
 
@@ -34,10 +34,37 @@ document.getElementById('brand').value = "";
 //window.localStorage.setItem(arvo, count);
 }
 
-function retrieveRecords(){
+/*function retrieveRecords(){
   let key = document.getElementById('retrieveKey').value;
   console.log("retrive records");
   let records = window.localStorage.getItem(key);
   let paragraph = document.createElementById("retrieve");
   element.appendChild(paragraph);
+}*/
+function retrieveRecords(){ //retrieves items in the localStorage
+    console.log("retrieve records");
+     var key = document.getElementById('retrieveKey').value;
+    var records = window.localStorage.getItem(key);
+    var paragraph = document.createElement("p");
+    var infor = document.createTextNode(records);
+    paragraph.appendChild(infor);
+    var element = document.getElementById("retrieve");
+    element.appendChild(paragraph);
+}
+function removeItem(){ //deletes item from localStorage
+    var key = document.getElementById('removeKey').value; //gets key from user
+    localStorage.removeItem(key) //passes key to the removeItem method
+    console.log("remove items");
+}
+function clearStorage(){
+    //clears the entire localStorage
+    localStorage.clear()
+    console.log("clear records");
+}
+window.onload =function(){ //ensures the page is loaded before functions are executed.
+    //document.getElementById("carForm").onsubmit = store
+
+    document.getElementById("removeButton").onclick = removeItem
+    document.getElementById("retrieveButton").onclick = retrieveRecords
+    document.getElementById("clearButton").onclick = clearStorage
 }
