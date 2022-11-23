@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="ls1.css">
     <script src="ls1.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Silkscreen&display=swap" rel="stylesheet">
     <title>localStorage</title>
   </head>
   <body>
     <form id="opel">
   <!--    <input type="text" id="brand" value="" placeholder="Syötä tähän merkki"> -->
+          <h1>Local Storage</h1>
     <select id="brand" name="Merkki">
       <option value="Merkki">Merkki</option>
       <option value="BMW">BMW</option>
@@ -29,7 +33,13 @@
       <!--<input type="submit" name="" value="send" onclick="faultCode()">-->
       <button type="button" name="button" onclick="faultCode()">Send</button>
     </form>
+
+      <div class="search">
+            <p>Anna hakuavain</p>
+            <input type="text" name="" id="retrieveKey" value="" placeholder="anna id" required>
+            <button type="button" name="button" id="searchButton" onclick="key()">Hae</button>
+      </div>
   </body>
     <p id="tulos"></p>
-
+    <p id="id"></p>
 </html>

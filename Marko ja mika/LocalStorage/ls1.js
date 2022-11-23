@@ -31,6 +31,13 @@ document.getElementById('model').value = "";
 document.getElementById('fault').value = "";
 document.getElementById('type').value = "";
 document.getElementById('brand').value = "";
-
 //window.localStorage.setItem(arvo, count);
+}
+
+function retrieveRecords(){
+  let key = document.getElementById('retrieveKey').value;
+  console.log("retrive records");
+  let records = window.localStorage.getItem(key);
+  let paragraph = document.createElementById("retrieve");
+  element.appendChild(paragraph);
 }
