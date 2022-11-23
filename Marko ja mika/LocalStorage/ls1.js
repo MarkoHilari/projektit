@@ -1,7 +1,7 @@
 function faultCode() {
-  let count = localStorage.getItem(arvo);
+/*  let count = localStorage.getItem(arvo);
   count++;
-  alert("count = " + count);
+  alert("count = " + count);*/
   let brand = document.getElementById('brand').value;
   let model = document.getElementById('model').value;
   let fault = document.getElementById('fault').value;
@@ -16,6 +16,6 @@ let car = {
   vika: fault,
   Tyyppi: type,
 }
-window.localStorage.setItem(count, JSON.stringify(car));
-window.localStorage.setItem(arvo, count);
+window.localStorage.setItem(brand, JSON.stringify(car));
+//window.localStorage.setItem(arvo, count);
 }
