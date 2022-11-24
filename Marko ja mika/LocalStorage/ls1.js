@@ -51,9 +51,10 @@ function retrieveRecords(){ //retrieves items in the localStorage
     var tulosta = "";
     console.log("local storage");
     for (i = 0; i < localStorage.length; i++)   {
-        document.getElementById('mobiili').innerHTML =  tulosta + (localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
+      tulosta += (localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]") + "<br>";
     }
 
+    document.getElementById('mobiili').innerHTML =  tulosta;
 
     /*
      var key = document.getElementById('retrieveKey').value;
