@@ -13,6 +13,23 @@ form
 h1
 {
   font-family: 'Alumni Sans Pinstripe', sans-serif;
-  border: 3px dotted navy;
+
+}
+#clearButton
+{
+  float: right;
+  box-shadow: 1px 2px 1px;
   border-radius: 5px;
+}
+#clearButton:hover
+{
+  opacity: 0.5;
+}
+#retrieve
+{
+  float: right;
+}
+#removeKey
+{
+  width: 35px;
 }

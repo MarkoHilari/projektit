@@ -12,20 +12,21 @@
   <body>
     <form id="opel">
   <!--    <input type="text" id="brand" value="" placeholder="Syötä tähän merkki"> -->
-          <h1>Local Storage</h1>
-    <select id="brand" name="Merkki">
-      <option value="Merkki">Merkki</option>
-      <option value="BMW">BMW</option>
-      <option value="Volvo">Volvo</option>
-      <option value="Mercedes">Mercedes</option>
-      <option value="Opel">Opel</option>
-      <option value="Kia">Kia</option>
-      <option value="Seat">Seat</option>
-      <option value="Audi">Audi</option>
-      <option value="Ford">Ford</option>
-      <option value="Scoda">Scoda</option>
-      <option value="VW">VW</option>
-      <option value="Chevrolet">Chevrolet</option>
+        <button id="clearButton">Tyhjennä koko<br/ > muisti</button>
+          <h1><u>Local Storage</u></h1>
+          <select id="brand" name="Merkki">
+            <option value="Merkki">Merkki</option>
+            <option value="BMW">BMW</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Opel">Opel</option>
+            <option value="Kia">Kia</option>
+            <option value="Seat">Seat</option>
+            <option value="Audi">Audi</option>
+            <option value="Ford">Ford</option>
+            <option value="Scoda">Scoda</option>
+            <option value="VW">VW</option>
+            <option value="Chevrolet">Chevrolet</option>
     </select>
       <input type="text" id="model" value="" placeholder="Syötä tähän malli">
       <input type="text" id="fault" value="" placeholder="Syötä tähän vika">
@@ -35,16 +36,15 @@
     </form>
 
       <div class="search">
-        <label for="retrieveKey" >Enter Key to retrieve item</label>
-        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <label for="retrieveKey" >Avain haku</label>
+        <input type="text" id="retrieveKey" placeholder="Näytä lista" required>
         <button id="retrieveButton">Retrieve records</button>
-        <br>
+
         <div id="retrieve"></div>
-        <label for="removeKey" >Enter Key to delete item</label>
-        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <label for="removeKey" >Poistettava avain</label>
+        <input type="text" id="removeKey" placeholder="Avain" required>
         <button id="removeButton">Remove record</button>
 <br>
-         <button id="clearButton">Clear all records</button>
       </div>
   </body>
     <p id="tulos"></p>
