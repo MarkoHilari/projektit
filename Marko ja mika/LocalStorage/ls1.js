@@ -8,7 +8,7 @@ function faultCode() {
   }
 
   count++;
-  alert("count = " + count);
+  alert("count " + count);
   let id = count;
   let brand = document.getElementById('brand').value;
   let model = document.getElementById('model').value;
@@ -30,7 +30,8 @@ window.localStorage.setItem(id, JSON.stringify(car));
 document.getElementById('model').value = "";
 document.getElementById('fault').value = "";
 document.getElementById('type').value = "";
-document.getElementById('brand').value = "";
+document.getElementById('brand').value = "Merkki";
+
 //window.localStorage.setItem(arvo, count);
 }
 
@@ -42,14 +43,27 @@ document.getElementById('brand').value = "";
   element.appendChild(paragraph);
 }*/
 function retrieveRecords(){ //retrieves items in the localStorage
+
     console.log("retrieve records");
+    console.log(localStorage);
+
+    var i;
+    var tulosta = "";
+    console.log("local storage");
+    for (i = 0; i < localStorage.length; i++)   {
+        document.getElementById('mobiili').innerHTML =  tulosta + (localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
+    }
+
+
+    /*
      var key = document.getElementById('retrieveKey').value;
     var records = window.localStorage.getItem(key);
     var paragraph = document.createElement("p");
     var infor = document.createTextNode(records);
     paragraph.appendChild(infor);
     var element = document.getElementById("retrieve");
-    element.appendChild(paragraph);
+    element.appendChild(paragraph);*/
+
 }
 function removeItem(){ //deletes item from localStorage
     var key = document.getElementById('removeKey').value; //gets key from user
