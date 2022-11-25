@@ -56,7 +56,8 @@ function retrieveRecords(){ //retrieves items in the localStorage
 
     document.getElementById('mobiili').innerHTML =  tulosta;
 
-    /*
+      /*-
+
      var key = document.getElementById('retrieveKey').value;
     var records = window.localStorage.getItem(key);
     var paragraph = document.createElement("p");
