@@ -15,7 +15,7 @@ function faultCode() {
   let fault = document.getElementById('fault').value;
   let type = document.getElementById('type').value;
   let tulosta =  "<b>ID: </b>" + id + "<br> <b>Merkki: </b>" + brand + " <br> <b>Malli: </b>" + model +  "<br><b> Vika: </b>" + fault + "<br><b> Tyyppi: </b>" + type;
-
+  document.getElementById('nayta').innerHTML = tulosta;
 //  document.getElementById('tulos').innerHTML = tulosta;
 
 let car = {
@@ -55,6 +55,8 @@ function retrieveRecords(){ //retrieves items in the localStorage
     }
 
     document.getElementById('mobiili').innerHTML =  tulosta;
+    let tulosta2 =  "<b>ID: </b>" + tulosta.id + "<br> <b>Merkki: </b>" + brand + " <br> <b>Malli: </b>" + model +  "<br><b> Vika: </b>" + fault + "<br><b> Tyyppi: </b>" + type;
+    document.getElementById('nayta').innerHTML = tulosta2;
 
       /*-
 
