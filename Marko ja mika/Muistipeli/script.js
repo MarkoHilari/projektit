@@ -1,7 +1,16 @@
 // constant variables
 var constants = new (function() {
-    var rows = prompt('Anna rivien parillinen lukumäärä');
-    var columns = prompt('Anna sarakkeiden parillinen lukumäärä');
+    var rows = 0;
+    var columns = 0;
+    do {
+      rows = prompt('Anna rivien parillinen lukumäärä');
+    }
+    while(rows%2 !=0 || rows>6);
+    do{
+      columns = prompt('Anna sarakkeiden parillinen lukumäärä');
+    }
+    while(columns%2 != 0  || columns>6);
+
     var numMatches = (rows * columns) / 2;
     this.getRows = function() { return rows; };
     this.getColumns = function() { return columns; };
