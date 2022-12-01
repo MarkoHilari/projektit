@@ -76,8 +76,11 @@ function createRandom() {
 					, 'ぷ', 'へ', 'べ', 'ぺ', 'ほ', 'ぼ', 'ぽ', 'ま'
 					, 'み', 'む', 'め', 'も', 'や', 'ゆ', 'よ', 'ら'
 					, 'り', 'る', 'れ', 'ろ', 'わ', 'を', 'ん'];
+
+  var emojis = ['😀', '😁'];
+
 	// set what kind of item to display
-	var items = hiragana;
+	var items = emojis;
 
 	// create the arrays for random numbers and item holder
 	for (var i = 0; i < matches * 2; i++) {
