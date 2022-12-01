@@ -1,4 +1,3 @@
-
 .card_container {
   position: relative;
   margin: 1px auto;
@@ -28,8 +27,8 @@
   -moz-transition: all .25s linear;
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
 }
 .flip .card{
   -moz-transform: rotateY(180deg);
@@ -40,8 +39,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
 }
 .face.back {
   display: block;

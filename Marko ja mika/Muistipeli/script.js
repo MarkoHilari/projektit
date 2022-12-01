@@ -1,10 +1,7 @@
-window.onload = function () {
-
-
 // constant variables
 var constants = new (function() {
-    var rows = 2;
-    var columns = 6;
+    var rows = prompt('Anna rivien parillinen lukumäärä');
+    var columns = prompt('Anna sarakkeiden parillinen lukumäärä');
     var numMatches = (rows * columns) / 2;
     this.getRows = function() { return rows; };
     this.getColumns = function() { return columns; };
@@ -139,7 +136,7 @@ app.controller("CardController", function($scope, $timeout) {
 	} //end of check()
 
 	// for the timer
-	$scope.timeLimit = 600000;
+	$scope.timeLimit = 300000;
 	$scope.isCritical = false;
 
 	var timer = null;
@@ -150,7 +147,7 @@ app.controller("CardController", function($scope, $timeout) {
 		// game with a start button.
 		$scope.deck = createDeck();
 		// set the time of 1 minutes and remove the cards guard
-		$scope.timeLimit = 60000;
+		$scope.timeLimit = 300000;
 		$scope.isGuarding = false;
 		$scope.inGame = true;
 
@@ -175,4 +172,3 @@ app.controller("CardController", function($scope, $timeout) {
 	}
 
 });
-}
