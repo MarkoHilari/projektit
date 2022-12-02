@@ -182,5 +182,9 @@ app.controller("CardController", function($scope, $timeout) {
 	  currentSessionOpen = false;
 	  numPairs = 0;
 	}
-
+  var click = 0;
+  function klik() {
+    click += 1;
+    document.getElementById('klikkaa').innerHTML = click;
+  }
 });
