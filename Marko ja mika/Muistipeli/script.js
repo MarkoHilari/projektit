@@ -9,7 +9,7 @@ var constants = new (function() {
     do{
       columns = prompt('Anna sarakkeiden parillinen lukumäärä');
     }
-    while(columns%2 != 0  || columns>6);
+    while(columns%2 != 0  || columns>8);
 
     var numMatches = (rows * columns) / 2;
     this.getRows = function() { return rows; };
