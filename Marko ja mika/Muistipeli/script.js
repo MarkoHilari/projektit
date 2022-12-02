@@ -21,6 +21,13 @@ var constants = new (function() {
 var	currentSessionOpen = false;
 var	previousCard = null;
 var numPairs = 0;
+var click = 0;
+
+
+function klik() {
+  click++;
+  document.getElementById('klikkaa').innerHTML = click;
+}
 
 // this function creates deck of cards that returns an object of cards
 // to the caller
@@ -141,7 +148,7 @@ app.controller("CardController", function($scope, $timeout) {
 			currentSessionOpen = true;
 			previousCard = card;
 		}
-
+    klik();
 		if (numPairs == constants.getNumMatches()) {
 			$scope.stopTimer();
 		}
@@ -182,9 +189,4 @@ app.controller("CardController", function($scope, $timeout) {
 	  currentSessionOpen = false;
 	  numPairs = 0;
 	}
-  var click = 0;
-  function klik() {
-    click += 1;
-    document.getElementById('klikkaa').innerHTML = click;
-  }
 });
