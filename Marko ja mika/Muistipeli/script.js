@@ -1,4 +1,4 @@
-// constant variables
+// esitellään muuttujat pelikentän kokoon
 var constants = new (function() {
     var rows = 0;
     var columns = 0;
@@ -17,7 +17,7 @@ var constants = new (function() {
     this.getNumMatches = function() { return numMatches; };
 })();
 
-// Global Variables
+// Globaalit muuttujat
 var	currentSessionOpen = false;
 var	previousCard = null;
 var numPairs = 0;
@@ -29,8 +29,7 @@ function klik() {
   document.getElementById('klikkaa').innerHTML = click;
 }
 
-// this function creates deck of cards that returns an object of cards
-// to the caller
+// Luodaan pelikenttä
 function createDeck() {
 	var rows = constants.getRows();
 	var cols = constants.getColumns();
@@ -38,12 +37,12 @@ function createDeck() {
 	var deck = {};
 	deck.rows = [];
 
-	// create each row
+	// Luodaan rivit
 	for(var i = 0; i < rows; i++) {
 		var row = {};
 		row.cards = [];
 
-		// creat each card in the row
+		// Luodaan kortit riviin
 		for (var j = 0; j < cols; j++) {
 			var card = {};
 			card.isFaceUp = false;
@@ -86,7 +85,7 @@ function createRandom() {
 
   var emojis = ['😀', '😁', '😄', '🫣', '💑', '👨‍❤️‍👨', '💏', '👨‍❤️‍💋‍👨', '🕵🏻‍♀️', '🕵🏻', '🕵🏻‍♂️', '🧑🏻‍🎓', '👨🏻‍🎓', '👩🏻‍🎓', '🧑🏻‍🦳', '👨🏻‍🦳', '🧙🏻‍♀️','🧙🏻', '🧛🏻', '🧛🏻‍♂️'];
 
-	// set what kind of item to display
+	// Valitaan mitä kenttä halutaan näyttää
 	var items = emojis;
 
 	// create the arrays for random numbers and item holder
