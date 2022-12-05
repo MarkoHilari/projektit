@@ -40,16 +40,21 @@ function retrieveRecords(){
     var paragraph = document.createElement("p");
     var infor = document.createTextNode(data.merkki);
     var infor2 = document.createTextNode(data.malli);
+    var infor3 = document.createTextNode(data.vika);
     var teksti = document.createTextNode("Merkki: ");
-    var teksti2 = document.createTextNode("Malli: ");
+    var teksti2 = document.createTextNode(" Malli: ");
+    var teksti3 = document.createTextNode(" vika: ");
     var rivinvaihto = document.createElement("br");
-    paragraph.appenChild(teksti);
-    paragraph.appenChild(infor);
-    paragraph.appenChild(rivinvaihto);
-    paragraph.appenChild(teksti2);
-    paragraph.appenChild(infor2);
-    var element = document.getElementById('nayta');
-    element.appenChild(paragraph);
+    paragraph.appendChild(teksti);
+    paragraph.appendChild(infor);
+    paragraph.appendChild(rivinvaihto);
+    paragraph.appendChild(teksti2);
+    paragraph.appendChild(infor2);
+    paragraph.appendChild(rivinvaihto);
+    paragraph.appendChild(teksti3);
+    paragraph.appendChild(infor3);
+    var element = document.getElementById('mobiili');
+    element.appendChild(paragraph);
   }
 }
 
