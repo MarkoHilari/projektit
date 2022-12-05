@@ -34,15 +34,28 @@ document.getElementById('brand').value = "Merkki";
 
 //window.localStorage.setItem(arvo, count);
 }
+function retrieveRecords(){
+  for(var i = 0; i < localStorage.length; i++){
+    var data = JSON.parse(localStorage.getItem(localStorage.key(i)));
+    var paragraph = document.createElement("p");
+    var infor = document.createTextNode(data.merkki);
+    var infor2 = document.createTextNode(data.malli);
+    var teksti = document.createTextNode("Merkki: ");
+    var teksti2 = document.createTextNode("Malli: ");
+    var rivinvaihto = document.createElement("br");
+    paragraph.appenChild(teksti);
+    paragraph.appenChild(infor);
+    paragraph.appenChild(rivinvaihto);
+    paragraph.appenChild(teksti2);
+    paragraph.appenChild(infor2);
+    var element = document.getElementById('nayta');
+    element.appenChild(paragraph);
+  }
+}
 
-/*function retrieveRecords(){
-  let key = document.getElementById('retrieveKey').value;
-  console.log("retrive records");
-  let records = window.localStorage.getItem(key);
-  let paragraph = document.createElementById("retrieve");
-  element.appendChild(paragraph);
-}*/
-function retrieveRecords(){ //retrieves items in the localStorage
+
+
+/*function retrieveRecords(){ //retrieves items in the localStorage
 
     console.log("retrieve records");
     console.log(localStorage);
@@ -58,17 +71,7 @@ function retrieveRecords(){ //retrieves items in the localStorage
     let tulosta2 =  "<b>ID: </b>" + tulosta.id + "<br> <b>Merkki: </b>" + brand + " <br> <b>Malli: </b>" + model +  "<br><b> Vika: </b>" + fault + "<br><b> Tyyppi: </b>" + type;
     document.getElementById('nayta').innerHTML = tulosta2;
 
-      /*-
-
-     var key = document.getElementById('retrieveKey').value;
-    var records = window.localStorage.getItem(key);
-    var paragraph = document.createElement("p");
-    var infor = document.createTextNode(records);
-    paragraph.appendChild(infor);
-    var element = document.getElementById("retrieve");
-    element.appendChild(paragraph);*/
-
-}
+}*/
 function removeItem(){ //deletes item from localStorage
     var key = document.getElementById('removeKey').value; //gets key from user
     localStorage.removeItem(key) //passes key to the removeItem method

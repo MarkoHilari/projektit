@@ -26,7 +26,7 @@ var click = 0;
 
 function klik() {
   click++;
-  document.getElementById('klikkaa').innerHTML = click;
+  document.getElementById('klikkaa').innerHTML = Math.floor(click/2);
 }
 
 // Luodaan pelikenttä
