@@ -88,33 +88,33 @@ function createRandom() {
 	// Valitaan mitä kenttä halutaan näyttää
 	var items = emojis;
 
-	// create the arrays for random numbers and item holder
+	// luodaan satunnaset numerot
 	for (var i = 0; i < matches * 2; i++) {
-		pool.push(i); // random numbers
+		pool.push(i); // satunnais numerot
 	}
 
-	// generate an array with the random items
+	// luodaan taulukko satunnaistista kohteista
 	for (var n = 0; n < matches; n++) {
-		// grab random letter from array and remove that letter from the
-		// original array
+		// luodaan satunnainen kirjain ja poistetaan se alkuperäisestä taulukosta
+
 		var randLetter = Math.floor((Math.random() * items.length));
 		var letter = items[randLetter];
 		removeByIndex(items, randLetter);
-		// generate two random placements for each item
+		// luodaan jokaiselle itemille satunnainen paikka taulukosta
 		var randPool = Math.floor((Math.random() * pool.length));
 
-		// remove the placeholder from answers and insert the letter into
-		// random slot
+		// poistaa paikkamerkin vastauksista ja lisää kirjaimen satunnaisen kohtaan
+
 		insertByIndex(answers, pool[randPool], letter);
 
-		// remove random number from pool
+		// poistaa satunnaisen numeron pool
 		removeByIndex(pool, randPool);
 
-		// redo this process for the second placement
+		// toistaa tämän prosessin toista sijoitusta varten
 		randPool = Math.floor((Math.random() * pool.length));
 		insertByIndex(answers, pool[randPool], letter);
 
-		// remove rand number from pool
+		// poistaa satunnaisen numeron poolista
 		removeByIndex(pool, randPool);
 	}
 	return answers;
@@ -151,20 +151,20 @@ app.controller("CardController", function($scope, $timeout) {
 		if (numPairs == constants.getNumMatches()) {
 			$scope.stopTimer();
 		}
-	} //end of check()
+	} //tarkastuksen lopetus
 
-	// for the timer
+	// ajastin
 	$scope.timeLimit = 300000;
 	$scope.isCritical = false;
 
 	var timer = null;
 
-	// start the timer as soon as the player presses start
+	// käynnistää ajastimen kun käyttäjä aloittaa pelin
 	$scope.start = function(){
-		// I need to fix this redundancy. I initially did not create this
-		// game with a start button.
+
+		// pelin aloitus nappi
 		$scope.deck = createDeck();
-		// set the time of 1 minutes and remove the cards guard
+		// asettaa peliajaksi 5 minuuttia ja vapauttaa kortit pelaamista varten
 		$scope.timeLimit = 300000;
 		$scope.isGuarding = false;
 		$scope.inGame = true;
@@ -180,7 +180,7 @@ app.controller("CardController", function($scope, $timeout) {
 			}
 		})();
 	}
-	// function to stop the timer
+	// ajastimen keskeytys 
 	$scope.stopTimer = function() {
 	  $timeout.cancel(timer);
 	  $scope.inGame = false;
