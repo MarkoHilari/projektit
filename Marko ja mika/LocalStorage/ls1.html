@@ -11,9 +11,10 @@
   </head>
   <body>
     <form id="opel">
-  <!--    <input type="text" id="brand" value="" placeholder="Syötä tähän merkki"> -->
+      <!-- Poistonappi koko muistin tyhjennykselle-->
         <button id="clearButton">Tyhjennä koko<br/ > muisti</button>
           <h1><u>Local Storage</u></h1>
+          <!--Alavalikko josta voi napsauttaa oikean automerkin-->
           <select id="brand" name="Merkki">
             <option value="Merkki">Merkki</option>
             <option value="BMW">BMW</option>
@@ -28,24 +29,25 @@
             <option value="VW">VW</option>
             <option value="Chevrolet">Chevrolet</option>
     </select>
+    <!--Tähän syötetään auton malli-->
       <input type="text" id="model" value="" placeholder="Syötä tähän malli">
       <input type="text" id="fault" value="" placeholder="Syötä tähän vika">
       <input type="text" id="type" value="" placeholder="Syötä tähän tyyppi">
-      <!--<input type="submit" name="" value="send" onclick="faultCode()">-->
+      <!--Tällä lähetetään tiedot localStorage-->
       <button type="button" name="button" onclick="faultCode()">Lähetä</button>
     </form>
 
       <div class="search">
-    <!--    <label for="retrieveKey" >Avain haku</label>
-        <input type="text" id="retrieveKey" placeholder="Näytä lista" required>  -->
+    <!--    Voidaan näyttää koko lista joka on lähetetty LS  -->
 
         <div id="retrieve" class="tietue">
           <button id="retrieveButton">Näytä koko lista</button>
           <p id="nayta"></p>
-
+          <!-- Poistettan avaimen poisto-->
         <label for="removeKey" >Poistettava avain</label>
         <input type="text" id="removeKey" placeholder="Avain" required>
         <button id="removeButton">Poista lista</button>
+        <!--Kentät johon pyydetyt tiedot tulostuu-->
         <p id="tulos"></p>
         <p id="id"></p>
         <h3>Tieto lista.</h3>

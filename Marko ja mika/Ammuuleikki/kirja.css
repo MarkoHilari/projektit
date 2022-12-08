@@ -1,10 +1,10 @@
 
-body
+body /* Taustaväri*/
 {
   background-color: #758DC3;
 }
 
-img
+img /* Kuvien muotoilua*/
 {
 
 
@@ -15,19 +15,19 @@ img
 
 }
 
-  table
+  table /* Kuvien sijainnin muotoilua*/
 {
     margin: 0 auto;
     margin-top: 2.5rem;
     background-color: lightblue;
 }
-figcaption
+figcaption  /*Kuvateksti*/
 {
   text-align: center;
 }
-img:hover
+img:hover  /*Muuttaa kuvan kun hiiri viedään kuvan päälle*/
 {
-  
+
   transform: scale(1.4);
   clip-path: polygon(0% 0%, 0% 100%, 100% 50% );
   border-radius: 0%;

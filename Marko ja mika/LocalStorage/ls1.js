@@ -8,7 +8,7 @@ function faultCode() {
   }
 
   count++;
-  alert("count " + count);
+  alert("count " + count);//Laskuri joka laskee ja näyttää avaimen
   let id = count;
   let brand = document.getElementById('brand').value;
   let model = document.getElementById('model').value;
@@ -87,7 +87,7 @@ function clearStorage(){
     localStorage.clear()
     console.log("clear records");
 }
-window.onload =function(){ //ensures the page is loaded before functions are executed.
+window.onload =function(){ //Varmistaa että sivu latautuu ennenkuin functio ajetaan
     //document.getElementById("carForm").onsubmit = store
 
     document.getElementById("removeButton").onclick = removeItem

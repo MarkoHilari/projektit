@@ -6,7 +6,7 @@ var audio = new audio();
   onmouseout= function(){
 		audio.pause();
 }*/
-function aanet(elain)
+function aanet(elain)  //Funktio jolla äänet tulee sivustolle
 {
   aani = elain.id;
   var audio = new Audio(aani+'.mp3');
