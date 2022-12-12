@@ -31,7 +31,7 @@ document.getElementById('type').value = "";
 document.getElementById('brand').value = "Merkki";
 
 }
-function retrieveRecords(){
+function retrieveRecords(){// palauttaa tietueen local storagesta
   for(var i = 0; i < localStorage.length; i++){
     var data = JSON.parse(localStorage.getItem(localStorage.key(i)));
     var paragraph = document.createElement("p");
@@ -54,7 +54,7 @@ function retrieveRecords(){
     element.appendChild(paragraph);
   }
 }
-/*function retrieveRecords(){ // palauttaa tietueen local storagesta
+
 function removeItem(){ //poistaa tietueen local storagesta
     var key = document.getElementById('removeKey').value; //käyttän antama avain
     localStorage.removeItem(key) //välittää avaimen removeItem-menetelmälle
