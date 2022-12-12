@@ -2,14 +2,16 @@
 var constants = new (function() {
     var rows = 0;
     var columns = 0;
+    var tulo = 0;
     do {
-      rows = prompt('Anna rivien parillinen lukumäärä');
+      rows = prompt('Anna rivien määrä');
+      columns = prompt('Anna sarakkeiden määrä');
+      tulo = rows*columns;
+      if(tulo%2 != 0) {
+        alert('Ruutuja pariton määrä, yritä uudelleen');
+      }
     }
-    while(rows%2 !=0 || rows>4);
-    do{
-      columns = prompt('Anna sarakkeiden parillinen lukumäärä');
-    }
-    while(columns%2 != 0  || columns>8);
+    while(tulo%2 != 0);
 
     var numMatches = (rows * columns) / 2;
     this.getRows = function() { return rows; };
@@ -180,7 +182,7 @@ app.controller("CardController", function($scope, $timeout) {
 			}
 		})();
 	}
-	// ajastimen keskeytys 
+	// ajastimen keskeytys
 	$scope.stopTimer = function() {
 	  $timeout.cancel(timer);
 	  $scope.inGame = false;
