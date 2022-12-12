@@ -1,4 +1,4 @@
-/* Create the Outer layout of the Calculator. */
+/* Luodaan laskimen muotoilu*/
 .formstyle
 {
 width: 300px;
@@ -12,7 +12,7 @@ background-color: grey;
 
 }
 
-/* Display top horizontal bar that contain some information. */
+/*Laskimen otsikon muotoilu*/
 h1 {
     width: 20%;
     margin: 0 auto;
@@ -38,7 +38,7 @@ margin: 0;
 padding: 0;
 }
 
-/* It is used to create the layout for calculator button. */
+/* Laskimen nappi */
 .btn{
 width: 50px;
 height: 50px;
@@ -52,7 +52,7 @@ border-radius: 15px;
 
 }
 
-/* It is used to display the numbers, operations and results. */
+/* Laskimen näytön sisällön muotoilu */
 .textview{
 width: 223px;
 margin: 5px;
