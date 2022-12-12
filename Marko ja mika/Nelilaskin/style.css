@@ -8,6 +8,11 @@ border-radius: 15px;
 padding: 20px;
 text-align: center;
 background-color: #230584;
+            border-width: 15px;
+            border-style: groove;
+            Border-color: lightgray;
+            box-shadow: 10px 10px 10px;
+            color: white;
 }
 
 /*Laskimen otsikon muotoilu*/
@@ -21,12 +26,17 @@ h1 {
     font-family: 'Berkshire Swash', cursive;
 font-family: 'Ubuntu', sans-serif;
   border-radius: 15px;
-  border-style: ridge;
+
+
+
+            border-width: 20px;
+            border-style: groove;
+            Border-color: lightgray;
   margin-top: 15px;
   background-image: url(numero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  box-shadow: 10px 10px 10px;
     }
 .btn:hover
 {
@@ -48,6 +58,9 @@ cursor: pointer;
 background-color: #949494;
 color: white;
 border-radius: 15px;
+border-style: groove;
+  border-width: 5px;
+  border-color: white;
 
 
 }
@@ -59,13 +72,17 @@ margin: 5px;
 font-size: 25px;
 padding: 5px;
 background-color: #9e99fa;
-border-radius: 15px;
+border-radius: 10px;
+border-width: 4px;
+border-style: groove;
+Border-color: lightgray;
 }
 footer{
   text-align: center;
   font-family: 'Berkshire Swash', cursive;
 font-family: 'Ubuntu', sans-serif;
 font-size: 1,5rem;
+color: white;
 
 }
 body{
@@ -74,4 +91,5 @@ body{
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
 }
