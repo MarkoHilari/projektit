@@ -7,8 +7,7 @@ margin: 20px auto;
 border-radius: 15px;
 padding: 20px;
 text-align: center;
-background-color: grey;
-
+background-color: #230584;
 }
 
 /*Laskimen otsikon muotoilu*/
@@ -18,13 +17,15 @@ h1 {
     text-align: center;
     padding: 23px;
     background-color: grey;
-    color: black;
+    color: white;
     font-family: 'Berkshire Swash', cursive;
 font-family: 'Ubuntu', sans-serif;
   border-radius: 15px;
   border-style: ridge;
   margin-top: 15px;
-
+  background-image: url(numero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
     }
 .btn:hover
