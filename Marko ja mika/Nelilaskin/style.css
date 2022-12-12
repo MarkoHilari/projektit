@@ -1,18 +1,18 @@
 /* Luodaan laskimen muotoilu*/
 .formstyle
 {
-width: 300px;
-height: 330px;
-margin: 20px auto;
-border-radius: 15px;
-padding: 20px;
-text-align: center;
-background-color: #230584;
-            border-width: 15px;
-            border-style: groove;
-            Border-color: lightgray;
-            box-shadow: 10px 10px 10px;
-            color: white;
+    width: 300px;
+    height: 330px;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #230584;
+    border-width: 15px;
+    border-style: groove;
+    Border-color: lightgray;
+    box-shadow: 10px 10px 10px;
+    color: white;
 }
 
 /*Laskimen otsikon muotoilu*/
@@ -24,19 +24,16 @@ h1 {
     background-color: grey;
     color: white;
     font-family: 'Berkshire Swash', cursive;
-font-family: 'Ubuntu', sans-serif;
-  border-radius: 15px;
-
-
-
-            border-width: 20px;
-            border-style: groove;
-            Border-color: lightgray;
-  margin-top: 15px;
-  background-image: url(numero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 10px 10px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    border-width: 20px;
+    border-style: groove;
+    Border-color: lightgray;
+    margin-top: 15px;
+    background-image: url(numero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px;
     }
 .btn:hover
 {
