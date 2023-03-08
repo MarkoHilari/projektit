@@ -33,10 +33,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tunnistauduGB = new System.Windows.Forms.GroupBox();
-            this.ktunnusLB = new System.Windows.Forms.Label();
-            this.salasanaLB = new System.Windows.Forms.Label();
-            this.ktunnusTB = new System.Windows.Forms.TextBox();
             this.ssTB = new System.Windows.Forms.TextBox();
+            this.ktunnusTB = new System.Windows.Forms.TextBox();
+            this.salasanaLB = new System.Windows.Forms.Label();
+            this.ktunnusLB = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tunnistauduGB.SuspendLayout();
@@ -83,15 +83,22 @@
             this.tunnistauduGB.TabIndex = 2;
             this.tunnistauduGB.TabStop = false;
             // 
-            // ktunnusLB
+            // ssTB
             // 
-            this.ktunnusLB.AutoSize = true;
-            this.ktunnusLB.Font = new System.Drawing.Font("MV Boli", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktunnusLB.Location = new System.Drawing.Point(29, 40);
-            this.ktunnusLB.Name = "ktunnusLB";
-            this.ktunnusLB.Size = new System.Drawing.Size(179, 26);
-            this.ktunnusLB.TabIndex = 0;
-            this.ktunnusLB.Text = "Käyttäjätunnus:";
+            this.ssTB.Location = new System.Drawing.Point(270, 87);
+            this.ssTB.Name = "ssTB";
+            this.ssTB.Size = new System.Drawing.Size(185, 26);
+            this.ssTB.TabIndex = 3;
+            this.ssTB.Text = "Password";
+            this.ssTB.UseSystemPasswordChar = true;
+            // 
+            // ktunnusTB
+            // 
+            this.ktunnusTB.Location = new System.Drawing.Point(270, 40);
+            this.ktunnusTB.Name = "ktunnusTB";
+            this.ktunnusTB.Size = new System.Drawing.Size(185, 26);
+            this.ktunnusTB.TabIndex = 2;
+            this.ktunnusTB.Text = "Admin";
             // 
             // salasanaLB
             // 
@@ -103,22 +110,15 @@
             this.salasanaLB.TabIndex = 1;
             this.salasanaLB.Text = "Salasana:";
             // 
-            // ktunnusTB
+            // ktunnusLB
             // 
-            this.ktunnusTB.Location = new System.Drawing.Point(270, 40);
-            this.ktunnusTB.Name = "ktunnusTB";
-            this.ktunnusTB.Size = new System.Drawing.Size(185, 26);
-            this.ktunnusTB.TabIndex = 2;
-            this.ktunnusTB.Text = "Admin";
-            // 
-            // ssTB
-            // 
-            this.ssTB.Location = new System.Drawing.Point(270, 87);
-            this.ssTB.Name = "ssTB";
-            this.ssTB.Size = new System.Drawing.Size(185, 26);
-            this.ssTB.TabIndex = 3;
-            this.ssTB.Text = "Password";
-            this.ssTB.UseSystemPasswordChar = true;
+            this.ktunnusLB.AutoSize = true;
+            this.ktunnusLB.Font = new System.Drawing.Font("MV Boli", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ktunnusLB.Location = new System.Drawing.Point(29, 40);
+            this.ktunnusLB.Name = "ktunnusLB";
+            this.ktunnusLB.Size = new System.Drawing.Size(179, 26);
+            this.ktunnusLB.TabIndex = 0;
+            this.ktunnusLB.Text = "Käyttäjätunnus:";
             // 
             // kirjausFM
             // 
