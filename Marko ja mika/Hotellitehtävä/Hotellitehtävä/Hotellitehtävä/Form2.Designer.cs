@@ -42,9 +42,10 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1424, 773);
+            this.pictureBox1.Size = new System.Drawing.Size(1068, 619);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -59,7 +60,8 @@
             this.hallitseHuoneitaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1424, 48);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1068, 38);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,31 +69,32 @@
             // 
             this.hallitseHenkilökuntaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hallitseHenkilökuntaToolStripMenuItem.Name = "hallitseHenkilökuntaToolStripMenuItem";
-            this.hallitseHenkilökuntaToolStripMenuItem.Size = new System.Drawing.Size(302, 44);
+            this.hallitseHenkilökuntaToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.hallitseHenkilökuntaToolStripMenuItem.Text = "Hallitse henkilökunta";
             // 
             // hallitseVarauksiaToolStripMenuItem
             // 
             this.hallitseVarauksiaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hallitseVarauksiaToolStripMenuItem.Name = "hallitseVarauksiaToolStripMenuItem";
-            this.hallitseVarauksiaToolStripMenuItem.Size = new System.Drawing.Size(257, 44);
+            this.hallitseVarauksiaToolStripMenuItem.Size = new System.Drawing.Size(194, 34);
             this.hallitseVarauksiaToolStripMenuItem.Text = "Hallitse varauksia";
             // 
             // hallitseHuoneitaToolStripMenuItem
             // 
             this.hallitseHuoneitaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hallitseHuoneitaToolStripMenuItem.Name = "hallitseHuoneitaToolStripMenuItem";
-            this.hallitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(251, 44);
+            this.hallitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.hallitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 821);
+            this.ClientSize = new System.Drawing.Size(1068, 657);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Pääikkuna";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
