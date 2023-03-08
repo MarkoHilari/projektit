@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotellitehtävä
 {
-    public partial class Form1 : Form
+    public partial class kirjausFM : Form
     {
-        public Form1()
+        public kirjausFM()
         {
             InitializeComponent();
         }
