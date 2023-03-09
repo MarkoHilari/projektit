@@ -37,6 +37,7 @@
             this.ktunnusTB = new System.Windows.Forms.TextBox();
             this.salasanaLB = new System.Windows.Forms.Label();
             this.ktunnusLB = new System.Windows.Forms.Label();
+            this.kirjauduBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tunnistauduGB.SuspendLayout();
@@ -120,12 +121,24 @@
             this.ktunnusLB.TabIndex = 0;
             this.ktunnusLB.Text = "Käyttäjätunnus:";
             // 
+            // kirjauduBT
+            // 
+            this.kirjauduBT.BackColor = System.Drawing.Color.Tomato;
+            this.kirjauduBT.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kirjauduBT.Location = new System.Drawing.Point(314, 645);
+            this.kirjauduBT.Name = "kirjauduBT";
+            this.kirjauduBT.Size = new System.Drawing.Size(144, 45);
+            this.kirjauduBT.TabIndex = 3;
+            this.kirjauduBT.Text = "Kirjaudu";
+            this.kirjauduBT.UseVisualStyleBackColor = false;
+            // 
             // kirjausFM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(808, 676);
+            this.ClientSize = new System.Drawing.Size(816, 715);
+            this.Controls.Add(this.kirjauduBT);
             this.Controls.Add(this.tunnistauduGB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -150,6 +163,7 @@
         private System.Windows.Forms.TextBox ktunnusTB;
         private System.Windows.Forms.Label salasanaLB;
         private System.Windows.Forms.Label ktunnusLB;
+        private System.Windows.Forms.Button kirjauduBT;
     }
 }
 
