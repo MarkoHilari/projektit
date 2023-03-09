@@ -1,0 +1,10 @@
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\bin\Debug\Hotellitehtävä.exe.config
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\bin\Debug\Hotellitehtävä.exe
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\bin\Debug\Hotellitehtävä.pdb
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.AssemblyReference.cache
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.SuggestedBindingRedirects.cache
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.Properties.Resources.resources
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.GenerateResource.cache
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.CoreCompileInputs.cache
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.exe
+C:\Users\mhuot\source\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.pdb
