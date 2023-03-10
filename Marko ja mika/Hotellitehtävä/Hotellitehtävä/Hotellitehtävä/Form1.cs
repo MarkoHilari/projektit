@@ -34,12 +34,12 @@ namespace Hotellitehtävä
 
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
-
+           
             if(table.Rows.Count > 0 )
             {
                 this.Hide();
-                Form nform = new Form();
-                nform.Show();
+                PaaikkunaFM form2 = new PaaikkunaFM();
+                form2.Show();
             }
             else
             {
@@ -53,7 +53,7 @@ namespace Hotellitehtävä
                 }
                 else
                 {
-                    MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy ", "Tarkista käyttäjänimi tai salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy! ", "Tarkista käyttäjänimi tai salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
