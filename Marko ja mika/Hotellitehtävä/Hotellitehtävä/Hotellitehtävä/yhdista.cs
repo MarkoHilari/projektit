@@ -10,7 +10,7 @@ namespace Hotellitehtävä
 {
     internal class yhdista
     {
-        public string yhteyslause()
+        public string muodostaYhteys()
         {
             return "datasource = localhost;Port = 3306;username = root;password =;database = hotelli";
         }

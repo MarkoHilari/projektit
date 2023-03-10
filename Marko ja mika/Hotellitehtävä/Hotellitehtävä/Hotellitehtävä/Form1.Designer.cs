@@ -131,6 +131,7 @@
             this.kirjauduBT.TabIndex = 3;
             this.kirjauduBT.Text = "Kirjaudu";
             this.kirjauduBT.UseVisualStyleBackColor = false;
+            this.kirjauduBT.Click += new System.EventHandler(this.kirjauduBT_Click);
             // 
             // kirjausFM
             // 
