@@ -103,7 +103,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MV Boli", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 369);
+            this.label5.Location = new System.Drawing.Point(37, 388);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 34);
             this.label5.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MV Boli", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 414);
+            this.label6.Location = new System.Drawing.Point(37, 450);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 34);
             this.label6.TabIndex = 7;
@@ -243,6 +243,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.Text = "Varausten hallinta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
