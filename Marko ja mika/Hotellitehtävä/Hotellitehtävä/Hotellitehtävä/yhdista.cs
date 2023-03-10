@@ -5,17 +5,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 
+=======
 //Makke on kikkeli kunkku
+>>>>>>> 845077ea91bc606c142a127d84771a3eea897356
 namespace Hotellitehtävä
 {
     internal class YHDISTA
     {
         public string muodostaYhteys()
         {
-            return "datasource = sql7.freesqldatabase.com;Port = 3306;username = sql7603897;password =vQdhASH2tU;database = sql7603897";
+            return "datasource = localhost;Port = 3306;username = root;password =;database = hotelli";
         }
-        private MySqlConnection yhteys = new MySqlConnection("datasource=sql7.freesqldatabase.com; port=3306; username=sql7603897; password=vQdhASH2tU;database=sql7603897");
+        private MySqlConnection yhteys = new MySqlConnection("datasource=localhost; port=3306; username=root; password=;database=opiskelijat");
         public MySqlConnection otaYhteys()
         {
             return yhteys;
