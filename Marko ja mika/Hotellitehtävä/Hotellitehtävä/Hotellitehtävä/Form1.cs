@@ -25,6 +25,21 @@ namespace Hotellitehtävä
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand();
             String kysely = "SELECT * FROM `kayttajat` WHERE `kayttajanimi`=@usn AND `salasana`=@pass";
+
+            cmd.CommandText = kysely;
+            cmd.Connection = yhdista.otaYhteys();
+
+            adapter.SelectCommand = cmd;
+            adapter.Fill(table);
+
+            if(table.Rows.Count > 0 )
+            {
+                MessageBox.Show("Kyllä");
+            }
+            else
+            {
+                MessageBox.Show("Ei");
+            }
         }
     }
 }
