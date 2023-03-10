@@ -5,7 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 
+=======
+//Makke on kikkeli kunkku
+>>>>>>> 845077ea91bc606c142a127d84771a3eea897356
 namespace Hotellitehtävä
 {
     internal class YHDISTA
