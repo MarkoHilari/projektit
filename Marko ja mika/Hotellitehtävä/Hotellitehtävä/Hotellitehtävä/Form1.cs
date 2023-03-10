@@ -30,17 +30,31 @@ namespace Hotellitehtävä
             cmd.Connection = yhdista.otaYhteys();
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = ktunnusTB.Text;
+            cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = ssTB.Text;
 
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
 
             if(table.Rows.Count > 0 )
             {
-                MessageBox.Show("Kyllä");
+                this.Hide();
+                Form nform = new Form();
+                nform.Show();
             }
             else
             {
-                MessageBox.Show("Ei");
+                if(ktunnusTB.Text.Trim().Equals("")) 
+                {
+                    MessageBox.Show("Syötä käyttäjänimesi", "Tyhjä käyttäjänimi", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                }
+                else if(ssTB.Text.Trim().Equals(""))
+                {
+                    MessageBox.Show("Syötä salasana", "Tyhjä salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy ", "Tarkista käyttäjänimi tai salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
