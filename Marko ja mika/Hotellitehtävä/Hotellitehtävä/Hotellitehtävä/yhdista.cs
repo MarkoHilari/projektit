@@ -12,9 +12,9 @@ namespace Hotellitehtävä
     {
         public string muodostaYhteys()
         {
-            return "datasource = localhost;Port = 3306;username = root;password =;database = hotelli";
+            return "datasource = sql7.freesqldatabase.com;Port = 3306;username = sql7603897;password =vQdhASH2tU;database = sql7603897";
         }
-        private MySqlConnection yhteys = new MySqlConnection("datasource=localhost; port=3306; username=root; password=;database=opiskelijat");
+        private MySqlConnection yhteys = new MySqlConnection("datasource = sql7.freesqldatabase.com;Port = 3306;username = sql7603897;password =vQdhASH2tU;database = sql7603897");
         public MySqlConnection otaYhteys()
         {
             return yhteys;
