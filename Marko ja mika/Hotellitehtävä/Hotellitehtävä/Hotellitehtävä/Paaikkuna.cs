@@ -16,5 +16,16 @@ namespace Hotellitehtävä
         {
             InitializeComponent();
         }
+
+        private void PaaikkunaFM_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void hallitseHenkilökuntaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            hallitseTTFM hallitseTT = new hallitseTTFM();
+            hallitseTT.Show();
+        }
     }
 }
