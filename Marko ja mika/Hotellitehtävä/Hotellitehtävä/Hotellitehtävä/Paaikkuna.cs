@@ -25,7 +25,19 @@ namespace Hotellitehtävä
         private void hallitseHenkilökuntaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             hallitseTTFM hallitseTT = new hallitseTTFM();
-            hallitseTT.Show();
+            hallitseTT.ShowDialog();
+        }
+
+        private void hallitseVarauksiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            varausFM varaukset = new varausFM();
+            varaukset.ShowDialog();
+        }
+
+        private void hallitseHuoneitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            huoneFM huoneet = new huoneFM();
+            huoneet.ShowDialog();
         }
     }
 }

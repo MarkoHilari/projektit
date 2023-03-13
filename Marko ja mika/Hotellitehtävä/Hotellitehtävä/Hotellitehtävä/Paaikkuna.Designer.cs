@@ -79,6 +79,7 @@
             this.hallitseVarauksiaToolStripMenuItem.Name = "hallitseVarauksiaToolStripMenuItem";
             this.hallitseVarauksiaToolStripMenuItem.Size = new System.Drawing.Size(194, 34);
             this.hallitseVarauksiaToolStripMenuItem.Text = "Hallitse varauksia";
+            this.hallitseVarauksiaToolStripMenuItem.Click += new System.EventHandler(this.hallitseVarauksiaToolStripMenuItem_Click);
             // 
             // hallitseHuoneitaToolStripMenuItem
             // 
@@ -86,6 +87,7 @@
             this.hallitseHuoneitaToolStripMenuItem.Name = "hallitseHuoneitaToolStripMenuItem";
             this.hallitseHuoneitaToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.hallitseHuoneitaToolStripMenuItem.Text = "Hallitse huoneita";
+            this.hallitseHuoneitaToolStripMenuItem.Click += new System.EventHandler(this.hallitseHuoneitaToolStripMenuItem_Click);
             // 
             // PaaikkunaFM
             // 

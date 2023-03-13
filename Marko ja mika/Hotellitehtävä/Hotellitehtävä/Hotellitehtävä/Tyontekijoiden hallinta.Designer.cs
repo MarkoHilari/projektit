@@ -214,6 +214,7 @@
             this.lisaaBT.TabIndex = 16;
             this.lisaaBT.Text = "Lisää käyttäjä";
             this.lisaaBT.UseVisualStyleBackColor = true;
+            this.lisaaBT.Click += new System.EventHandler(this.lisaaBT_Click);
             // 
             // tyhjennaBT
             // 
@@ -274,6 +275,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "hallitseTTFM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

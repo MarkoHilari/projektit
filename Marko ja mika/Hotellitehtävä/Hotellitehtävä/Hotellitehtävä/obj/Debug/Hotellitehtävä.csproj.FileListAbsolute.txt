@@ -27,8 +27,6 @@ C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtäv�
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.SuggestedBindingRedirects.cache
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.exe.config
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.kirjausFM.resources
-C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.Form4.resources
-C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.Form6.resources
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.Properties.Resources.resources
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.GenerateResource.cache
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.csproj.CoreCompileInputs.cache
@@ -37,3 +35,5 @@ C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtäv�
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.pdb
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.PaaikkunaFM.resources
 C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.hallitseTTFM.resources
+C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.varausFM.resources
+C:\Users\Omistaja\repos\projektit\Marko ja mika\Hotellitehtävä\Hotellitehtävä\Hotellitehtävä\obj\Debug\Hotellitehtävä.huoneFM.resources

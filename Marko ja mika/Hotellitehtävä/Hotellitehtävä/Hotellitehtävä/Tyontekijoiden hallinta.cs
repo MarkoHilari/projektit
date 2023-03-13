@@ -21,5 +21,10 @@ namespace Hotellitehtävä
         {
 
         }
+
+        private void lisaaBT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
