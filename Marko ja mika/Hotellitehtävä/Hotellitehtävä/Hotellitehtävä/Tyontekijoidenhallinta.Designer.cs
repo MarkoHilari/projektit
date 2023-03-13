@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hallitseTTFM));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TyontekijatDG = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.poistaBT = new System.Windows.Forms.Button();
             this.muokkaaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TyontekijatDG)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,15 +76,16 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Työntekijöiden hallinta";
             // 
-            // dataGridView1
+            // TyontekijatDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(442, 189);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(959, 682);
-            this.dataGridView1.TabIndex = 1;
+            this.TyontekijatDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TyontekijatDG.Location = new System.Drawing.Point(442, 189);
+            this.TyontekijatDG.Name = "TyontekijatDG";
+            this.TyontekijatDG.RowHeadersWidth = 62;
+            this.TyontekijatDG.RowTemplate.Height = 28;
+            this.TyontekijatDG.Size = new System.Drawing.Size(959, 682);
+            this.TyontekijatDG.TabIndex = 1;
+            this.TyontekijatDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TyontekijatDG_CellClick);
             // 
             // label1
             // 
@@ -235,6 +236,7 @@
             this.poistaBT.TabIndex = 18;
             this.poistaBT.Text = "Poista";
             this.poistaBT.UseVisualStyleBackColor = true;
+            this.poistaBT.Click += new System.EventHandler(this.poistaBT_Click);
             // 
             // muokkaaBT
             // 
@@ -271,15 +273,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TyontekijatDG);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "hallitseTTFM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.hallitseTTFM_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TyontekijatDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,7 +291,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TyontekijatDG;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
