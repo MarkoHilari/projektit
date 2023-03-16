@@ -78,7 +78,7 @@
             this.tunnistauduGB.Controls.Add(this.ktunnusTB);
             this.tunnistauduGB.Controls.Add(this.salasanaLB);
             this.tunnistauduGB.Controls.Add(this.ktunnusLB);
-            this.tunnistauduGB.Location = new System.Drawing.Point(108, 479);
+            this.tunnistauduGB.Location = new System.Drawing.Point(108, 477);
             this.tunnistauduGB.Name = "tunnistauduGB";
             this.tunnistauduGB.Size = new System.Drawing.Size(576, 142);
             this.tunnistauduGB.TabIndex = 2;

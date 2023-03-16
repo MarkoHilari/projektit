@@ -40,6 +40,7 @@ namespace Hotellitehtävä
                 this.Hide();
                 PaaikkunaFM form2 = new PaaikkunaFM();
                 form2.Show();
+                //
             }
             else
             {

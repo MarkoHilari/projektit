@@ -279,7 +279,7 @@
             this.Name = "hallitseTTFM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
-            this.Load += new System.EventHandler(this.hallitseTTFM_Load);
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TyontekijatDG)).EndInit();

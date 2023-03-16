@@ -22,9 +22,9 @@ namespace Hotellitehtävä
 
         }
 
-        private void Tyontekijoidenhallinta_Load(object sender, EventArgs e) 
+        private void Tyontekijoidenhallinta_Load(object sender, EventArgs e)
         {
-            TyontekijatDG.DataSource = ASIAKAS.haeAsiakkaat();
+            //TyontekijatDG.DataSource = ASIAKAS.haeAsiakkaat();
         }
 
         private void lisaaBT_Click(object sender, EventArgs e)
@@ -45,9 +45,9 @@ namespace Hotellitehtävä
         private void poistaBT_Click(object sender, EventArgs e)
         {
             String ktunnus = knimiTB.Text;
-            if(ASIAKAS.poistaAsiakas(ktunnus))
+            /*if(ASIAKAS.poistaAsiakas(ktunnus))
             {
-                TyontekijatDG.DataSource = ASIAKAS.haeAsiakkaat();
+                //TyontekijatDG.DataSource = ASIAKAS.haeAsiakkaat();
                 MessageBox.Show("Asiakas poistettu onnistuneesti", "Asiakkaan poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -60,6 +60,7 @@ namespace Hotellitehtävä
         private void hallitseTTFM_Load(object sender, EventArgs e)
         {
 
+        }*/
         }
     }
 }
