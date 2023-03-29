@@ -26,5 +26,10 @@ namespace pizzatehtava
         {
 
         }
+
+        private void pizzat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
