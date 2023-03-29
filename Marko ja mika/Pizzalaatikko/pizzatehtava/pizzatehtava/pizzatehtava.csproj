@@ -52,10 +52,19 @@
     <Compile Include="Paaikkuna.Designer.cs">
       <DependentUpon>Paaikkuna.cs</DependentUpon>
     </Compile>
+    <Compile Include="pizzat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pizzat.Designer.cs">
+      <DependentUpon>pizzat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Paaikkuna.resx">
       <DependentUpon>Paaikkuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pizzat.resx">
+      <DependentUpon>pizzat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
