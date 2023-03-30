@@ -65,6 +65,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.juomatBT = new System.Windows.Forms.Button();
+            this.ostosBT = new System.Windows.Forms.Button();
+            this.pizzaBT = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -76,6 +80,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -83,7 +88,7 @@
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.amerRB);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Location = new System.Drawing.Point(192, 244);
+            this.groupBox4.Location = new System.Drawing.Point(192, 198);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(0);
@@ -124,7 +129,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.rinneRB);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(823, 244);
+            this.groupBox1.Location = new System.Drawing.Point(823, 198);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
@@ -166,11 +171,11 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.tropiRB);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(192, 402);
+            this.groupBox2.Location = new System.Drawing.Point(192, 298);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(316, 88);
+            this.groupBox2.Size = new System.Drawing.Size(326, 88);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
@@ -208,11 +213,11 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.spessuRB);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(833, 402);
+            this.groupBox3.Location = new System.Drawing.Point(823, 298);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox3.Size = new System.Drawing.Size(311, 88);
+            this.groupBox3.Size = new System.Drawing.Size(321, 88);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
@@ -250,11 +255,11 @@
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.meheRB);
             this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Location = new System.Drawing.Point(192, 560);
+            this.groupBox5.Location = new System.Drawing.Point(192, 399);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox5.Size = new System.Drawing.Size(316, 79);
+            this.groupBox5.Size = new System.Drawing.Size(326, 79);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
@@ -293,7 +298,7 @@
             this.groupBox6.Controls.Add(this.label12);
             this.groupBox6.Controls.Add(this.tuliRB);
             this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Location = new System.Drawing.Point(840, 560);
+            this.groupBox6.Location = new System.Drawing.Point(823, 399);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(0);
@@ -335,7 +340,7 @@
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.meheSpRB);
             this.groupBox7.Controls.Add(this.label15);
-            this.groupBox7.Location = new System.Drawing.Point(192, 718);
+            this.groupBox7.Location = new System.Drawing.Point(199, 497);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(0);
@@ -377,7 +382,7 @@
             this.groupBox8.Controls.Add(this.label16);
             this.groupBox8.Controls.Add(this.softRB);
             this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Location = new System.Drawing.Point(840, 711);
+            this.groupBox8.Location = new System.Drawing.Point(823, 497);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(0);
@@ -430,7 +435,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 39);
+            this.label1.Location = new System.Drawing.Point(312, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(600, 68);
             this.label1.TabIndex = 2;
@@ -459,6 +464,53 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox9.Controls.Add(this.juomatBT);
+            this.groupBox9.Controls.Add(this.ostosBT);
+            this.groupBox9.Controls.Add(this.pizzaBT);
+            this.groupBox9.Location = new System.Drawing.Point(125, 673);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Size = new System.Drawing.Size(1114, 98);
+            this.groupBox9.TabIndex = 10;
+            this.groupBox9.TabStop = false;
+            // 
+            // juomatBT
+            // 
+            this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.juomatBT.Location = new System.Drawing.Point(471, 17);
+            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.juomatBT.Name = "juomatBT";
+            this.juomatBT.Size = new System.Drawing.Size(182, 72);
+            this.juomatBT.TabIndex = 2;
+            this.juomatBT.Text = "Juomat";
+            this.juomatBT.UseVisualStyleBackColor = true;
+            // 
+            // ostosBT
+            // 
+            this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ostosBT.Location = new System.Drawing.Point(892, 17);
+            this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ostosBT.Name = "ostosBT";
+            this.ostosBT.Size = new System.Drawing.Size(182, 72);
+            this.ostosBT.TabIndex = 3;
+            this.ostosBT.Text = "Ostoskori";
+            this.ostosBT.UseVisualStyleBackColor = true;
+            // 
+            // pizzaBT
+            // 
+            this.pizzaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pizzaBT.Location = new System.Drawing.Point(45, 17);
+            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pizzaBT.Name = "pizzaBT";
+            this.pizzaBT.Size = new System.Drawing.Size(182, 72);
+            this.pizzaBT.TabIndex = 1;
+            this.pizzaBT.Text = "Pizza Meny";
+            this.pizzaBT.UseVisualStyleBackColor = true;
+            // 
             // pizzat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -466,6 +518,7 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1341, 849);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -498,6 +551,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -539,5 +593,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button juomatBT;
+        private System.Windows.Forms.Button ostosBT;
+        private System.Windows.Forms.Button pizzaBT;
     }
 }
