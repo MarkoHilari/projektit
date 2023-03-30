@@ -19,14 +19,16 @@ namespace pizzatehtava
 
         private void pizzaBT_Click(object sender, EventArgs e)
         {
-            pizzat pizza = new pizzat();
-            pizza.Show();
+            pizzat pizza = new pizzat();            
+            pizza.ShowDialog();
+            Application.Exit();
+
         }
 
         private void juomatBT_Click(object sender, EventArgs e)
         {
             Juomat juoma = new Juomat();
-            juoma.Show();
+            juoma.ShowDialog();
         }
 
         private void suljeBT_Click(object sender, EventArgs e)
@@ -37,7 +39,16 @@ namespace pizzatehtava
         private void juomatBT_Click_1(object sender, EventArgs e)
         {
             Juomat juoma = new Juomat();
+            juoma.ShowDialog();
+            Application.Exit();
+
+        }
+
+        private void juomatBT_Click_2(object sender, EventArgs e)
+        {
+            Juomat juoma = new Juomat();
             juoma.Show();
+            Application.Exit();
         }
     }
 }

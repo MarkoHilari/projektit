@@ -488,6 +488,7 @@
             this.juomatBT.TabIndex = 2;
             this.juomatBT.Text = "Juomat";
             this.juomatBT.UseVisualStyleBackColor = true;
+            this.juomatBT.Click += new System.EventHandler(this.juomatBT_Click);
             // 
             // ostosBT
             // 
@@ -510,6 +511,7 @@
             this.pizzaBT.TabIndex = 1;
             this.pizzaBT.Text = "Pizza Meny";
             this.pizzaBT.UseVisualStyleBackColor = true;
+            this.pizzaBT.Visible = false;
             // 
             // pizzat
             // 

@@ -391,6 +391,7 @@
             this.juomatBT.TabIndex = 2;
             this.juomatBT.Text = "Juomat";
             this.juomatBT.UseVisualStyleBackColor = true;
+            this.juomatBT.Visible = false;
             // 
             // ostosBT
             // 

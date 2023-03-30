@@ -20,7 +20,10 @@ namespace pizzatehtava
         private void pizzaBT_Click(object sender, EventArgs e)
         {
             pizzat pizza = new pizzat();
-            pizza.Show();
+            pizza.ShowDialog();
+            Application.Exit();
+
+
         }
     }
 }
