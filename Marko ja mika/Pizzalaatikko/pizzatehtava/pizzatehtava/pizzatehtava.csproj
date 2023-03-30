@@ -90,6 +90,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
     <Content Include="kuvat\mehmet-3.jpg" />
     <Content Include="kuvat\pizza.png" />
   </ItemGroup>

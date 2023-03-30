@@ -63,6 +63,16 @@ namespace pizzatehtava.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap food_and_drink_pizza_pizzas_tomato {
+            get {
+                object obj = ResourceManager.GetObject("food-and-drink-pizza-pizzas-tomato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mehmet_3 {
             get {
                 object obj = ResourceManager.GetObject("mehmet-3", resourceCulture);
