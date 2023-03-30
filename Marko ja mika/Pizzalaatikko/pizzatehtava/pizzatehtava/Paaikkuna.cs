@@ -28,5 +28,10 @@ namespace pizzatehtava
             Juomat juoma = new Juomat();
             juoma.Show();
         }
+
+        private void suljeBT_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
