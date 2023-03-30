@@ -22,5 +22,11 @@ namespace pizzatehtava
             pizzat pizza = new pizzat();
             pizza.Show();
         }
+
+        private void juomatBT_Click(object sender, EventArgs e)
+        {
+            Juomat juoma = new Juomat();
+            juoma.Show();
+        }
     }
 }

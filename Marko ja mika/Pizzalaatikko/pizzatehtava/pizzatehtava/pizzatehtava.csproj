@@ -71,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Juomat.resx">
+      <DependentUpon>Juomat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Juomat1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Juomat1.Designer.cs</LastGenOutput>
