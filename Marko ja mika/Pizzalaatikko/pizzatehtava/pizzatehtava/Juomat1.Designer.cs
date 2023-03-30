@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace pizzatehtava.Properties {
+namespace pizzatehtava {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace pizzatehtava.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Juomat1 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Juomat1() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace pizzatehtava.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("pizzatehtava.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("pizzatehtava.Juomat1", typeof(Juomat1).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace pizzatehtava.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap food_and_drink_pizza_pizzas_tomato {
+        internal static System.Drawing.Bitmap pictureBox1_Image {
             get {
-                object obj = ResourceManager.GetObject("food-and-drink-pizza-pizzas-tomato", resourceCulture);
+                object obj = ResourceManager.GetObject("pictureBox1.Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,19 +73,9 @@ namespace pizzatehtava.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mehmet_3 {
+        internal static System.Drawing.Bitmap pictureBox2_Image {
             get {
-                object obj = ResourceManager.GetObject("mehmet-3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pizza_car {
-            get {
-                object obj = ResourceManager.GetObject("pizza car", resourceCulture);
+                object obj = ResourceManager.GetObject("pictureBox2.Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -52,6 +52,11 @@
     <Compile Include="Juomat.Designer.cs">
       <DependentUpon>Juomat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Juomat1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Juomat1.resx</DependentUpon>
+    </Compile>
     <Compile Include="Paaikkuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,7 +71,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Juomat1.resx" />
+    <EmbeddedResource Include="Juomat1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Juomat1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paaikkuna.resx">
       <DependentUpon>Paaikkuna.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,7 +107,9 @@
   <ItemGroup>
     <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
     <Content Include="kuvat\mehmet-3.jpg" />
+    <Content Include="kuvat\pizza car.png" />
     <Content Include="kuvat\pizza.png" />
+    <None Include="Resources\pizza car.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
