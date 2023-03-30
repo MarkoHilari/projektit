@@ -16,7 +16,7 @@ namespace pizzatehtava
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new pizzat());
+            Application.Run(new Paaikkuna());
         }
     }
 }

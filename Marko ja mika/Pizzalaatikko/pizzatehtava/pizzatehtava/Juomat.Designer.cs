@@ -57,6 +57,10 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.yllariIRB = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.juomatBT = new System.Windows.Forms.Button();
+            this.ostosBT = new System.Windows.Forms.Button();
+            this.pizzaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +72,7 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,7 +91,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(384, 62);
+            this.label1.Location = new System.Drawing.Point(424, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(480, 68);
             this.label1.TabIndex = 2;
@@ -96,7 +101,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1018, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1222, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(168, 147);
@@ -107,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(138, 147);
@@ -123,14 +128,14 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox4.Size = new System.Drawing.Size(215, 56);
+            this.groupBox4.Size = new System.Drawing.Size(294, 56);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
             // colaPRB
             // 
             this.colaPRB.AutoSize = true;
-            this.colaPRB.Location = new System.Drawing.Point(173, 22);
+            this.colaPRB.Location = new System.Drawing.Point(246, 22);
             this.colaPRB.Name = "colaPRB";
             this.colaPRB.Size = new System.Drawing.Size(21, 20);
             this.colaPRB.TabIndex = 2;
@@ -142,9 +147,9 @@
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(3, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 23);
+            this.label9.Size = new System.Drawing.Size(202, 23);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Pieni Cola 0,33l";
+            this.label9.Text = "Pieni Cola 0,33l: 4€";
             // 
             // groupBox1
             // 
@@ -154,14 +159,14 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Size = new System.Drawing.Size(215, 64);
+            this.groupBox1.Size = new System.Drawing.Size(294, 64);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
             // ColaIRB
             // 
             this.ColaIRB.AutoSize = true;
-            this.ColaIRB.Location = new System.Drawing.Point(163, 22);
+            this.ColaIRB.Location = new System.Drawing.Point(246, 22);
             this.ColaIRB.Name = "ColaIRB";
             this.ColaIRB.Size = new System.Drawing.Size(21, 20);
             this.ColaIRB.TabIndex = 2;
@@ -173,9 +178,9 @@
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 23);
+            this.label3.Size = new System.Drawing.Size(205, 23);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Iso Cola 1,5l";
+            this.label3.Text = "Iso Cola 1,5l        8€";
             // 
             // groupBox2
             // 
@@ -185,14 +190,14 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(215, 56);
+            this.groupBox2.Size = new System.Drawing.Size(294, 56);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
             // zeroPRB
             // 
             this.zeroPRB.AutoSize = true;
-            this.zeroPRB.Location = new System.Drawing.Point(169, 22);
+            this.zeroPRB.Location = new System.Drawing.Point(246, 22);
             this.zeroPRB.Name = "zeroPRB";
             this.zeroPRB.Size = new System.Drawing.Size(21, 20);
             this.zeroPRB.TabIndex = 2;
@@ -216,14 +221,14 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox3.Size = new System.Drawing.Size(211, 72);
+            this.groupBox3.Size = new System.Drawing.Size(327, 72);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
             // pilPRB
             // 
             this.pilPRB.AutoSize = true;
-            this.pilPRB.Location = new System.Drawing.Point(141, 22);
+            this.pilPRB.Location = new System.Drawing.Point(267, 22);
             this.pilPRB.Name = "pilPRB";
             this.pilPRB.Size = new System.Drawing.Size(21, 20);
             this.pilPRB.TabIndex = 2;
@@ -235,9 +240,9 @@
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 19);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 23);
+            this.label7.Size = new System.Drawing.Size(200, 23);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Pillima 0,33l";
+            this.label7.Text = "Pillima 0,33l    4,5€";
             // 
             // groupBox6
             // 
@@ -247,14 +252,14 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox6.Size = new System.Drawing.Size(250, 62);
+            this.groupBox6.Size = new System.Drawing.Size(336, 62);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
             // yllariPRB
             // 
             this.yllariPRB.AutoSize = true;
-            this.yllariPRB.Location = new System.Drawing.Point(212, 22);
+            this.yllariPRB.Location = new System.Drawing.Point(276, 19);
             this.yllariPRB.Name = "yllariPRB";
             this.yllariPRB.Size = new System.Drawing.Size(21, 20);
             this.yllariPRB.TabIndex = 2;
@@ -266,9 +271,9 @@
             this.label13.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(3, 19);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(187, 23);
+            this.label13.Size = new System.Drawing.Size(244, 23);
             this.label13.TabIndex = 1;
-            this.label13.Text = "Mehmeylläri 0,33l";
+            this.label13.Text = "Mehmeylläri 0,33l  3,5€";
             // 
             // groupBox7
             // 
@@ -278,14 +283,14 @@
             this.groupBox7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox7.Size = new System.Drawing.Size(215, 56);
+            this.groupBox7.Size = new System.Drawing.Size(287, 56);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             // 
             // zerIRB
             // 
             this.zerIRB.AutoSize = true;
-            this.zerIRB.Location = new System.Drawing.Point(169, 22);
+            this.zerIRB.Location = new System.Drawing.Point(239, 19);
             this.zerIRB.Name = "zerIRB";
             this.zerIRB.Size = new System.Drawing.Size(21, 20);
             this.zerIRB.TabIndex = 2;
@@ -309,14 +314,14 @@
             this.groupBox8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox8.Size = new System.Drawing.Size(211, 64);
+            this.groupBox8.Size = new System.Drawing.Size(327, 64);
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
             // 
             // pilIRB
             // 
             this.pilIRB.AutoSize = true;
-            this.pilIRB.Location = new System.Drawing.Point(141, 22);
+            this.pilIRB.Location = new System.Drawing.Point(267, 19);
             this.pilIRB.Name = "pilIRB";
             this.pilIRB.Size = new System.Drawing.Size(21, 20);
             this.pilIRB.TabIndex = 2;
@@ -328,9 +333,9 @@
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 23);
+            this.label4.Size = new System.Drawing.Size(180, 23);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Pillima 1,5l";
+            this.label4.Text = "Pillima 1,5l      9€";
             // 
             // groupBox5
             // 
@@ -340,14 +345,14 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox5.Size = new System.Drawing.Size(250, 62);
+            this.groupBox5.Size = new System.Drawing.Size(336, 62);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             // 
             // yllariIRB
             // 
             this.yllariIRB.AutoSize = true;
-            this.yllariIRB.Location = new System.Drawing.Point(212, 22);
+            this.yllariIRB.Location = new System.Drawing.Point(276, 19);
             this.yllariIRB.Name = "yllariIRB";
             this.yllariIRB.Size = new System.Drawing.Size(21, 20);
             this.yllariIRB.TabIndex = 2;
@@ -359,9 +364,56 @@
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(174, 23);
+            this.label6.Size = new System.Drawing.Size(224, 23);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Mehmeylläri 1,5l";
+            this.label6.Text = "Mehmeylläri 1,5l    8€";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox9.Controls.Add(this.juomatBT);
+            this.groupBox9.Controls.Add(this.ostosBT);
+            this.groupBox9.Controls.Add(this.pizzaBT);
+            this.groupBox9.Location = new System.Drawing.Point(117, 850);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Size = new System.Drawing.Size(1114, 98);
+            this.groupBox9.TabIndex = 7;
+            this.groupBox9.TabStop = false;
+            // 
+            // juomatBT
+            // 
+            this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.juomatBT.Location = new System.Drawing.Point(471, 17);
+            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.juomatBT.Name = "juomatBT";
+            this.juomatBT.Size = new System.Drawing.Size(182, 72);
+            this.juomatBT.TabIndex = 2;
+            this.juomatBT.Text = "Juomat";
+            this.juomatBT.UseVisualStyleBackColor = true;
+            // 
+            // ostosBT
+            // 
+            this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ostosBT.Location = new System.Drawing.Point(892, 17);
+            this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ostosBT.Name = "ostosBT";
+            this.ostosBT.Size = new System.Drawing.Size(182, 72);
+            this.ostosBT.TabIndex = 3;
+            this.ostosBT.Text = "Ostoskori";
+            this.ostosBT.UseVisualStyleBackColor = true;
+            // 
+            // pizzaBT
+            // 
+            this.pizzaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pizzaBT.Location = new System.Drawing.Point(45, 17);
+            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pizzaBT.Name = "pizzaBT";
+            this.pizzaBT.Size = new System.Drawing.Size(182, 72);
+            this.pizzaBT.TabIndex = 1;
+            this.pizzaBT.Text = "Pizza Meny";
+            this.pizzaBT.UseVisualStyleBackColor = true;
             // 
             // Juomat
             // 
@@ -370,6 +422,7 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1418, 962);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
@@ -402,6 +455,7 @@
             this.groupBox8.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -436,5 +490,9 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton yllariIRB;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Button juomatBT;
+        private System.Windows.Forms.Button ostosBT;
+        private System.Windows.Forms.Button pizzaBT;
     }
 }
