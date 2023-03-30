@@ -384,7 +384,7 @@
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(471, 17);
+            this.juomatBT.Location = new System.Drawing.Point(435, 17);
             this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.juomatBT.Name = "juomatBT";
             this.juomatBT.Size = new System.Drawing.Size(182, 72);
@@ -413,6 +413,7 @@
             this.pizzaBT.TabIndex = 1;
             this.pizzaBT.Text = "Pizza Meny";
             this.pizzaBT.UseVisualStyleBackColor = true;
+            this.pizzaBT.Click += new System.EventHandler(this.pizzaBT_Click);
             // 
             // Juomat
             // 
