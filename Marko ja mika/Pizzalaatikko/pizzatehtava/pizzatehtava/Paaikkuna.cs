@@ -21,7 +21,7 @@ namespace pizzatehtava
         {
             pizzat pizza = new pizzat();            
             pizza.ShowDialog();
-            Application.Exit();
+            
 
         }
 
@@ -40,15 +40,12 @@ namespace pizzatehtava
         {
             Juomat juoma = new Juomat();
             juoma.ShowDialog();
-            Application.Exit();
-
         }
 
         private void juomatBT_Click_2(object sender, EventArgs e)
         {
             Juomat juoma = new Juomat();
             juoma.Show();
-            Application.Exit();
         }
     }
 }
