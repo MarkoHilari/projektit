@@ -16,5 +16,11 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
+
+        private void pizzaBT_Click(object sender, EventArgs e)
+        {
+            pizzat pizza = new pizzat();
+            pizza.Show();
+        }
     }
 }
