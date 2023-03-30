@@ -38,5 +38,13 @@ namespace pizzatehtava
             juoma.ShowDialog();
             Application.Exit();
         }
+
+        private void amerRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if(amerRB.Checked == true) 
+            {
+                MessageBox.Show("valittu", "valittu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

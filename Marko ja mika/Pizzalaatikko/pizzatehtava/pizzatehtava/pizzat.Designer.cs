@@ -113,6 +113,7 @@
             this.amerRB.Size = new System.Drawing.Size(21, 20);
             this.amerRB.TabIndex = 2;
             this.amerRB.UseVisualStyleBackColor = true;
+            this.amerRB.CheckedChanged += new System.EventHandler(this.amerRB_CheckedChanged);
             // 
             // label9
             // 
