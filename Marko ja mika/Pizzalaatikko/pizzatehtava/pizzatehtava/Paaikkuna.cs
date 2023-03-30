@@ -22,5 +22,10 @@ namespace pizzatehtava
             pizzat pizza = new pizzat();
             pizza.Show();
         }
+
+        private void suljeBT_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.ostosBT = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.suljeBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,7 +106,7 @@
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(314, 11);
+            this.juomatBT.Location = new System.Drawing.Point(215, 11);
             this.juomatBT.Name = "juomatBT";
             this.juomatBT.Size = new System.Drawing.Size(121, 47);
             this.juomatBT.TabIndex = 2;
@@ -115,7 +116,7 @@
             // ostosBT
             // 
             this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ostosBT.Location = new System.Drawing.Point(595, 11);
+            this.ostosBT.Location = new System.Drawing.Point(406, 11);
             this.ostosBT.Name = "ostosBT";
             this.ostosBT.Size = new System.Drawing.Size(121, 47);
             this.ostosBT.TabIndex = 3;
@@ -125,6 +126,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.suljeBT);
             this.groupBox1.Controls.Add(this.juomatBT);
             this.groupBox1.Controls.Add(this.ostosBT);
             this.groupBox1.Controls.Add(this.pizzaBT);
@@ -144,6 +146,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            // 
+            // suljeBT
+            // 
+            this.suljeBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suljeBT.Location = new System.Drawing.Point(600, 11);
+            this.suljeBT.Name = "suljeBT";
+            this.suljeBT.Size = new System.Drawing.Size(121, 47);
+            this.suljeBT.TabIndex = 4;
+            this.suljeBT.Text = "Sulje";
+            this.suljeBT.UseVisualStyleBackColor = true;
+            this.suljeBT.Click += new System.EventHandler(this.suljeBT_Click);
             // 
             // Paaikkuna
             // 
@@ -180,5 +193,6 @@
         private System.Windows.Forms.Button ostosBT;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button suljeBT;
     }
 }
