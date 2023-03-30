@@ -19,7 +19,8 @@ namespace pizzatehtava
 
         private void pizzaBT_Click(object sender, EventArgs e)
         {
-            pizzat pizza = new pizzat();            
+            pizzat pizza = new pizzat();
+            this.Hide();
             pizza.ShowDialog();
             
 
@@ -39,12 +40,14 @@ namespace pizzatehtava
         private void juomatBT_Click_1(object sender, EventArgs e)
         {
             Juomat juoma = new Juomat();
+            this.Hide();
             juoma.ShowDialog();
-        }
+                   }
 
         private void juomatBT_Click_2(object sender, EventArgs e)
         {
             Juomat juoma = new Juomat();
+            this.Hide();
             juoma.Show();
         }
     }
