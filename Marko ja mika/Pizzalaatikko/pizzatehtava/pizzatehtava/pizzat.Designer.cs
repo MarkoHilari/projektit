@@ -31,35 +31,35 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pizzat));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.amerRB = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rinneRB = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.tropiRB = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.spessuRB = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.meheRB = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.tuliRB = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.meheSpRB = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.softRB = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -81,13 +81,13 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.radioButton4);
+            this.groupBox4.Controls.Add(this.amerRB);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Location = new System.Drawing.Point(46, 226);
+            this.groupBox4.Location = new System.Drawing.Point(192, 244);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox4.Size = new System.Drawing.Size(197, 79);
+            this.groupBox4.Size = new System.Drawing.Size(326, 88);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             // 
@@ -100,14 +100,14 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Kinkku, ananas";
             // 
-            // radioButton4
+            // amerRB
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(169, 44);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(21, 20);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.amerRB.AutoSize = true;
+            this.amerRB.Location = new System.Drawing.Point(169, 44);
+            this.amerRB.Name = "amerRB";
+            this.amerRB.Size = new System.Drawing.Size(21, 20);
+            this.amerRB.TabIndex = 2;
+            this.amerRB.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -122,13 +122,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rinneRB);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(501, 226);
+            this.groupBox1.Location = new System.Drawing.Point(823, 244);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Size = new System.Drawing.Size(197, 79);
+            this.groupBox1.Size = new System.Drawing.Size(321, 94);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
@@ -141,15 +141,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Kinkku, ananas";
             // 
-            // radioButton1
+            // rinneRB
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(169, 44);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(21, 20);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rinneRB.AutoSize = true;
+            this.rinneRB.Location = new System.Drawing.Point(169, 44);
+            this.rinneRB.Name = "rinneRB";
+            this.rinneRB.Size = new System.Drawing.Size(21, 20);
+            this.rinneRB.TabIndex = 2;
+            this.rinneRB.TabStop = true;
+            this.rinneRB.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -164,13 +164,13 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.tropiRB);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(46, 384);
+            this.groupBox2.Location = new System.Drawing.Point(192, 402);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(197, 79);
+            this.groupBox2.Size = new System.Drawing.Size(316, 88);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
@@ -183,15 +183,15 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Kinkku, ananas";
             // 
-            // radioButton2
+            // tropiRB
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(169, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(21, 20);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.tropiRB.AutoSize = true;
+            this.tropiRB.Location = new System.Drawing.Point(169, 44);
+            this.tropiRB.Name = "tropiRB";
+            this.tropiRB.Size = new System.Drawing.Size(21, 20);
+            this.tropiRB.TabIndex = 2;
+            this.tropiRB.TabStop = true;
+            this.tropiRB.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -206,13 +206,13 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Controls.Add(this.spessuRB);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(511, 384);
+            this.groupBox3.Location = new System.Drawing.Point(833, 402);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox3.Size = new System.Drawing.Size(197, 79);
+            this.groupBox3.Size = new System.Drawing.Size(311, 88);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
@@ -225,15 +225,15 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Kinkku, ananas";
             // 
-            // radioButton3
+            // spessuRB
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(169, 44);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(21, 20);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.spessuRB.AutoSize = true;
+            this.spessuRB.Location = new System.Drawing.Point(169, 44);
+            this.spessuRB.Name = "spessuRB";
+            this.spessuRB.Size = new System.Drawing.Size(21, 20);
+            this.spessuRB.TabIndex = 2;
+            this.spessuRB.TabStop = true;
+            this.spessuRB.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -248,13 +248,13 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.radioButton5);
+            this.groupBox5.Controls.Add(this.meheRB);
             this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Location = new System.Drawing.Point(46, 542);
+            this.groupBox5.Location = new System.Drawing.Point(192, 560);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox5.Size = new System.Drawing.Size(197, 79);
+            this.groupBox5.Size = new System.Drawing.Size(316, 79);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
@@ -267,15 +267,15 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Kinkku, ananas";
             // 
-            // radioButton5
+            // meheRB
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(169, 44);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(21, 20);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.meheRB.AutoSize = true;
+            this.meheRB.Location = new System.Drawing.Point(169, 44);
+            this.meheRB.Name = "meheRB";
+            this.meheRB.Size = new System.Drawing.Size(21, 20);
+            this.meheRB.TabIndex = 2;
+            this.meheRB.TabStop = true;
+            this.meheRB.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -291,13 +291,13 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Controls.Add(this.radioButton6);
+            this.groupBox6.Controls.Add(this.tuliRB);
             this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Location = new System.Drawing.Point(518, 542);
+            this.groupBox6.Location = new System.Drawing.Point(840, 560);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox6.Size = new System.Drawing.Size(197, 79);
+            this.groupBox6.Size = new System.Drawing.Size(304, 91);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             // 
@@ -310,15 +310,15 @@
             this.label12.TabIndex = 3;
             this.label12.Text = "Kinkku, ananas";
             // 
-            // radioButton6
+            // tuliRB
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(169, 44);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(21, 20);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.tuliRB.AutoSize = true;
+            this.tuliRB.Location = new System.Drawing.Point(169, 44);
+            this.tuliRB.Name = "tuliRB";
+            this.tuliRB.Size = new System.Drawing.Size(21, 20);
+            this.tuliRB.TabIndex = 2;
+            this.tuliRB.TabStop = true;
+            this.tuliRB.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -333,13 +333,13 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.radioButton7);
+            this.groupBox7.Controls.Add(this.meheSpRB);
             this.groupBox7.Controls.Add(this.label15);
-            this.groupBox7.Location = new System.Drawing.Point(46, 700);
+            this.groupBox7.Location = new System.Drawing.Point(192, 718);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox7.Size = new System.Drawing.Size(197, 79);
+            this.groupBox7.Size = new System.Drawing.Size(316, 88);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
@@ -352,15 +352,15 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Kinkku, ananas";
             // 
-            // radioButton7
+            // meheSpRB
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(169, 44);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(21, 20);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.meheSpRB.AutoSize = true;
+            this.meheSpRB.Location = new System.Drawing.Point(169, 44);
+            this.meheSpRB.Name = "meheSpRB";
+            this.meheSpRB.Size = new System.Drawing.Size(21, 20);
+            this.meheSpRB.TabIndex = 2;
+            this.meheSpRB.TabStop = true;
+            this.meheSpRB.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -375,13 +375,13 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.radioButton8);
+            this.groupBox8.Controls.Add(this.softRB);
             this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Location = new System.Drawing.Point(518, 693);
+            this.groupBox8.Location = new System.Drawing.Point(840, 711);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox8.Size = new System.Drawing.Size(197, 79);
+            this.groupBox8.Size = new System.Drawing.Size(304, 95);
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
             // 
@@ -394,15 +394,15 @@
             this.label16.TabIndex = 3;
             this.label16.Text = "Kinkku, ananas";
             // 
-            // radioButton8
+            // softRB
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(169, 44);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(21, 20);
-            this.radioButton8.TabIndex = 2;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.softRB.AutoSize = true;
+            this.softRB.Location = new System.Drawing.Point(169, 44);
+            this.softRB.Name = "softRB";
+            this.softRB.Size = new System.Drawing.Size(21, 20);
+            this.softRB.TabIndex = 2;
+            this.softRB.TabStop = true;
+            this.softRB.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -505,35 +505,35 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton amerRB;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rinneRB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton tropiRB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton spessuRB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton meheRB;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton tuliRB;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton meheSpRB;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton softRB;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
