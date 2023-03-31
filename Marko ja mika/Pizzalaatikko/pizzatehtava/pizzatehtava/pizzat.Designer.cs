@@ -32,7 +32,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.amerRB = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
+            this.ameLB = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rinneRB = new System.Windows.Forms.RadioButton();
@@ -87,7 +87,7 @@
             // 
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.amerRB);
-            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.ameLB);
             this.groupBox4.Location = new System.Drawing.Point(192, 198);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
@@ -110,20 +110,21 @@
             this.amerRB.AutoSize = true;
             this.amerRB.Location = new System.Drawing.Point(169, 44);
             this.amerRB.Name = "amerRB";
-            this.amerRB.Size = new System.Drawing.Size(21, 20);
+            this.amerRB.Size = new System.Drawing.Size(52, 24);
             this.amerRB.TabIndex = 2;
+            this.amerRB.Text = "5€";
             this.amerRB.UseVisualStyleBackColor = true;
             this.amerRB.CheckedChanged += new System.EventHandler(this.amerRB_CheckedChanged);
             // 
-            // label9
+            // ameLB
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(138, 23);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "1. Americano";
+            this.ameLB.AutoSize = true;
+            this.ameLB.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ameLB.Location = new System.Drawing.Point(3, 19);
+            this.ameLB.Name = "ameLB";
+            this.ameLB.Size = new System.Drawing.Size(138, 23);
+            this.ameLB.TabIndex = 1;
+            this.ameLB.Text = "1. Americano";
             // 
             // groupBox1
             // 
@@ -563,7 +564,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton amerRB;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label ameLB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rinneRB;

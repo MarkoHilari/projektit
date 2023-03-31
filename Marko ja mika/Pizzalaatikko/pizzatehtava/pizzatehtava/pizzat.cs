@@ -43,7 +43,8 @@ namespace pizzatehtava
         {
             if(amerRB.Checked == true) 
             {
-                MessageBox.Show("valittu", "valittu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string pizza = amerRB.Text;
+                MessageBox.Show(pizza, "valittu", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
