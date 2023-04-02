@@ -128,6 +128,7 @@
             this.ostosBT.TabIndex = 3;
             this.ostosBT.Text = "Ostoskori";
             this.ostosBT.UseVisualStyleBackColor = true;
+            this.ostosBT.Click += new System.EventHandler(this.ostosBT_Click);
             // 
             // groupBox1
             // 

@@ -50,5 +50,12 @@ namespace pizzatehtava
             this.Hide();
             juoma.Show();
         }
+
+        private void ostosBT_Click(object sender, EventArgs e)
+        {
+            ostoskori kori = new ostoskori();
+            this.Hide();
+            kori.Show();
+        }
     }
 }
