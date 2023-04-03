@@ -34,9 +34,10 @@ namespace pizzatehtava
 
         private void juomatBT_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Juomat juoma = new Juomat();
             juoma.ShowDialog();
-            Application.Exit();
+            this.Close();
         }
 
         private void amerRB_CheckedChanged(object sender, EventArgs e)
