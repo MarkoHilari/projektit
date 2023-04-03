@@ -14,13 +14,32 @@ namespace pizzatehtava
         public DataTable haeTilaukset()
         {
             MySqlCommand pyynto = new MySqlCommand("SELECT * FROM `ostoskori`", yhdista.otaYhteys());
-            MySqlAdapter sovitin = new MySqlAdapter();
+            MySqlDataAdapter sovitin = new MySqlDataAdapter();
             DataTable data = new DataTable();
 
             sovitin.SelectCommand = pyynto;
             sovitin.Fill(data);
             return data;
 
+        }
+        public bool lisaaTilaus(int pizza)
+        {
+            MySqlCommand pyynto = new MySqlCommand();
+            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES ('@pit')";
+            pyynto.CommandText = lisaaKysely;
+            pyynto.Connection = yhdista.otaYhteys();
+            pyynto.Parameters.Add("@pit", MySqlDbType.Int32).Value = pizza;
+            yhdista.avaaXhteys();
+            if(pyynto.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
         }
     }
 }

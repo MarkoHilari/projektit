@@ -16,7 +16,7 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
-
+        TILAUS tilaus = new TILAUS();
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -24,7 +24,7 @@ namespace pizzatehtava
 
         private void label11_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pizzat_Load(object sender, EventArgs e)
@@ -40,12 +40,13 @@ namespace pizzatehtava
             this.Close();
         }
 
-        private void amerRB_CheckedChanged(object sender, EventArgs e)
+        private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
-            if(amerRB.Checked == true) 
+            int pizza = Convert.ToInt32(americanoCB.Checked);
+
+            if (tilaus.lisaaTilaus(pizza))
             {
-                string pizza = amerRB.Text;
-                MessageBox.Show(pizza, "valittu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ostos
             }
         }
     }

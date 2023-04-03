@@ -16,5 +16,10 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
+
+        private void ostosDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
