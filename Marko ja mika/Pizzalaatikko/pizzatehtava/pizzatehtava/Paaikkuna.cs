@@ -56,7 +56,7 @@ namespace pizzatehtava
             ostoskori kori = new ostoskori();
             this.Hide();
             kori.Show();
-            paaikkuna.Hide();
+            //paaikkuna.Hide();
         }
 
        

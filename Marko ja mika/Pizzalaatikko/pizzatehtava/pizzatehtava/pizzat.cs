@@ -46,7 +46,7 @@ namespace pizzatehtava
 
             if (tilaus.lisaaTilaus(pizza))
             {
-                ostos
+                
             }
         }
     }

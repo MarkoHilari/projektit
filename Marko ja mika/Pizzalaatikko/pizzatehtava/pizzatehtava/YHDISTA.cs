@@ -10,7 +10,7 @@ namespace pizzatehtava
 {
     internal class YHDISTA
     {
-        private MySqlConnection yhdista = new MySqlConnection("datasource= localhost; port=3306; username=root; password=; database=pizzatieto");
+        private MySqlConnection yhdista = new MySqlConnection("datasource= localhost; port=3306; username=root; password=; database=pizzakanta");
     
         public MySqlConnection otaYhteys()
         { 

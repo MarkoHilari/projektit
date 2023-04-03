@@ -25,7 +25,7 @@ namespace pizzatehtava
         public bool lisaaTilaus(int pizza)
         {
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES ('@pit')";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES ('ame')";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@pit", MySqlDbType.Int32).Value = pizza;
