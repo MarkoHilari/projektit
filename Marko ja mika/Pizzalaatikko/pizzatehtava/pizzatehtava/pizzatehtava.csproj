@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TILAUS.cs" />
     <Compile Include="YHDISTA.cs" />
     <EmbeddedResource Include="Juomat.resx">
       <DependentUpon>Juomat.cs</DependentUpon>
