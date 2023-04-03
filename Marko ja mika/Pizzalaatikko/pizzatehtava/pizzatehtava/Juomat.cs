@@ -24,6 +24,7 @@ namespace pizzatehtava
             pizza.ShowDialog();
             this.Close();
 
+
         }
     }
 }
