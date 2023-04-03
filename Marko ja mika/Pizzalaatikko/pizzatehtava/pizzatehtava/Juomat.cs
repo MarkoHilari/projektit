@@ -19,7 +19,6 @@ namespace pizzatehtava
 
         private void pizzaBT_Click(object sender, EventArgs e)
         {
-            pizzat pizza = new pizzat();
             this.Hide();
             pizza.ShowDialog();
 
