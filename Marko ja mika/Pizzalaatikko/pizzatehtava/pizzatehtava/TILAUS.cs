@@ -43,5 +43,25 @@ namespace pizzatehtava
                 return false;
             }
         }
+        public bool poistaTilaus(string pizza)
+        {
+            MessageBox.Show(pizza + "Poistettu ostoskorista");
+            MySqlCommand pyynto = new MySqlCommand();
+            string poistoKysely = "DELETE FROM `ostoskori` `pizza`  VALUES (@pit)";
+            pyynto.CommandText = poistoKysely;
+            pyynto.Connection = yhdista.otaYhteys();
+            pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
+            yhdista.avaaXhteys();
+            if (pyynto.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
     }
 }
