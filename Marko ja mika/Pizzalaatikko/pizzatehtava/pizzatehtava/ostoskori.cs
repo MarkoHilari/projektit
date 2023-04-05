@@ -28,5 +28,26 @@ namespace pizzatehtava
         {
             ostosDG.DataSource = tilaus.haeTilaukset();
         }
+
+        private void suljeoBT_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void juomatBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Juomat juoma = new Juomat();
+            juoma.ShowDialog();
+            this.Close();
+        }
+
+        private void pizzaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pizzat pizza = new pizzat();
+            pizza.ShowDialog();
+            this.Close();
+        }
     }
 }
