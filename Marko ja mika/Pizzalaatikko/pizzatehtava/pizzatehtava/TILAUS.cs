@@ -25,7 +25,7 @@ namespace pizzatehtava
         }
         public bool lisaaTilaus(string pizza)
         {
-            MessageBox.Show(pizza + "Lisätty ostoskoriin");
+            MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
             string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES (@pit)";
             pyynto.CommandText = lisaaKysely;

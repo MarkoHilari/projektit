@@ -40,7 +40,7 @@ namespace pizzatehtava
             this.Close();
         }
 
-        private void americanoCB_CheckedChanged(object sender, EventArgs e)
+        /*private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = americanoCB.Text;
 
@@ -48,6 +48,31 @@ namespace pizzatehtava
             {
                 //MessageBox.Show("Toimii", "");
             }
+            
+        }*/
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = checkBox2.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void americanoCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = americanoCB.Text;
+            if(americanoCB.Checked)
+            {
+                if (tilaus.lisaaTilaus(pizza))
+                {
+                    //MessageBox.Show("Toimii", "");
+                }
+            }
+
+            
         }
     }
 }
