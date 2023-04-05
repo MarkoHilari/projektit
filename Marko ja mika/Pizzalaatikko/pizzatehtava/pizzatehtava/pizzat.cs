@@ -46,7 +46,7 @@ namespace pizzatehtava
 
             if (tilaus.lisaaTilaus(pizza))
             {
-                MessageBox.Show("Toimii", "");
+                //MessageBox.Show("Toimii", "");
             }
         }
     }
