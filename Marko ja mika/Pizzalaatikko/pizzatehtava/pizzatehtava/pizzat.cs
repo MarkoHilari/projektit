@@ -56,13 +56,17 @@ namespace pizzatehtava
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = americanoCB.Text;
-            if(americanoCB.Checked)
+            if(americanoCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
-                
+
+            }
+            else
+            {
+                tilaus.poistaTilaus(pizza);
             }
 
             
