@@ -21,13 +21,7 @@ namespace pizzatehtava
 
         private void ostosDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ostosDG.DataSource = tilaus.haeTilaukset();
-        }
-
-        private void ostoskori_Load(object sender, EventArgs e)
-        {
-            ostosDG.DataSource = tilaus.haeTilaukset();
-
+            ostosDG.DataSource = 
         }
     }
 }
