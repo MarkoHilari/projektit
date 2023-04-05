@@ -32,35 +32,27 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.americanoCB = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.ameLB = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.rinneCB = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.troCB = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.speciSCB = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.meheCB = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.tuliCB = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.meheSpCB = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.softCB = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -87,7 +79,6 @@
             // 
             this.groupBox4.Controls.Add(this.americanoCB);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.ameLB);
             this.groupBox4.Location = new System.Drawing.Point(192, 198);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
@@ -99,10 +90,11 @@
             // americanoCB
             // 
             this.americanoCB.AutoSize = true;
-            this.americanoCB.Location = new System.Drawing.Point(199, 21);
+            this.americanoCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.americanoCB.Location = new System.Drawing.Point(17, 18);
             this.americanoCB.Margin = new System.Windows.Forms.Padding(2);
             this.americanoCB.Name = "americanoCB";
-            this.americanoCB.Size = new System.Drawing.Size(111, 24);
+            this.americanoCB.Size = new System.Drawing.Size(144, 27);
             this.americanoCB.TabIndex = 4;
             this.americanoCB.Text = "Americano";
             this.americanoCB.UseVisualStyleBackColor = true;
@@ -117,21 +109,10 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Kinkku, ananas";
             // 
-            // ameLB
-            // 
-            this.ameLB.AutoSize = true;
-            this.ameLB.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ameLB.Location = new System.Drawing.Point(3, 19);
-            this.ameLB.Name = "ameLB";
-            this.ameLB.Size = new System.Drawing.Size(138, 23);
-            this.ameLB.TabIndex = 1;
-            this.ameLB.Text = "1. Americano";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.rinneCB);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(823, 198);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
@@ -140,16 +121,18 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox5
+            // rinneCB
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(177, 22);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(113, 24);
-            this.checkBox5.TabIndex = 7;
-            this.checkBox5.Text = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.rinneCB.AutoSize = true;
+            this.rinneCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rinneCB.Location = new System.Drawing.Point(16, 18);
+            this.rinneCB.Margin = new System.Windows.Forms.Padding(2);
+            this.rinneCB.Name = "rinneCB";
+            this.rinneCB.Size = new System.Drawing.Size(144, 27);
+            this.rinneCB.TabIndex = 7;
+            this.rinneCB.Text = "Rinteessä";
+            this.rinneCB.UseVisualStyleBackColor = true;
+            this.rinneCB.CheckedChanged += new System.EventHandler(this.rinneCB_CheckedChanged);
             // 
             // label2
             // 
@@ -160,21 +143,10 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Kinkku, ananas";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 23);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "5. Rinteessä";
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox2);
+            this.groupBox2.Controls.Add(this.troCB);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(192, 298);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
@@ -183,17 +155,18 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
-            // checkBox2
+            // troCB
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(199, 23);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(92, 24);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Tropiikki";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.troCB.AutoSize = true;
+            this.troCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.troCB.Location = new System.Drawing.Point(17, 19);
+            this.troCB.Margin = new System.Windows.Forms.Padding(2);
+            this.troCB.Name = "troCB";
+            this.troCB.Size = new System.Drawing.Size(144, 27);
+            this.troCB.TabIndex = 5;
+            this.troCB.Text = "Tropiikki";
+            this.troCB.UseVisualStyleBackColor = true;
+            this.troCB.CheckedChanged += new System.EventHandler(this.troCB_CheckedChanged);
             // 
             // label4
             // 
@@ -204,21 +177,10 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Kinkku, ananas";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "2. Tropiikki";
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBox6);
+            this.groupBox3.Controls.Add(this.speciSCB);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Location = new System.Drawing.Point(823, 298);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
@@ -227,16 +189,18 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
-            // checkBox6
+            // speciSCB
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(177, 23);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(113, 24);
-            this.checkBox6.TabIndex = 8;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.speciSCB.AutoSize = true;
+            this.speciSCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speciSCB.Location = new System.Drawing.Point(16, 19);
+            this.speciSCB.Margin = new System.Windows.Forms.Padding(2);
+            this.speciSCB.Name = "speciSCB";
+            this.speciSCB.Size = new System.Drawing.Size(168, 27);
+            this.speciSCB.TabIndex = 8;
+            this.speciSCB.Text = "SpecialSoos";
+            this.speciSCB.UseVisualStyleBackColor = true;
+            this.speciSCB.CheckedChanged += new System.EventHandler(this.speciSCB_CheckedChanged);
             // 
             // label6
             // 
@@ -247,21 +211,10 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Kinkku, ananas";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 23);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "6. Specialsoos";
-            // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.checkBox3);
+            this.groupBox5.Controls.Add(this.meheCB);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Location = new System.Drawing.Point(192, 399);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox5.Name = "groupBox5";
@@ -270,16 +223,18 @@
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             // 
-            // checkBox3
+            // meheCB
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(199, 23);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(113, 24);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.meheCB.AutoSize = true;
+            this.meheCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meheCB.Location = new System.Drawing.Point(17, 18);
+            this.meheCB.Margin = new System.Windows.Forms.Padding(2);
+            this.meheCB.Name = "meheCB";
+            this.meheCB.Size = new System.Drawing.Size(120, 27);
+            this.meheCB.TabIndex = 5;
+            this.meheCB.Text = "Mehemet";
+            this.meheCB.UseVisualStyleBackColor = true;
+            this.meheCB.CheckedChanged += new System.EventHandler(this.meheCB_CheckedChanged);
             // 
             // label10
             // 
@@ -290,22 +245,10 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Kinkku, ananas";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 23);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "3. Mehemet";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.checkBox7);
+            this.groupBox6.Controls.Add(this.tuliCB);
             this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Location = new System.Drawing.Point(823, 399);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
@@ -314,16 +257,18 @@
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             // 
-            // checkBox7
+            // tuliCB
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(177, 22);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(113, 24);
-            this.checkBox7.TabIndex = 9;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.tuliCB.AutoSize = true;
+            this.tuliCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tuliCB.Location = new System.Drawing.Point(16, 18);
+            this.tuliCB.Margin = new System.Windows.Forms.Padding(2);
+            this.tuliCB.Name = "tuliCB";
+            this.tuliCB.Size = new System.Drawing.Size(168, 27);
+            this.tuliCB.TabIndex = 9;
+            this.tuliCB.Text = "MeheTulinen";
+            this.tuliCB.UseVisualStyleBackColor = true;
+            this.tuliCB.CheckedChanged += new System.EventHandler(this.tuliCB_CheckedChanged);
             // 
             // label12
             // 
@@ -334,39 +279,30 @@
             this.label12.TabIndex = 3;
             this.label12.Text = "Kinkku, ananas";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(160, 23);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "7. Mehetulinen";
-            // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.checkBox4);
+            this.groupBox7.Controls.Add(this.meheSpCB);
             this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.label15);
-            this.groupBox7.Location = new System.Drawing.Point(199, 497);
+            this.groupBox7.Location = new System.Drawing.Point(192, 497);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox7.Size = new System.Drawing.Size(316, 88);
+            this.groupBox7.Size = new System.Drawing.Size(323, 88);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
-            // checkBox4
+            // meheSpCB
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(192, 23);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(113, 24);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.meheSpCB.AutoSize = true;
+            this.meheSpCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meheSpCB.Location = new System.Drawing.Point(10, 18);
+            this.meheSpCB.Margin = new System.Windows.Forms.Padding(2);
+            this.meheSpCB.Name = "meheSpCB";
+            this.meheSpCB.Size = new System.Drawing.Size(180, 27);
+            this.meheSpCB.TabIndex = 6;
+            this.meheSpCB.Text = "MehmenSpessu";
+            this.meheSpCB.UseVisualStyleBackColor = true;
+            this.meheSpCB.CheckedChanged += new System.EventHandler(this.meheSpCB_CheckedChanged);
             // 
             // label14
             // 
@@ -377,21 +313,10 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Kinkku, ananas";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 19);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 23);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "4. MehmeSpessu";
-            // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.checkBox8);
+            this.groupBox8.Controls.Add(this.softCB);
             this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.label17);
             this.groupBox8.Location = new System.Drawing.Point(823, 497);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox8.Name = "groupBox8";
@@ -400,16 +325,18 @@
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
             // 
-            // checkBox8
+            // softCB
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(177, 23);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(113, 24);
-            this.checkBox8.TabIndex = 10;
-            this.checkBox8.Text = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.softCB.AutoSize = true;
+            this.softCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.softCB.Location = new System.Drawing.Point(16, 18);
+            this.softCB.Margin = new System.Windows.Forms.Padding(2);
+            this.softCB.Name = "softCB";
+            this.softCB.Size = new System.Drawing.Size(132, 27);
+            this.softCB.TabIndex = 10;
+            this.softCB.Text = "MeheSoft";
+            this.softCB.UseVisualStyleBackColor = true;
+            this.softCB.CheckedChanged += new System.EventHandler(this.softCB_CheckedChanged);
             // 
             // label16
             // 
@@ -419,16 +346,6 @@
             this.label16.Size = new System.Drawing.Size(117, 20);
             this.label16.TabIndex = 3;
             this.label16.Text = "Kinkku, ananas";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 19);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(127, 23);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "8. Mehesoft";
             // 
             // panel1
             // 
@@ -572,28 +489,20 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label ameLB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -603,12 +512,12 @@
         private System.Windows.Forms.Button ostosBT;
         private System.Windows.Forms.Button pizzaBT;
         private System.Windows.Forms.CheckBox americanoCB;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox rinneCB;
+        private System.Windows.Forms.CheckBox troCB;
+        private System.Windows.Forms.CheckBox speciSCB;
+        private System.Windows.Forms.CheckBox meheCB;
+        private System.Windows.Forms.CheckBox tuliCB;
+        private System.Windows.Forms.CheckBox meheSpCB;
+        private System.Windows.Forms.CheckBox softCB;
     }
 }

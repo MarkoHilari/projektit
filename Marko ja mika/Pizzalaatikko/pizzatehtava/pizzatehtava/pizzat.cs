@@ -51,15 +51,7 @@ namespace pizzatehtava
             
         }*/
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            string pizza = checkBox2.Text;
 
-            if (tilaus.lisaaTilaus(pizza))
-            {
-                //MessageBox.Show("Toimii", "");
-            }
-        }
 
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
@@ -70,9 +62,82 @@ namespace pizzatehtava
                 {
                     //MessageBox.Show("Toimii", "");
                 }
+                
             }
 
             
+        }
+
+        private void meheCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = meheCB.Text;
+            if (americanoCB.Checked)
+            {
+                if (tilaus.lisaaTilaus(pizza))
+                {
+                    //MessageBox.Show("Toimii", "");
+                }
+            }
+        }
+
+        private void troCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = troCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void meheSpCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = meheSpCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void rinneCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = rinneCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void speciSCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = speciSCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void tuliCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = tuliCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
+        }
+
+        private void softCB_CheckedChanged(object sender, EventArgs e)
+        {
+            string pizza = softCB.Text;
+
+            if (tilaus.lisaaTilaus(pizza))
+            {
+                //MessageBox.Show("Toimii", "");
+            }
         }
     }
 }
