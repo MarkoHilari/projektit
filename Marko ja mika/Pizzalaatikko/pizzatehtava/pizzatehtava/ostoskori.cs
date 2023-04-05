@@ -19,7 +19,7 @@ namespace pizzatehtava
 
         private void ostosDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ostosDG.DataSource = 
+            //ostosDG.DataSource = 
         }
     }
 }
