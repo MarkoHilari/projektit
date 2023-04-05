@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace pizzatehtava
 {
@@ -22,13 +23,14 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(int pizza)
+        public bool lisaaTilaus(string pizza)
         {
+            MessageBox.Show(pizza);
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES ('ame')";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES (@pit)";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
-            pyynto.Parameters.Add("@pit", MySqlDbType.Int32).Value = pizza;
+            pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
             yhdista.avaaXhteys();
             if(pyynto.ExecuteNonQuery() == 1)
             {

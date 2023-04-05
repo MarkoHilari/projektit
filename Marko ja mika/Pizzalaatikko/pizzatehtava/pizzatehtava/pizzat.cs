@@ -42,11 +42,11 @@ namespace pizzatehtava
 
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
-            int pizza = Convert.ToInt32(americanoCB.Checked);
+            string pizza = americanoCB.Text;
 
             if (tilaus.lisaaTilaus(pizza))
             {
-                
+                MessageBox.Show("Toimii", "");
             }
         }
     }
