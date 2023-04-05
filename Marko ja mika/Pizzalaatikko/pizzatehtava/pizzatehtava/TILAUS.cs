@@ -47,7 +47,7 @@ namespace pizzatehtava
         {
             MessageBox.Show(pizza + "Poistettu ostoskorista");
             MySqlCommand pyynto = new MySqlCommand();
-            string poistoKysely = "DELETE FROM `ostoskori` WHERE `pizza` VALUES (@pit)";
+            string poistoKysely = "DELETE FROM `ostoskori` WHERE `pizza` = @pit";
             pyynto.CommandText = poistoKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
