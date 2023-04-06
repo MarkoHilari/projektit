@@ -28,6 +28,7 @@ namespace pizzatehtava
         private void ostoskori_Load(object sender, EventArgs e)
         {
             ostosDG.DataSource = tilaus.haeTilaukset();
+            ostosDG.AutoResizeColumns();
         }
 
         private void suljeoBT_Click(object sender, EventArgs e)

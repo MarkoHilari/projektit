@@ -64,10 +64,7 @@ namespace pizzatehtava
                 }
 
             }
-            else
-            {
-                tilaus.poistaTilaus(pizza);
-            }
+          
 
             
         }
@@ -75,7 +72,7 @@ namespace pizzatehtava
         private void meheCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = meheCB.Text;
-            if (meheCB.Checked)
+            if (meheCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
@@ -87,7 +84,7 @@ namespace pizzatehtava
         private void troCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = troCB.Text;
-            if (troCB.Checked)
+            if (troCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
@@ -100,7 +97,7 @@ namespace pizzatehtava
         private void meheSpCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = meheCB.Text;
-            if (meheCB.Checked)
+            if (meheCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
@@ -125,8 +122,8 @@ namespace pizzatehtava
 
         private void speciSCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = speciSCB.Text;
-            if (speciSCB.Checked)
+            string pizza = meheSpCB.Text;
+            if (meheSpCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
@@ -139,7 +136,7 @@ namespace pizzatehtava
         private void tuliCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = tuliCB.Text;
-            if (tuliCB.Checked)
+            if (tuliCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
                 {
