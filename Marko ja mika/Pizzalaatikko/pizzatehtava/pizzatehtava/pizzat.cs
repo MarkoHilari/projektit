@@ -39,6 +39,13 @@ namespace pizzatehtava
             juoma.ShowDialog();
             this.Close();
         }
+        private void ostosBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ostoskori ostos = new ostoskori();
+            ostos.ShowDialog();
+            this.Close();
+        }
 
         /*private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
@@ -158,5 +165,7 @@ namespace pizzatehtava
 
             }
         }
+
+       
     }
 }
