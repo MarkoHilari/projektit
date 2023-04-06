@@ -43,6 +43,8 @@ namespace pizzatehtava
                 return false;
             }
         }
+
+
         public bool poistaTilaus(string pizza)
         {
             MessageBox.Show(pizza + "Poistettu ostoskorista");
@@ -51,6 +53,26 @@ namespace pizzatehtava
             pyynto.CommandText = poistoKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
+            yhdista.avaaXhteys();
+            if (pyynto.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
+        public bool lisaaJuoma(string juoma)
+        {
+            MessageBox.Show(juoma + " " + "Lisätty ostoskoriin");
+            MySqlCommand pyynto = new MySqlCommand();
+            string lisaaKysely = "INSERT INTO `ostoskori`(`juoma`) VALUES (@juo)";
+            pyynto.CommandText = lisaaKysely;
+            pyynto.Connection = yhdista.otaYhteys();
+            pyynto.Parameters.Add("@juo", MySqlDbType.VarChar).Value = juoma;
             yhdista.avaaXhteys();
             if (pyynto.ExecuteNonQuery() == 1)
             {
