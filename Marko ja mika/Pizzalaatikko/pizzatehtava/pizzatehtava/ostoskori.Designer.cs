@@ -34,12 +34,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ostosDG = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tilaaBT = new System.Windows.Forms.Button();
+            this.tyhjennaostoBT = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.suljeoBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
+            this.poistariBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,29 +99,30 @@
             this.ostosDG.RowHeadersWidth = 82;
             this.ostosDG.Size = new System.Drawing.Size(598, 385);
             this.ostosDG.TabIndex = 2;
+            this.ostosDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ostosDG_CellClick);
             this.ostosDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ostosDG_CellContentClick);
             // 
-            // button1
+            // tilaaBT
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(924, 275);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 100);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Tilaa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tilaaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tilaaBT.Location = new System.Drawing.Point(924, 250);
+            this.tilaaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tilaaBT.Name = "tilaaBT";
+            this.tilaaBT.Size = new System.Drawing.Size(195, 88);
+            this.tilaaBT.TabIndex = 3;
+            this.tilaaBT.Text = "Tilaa";
+            this.tilaaBT.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // tyhjennaostoBT
             // 
-            this.button2.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(924, 385);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 122);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Tyhjennä ostoskori";
-            this.button2.UseVisualStyleBackColor = true;
+            this.tyhjennaostoBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tyhjennaostoBT.Location = new System.Drawing.Point(923, 358);
+            this.tyhjennaostoBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tyhjennaostoBT.Name = "tyhjennaostoBT";
+            this.tyhjennaostoBT.Size = new System.Drawing.Size(195, 122);
+            this.tyhjennaostoBT.TabIndex = 4;
+            this.tyhjennaostoBT.Text = "Tyhjennä ostoskori";
+            this.tyhjennaostoBT.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -172,6 +174,18 @@
             this.pizzaBT.UseVisualStyleBackColor = true;
             this.pizzaBT.Click += new System.EventHandler(this.pizzaBT_Click);
             // 
+            // poistariBT
+            // 
+            this.poistariBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poistariBT.Location = new System.Drawing.Point(924, 490);
+            this.poistariBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.poistariBT.Name = "poistariBT";
+            this.poistariBT.Size = new System.Drawing.Size(195, 88);
+            this.poistariBT.TabIndex = 12;
+            this.poistariBT.Text = "Poista tuote";
+            this.poistariBT.UseVisualStyleBackColor = true;
+            this.poistariBT.Click += new System.EventHandler(this.poistariBT_Click);
+            // 
             // ostoskori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -179,9 +193,10 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1179, 771);
+            this.Controls.Add(this.poistariBT);
             this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tyhjennaostoBT);
+            this.Controls.Add(this.tilaaBT);
             this.Controls.Add(this.ostosDG);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -205,11 +220,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView ostosDG;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button tilaaBT;
+        private System.Windows.Forms.Button tyhjennaostoBT;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button juomatBT;
         private System.Windows.Forms.Button suljeoBT;
         private System.Windows.Forms.Button pizzaBT;
+        private System.Windows.Forms.Button poistariBT;
     }
 }

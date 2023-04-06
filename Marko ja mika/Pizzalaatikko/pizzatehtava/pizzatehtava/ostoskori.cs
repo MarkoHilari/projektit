@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -49,5 +50,25 @@ namespace pizzatehtava
             pizza.ShowDialog();
             this.Close();
         }
+
+        private void ostosDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+          /*  varausTB.Text = varausDG.CurrentRow.Cells[0].Value.ToString();
+            int huoneID = Convert.ToInt32(varausDG.CurrentRow.Cells[1].Value.ToString());
+            huonetyyppiCB.SelectedValue = huone.haeHuoneTyyppi(huoneID);
+            huoneenNumeroCB.Text = huoneID.ToString();     */
+        }
+
+        private void poistariBT_Click(object sender, EventArgs e)
+        {
+            string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+            if (tilaus.poistaTilaus(pizza))
+            {
+                ostosDG.DataSource = tilaus.haeTilaukset();
+                MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+      
     }
 }
