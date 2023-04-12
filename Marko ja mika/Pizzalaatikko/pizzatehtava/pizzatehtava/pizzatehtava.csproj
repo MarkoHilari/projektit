@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Juomat1.resx</DependentUpon>
     </Compile>
+    <Compile Include="maksu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maksu.Designer.cs">
+      <DependentUpon>maksu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ostoskori.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <EmbeddedResource Include="Juomat1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Juomat1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maksu.resx">
+      <DependentUpon>maksu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ostoskori.resx">
       <DependentUpon>ostoskori.cs</DependentUpon>

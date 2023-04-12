@@ -139,9 +139,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 20);
+            this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Kinkku, ananas";
+            this.label2.Text = "Luumu, Yllärihiutale";
             // 
             // groupBox2
             // 
@@ -173,9 +173,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 20);
+            this.label4.Size = new System.Drawing.Size(114, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Kinkku, ananas";
+            this.label4.Text = "Mustekala, Hai";
             // 
             // groupBox3
             // 
@@ -207,9 +207,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 20);
+            this.label6.Size = new System.Drawing.Size(290, 20);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Kinkku, ananas";
+            this.label6.Text = "Paholaiskastike, BBQ kastike,  jauheliha";
             // 
             // groupBox5
             // 
@@ -241,9 +241,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(6, 52);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 20);
+            this.label10.Size = new System.Drawing.Size(193, 20);
             this.label10.TabIndex = 3;
-            this.label10.Text = "Kinkku, ananas";
+            this.label10.Text = "Kebab, rintakarva, ananas";
             // 
             // groupBox6
             // 
@@ -275,9 +275,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(6, 52);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 20);
+            this.label12.Size = new System.Drawing.Size(185, 20);
             this.label12.TabIndex = 3;
-            this.label12.Text = "Kinkku, ananas";
+            this.label12.Text = "Jalopenoja rivissä, kebab";
             // 
             // groupBox7
             // 
@@ -309,9 +309,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(6, 52);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 20);
+            this.label14.Size = new System.Drawing.Size(283, 20);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Kinkku, ananas";
+            this.label14.Text = "Kebab, rintakarva, ananas, Tuplajuusto";
             // 
             // groupBox8
             // 
@@ -343,9 +343,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(6, 52);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(117, 20);
+            this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 3;
-            this.label16.Text = "Kinkku, ananas";
+            this.label16.Text = "Pelkkä kebab";
             // 
             // panel1
             // 
