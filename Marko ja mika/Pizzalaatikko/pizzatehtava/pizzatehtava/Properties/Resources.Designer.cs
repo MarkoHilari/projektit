@@ -73,6 +73,16 @@ namespace pizzatehtava.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap koti {
+            get {
+                object obj = ResourceManager.GetObject("koti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mehmet_3 {
             get {
                 object obj = ResourceManager.GetObject("mehmet-3", resourceCulture);

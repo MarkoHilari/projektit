@@ -166,6 +166,12 @@ namespace pizzatehtava
             }
         }
 
-       
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Paaikkuna paa = new Paaikkuna();
+            paa.ShowDialog();
+            this.Close();
+        }
     }
 }

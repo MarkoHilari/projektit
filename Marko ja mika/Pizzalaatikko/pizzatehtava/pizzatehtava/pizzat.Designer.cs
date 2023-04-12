@@ -58,6 +58,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
@@ -73,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -395,6 +397,7 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox9.Controls.Add(this.pictureBox5);
             this.groupBox9.Controls.Add(this.juomatBT);
             this.groupBox9.Controls.Add(this.ostosBT);
             this.groupBox9.Controls.Add(this.pizzaBT);
@@ -406,10 +409,21 @@
             this.groupBox9.TabIndex = 10;
             this.groupBox9.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(471, 17);
+            this.juomatBT.Location = new System.Drawing.Point(290, 17);
             this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.juomatBT.Name = "juomatBT";
             this.juomatBT.Size = new System.Drawing.Size(182, 72);
@@ -459,7 +473,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pizzat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pizzat";
             this.Load += new System.EventHandler(this.pizzat_Load);
             this.groupBox4.ResumeLayout(false);
@@ -483,6 +499,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -520,5 +537,6 @@
         private System.Windows.Forms.CheckBox tuliCB;
         private System.Windows.Forms.CheckBox meheSpCB;
         private System.Windows.Forms.CheckBox softCB;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
