@@ -475,6 +475,7 @@
             this.Controls.Add(this.groupBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pizzat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pizzat";
             this.Load += new System.EventHandler(this.pizzat_Load);
             this.groupBox4.ResumeLayout(false);
