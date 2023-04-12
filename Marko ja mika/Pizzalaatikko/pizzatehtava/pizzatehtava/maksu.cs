@@ -19,11 +19,23 @@ namespace pizzatehtava
 
         private void maksuCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(maksuCB.Text == "Pankkikortti")
+            if (maksuCB.Text == "Pankkikortti")
             {
                 korttiPANEL.Show();
+                luontoPANEL.Hide();
             }
-            else { korttiPANEL.Hide();}
+            else if(maksuCB.Text == "Luonnossa")
+            {
+                luontoPANEL.Show();
+                korttiPANEL.Hide();
+            }
+            else
+            {
+                korttiPANEL.Hide();
+                luontoPANEL.Hide();
+            }
         }
+
+ 
     }
 }
