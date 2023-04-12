@@ -77,5 +77,13 @@ namespace pizzatehtava
             paa.ShowDialog();
             this.Close();
         }
+
+        private void tilaaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            maksu maksu= new maksu();
+            maksu.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -37,11 +37,11 @@
             this.tilaaBT = new System.Windows.Forms.Button();
             this.tyhjennaostoBT = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.suljeoBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
             this.poistariBT = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,6 +114,7 @@
             this.tilaaBT.TabIndex = 3;
             this.tilaaBT.Text = "Tilaa";
             this.tilaaBT.UseVisualStyleBackColor = true;
+            this.tilaaBT.Click += new System.EventHandler(this.tilaaBT_Click);
             // 
             // tyhjennaostoBT
             // 
@@ -140,6 +141,17 @@
             this.groupBox9.Size = new System.Drawing.Size(1114, 98);
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // juomatBT
             // 
@@ -188,17 +200,6 @@
             this.poistariBT.Text = "Poista tuote";
             this.poistariBT.UseVisualStyleBackColor = true;
             this.poistariBT.Click += new System.EventHandler(this.poistariBT_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // ostoskori
             // 

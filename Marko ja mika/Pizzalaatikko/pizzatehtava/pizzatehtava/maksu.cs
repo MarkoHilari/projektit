@@ -16,5 +16,14 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
+
+        private void maksuCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(maksuCB.Text == "Pankkikortti")
+            {
+                korttiPANEL.Show();
+            }
+            else { korttiPANEL.Hide();}
+        }
     }
 }
