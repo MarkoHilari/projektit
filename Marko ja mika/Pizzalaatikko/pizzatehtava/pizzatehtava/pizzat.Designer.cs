@@ -58,10 +58,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -409,10 +409,21 @@
             this.groupBox9.TabIndex = 10;
             this.groupBox9.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(268, 17);
+            this.juomatBT.Location = new System.Drawing.Point(290, 17);
             this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.juomatBT.Name = "juomatBT";
             this.juomatBT.Size = new System.Drawing.Size(182, 72);
@@ -444,17 +455,6 @@
             this.pizzaBT.Text = "Pizza Meny";
             this.pizzaBT.UseVisualStyleBackColor = true;
             this.pizzaBT.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pizzat
             // 
