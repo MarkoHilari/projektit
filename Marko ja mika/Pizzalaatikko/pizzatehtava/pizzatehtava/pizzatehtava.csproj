@@ -129,9 +129,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="kuvat\Bedroom.jpg" />
+    <None Include="kuvat\Car.jpg" />
     <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
     <None Include="kuvat\koti.png" />
     <Content Include="kuvat\mehmet-3.jpg" />
+    <None Include="kuvat\Pensas.jpg" />
     <Content Include="kuvat\pizza car.png" />
     <Content Include="kuvat\pizza.png" />
     <None Include="Resources\pizza car.png" />

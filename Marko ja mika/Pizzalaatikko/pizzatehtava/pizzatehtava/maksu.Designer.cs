@@ -41,7 +41,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.eNimiTB = new System.Windows.Forms.TextBox();
             this.oviTB = new System.Windows.Forms.TextBox();
-            this.paikkaTB = new System.Windows.Forms.TextBox();
             this.osoiteTB = new System.Windows.Forms.TextBox();
             this.sNimiTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,19 +51,28 @@
             this.puhTB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.korttiPANEL = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.maksuCB = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.luontoPANEL = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.korttiPANEL.SuspendLayout();
+            this.luontoPANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -187,14 +195,6 @@
             this.oviTB.Size = new System.Drawing.Size(218, 35);
             this.oviTB.TabIndex = 13;
             // 
-            // paikkaTB
-            // 
-            this.paikkaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paikkaTB.Location = new System.Drawing.Point(339, 561);
-            this.paikkaTB.Name = "paikkaTB";
-            this.paikkaTB.Size = new System.Drawing.Size(218, 35);
-            this.paikkaTB.TabIndex = 14;
-            // 
             // osoiteTB
             // 
             this.osoiteTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -288,29 +288,35 @@
             this.korttiPANEL.Controls.Add(this.textBox3);
             this.korttiPANEL.Controls.Add(this.textBox2);
             this.korttiPANEL.Controls.Add(this.textBox1);
-            this.korttiPANEL.Location = new System.Drawing.Point(609, 387);
+            this.korttiPANEL.Location = new System.Drawing.Point(609, 337);
             this.korttiPANEL.Name = "korttiPANEL";
             this.korttiPANEL.Size = new System.Drawing.Size(874, 194);
             this.korttiPANEL.TabIndex = 22;
             this.korttiPANEL.Visible = false;
             // 
-            // textBox1
+            // textBox6
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(23, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Pankkikortin numero:";
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(336, 137);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(138, 30);
+            this.textBox6.TabIndex = 5;
             // 
-            // textBox2
+            // textBox5
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(71, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 31);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Voimassaoloaika:";
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(336, 80);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(138, 30);
+            this.textBox5.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(336, 24);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(278, 30);
+            this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -321,29 +327,23 @@
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Tarkistusnumero:";
             // 
-            // textBox4
+            // textBox2
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(336, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(278, 30);
-            this.textBox4.TabIndex = 3;
+            this.textBox2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(71, 79);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(205, 31);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Voimassaoloaika:";
             // 
-            // textBox5
+            // textBox1
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(336, 80);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(138, 30);
-            this.textBox5.TabIndex = 4;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(336, 137);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(138, 30);
-            this.textBox6.TabIndex = 5;
+            this.textBox1.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(23, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(253, 31);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Pankkikortin numero:";
             // 
             // maksuCB
             // 
@@ -352,13 +352,13 @@
             this.maksuCB.Items.AddRange(new object[] {
             "Pankkikortti",
             "Luonnossa",
-            "Perintä",
+            "Perintä, vain miehet",
             "Käteinen"});
-            this.maksuCB.Location = new System.Drawing.Point(875, 310);
+            this.maksuCB.Location = new System.Drawing.Point(806, 310);
             this.maksuCB.Name = "maksuCB";
-            this.maksuCB.Size = new System.Drawing.Size(141, 33);
+            this.maksuCB.Size = new System.Drawing.Size(333, 33);
             this.maksuCB.TabIndex = 23;
-            this.maksuCB.Text = "valitse maksu:";
+            this.maksuCB.Text = "    valitse maksu:";
             this.maksuCB.SelectedIndexChanged += new System.EventHandler(this.maksuCB_SelectedIndexChanged);
             // 
             // label10
@@ -371,6 +371,60 @@
             this.label10.TabIndex = 24;
             this.label10.Text = "Valitse maksuvaihtoehto:";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans Typewriter", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(339, 561);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(184, 32);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Karvajärvi";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // luontoPANEL
+            // 
+            this.luontoPANEL.BackColor = System.Drawing.Color.Transparent;
+            this.luontoPANEL.Controls.Add(this.pictureBox5);
+            this.luontoPANEL.Controls.Add(this.pictureBox4);
+            this.luontoPANEL.Controls.Add(this.pictureBox3);
+            this.luontoPANEL.Location = new System.Drawing.Point(600, 561);
+            this.luontoPANEL.Name = "luontoPANEL";
+            this.luontoPANEL.Size = new System.Drawing.Size(908, 459);
+            this.luontoPANEL.TabIndex = 26;
+            this.luontoPANEL.Visible = false;
+            this.luontoPANEL.LocationChanged += new System.EventHandler(this.maksuCB_SelectedIndexChanged);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::pizzatehtava.Properties.Resources.Pensas;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(573, 68);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(286, 228);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::pizzatehtava.Properties.Resources.Car;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(286, 69);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(281, 227);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::pizzatehtava.Properties.Resources.Bedroom;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(23, 68);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(257, 228);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // maksu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -378,6 +432,8 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1506, 979);
+            this.Controls.Add(this.luontoPANEL);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.maksuCB);
             this.Controls.Add(this.korttiPANEL);
@@ -388,7 +444,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.sNimiTB);
             this.Controls.Add(this.osoiteTB);
-            this.Controls.Add(this.paikkaTB);
             this.Controls.Add(this.oviTB);
             this.Controls.Add(this.eNimiTB);
             this.Controls.Add(this.label7);
@@ -408,6 +463,10 @@
             this.groupBox1.PerformLayout();
             this.korttiPANEL.ResumeLayout(false);
             this.korttiPANEL.PerformLayout();
+            this.luontoPANEL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,7 +486,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox eNimiTB;
         private System.Windows.Forms.TextBox oviTB;
-        private System.Windows.Forms.TextBox paikkaTB;
         private System.Windows.Forms.TextBox osoiteTB;
         private System.Windows.Forms.TextBox sNimiTB;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -446,5 +504,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox maksuCB;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel luontoPANEL;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
