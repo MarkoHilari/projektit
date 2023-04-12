@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace pizzatehtava
 {
@@ -137,5 +138,13 @@ namespace pizzatehtava
                 }
             }
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Paaikkuna paa = new Paaikkuna();
+            paa.ShowDialog();
+            this.Close();
+        }
     }
-}
+  }

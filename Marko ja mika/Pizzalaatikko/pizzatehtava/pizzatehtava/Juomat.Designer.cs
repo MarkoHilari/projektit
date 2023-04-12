@@ -41,19 +41,20 @@
             this.colaZeroPCB = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pieniPLCB = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.mehYlpCB = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.isoZeroCB = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.isoPLCB = new System.Windows.Forms.CheckBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
-            this.isoZeroCB = new System.Windows.Forms.CheckBox();
-            this.pieniPLCB = new System.Windows.Forms.CheckBox();
-            this.isoPLCB = new System.Windows.Forms.CheckBox();
-            this.mehYlpCB = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.mehYlisoCB = new System.Windows.Forms.CheckBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,6 +67,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -214,6 +216,18 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
+            // pieniPLCB
+            // 
+            this.pieniPLCB.AutoSize = true;
+            this.pieniPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pieniPLCB.Location = new System.Drawing.Point(21, 22);
+            this.pieniPLCB.Name = "pieniPLCB";
+            this.pieniPLCB.Size = new System.Drawing.Size(267, 25);
+            this.pieniPLCB.TabIndex = 0;
+            this.pieniPLCB.Text = "Pillima 0,33l    4,5€";
+            this.pieniPLCB.UseVisualStyleBackColor = true;
+            this.pieniPLCB.CheckedChanged += new System.EventHandler(this.pieniPLCB_CheckedChanged);
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.mehYlpCB);
@@ -224,6 +238,18 @@
             this.groupBox6.Size = new System.Drawing.Size(336, 62);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
+            // 
+            // mehYlpCB
+            // 
+            this.mehYlpCB.AutoSize = true;
+            this.mehYlpCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mehYlpCB.Location = new System.Drawing.Point(30, 25);
+            this.mehYlpCB.Name = "mehYlpCB";
+            this.mehYlpCB.Size = new System.Drawing.Size(289, 25);
+            this.mehYlpCB.TabIndex = 0;
+            this.mehYlpCB.Text = "Mehmeylläri 0,33l  3,5€";
+            this.mehYlpCB.UseVisualStyleBackColor = true;
+            this.mehYlpCB.CheckedChanged += new System.EventHandler(this.mehYlpCB_CheckedChanged);
             // 
             // groupBox7
             // 
@@ -236,6 +262,18 @@
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             // 
+            // isoZeroCB
+            // 
+            this.isoZeroCB.AutoSize = true;
+            this.isoZeroCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isoZeroCB.Location = new System.Drawing.Point(7, 17);
+            this.isoZeroCB.Name = "isoZeroCB";
+            this.isoZeroCB.Size = new System.Drawing.Size(245, 25);
+            this.isoZeroCB.TabIndex = 0;
+            this.isoZeroCB.Text = "Cola Zero 1,5l   8€";
+            this.isoZeroCB.UseVisualStyleBackColor = true;
+            this.isoZeroCB.CheckedChanged += new System.EventHandler(this.isoZeroCB_CheckedChanged);
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.isoPLCB);
@@ -247,9 +285,22 @@
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
             // 
+            // isoPLCB
+            // 
+            this.isoPLCB.AutoSize = true;
+            this.isoPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isoPLCB.Location = new System.Drawing.Point(21, 19);
+            this.isoPLCB.Name = "isoPLCB";
+            this.isoPLCB.Size = new System.Drawing.Size(256, 25);
+            this.isoPLCB.TabIndex = 0;
+            this.isoPLCB.Text = "Pillima 1,5l      9€";
+            this.isoPLCB.UseVisualStyleBackColor = true;
+            this.isoPLCB.CheckedChanged += new System.EventHandler(this.isoPLCB_CheckedChanged);
+            // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox9.Controls.Add(this.pictureBox5);
             this.groupBox9.Controls.Add(this.juomatBT);
             this.groupBox9.Controls.Add(this.ostosBT);
             this.groupBox9.Controls.Add(this.pizzaBT);
@@ -264,7 +315,7 @@
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(435, 17);
+            this.juomatBT.Location = new System.Drawing.Point(294, 17);
             this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.juomatBT.Name = "juomatBT";
             this.juomatBT.Size = new System.Drawing.Size(182, 72);
@@ -297,54 +348,6 @@
             this.pizzaBT.UseVisualStyleBackColor = true;
             this.pizzaBT.Click += new System.EventHandler(this.pizzaBT_Click);
             // 
-            // isoZeroCB
-            // 
-            this.isoZeroCB.AutoSize = true;
-            this.isoZeroCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isoZeroCB.Location = new System.Drawing.Point(7, 17);
-            this.isoZeroCB.Name = "isoZeroCB";
-            this.isoZeroCB.Size = new System.Drawing.Size(245, 25);
-            this.isoZeroCB.TabIndex = 0;
-            this.isoZeroCB.Text = "Cola Zero 1,5l   8€";
-            this.isoZeroCB.UseVisualStyleBackColor = true;
-            this.isoZeroCB.CheckedChanged += new System.EventHandler(this.isoZeroCB_CheckedChanged);
-            // 
-            // pieniPLCB
-            // 
-            this.pieniPLCB.AutoSize = true;
-            this.pieniPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pieniPLCB.Location = new System.Drawing.Point(21, 22);
-            this.pieniPLCB.Name = "pieniPLCB";
-            this.pieniPLCB.Size = new System.Drawing.Size(267, 25);
-            this.pieniPLCB.TabIndex = 0;
-            this.pieniPLCB.Text = "Pillima 0,33l    4,5€";
-            this.pieniPLCB.UseVisualStyleBackColor = true;
-            this.pieniPLCB.CheckedChanged += new System.EventHandler(this.pieniPLCB_CheckedChanged);
-            // 
-            // isoPLCB
-            // 
-            this.isoPLCB.AutoSize = true;
-            this.isoPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isoPLCB.Location = new System.Drawing.Point(21, 19);
-            this.isoPLCB.Name = "isoPLCB";
-            this.isoPLCB.Size = new System.Drawing.Size(256, 25);
-            this.isoPLCB.TabIndex = 0;
-            this.isoPLCB.Text = "Pillima 1,5l      9€";
-            this.isoPLCB.UseVisualStyleBackColor = true;
-            this.isoPLCB.CheckedChanged += new System.EventHandler(this.isoPLCB_CheckedChanged);
-            // 
-            // mehYlpCB
-            // 
-            this.mehYlpCB.AutoSize = true;
-            this.mehYlpCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mehYlpCB.Location = new System.Drawing.Point(30, 25);
-            this.mehYlpCB.Name = "mehYlpCB";
-            this.mehYlpCB.Size = new System.Drawing.Size(289, 25);
-            this.mehYlpCB.TabIndex = 0;
-            this.mehYlpCB.Text = "Mehmeylläri 0,33l  3,5€";
-            this.mehYlpCB.UseVisualStyleBackColor = true;
-            this.mehYlpCB.CheckedChanged += new System.EventHandler(this.mehYlpCB_CheckedChanged);
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.mehYlisoCB);
@@ -367,6 +370,17 @@
             this.mehYlisoCB.Text = "Mehmeylläri 1,5l    8€";
             this.mehYlisoCB.UseVisualStyleBackColor = true;
             this.mehYlisoCB.CheckedChanged += new System.EventHandler(this.mehYlisoCB_CheckedChanged);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(536, 27);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // Juomat
             // 
@@ -409,6 +423,7 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -441,5 +456,6 @@
         private System.Windows.Forms.CheckBox mehYlpCB;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.CheckBox mehYlisoCB;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

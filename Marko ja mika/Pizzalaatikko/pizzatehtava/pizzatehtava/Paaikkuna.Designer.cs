@@ -116,6 +116,7 @@
             this.juomatBT.TabIndex = 2;
             this.juomatBT.Text = "Juomat";
             this.juomatBT.UseVisualStyleBackColor = true;
+            this.juomatBT.Click += new System.EventHandler(this.juomatBT_Click_3);
             // 
             // ostosBT
             // 

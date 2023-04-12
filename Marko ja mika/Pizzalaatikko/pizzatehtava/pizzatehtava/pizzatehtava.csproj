@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
+    <None Include="kuvat\koti.png" />
     <Content Include="kuvat\mehmet-3.jpg" />
     <Content Include="kuvat\pizza car.png" />
     <Content Include="kuvat\pizza.png" />

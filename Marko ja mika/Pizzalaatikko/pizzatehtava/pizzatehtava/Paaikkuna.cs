@@ -59,6 +59,10 @@ namespace pizzatehtava
             //paaikkuna.Hide();
         }
 
-       
+        private void juomatBT_Click_3(object sender, EventArgs e)
+        {
+            Juomat juoma = new Juomat();
+            this.Hide(); juoma.Show();
+        }
     }
 }
