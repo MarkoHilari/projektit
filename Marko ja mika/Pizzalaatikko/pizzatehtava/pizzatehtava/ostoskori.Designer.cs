@@ -35,13 +35,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ostosDG = new System.Windows.Forms.DataGridView();
             this.tilaaBT = new System.Windows.Forms.Button();
-            this.tyhjennaostoBT = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.suljeoBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
             this.poistariBT = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,30 +100,18 @@
             this.ostosDG.RowHeadersWidth = 82;
             this.ostosDG.Size = new System.Drawing.Size(598, 385);
             this.ostosDG.TabIndex = 2;
-            this.ostosDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ostosDG_CellClick);
             this.ostosDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ostosDG_CellContentClick);
             // 
             // tilaaBT
             // 
             this.tilaaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tilaaBT.Location = new System.Drawing.Point(924, 250);
+            this.tilaaBT.Location = new System.Drawing.Point(923, 288);
             this.tilaaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tilaaBT.Name = "tilaaBT";
             this.tilaaBT.Size = new System.Drawing.Size(195, 88);
             this.tilaaBT.TabIndex = 3;
             this.tilaaBT.Text = "Tilaa";
             this.tilaaBT.UseVisualStyleBackColor = true;
-            // 
-            // tyhjennaostoBT
-            // 
-            this.tyhjennaostoBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tyhjennaostoBT.Location = new System.Drawing.Point(923, 358);
-            this.tyhjennaostoBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tyhjennaostoBT.Name = "tyhjennaostoBT";
-            this.tyhjennaostoBT.Size = new System.Drawing.Size(195, 122);
-            this.tyhjennaostoBT.TabIndex = 4;
-            this.tyhjennaostoBT.Text = "Tyhjennä ostoskori";
-            this.tyhjennaostoBT.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -140,6 +127,17 @@
             this.groupBox9.Size = new System.Drawing.Size(1114, 98);
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // juomatBT
             // 
@@ -180,7 +178,7 @@
             // poistariBT
             // 
             this.poistariBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poistariBT.Location = new System.Drawing.Point(924, 490);
+            this.poistariBT.Location = new System.Drawing.Point(924, 441);
             this.poistariBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.poistariBT.Name = "poistariBT";
             this.poistariBT.Size = new System.Drawing.Size(195, 88);
@@ -188,17 +186,6 @@
             this.poistariBT.Text = "Poista tuote";
             this.poistariBT.UseVisualStyleBackColor = true;
             this.poistariBT.Click += new System.EventHandler(this.poistariBT_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // ostoskori
             // 
@@ -209,7 +196,6 @@
             this.ClientSize = new System.Drawing.Size(1179, 771);
             this.Controls.Add(this.poistariBT);
             this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.tyhjennaostoBT);
             this.Controls.Add(this.tilaaBT);
             this.Controls.Add(this.ostosDG);
             this.Controls.Add(this.panel1);
@@ -238,7 +224,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView ostosDG;
         private System.Windows.Forms.Button tilaaBT;
-        private System.Windows.Forms.Button tyhjennaostoBT;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button juomatBT;
         private System.Windows.Forms.Button suljeoBT;

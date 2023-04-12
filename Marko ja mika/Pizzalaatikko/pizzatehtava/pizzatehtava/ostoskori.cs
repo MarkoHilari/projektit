@@ -52,12 +52,12 @@ namespace pizzatehtava
             this.Close();
         }
 
-        private void ostosDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-          /*  varausTB.Text = varausDG.CurrentRow.Cells[0].Value.ToString();
-            int huoneID = Convert.ToInt32(varausDG.CurrentRow.Cells[1].Value.ToString());
-            huonetyyppiCB.SelectedValue = huone.haeHuoneTyyppi(huoneID);
-            huoneenNumeroCB.Text = huoneID.ToString();     */
+            this.Hide();
+            Paaikkuna paa = new Paaikkuna();
+            paa.ShowDialog();
+            this.Close();
         }
 
         private void poistariBT_Click(object sender, EventArgs e)
@@ -69,13 +69,6 @@ namespace pizzatehtava
                 MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Paaikkuna paa = new Paaikkuna();
-            paa.ShowDialog();
-            this.Close();
-        }
+             
     }
 }
