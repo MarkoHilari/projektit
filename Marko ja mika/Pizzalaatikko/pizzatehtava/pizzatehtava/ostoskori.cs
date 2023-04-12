@@ -70,7 +70,17 @@ namespace pizzatehtava
             }
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void tilaaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            maksu maksu= new maksu();
+            maksu.ShowDialog();
+            this.Close();
+        }
+
+        
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Paaikkuna paa = new Paaikkuna();
