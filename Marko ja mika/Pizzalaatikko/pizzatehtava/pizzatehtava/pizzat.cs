@@ -62,7 +62,8 @@ namespace pizzatehtava
 
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = americanoCB.Text;            
+            string pizza = americanoCB.Text;
+            
             if(americanoCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(pizza))
