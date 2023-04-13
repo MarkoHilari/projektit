@@ -146,5 +146,10 @@ namespace pizzatehtava
             paa.ShowDialog();
             this.Close();
         }
+
+        private void juomatBT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
   }

@@ -49,12 +49,12 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.isoPLCB = new System.Windows.Forms.CheckBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.mehYlisoCB = new System.Windows.Forms.CheckBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,8 +66,8 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,16 +79,16 @@
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1416, 189);
+            this.panel1.Size = new System.Drawing.Size(1259, 151);
             this.panel1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(424, 55);
+            this.label1.Location = new System.Drawing.Point(377, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(480, 68);
+            this.label1.Size = new System.Drawing.Size(405, 57);
             this.label1.TabIndex = 2;
             this.label1.Text = "Juomatarjoilut";
             // 
@@ -96,10 +96,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::pizzatehtava.Properties.Resources.pizza;
-            this.pictureBox2.Location = new System.Drawing.Point(1222, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1086, 10);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 147);
+            this.pictureBox2.Size = new System.Drawing.Size(149, 118);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -107,10 +107,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pizzatehtava.Properties.Resources.mehmet_3;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 147);
+            this.pictureBox1.Size = new System.Drawing.Size(123, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -118,11 +118,11 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.pieniColaCB);
-            this.groupBox4.Location = new System.Drawing.Point(163, 287);
+            this.groupBox4.Location = new System.Drawing.Point(145, 230);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox4.Size = new System.Drawing.Size(281, 67);
+            this.groupBox4.Size = new System.Drawing.Size(250, 54);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
@@ -131,9 +131,10 @@
             // 
             this.pieniColaCB.AutoSize = true;
             this.pieniColaCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pieniColaCB.Location = new System.Drawing.Point(14, 22);
+            this.pieniColaCB.Location = new System.Drawing.Point(12, 18);
+            this.pieniColaCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pieniColaCB.Name = "pieniColaCB";
-            this.pieniColaCB.Size = new System.Drawing.Size(256, 25);
+            this.pieniColaCB.Size = new System.Drawing.Size(210, 21);
             this.pieniColaCB.TabIndex = 0;
             this.pieniColaCB.Text = "Pieni Cola 0,33l: 4€";
             this.pieniColaCB.UseVisualStyleBackColor = true;
@@ -143,11 +144,11 @@
             // 
             this.groupBox1.Controls.Add(this.isoColaCB);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(163, 434);
+            this.groupBox1.Location = new System.Drawing.Point(145, 347);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Size = new System.Drawing.Size(294, 64);
+            this.groupBox1.Size = new System.Drawing.Size(261, 51);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
@@ -155,9 +156,10 @@
             // 
             this.isoColaCB.AutoSize = true;
             this.isoColaCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isoColaCB.Location = new System.Drawing.Point(14, 23);
+            this.isoColaCB.Location = new System.Drawing.Point(12, 18);
+            this.isoColaCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.isoColaCB.Name = "isoColaCB";
-            this.isoColaCB.Size = new System.Drawing.Size(245, 25);
+            this.isoColaCB.Size = new System.Drawing.Size(201, 21);
             this.isoColaCB.TabIndex = 2;
             this.isoColaCB.Text = "Iso Cola 1,5l    8€";
             this.isoColaCB.UseVisualStyleBackColor = true;
@@ -167,20 +169,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 19);
+            this.label3.Location = new System.Drawing.Point(3, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 23);
+            this.label3.Size = new System.Drawing.Size(0, 19);
             this.label3.TabIndex = 1;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.colaZeroPCB);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(163, 570);
+            this.groupBox2.Location = new System.Drawing.Point(145, 456);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(294, 56);
+            this.groupBox2.Size = new System.Drawing.Size(261, 45);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
@@ -188,9 +190,10 @@
             // 
             this.colaZeroPCB.AutoSize = true;
             this.colaZeroPCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colaZeroPCB.Location = new System.Drawing.Point(14, 19);
+            this.colaZeroPCB.Location = new System.Drawing.Point(12, 15);
+            this.colaZeroPCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.colaZeroPCB.Name = "colaZeroPCB";
-            this.colaZeroPCB.Size = new System.Drawing.Size(256, 25);
+            this.colaZeroPCB.Size = new System.Drawing.Size(210, 21);
             this.colaZeroPCB.TabIndex = 2;
             this.colaZeroPCB.Text = "Cola Zero 0,33l   4€";
             this.colaZeroPCB.UseVisualStyleBackColor = true;
@@ -200,19 +203,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 19);
+            this.label5.Location = new System.Drawing.Point(3, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 23);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 1;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.pieniPLCB);
-            this.groupBox3.Location = new System.Drawing.Point(787, 271);
+            this.groupBox3.Location = new System.Drawing.Point(700, 217);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox3.Size = new System.Drawing.Size(327, 72);
+            this.groupBox3.Size = new System.Drawing.Size(291, 58);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
@@ -220,9 +223,10 @@
             // 
             this.pieniPLCB.AutoSize = true;
             this.pieniPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pieniPLCB.Location = new System.Drawing.Point(21, 22);
+            this.pieniPLCB.Location = new System.Drawing.Point(19, 18);
+            this.pieniPLCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pieniPLCB.Name = "pieniPLCB";
-            this.pieniPLCB.Size = new System.Drawing.Size(267, 25);
+            this.pieniPLCB.Size = new System.Drawing.Size(219, 21);
             this.pieniPLCB.TabIndex = 0;
             this.pieniPLCB.Text = "Pillima 0,33l    4,5€";
             this.pieniPLCB.UseVisualStyleBackColor = true;
@@ -231,11 +235,11 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.mehYlpCB);
-            this.groupBox6.Location = new System.Drawing.Point(778, 564);
+            this.groupBox6.Location = new System.Drawing.Point(692, 451);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox6.Size = new System.Drawing.Size(336, 62);
+            this.groupBox6.Size = new System.Drawing.Size(299, 50);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
@@ -243,9 +247,10 @@
             // 
             this.mehYlpCB.AutoSize = true;
             this.mehYlpCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mehYlpCB.Location = new System.Drawing.Point(30, 25);
+            this.mehYlpCB.Location = new System.Drawing.Point(27, 20);
+            this.mehYlpCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mehYlpCB.Name = "mehYlpCB";
-            this.mehYlpCB.Size = new System.Drawing.Size(289, 25);
+            this.mehYlpCB.Size = new System.Drawing.Size(237, 21);
             this.mehYlpCB.TabIndex = 0;
             this.mehYlpCB.Text = "Mehmeylläri 0,33l  3,5€";
             this.mehYlpCB.UseVisualStyleBackColor = true;
@@ -254,11 +259,11 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.isoZeroCB);
-            this.groupBox7.Location = new System.Drawing.Point(170, 693);
+            this.groupBox7.Location = new System.Drawing.Point(151, 554);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox7.Size = new System.Drawing.Size(287, 56);
+            this.groupBox7.Size = new System.Drawing.Size(255, 45);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             // 
@@ -266,9 +271,10 @@
             // 
             this.isoZeroCB.AutoSize = true;
             this.isoZeroCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isoZeroCB.Location = new System.Drawing.Point(7, 17);
+            this.isoZeroCB.Location = new System.Drawing.Point(6, 14);
+            this.isoZeroCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.isoZeroCB.Name = "isoZeroCB";
-            this.isoZeroCB.Size = new System.Drawing.Size(245, 25);
+            this.isoZeroCB.Size = new System.Drawing.Size(201, 21);
             this.isoZeroCB.TabIndex = 0;
             this.isoZeroCB.Text = "Cola Zero 1,5l   8€";
             this.isoZeroCB.UseVisualStyleBackColor = true;
@@ -277,11 +283,11 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.isoPLCB);
-            this.groupBox8.Location = new System.Drawing.Point(787, 434);
+            this.groupBox8.Location = new System.Drawing.Point(700, 347);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox8.Size = new System.Drawing.Size(327, 64);
+            this.groupBox8.Size = new System.Drawing.Size(291, 51);
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
             // 
@@ -289,9 +295,10 @@
             // 
             this.isoPLCB.AutoSize = true;
             this.isoPLCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isoPLCB.Location = new System.Drawing.Point(21, 19);
+            this.isoPLCB.Location = new System.Drawing.Point(19, 15);
+            this.isoPLCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.isoPLCB.Name = "isoPLCB";
-            this.isoPLCB.Size = new System.Drawing.Size(256, 25);
+            this.isoPLCB.Size = new System.Drawing.Size(210, 21);
             this.isoPLCB.TabIndex = 0;
             this.isoPLCB.Text = "Pillima 1,5l      9€";
             this.isoPLCB.UseVisualStyleBackColor = true;
@@ -304,33 +311,46 @@
             this.groupBox9.Controls.Add(this.juomatBT);
             this.groupBox9.Controls.Add(this.ostosBT);
             this.groupBox9.Controls.Add(this.pizzaBT);
-            this.groupBox9.Location = new System.Drawing.Point(117, 850);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Location = new System.Drawing.Point(104, 680);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox9.Size = new System.Drawing.Size(1114, 98);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Size = new System.Drawing.Size(990, 78);
             this.groupBox9.TabIndex = 7;
             this.groupBox9.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox5.Location = new System.Drawing.Point(476, 22);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(60, 40);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(294, 17);
-            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.juomatBT.Location = new System.Drawing.Point(261, 14);
+            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.juomatBT.Name = "juomatBT";
-            this.juomatBT.Size = new System.Drawing.Size(182, 72);
+            this.juomatBT.Size = new System.Drawing.Size(162, 58);
             this.juomatBT.TabIndex = 2;
             this.juomatBT.Text = "Juomat";
             this.juomatBT.UseVisualStyleBackColor = true;
             this.juomatBT.Visible = false;
+            this.juomatBT.Click += new System.EventHandler(this.juomatBT_Click);
             // 
             // ostosBT
             // 
             this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ostosBT.Location = new System.Drawing.Point(892, 17);
-            this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ostosBT.Location = new System.Drawing.Point(793, 14);
+            this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ostosBT.Name = "ostosBT";
-            this.ostosBT.Size = new System.Drawing.Size(182, 72);
+            this.ostosBT.Size = new System.Drawing.Size(162, 58);
             this.ostosBT.TabIndex = 3;
             this.ostosBT.Text = "Ostoskori";
             this.ostosBT.UseVisualStyleBackColor = true;
@@ -339,10 +359,10 @@
             // pizzaBT
             // 
             this.pizzaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pizzaBT.Location = new System.Drawing.Point(45, 17);
-            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pizzaBT.Location = new System.Drawing.Point(40, 14);
+            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pizzaBT.Name = "pizzaBT";
-            this.pizzaBT.Size = new System.Drawing.Size(182, 72);
+            this.pizzaBT.Size = new System.Drawing.Size(162, 58);
             this.pizzaBT.TabIndex = 1;
             this.pizzaBT.Text = "Pizza Meny";
             this.pizzaBT.UseVisualStyleBackColor = true;
@@ -351,11 +371,11 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.mehYlisoCB);
-            this.groupBox5.Location = new System.Drawing.Point(778, 693);
+            this.groupBox5.Location = new System.Drawing.Point(692, 554);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox5.Size = new System.Drawing.Size(336, 62);
+            this.groupBox5.Size = new System.Drawing.Size(299, 50);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             // 
@@ -363,32 +383,22 @@
             // 
             this.mehYlisoCB.AutoSize = true;
             this.mehYlisoCB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mehYlisoCB.Location = new System.Drawing.Point(30, 17);
+            this.mehYlisoCB.Location = new System.Drawing.Point(27, 14);
+            this.mehYlisoCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mehYlisoCB.Name = "mehYlisoCB";
-            this.mehYlisoCB.Size = new System.Drawing.Size(278, 25);
+            this.mehYlisoCB.Size = new System.Drawing.Size(228, 21);
             this.mehYlisoCB.TabIndex = 0;
             this.mehYlisoCB.Text = "Mehmeylläri 1,5l    8€";
             this.mehYlisoCB.UseVisualStyleBackColor = true;
             this.mehYlisoCB.CheckedChanged += new System.EventHandler(this.mehYlisoCB_CheckedChanged);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox5.Location = new System.Drawing.Point(536, 27);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
             // Juomat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1418, 962);
+            this.ClientSize = new System.Drawing.Size(1260, 770);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox8);
@@ -400,6 +410,7 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Juomat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juomat";
@@ -422,9 +433,9 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

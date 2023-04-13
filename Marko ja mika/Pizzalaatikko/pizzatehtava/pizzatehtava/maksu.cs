@@ -36,6 +36,41 @@ namespace pizzatehtava
             }
         }
 
- 
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Paaikkuna paa = new Paaikkuna();
+            paa.ShowDialog();
+            this.Close();
+        }
+
+        private void suljeBT_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pizzaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pizzat pizza = new pizzat();
+            pizza.ShowDialog();
+            this.Close();
+        }
+
+        private void juomatBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Juomat juoma = new Juomat();
+            juoma.ShowDialog();
+            this.Close();
+        }
+
+        private void ostosBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ostoskori kori = new ostoskori();
+            kori.ShowDialog();
+            this.Close();
+        }
     }
 }

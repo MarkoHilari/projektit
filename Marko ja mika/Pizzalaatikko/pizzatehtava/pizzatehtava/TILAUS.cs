@@ -89,25 +89,6 @@ namespace pizzatehtava
                 return false;
             }
         }
-        public bool lisaahinta(int hinta)
-        {
-           // MessageBox.Show(juoma + " " + "Lisätty ostoskoriin");
-            MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`hinta`) VALUES (@hin)";
-            pyynto.CommandText = lisaaKysely;
-            pyynto.Connection = yhdista.otaYhteys();
-            pyynto.Parameters.Add("@hin", MySqlDbType.VarChar).Value = hinta;
-            yhdista.avaaXhteys();
-            if (pyynto.ExecuteNonQuery() == 1)
-            {
-                yhdista.suljeYhteys();
-                return true;
-            }
-            else
-            {
-                yhdista.suljeYhteys();
-                return false;
-            }
-        }
+       
     }
 }
