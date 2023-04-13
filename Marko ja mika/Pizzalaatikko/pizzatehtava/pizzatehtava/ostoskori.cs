@@ -25,21 +25,33 @@ namespace pizzatehtava
             ostosDG.DataSource = tilaus.haeTilaukset();
         }
 
-        private void ostoskori_Load(object sender, EventArgs e)
+        private void ostoskori_Load(object sender, EventArgs e) // ostoskorin lataaminen ja sovittaminen datagridiin
         {
             ostosDG.DataSource = tilaus.haeTilaukset();
             ostosDG.AutoResizeColumns();
         }
 
+        private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
+        {
+            string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+            if (tilaus.poistaTilaus(pizza))
+            {
+                ostosDG.DataSource = tilaus.haeTilaukset();
+                MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void suljeoBT_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); //tämä sulkee sovelluksen
         }
+
+            // kaikki alla olevat napit ovat navigointeja eri sivuille
 
         private void juomatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Juomat juoma = new Juomat();
+            Juomat juoma = new Juomat();  
             juoma.ShowDialog();
             this.Close();
         }
@@ -51,34 +63,14 @@ namespace pizzatehtava
             pizza.ShowDialog();
             this.Close();
         }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Paaikkuna paa = new Paaikkuna();
-            paa.ShowDialog();
-            this.Close();
-        }
-
-        private void poistariBT_Click(object sender, EventArgs e)
-        {
-            string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
-            if (tilaus.poistaTilaus(pizza))
-            {
-                ostosDG.DataSource = tilaus.haeTilaukset();
-                MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
+       
         private void tilaaBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            maksu maksu= new maksu();
+            maksu maksu = new maksu();
             maksu.ShowDialog();
             this.Close();
         }
-
-        
 
         private void pictureBox5_Click_1(object sender, EventArgs e)
         {
@@ -87,5 +79,7 @@ namespace pizzatehtava
             paa.ShowDialog();
             this.Close();
         }
+            
+               
     }
 }

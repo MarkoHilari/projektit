@@ -50,7 +50,6 @@
             this.isoPLCB = new System.Windows.Forms.CheckBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -308,13 +307,12 @@
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
             this.groupBox9.Controls.Add(this.pictureBox5);
-            this.groupBox9.Controls.Add(this.juomatBT);
             this.groupBox9.Controls.Add(this.ostosBT);
             this.groupBox9.Controls.Add(this.pizzaBT);
             this.groupBox9.Location = new System.Drawing.Point(104, 680);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox9.Size = new System.Drawing.Size(990, 78);
             this.groupBox9.TabIndex = 7;
             this.groupBox9.TabStop = false;
@@ -331,24 +329,11 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // juomatBT
-            // 
-            this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(261, 14);
-            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.juomatBT.Name = "juomatBT";
-            this.juomatBT.Size = new System.Drawing.Size(162, 58);
-            this.juomatBT.TabIndex = 2;
-            this.juomatBT.Text = "Juomat";
-            this.juomatBT.UseVisualStyleBackColor = true;
-            this.juomatBT.Visible = false;
-            this.juomatBT.Click += new System.EventHandler(this.juomatBT_Click);
-            // 
             // ostosBT
             // 
             this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ostosBT.Location = new System.Drawing.Point(793, 14);
-            this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ostosBT.Margin = new System.Windows.Forms.Padding(4);
             this.ostosBT.Name = "ostosBT";
             this.ostosBT.Size = new System.Drawing.Size(162, 58);
             this.ostosBT.TabIndex = 3;
@@ -360,7 +345,7 @@
             // 
             this.pizzaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pizzaBT.Location = new System.Drawing.Point(40, 14);
-            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4);
             this.pizzaBT.Name = "pizzaBT";
             this.pizzaBT.Size = new System.Drawing.Size(162, 58);
             this.pizzaBT.TabIndex = 1;
@@ -456,7 +441,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button juomatBT;
         private System.Windows.Forms.Button ostosBT;
         private System.Windows.Forms.Button pizzaBT;
         private System.Windows.Forms.CheckBox pieniColaCB;
