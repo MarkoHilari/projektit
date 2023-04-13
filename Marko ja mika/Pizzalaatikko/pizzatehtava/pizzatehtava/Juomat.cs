@@ -20,21 +20,26 @@ namespace pizzatehtava
 
         TILAUS tilaus = new TILAUS();
 
-        private void pizzaBT_Click(object sender, EventArgs e)
+        private void pizzaBT_Click(object sender, EventArgs e)  // Button pizza sivulle siirtymiseen
         {
             this.Hide();
             pizzat pizza = new pizzat();
             pizza.ShowDialog();
             this.Close();
-
-
         }
 
-        private void ostosBT_Click(object sender, EventArgs e)
+        private void ostosBT_Click(object sender, EventArgs e) // Button ostoskoriin siirtymiseen
         {
             this.Hide();
             ostoskori ostos = new ostoskori();
             ostos.ShowDialog();
+            this.Close();
+        }
+        private void pictureBox5_Click(object sender, EventArgs e)  // Button pääikkunalle siirtymiseen 
+        {
+            this.Hide();
+            Paaikkuna paa = new Paaikkuna();
+            paa.ShowDialog();
             this.Close();
         }
 
@@ -42,6 +47,8 @@ namespace pizzatehtava
         {
             
         }
+
+                // Kaikki alla olevat komennot ovat checkbox komentoja juomien lisäämiseen ostoslistaan
 
         private void pieniColaCB_CheckedChanged(object sender, EventArgs e)
         {
@@ -139,17 +146,8 @@ namespace pizzatehtava
             }
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Paaikkuna paa = new Paaikkuna();
-            paa.ShowDialog();
-            this.Close();
-        }
+        
 
-        private void juomatBT_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
   }
