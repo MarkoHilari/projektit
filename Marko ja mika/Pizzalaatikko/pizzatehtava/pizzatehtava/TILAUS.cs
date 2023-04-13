@@ -27,7 +27,7 @@ namespace pizzatehtava
         {
             MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`, `hinta`) VALUES ('@pit','@hin')";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES (@pit)";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
            
