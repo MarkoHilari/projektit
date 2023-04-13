@@ -23,15 +23,15 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(string pizza,int hinta)
+        public bool lisaaTilaus(string pizza)
         {
             MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`, `hinta`) VALUES ('@pit','@hin')";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES ('@pit')";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
-            pyynto.Parameters.Add("@hin", MySqlDbType.Int32).Value = hinta;
+            //pyynto.Parameters.Add("@hin", MySqlDbType.Int32).Value = hinta;
             yhdista.avaaXhteys();
             if(pyynto.ExecuteNonQuery() == 1)
             {
