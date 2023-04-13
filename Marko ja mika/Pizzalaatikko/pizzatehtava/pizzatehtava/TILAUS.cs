@@ -23,7 +23,7 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(string pizza,int hinta)
+        public bool lisaaTilaus(string pizza)
         {
             MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
@@ -32,9 +32,7 @@ namespace pizzatehtava
             pyynto.Connection = yhdista.otaYhteys();
            
             pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
-            pyynto.Parameters.Add("@hin", MySqlDbType.VarChar).Value = hinta;
-
-            string query = "INSERT INTO TableName (Column1, Column2) VALUES (@pit, @hin)";
+            //pyynto.Parameters.Add("@hin", MySqlDbType.VarChar).Value = hinta;
 
             yhdista.avaaXhteys();
             
