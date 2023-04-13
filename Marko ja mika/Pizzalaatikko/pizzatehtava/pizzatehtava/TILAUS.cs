@@ -27,7 +27,7 @@ namespace pizzatehtava
         {
             MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`pizza`) VALUES (@pit)";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`nimike`) VALUES (@pit)";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
            
@@ -53,7 +53,7 @@ namespace pizzatehtava
         {
             MessageBox.Show(pizza + "Poistettu ostoskorista");
             MySqlCommand pyynto = new MySqlCommand();
-            string poistoKysely = "DELETE FROM `ostoskori` WHERE `pizza` = @pit";
+            string poistoKysely = "DELETE FROM `ostoskori` WHERE `nimike` = @pit";
             pyynto.CommandText = poistoKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
@@ -73,7 +73,7 @@ namespace pizzatehtava
         {
             MessageBox.Show(juoma + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`juoma`) VALUES (@juo)";
+            string lisaaKysely = "INSERT INTO `ostoskori`(`nimike`) VALUES (@juo)";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
             pyynto.Parameters.Add("@juo", MySqlDbType.VarChar).Value = juoma;
