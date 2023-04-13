@@ -63,10 +63,10 @@ namespace pizzatehtava
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
             string pizza = americanoCB.Text;
-            int hinta = 15;
+            
             if(americanoCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza,hinta))
+                if (tilaus.lisaaTilaus(pizza))
                 {
                                    
                 }
