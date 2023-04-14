@@ -62,11 +62,11 @@ namespace pizzatehtava
 
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = americanoCB.Text;
+            string tuote = americanoCB.Text;
             
             if(americanoCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                                    
                 }
@@ -79,10 +79,10 @@ namespace pizzatehtava
 
         private void meheCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = meheCB.Text;
+            string tuote = meheCB.Text;
             if (meheCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -91,10 +91,10 @@ namespace pizzatehtava
 
         private void troCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = troCB.Text;
+            string tuote = troCB.Text;
             if (troCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -104,10 +104,10 @@ namespace pizzatehtava
 
         private void meheSpCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = meheCB.Text;
+            string tuote = meheCB.Text;
             if (meheCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -117,10 +117,10 @@ namespace pizzatehtava
 
         private void rinneCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = rinneCB.Text;
+            string tuote = rinneCB.Text;
             if (rinneCB.Checked)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -130,10 +130,10 @@ namespace pizzatehtava
 
         private void speciSCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = meheSpCB.Text;
+            string tuote = meheSpCB.Text;
             if (meheSpCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -143,10 +143,10 @@ namespace pizzatehtava
 
         private void tuliCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = tuliCB.Text;
+            string tuote = tuliCB.Text;
             if (tuliCB.Checked == true)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
@@ -156,10 +156,10 @@ namespace pizzatehtava
 
         private void softCB_CheckedChanged(object sender, EventArgs e)
         {
-            string pizza = softCB.Text;
+            string tuote = softCB.Text;
             if (softCB.Checked)
             {
-                if (tilaus.lisaaTilaus(pizza))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Toimii", "");
                 }
