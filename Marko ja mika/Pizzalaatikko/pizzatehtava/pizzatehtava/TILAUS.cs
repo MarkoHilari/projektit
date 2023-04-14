@@ -12,7 +12,7 @@ namespace pizzatehtava
     internal class TILAUS
     {
         YHDISTA yhdista = new YHDISTA();
-        public DataTable haeTilaukset()     //  Komento jolla haetaan SQL tietokannasta tuotteet datagridille
+        public DataTable haeTilaukset()
         {
             MySqlCommand pyynto = new MySqlCommand("SELECT * FROM `ostoskori`", yhdista.otaYhteys());
             MySqlDataAdapter sovitin = new MySqlDataAdapter();
@@ -23,15 +23,15 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(string pizza)      // Pizzan lisääminen SQL tietokantaan ja datagridille
-        {                                           // Yhteyden avaaminen aluksi ja sitten sulku
-            MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
+        public bool lisaaTilaus(string tuote)
+        {
+            MessageBox.Show(tuote + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`nimike`) VALUES (@pit)";
+            string lisaaKysely = "INSERT INTO ostoskori (nimike, hinta) SELECT nimike, hinta FROM tuotteet WHERE nimike = @tuo";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
            
-            pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
+            pyynto.Parameters.Add("@tuo", MySqlDbType.VarChar).Value = tuote;
             //pyynto.Parameters.Add("@hin", MySqlDbType.VarChar).Value = hinta;
 
             yhdista.avaaXhteys();
@@ -48,14 +48,15 @@ namespace pizzatehtava
             }
         }
 
-        public bool poistaTilaus(string pizza)    // Tuotteiden poistaminen datagridistä ja SQL tietokannasta
+
+        public bool poistaTilaus(string tuote)
         {
-            MessageBox.Show(pizza + "Poistettu ostoskorista");
+            MessageBox.Show(tuote + "Poistettu ostoskorista");
             MySqlCommand pyynto = new MySqlCommand();
-            string poistoKysely = "DELETE FROM `ostoskori` WHERE `nimike` = @pit";
+            string poistoKysely = "DELETE FROM `ostoskori` WHERE `nimike` = @tuo";
             pyynto.CommandText = poistoKysely;
             pyynto.Connection = yhdista.otaYhteys();
-            pyynto.Parameters.Add("@pit", MySqlDbType.VarChar).Value = pizza;
+            pyynto.Parameters.Add("@tuo", MySqlDbType.VarChar).Value = tuote;
             yhdista.avaaXhteys();
             if (pyynto.ExecuteNonQuery() == 1)
             {
@@ -68,14 +69,14 @@ namespace pizzatehtava
                 return false;
             }
         }
-        public bool lisaaJuoma(string juoma)   // Juoman lisääminen SQL tietokantaan. Yhteyden avaaminen aluksi ja sitten sulku
+        /*public bool lisaaJuoma(string tuote)
         {
-            MessageBox.Show(juoma + " " + "Lisätty ostoskoriin");
+            MessageBox.Show(tuote + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO `ostoskori`(`nimike`) VALUES (@juo)";
+            string lisaaKysely = "INSERT INTO ostoskori (nimike, hinta) SELECT nimike, hinta FROM tuotteet WHERE nimike = @tuo";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
-            pyynto.Parameters.Add("@juo", MySqlDbType.VarChar).Value = juoma;
+            pyynto.Parameters.Add("@tuo", MySqlDbType.VarChar).Value = tuote;
             yhdista.avaaXhteys();
             if (pyynto.ExecuteNonQuery() == 1)
             {
@@ -87,7 +88,7 @@ namespace pizzatehtava
                 yhdista.suljeYhteys();
                 return false;
             }
-        }
+        }*/
        
     }
 }

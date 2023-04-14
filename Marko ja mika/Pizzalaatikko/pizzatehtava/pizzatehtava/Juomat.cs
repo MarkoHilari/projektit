@@ -52,10 +52,10 @@ namespace pizzatehtava
 
         private void pieniColaCB_CheckedChanged(object sender, EventArgs e)
         {
-            string juoma = pieniColaCB.Text;
+            string tuote = pieniColaCB.Text;
             if (pieniColaCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -64,10 +64,10 @@ namespace pizzatehtava
 
         private void isoColaCB_CheckedChanged(object sender, EventArgs e)
         {
-            string juoma = isoColaCB.Text;
+            string tuote = isoColaCB.Text;
             if (isoColaCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(tuote))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -79,7 +79,7 @@ namespace pizzatehtava
             string juoma = colaZeroPCB.Text;
             if (colaZeroPCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -91,7 +91,7 @@ namespace pizzatehtava
             string juoma = isoZeroCB.Text;
             if (isoZeroCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -103,7 +103,7 @@ namespace pizzatehtava
             string juoma = pieniPLCB.Text;
             if (pieniPLCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -115,7 +115,7 @@ namespace pizzatehtava
             string juoma = isoPLCB.Text;
             if (isoPLCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -127,7 +127,7 @@ namespace pizzatehtava
             string juoma = mehYlpCB.Text;
             if (mehYlpCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
@@ -139,7 +139,7 @@ namespace pizzatehtava
             string juoma = mehYlisoCB.Text;
             if (mehYlisoCB.Checked == true)
             {
-                if (tilaus.lisaaJuoma(juoma))
+                if (tilaus.lisaaTilaus(juoma))
                 {
                     //MessageBox.Show("Lisätty");
                 }
