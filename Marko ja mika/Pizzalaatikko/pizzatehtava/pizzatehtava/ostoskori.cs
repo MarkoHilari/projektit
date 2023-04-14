@@ -48,15 +48,15 @@ namespace pizzatehtava
 
             // kaikki alla olevat napit ovat navigointeja eri sivuille
 
-        private void juomatBT_Click(object sender, EventArgs e)
+        private void juomatBT_Click(object sender, EventArgs e)      // Juomat
         {
             this.Hide();
-            Juomat juoma = new Juomat();  
+            Juomat juoma = new Juomat();         
             juoma.ShowDialog();
             this.Close();
         }
 
-        private void pizzaBT_Click(object sender, EventArgs e)
+        private void pizzaBT_Click(object sender, EventArgs e)      // Pizzat
         {
             this.Hide();
             pizzat pizza = new pizzat();
@@ -64,7 +64,7 @@ namespace pizzatehtava
             this.Close();
         }
        
-        private void tilaaBT_Click(object sender, EventArgs e)
+        private void tilaaBT_Click(object sender, EventArgs e)       // Tilaus
         {
             this.Hide();
             maksu maksu = new maksu();
@@ -72,7 +72,7 @@ namespace pizzatehtava
             this.Close();
         }
 
-        private void pictureBox5_Click_1(object sender, EventArgs e)
+        private void pictureBox5_Click_1(object sender, EventArgs e)     // Pääikkuna
         {
             this.Hide();
             Paaikkuna paa = new Paaikkuna();

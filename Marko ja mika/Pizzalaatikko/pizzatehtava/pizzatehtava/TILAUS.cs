@@ -12,7 +12,7 @@ namespace pizzatehtava
     internal class TILAUS
     {
         YHDISTA yhdista = new YHDISTA();
-        public DataTable haeTilaukset()
+        public DataTable haeTilaukset()     //  Komento jolla haetaan SQL tietokannasta tuotteet datagridille
         {
             MySqlCommand pyynto = new MySqlCommand("SELECT * FROM `ostoskori`", yhdista.otaYhteys());
             MySqlDataAdapter sovitin = new MySqlDataAdapter();
@@ -23,8 +23,8 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(string pizza)
-        {
+        public bool lisaaTilaus(string pizza)      // Pizzan lisääminen SQL tietokantaan ja datagridille
+        {                                           // Yhteyden avaaminen aluksi ja sitten sulku
             MessageBox.Show(pizza + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
             string lisaaKysely = "INSERT INTO `ostoskori`(`nimike`) VALUES (@pit)";
@@ -48,8 +48,7 @@ namespace pizzatehtava
             }
         }
 
-
-        public bool poistaTilaus(string pizza)
+        public bool poistaTilaus(string pizza)    // Tuotteiden poistaminen datagridistä ja SQL tietokannasta
         {
             MessageBox.Show(pizza + "Poistettu ostoskorista");
             MySqlCommand pyynto = new MySqlCommand();
@@ -69,7 +68,7 @@ namespace pizzatehtava
                 return false;
             }
         }
-        public bool lisaaJuoma(string juoma)
+        public bool lisaaJuoma(string juoma)   // Juoman lisääminen SQL tietokantaan. Yhteyden avaaminen aluksi ja sitten sulku
         {
             MessageBox.Show(juoma + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
