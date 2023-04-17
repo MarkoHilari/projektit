@@ -30,7 +30,7 @@ namespace pizzatehtava
             ostosDG.DataSource = tilaus.haeTilaukset();
             ostosDG.AutoResizeColumns();
             yhteensaLB.Visible = true;
-            tilaus.haeSumma();
+            //yhteensaLB.Text = tilaus.haeSumma();
                         
         }
   
