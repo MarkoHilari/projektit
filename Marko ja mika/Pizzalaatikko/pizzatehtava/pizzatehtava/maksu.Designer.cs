@@ -65,11 +65,12 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.suljeBT = new System.Windows.Forms.Button();
             this.juomatBT = new System.Windows.Forms.Button();
             this.ostosBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.tilaaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,6 +87,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Yellow;
+            this.panel1.Controls.Add(this.tilaaBT);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -471,6 +473,18 @@
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::pizzatehtava.Properties.Resources.koti;
+            this.pictureBox6.Location = new System.Drawing.Point(643, 21);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(60, 40);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // suljeBT
             // 
             this.suljeBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -498,7 +512,7 @@
             // ostosBT
             // 
             this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ostosBT.Location = new System.Drawing.Point(804, 14);
+            this.ostosBT.Location = new System.Drawing.Point(904, 14);
             this.ostosBT.Margin = new System.Windows.Forms.Padding(4);
             this.ostosBT.Name = "ostosBT";
             this.ostosBT.Size = new System.Drawing.Size(162, 58);
@@ -519,17 +533,17 @@
             this.pizzaBT.UseVisualStyleBackColor = true;
             this.pizzaBT.Click += new System.EventHandler(this.pizzaBT_Click);
             // 
-            // pictureBox6
+            // tilaaBT
             // 
-            this.pictureBox6.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox6.Location = new System.Drawing.Point(643, 21);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 40);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.tilaaBT.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tilaaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tilaaBT.Location = new System.Drawing.Point(972, 45);
+            this.tilaaBT.Name = "tilaaBT";
+            this.tilaaBT.Size = new System.Drawing.Size(70, 56);
+            this.tilaaBT.TabIndex = 3;
+            this.tilaaBT.Text = "Tilaa";
+            this.tilaaBT.UseVisualStyleBackColor = false;
+            this.tilaaBT.Click += new System.EventHandler(this.tilaaBT_Click_1);
             // 
             // maksu
             // 
@@ -625,5 +639,6 @@
         private System.Windows.Forms.Button ostosBT;
         private System.Windows.Forms.Button pizzaBT;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button tilaaBT;
     }
 }

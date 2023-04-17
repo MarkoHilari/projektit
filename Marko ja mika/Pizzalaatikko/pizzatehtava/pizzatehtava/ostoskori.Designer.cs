@@ -55,9 +55,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(387, 48);
+            this.label1.Location = new System.Drawing.Point(344, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 74);
+            this.label1.Size = new System.Drawing.Size(310, 61);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ostoskorisi";
             // 
@@ -67,18 +67,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(16, 17);
+            this.panel1.Location = new System.Drawing.Point(14, 14);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1143, 168);
+            this.panel1.Size = new System.Drawing.Size(1016, 134);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(962, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(855, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 148);
+            this.pictureBox2.Size = new System.Drawing.Size(149, 118);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -86,9 +88,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 148);
+            this.pictureBox1.Size = new System.Drawing.Size(123, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -97,21 +100,21 @@
             // 
             this.ostosDG.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.ostosDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ostosDG.Location = new System.Drawing.Point(13, 218);
-            this.ostosDG.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ostosDG.Location = new System.Drawing.Point(12, 174);
+            this.ostosDG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ostosDG.Name = "ostosDG";
             this.ostosDG.RowHeadersWidth = 82;
-            this.ostosDG.Size = new System.Drawing.Size(598, 385);
+            this.ostosDG.Size = new System.Drawing.Size(532, 308);
             this.ostosDG.TabIndex = 2;
             this.ostosDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ostosDG_CellContentClick);
             // 
             // tilaaBT
             // 
             this.tilaaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tilaaBT.Location = new System.Drawing.Point(923, 288);
-            this.tilaaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tilaaBT.Location = new System.Drawing.Point(820, 230);
+            this.tilaaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tilaaBT.Name = "tilaaBT";
-            this.tilaaBT.Size = new System.Drawing.Size(195, 88);
+            this.tilaaBT.Size = new System.Drawing.Size(173, 70);
             this.tilaaBT.TabIndex = 3;
             this.tilaaBT.Text = "Tilaa";
             this.tilaaBT.UseVisualStyleBackColor = true;
@@ -124,20 +127,21 @@
             this.groupBox9.Controls.Add(this.juomatBT);
             this.groupBox9.Controls.Add(this.suljeoBT);
             this.groupBox9.Controls.Add(this.pizzaBT);
-            this.groupBox9.Location = new System.Drawing.Point(31, 636);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox9.Location = new System.Drawing.Point(28, 509);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox9.Size = new System.Drawing.Size(1114, 98);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Size = new System.Drawing.Size(990, 78);
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::pizzatehtava.Properties.Resources.koti;
-            this.pictureBox5.Location = new System.Drawing.Point(524, 24);
+            this.pictureBox5.Location = new System.Drawing.Point(466, 19);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(60, 40);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
@@ -146,10 +150,10 @@
             // juomatBT
             // 
             this.juomatBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.juomatBT.Location = new System.Drawing.Point(266, 17);
-            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.juomatBT.Location = new System.Drawing.Point(236, 14);
+            this.juomatBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.juomatBT.Name = "juomatBT";
-            this.juomatBT.Size = new System.Drawing.Size(182, 72);
+            this.juomatBT.Size = new System.Drawing.Size(162, 58);
             this.juomatBT.TabIndex = 2;
             this.juomatBT.Text = "Juomat";
             this.juomatBT.UseVisualStyleBackColor = true;
@@ -158,10 +162,10 @@
             // suljeoBT
             // 
             this.suljeoBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.suljeoBT.Location = new System.Drawing.Point(892, 17);
-            this.suljeoBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.suljeoBT.Location = new System.Drawing.Point(793, 14);
+            this.suljeoBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.suljeoBT.Name = "suljeoBT";
-            this.suljeoBT.Size = new System.Drawing.Size(182, 72);
+            this.suljeoBT.Size = new System.Drawing.Size(162, 58);
             this.suljeoBT.TabIndex = 3;
             this.suljeoBT.Text = "Sulje";
             this.suljeoBT.UseVisualStyleBackColor = true;
@@ -170,10 +174,10 @@
             // pizzaBT
             // 
             this.pizzaBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pizzaBT.Location = new System.Drawing.Point(35, 17);
-            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pizzaBT.Location = new System.Drawing.Point(31, 14);
+            this.pizzaBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pizzaBT.Name = "pizzaBT";
-            this.pizzaBT.Size = new System.Drawing.Size(182, 72);
+            this.pizzaBT.Size = new System.Drawing.Size(162, 58);
             this.pizzaBT.TabIndex = 1;
             this.pizzaBT.Text = "Pizza Meny";
             this.pizzaBT.UseVisualStyleBackColor = true;
@@ -182,10 +186,10 @@
             // poistariBT
             // 
             this.poistariBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poistariBT.Location = new System.Drawing.Point(924, 441);
-            this.poistariBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.poistariBT.Location = new System.Drawing.Point(821, 353);
+            this.poistariBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.poistariBT.Name = "poistariBT";
-            this.poistariBT.Size = new System.Drawing.Size(195, 88);
+            this.poistariBT.Size = new System.Drawing.Size(173, 70);
             this.poistariBT.TabIndex = 12;
             this.poistariBT.Text = "Poista tuote";
             this.poistariBT.UseVisualStyleBackColor = true;
@@ -195,9 +199,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(640, 355);
+            this.label2.Location = new System.Drawing.Point(569, 284);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 23);
+            this.label2.Size = new System.Drawing.Size(219, 19);
             this.label2.TabIndex = 13;
             this.label2.Text = "Ostoskorisi yhteensä:";
             // 
@@ -205,21 +209,20 @@
             // 
             this.yhteensaLB.AutoSize = true;
             this.yhteensaLB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yhteensaLB.Location = new System.Drawing.Point(721, 441);
+            this.yhteensaLB.Location = new System.Drawing.Point(641, 353);
             this.yhteensaLB.Name = "yhteensaLB";
-            this.yhteensaLB.Size = new System.Drawing.Size(54, 27);
+            this.yhteensaLB.Size = new System.Drawing.Size(46, 23);
             this.yhteensaLB.TabIndex = 14;
             this.yhteensaLB.Text = "xxx";
             this.yhteensaLB.Visible = false;
-            this.yhteensaLB.Click += new System.EventHandler(this.yhteensaLB_Click);
             // 
             // ostoskori
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1179, 771);
+            this.ClientSize = new System.Drawing.Size(1048, 617);
             this.Controls.Add(this.yhteensaLB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.poistariBT);
@@ -228,7 +231,7 @@
             this.Controls.Add(this.ostosDG);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ostoskori";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ostoskori";

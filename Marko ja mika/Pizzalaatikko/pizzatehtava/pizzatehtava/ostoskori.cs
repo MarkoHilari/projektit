@@ -18,7 +18,19 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
-        TILAUS tilaus = new TILAUS();   
+        TILAUS tilaus = new TILAUS();
+
+        public DataGridView dataGridViewPassed = null;
+
+        public void ClearDataGrid()
+        {
+            ostosDG.Rows.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.dataGridViewPassed.Rows.Clear();
+        }
 
         private void ostosDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -29,11 +41,8 @@ namespace pizzatehtava
         {
             ostosDG.DataSource = tilaus.haeTilaukset();
             ostosDG.AutoResizeColumns();
-            yhteensaLB.Visible = true;
-            yhteensaLB.Text = tilaus.haeSumma();
-                        
         }
-  
+
         private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
         {
             string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
@@ -82,10 +91,7 @@ namespace pizzatehtava
             paa.ShowDialog();
             this.Close();
         }
-
-        private void yhteensaLB_Click(object sender, EventArgs e)
-        {
-            //yhteensaLB.
-        }
+            
+               
     }
 }
