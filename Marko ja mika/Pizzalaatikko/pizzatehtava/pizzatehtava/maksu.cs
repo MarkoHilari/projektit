@@ -72,19 +72,5 @@ namespace pizzatehtava
             kori.ShowDialog();
             this.Close();
         }
-
-        
-        
-
-        private void tilaaBT_Click_1(object sender, EventArgs e)
-        {
-            
-            ostoskori ostoskori = Application.OpenForms.OfType<ostoskori>().FirstOrDefault();
-
-            if (ostoskori != null)
-            {
-                ostoskori.ClearDataGrid();
-            }
-        }
     }
 }
