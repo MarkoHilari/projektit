@@ -92,14 +92,27 @@ namespace pizzatehtava
                 return false;
             }
         }*/
-        /*public bool haeSumma()
+        public string haeSumma()
         {
-            
-            
+            string summa = "";
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand pyynto = new MySqlCommand();
+            String kysely = "SELECT SUM(hinta) AS yhthinta from ostoskori";
+
+            pyynto.CommandText=kysely;
+            pyynto.Connection = yhdista.otaYhteys();
+
+            adapter.SelectCommand = pyynto;
+            adapter.Fill(table);
+            if(table.Rows.Count > 0 )
+            {
+                summa = table.Rows[0]["yhthinta"].ToString();
+            }
 
             //SELECT SUM(hinta) from ostoskori
-
-        }*/
+            return summa;
+        }
 
     }
 }
