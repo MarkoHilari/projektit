@@ -225,9 +225,9 @@
             this.pieniPLCB.Location = new System.Drawing.Point(21, 22);
             this.pieniPLCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pieniPLCB.Name = "pieniPLCB";
-            this.pieniPLCB.Size = new System.Drawing.Size(267, 25);
+            this.pieniPLCB.Size = new System.Drawing.Size(179, 25);
             this.pieniPLCB.TabIndex = 0;
-            this.pieniPLCB.Text = "Pillima 0,33l    4,5€";
+            this.pieniPLCB.Text = "Pillima 0,33l";
             this.pieniPLCB.UseVisualStyleBackColor = true;
             this.pieniPLCB.CheckedChanged += new System.EventHandler(this.pieniPLCB_CheckedChanged);
             // 
@@ -249,9 +249,9 @@
             this.mehYlpCB.Location = new System.Drawing.Point(30, 25);
             this.mehYlpCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mehYlpCB.Name = "mehYlpCB";
-            this.mehYlpCB.Size = new System.Drawing.Size(289, 25);
+            this.mehYlpCB.Size = new System.Drawing.Size(223, 25);
             this.mehYlpCB.TabIndex = 0;
-            this.mehYlpCB.Text = "Mehmeylläri 0,33l  3,5€";
+            this.mehYlpCB.Text = "Mehmeylläri 0,33l";
             this.mehYlpCB.UseVisualStyleBackColor = true;
             this.mehYlpCB.CheckedChanged += new System.EventHandler(this.mehYlpCB_CheckedChanged);
             // 
@@ -297,9 +297,9 @@
             this.isoPLCB.Location = new System.Drawing.Point(21, 19);
             this.isoPLCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.isoPLCB.Name = "isoPLCB";
-            this.isoPLCB.Size = new System.Drawing.Size(256, 25);
+            this.isoPLCB.Size = new System.Drawing.Size(168, 25);
             this.isoPLCB.TabIndex = 0;
-            this.isoPLCB.Text = "Pillima 1,5l      9€";
+            this.isoPLCB.Text = "Pillima 1,5l";
             this.isoPLCB.UseVisualStyleBackColor = true;
             this.isoPLCB.CheckedChanged += new System.EventHandler(this.isoPLCB_CheckedChanged);
             // 
@@ -371,9 +371,9 @@
             this.mehYlisoCB.Location = new System.Drawing.Point(30, 18);
             this.mehYlisoCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mehYlisoCB.Name = "mehYlisoCB";
-            this.mehYlisoCB.Size = new System.Drawing.Size(278, 25);
+            this.mehYlisoCB.Size = new System.Drawing.Size(212, 25);
             this.mehYlisoCB.TabIndex = 0;
-            this.mehYlisoCB.Text = "Mehmeylläri 1,5l    8€";
+            this.mehYlisoCB.Text = "Mehmeylläri 1,5l";
             this.mehYlisoCB.UseVisualStyleBackColor = true;
             this.mehYlisoCB.CheckedChanged += new System.EventHandler(this.mehYlisoCB_CheckedChanged);
             // 

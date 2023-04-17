@@ -29,8 +29,11 @@ namespace pizzatehtava
         {
             ostosDG.DataSource = tilaus.haeTilaukset();
             ostosDG.AutoResizeColumns();
+            yhteensaLB.Visible = true;
+            yhteensaLB.Text = tilaus.haeSumma();
+                        
         }
-
+  
         private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
         {
             string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
@@ -79,7 +82,10 @@ namespace pizzatehtava
             paa.ShowDialog();
             this.Close();
         }
-            
-               
+
+        private void yhteensaLB_Click(object sender, EventArgs e)
+        {
+            //yhteensaLB.
+        }
     }
 }

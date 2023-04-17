@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Xml.Schema;
+using System.Data.SqlClient;
 
 namespace pizzatehtava
 {
@@ -89,6 +91,27 @@ namespace pizzatehtava
                 return false;
             }
         }*/
-       
+        public String haeSumma()
+        {
+            
+            
+            //String vastaus  = "100 €";
+            MySqlCommand pyynto = new MySqlCommand("SELECT SUM(hinta) from ostoskori", yhdista.otaYhteys());
+            MySqlDataAdapter sovitin = new MySqlDataAdapter();
+            DataTable data = new DataTable();
+            /*MySqlDataReader data;
+            data = pyynto.ExecuteReader();
+            while (data.Read())
+            {
+                vastaus = data[0].ToString(); 
+            }
+            /*sovitin.SelectCommand = pyynto;
+            sovitin.Fill(data);*/
+            return data;
+
+            //SELECT SUM(hinta) from ostoskori
+            
+        }
+
     }
 }

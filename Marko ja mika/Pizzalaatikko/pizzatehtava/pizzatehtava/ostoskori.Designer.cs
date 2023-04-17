@@ -41,6 +41,8 @@
             this.suljeoBT = new System.Windows.Forms.Button();
             this.pizzaBT = new System.Windows.Forms.Button();
             this.poistariBT = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.yhteensaLB = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,8 +95,9 @@
             // 
             // ostosDG
             // 
+            this.ostosDG.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.ostosDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ostosDG.Location = new System.Drawing.Point(276, 225);
+            this.ostosDG.Location = new System.Drawing.Point(13, 218);
             this.ostosDG.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ostosDG.Name = "ostosDG";
             this.ostosDG.RowHeadersWidth = 82;
@@ -188,6 +191,28 @@
             this.poistariBT.UseVisualStyleBackColor = true;
             this.poistariBT.Click += new System.EventHandler(this.poistariBT_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(640, 355);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(262, 23);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Ostoskorisi yhteensä:";
+            // 
+            // yhteensaLB
+            // 
+            this.yhteensaLB.AutoSize = true;
+            this.yhteensaLB.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yhteensaLB.Location = new System.Drawing.Point(721, 441);
+            this.yhteensaLB.Name = "yhteensaLB";
+            this.yhteensaLB.Size = new System.Drawing.Size(54, 27);
+            this.yhteensaLB.TabIndex = 14;
+            this.yhteensaLB.Text = "xxx";
+            this.yhteensaLB.Visible = false;
+            this.yhteensaLB.Click += new System.EventHandler(this.yhteensaLB_Click);
+            // 
             // ostoskori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -195,6 +220,8 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1179, 771);
+            this.Controls.Add(this.yhteensaLB);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.poistariBT);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.tilaaBT);
@@ -214,6 +241,7 @@
             this.groupBox9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -231,5 +259,7 @@
         private System.Windows.Forms.Button pizzaBT;
         private System.Windows.Forms.Button poistariBT;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label yhteensaLB;
     }
 }
