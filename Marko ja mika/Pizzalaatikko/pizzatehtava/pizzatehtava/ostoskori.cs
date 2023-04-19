@@ -53,6 +53,7 @@ namespace pizzatehtava
             if (tilaus.poistaTilaus(pizza))
             {
                 ostosDG.DataSource = tilaus.haeTilaukset();
+                
                 MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -99,6 +100,18 @@ namespace pizzatehtava
         private void yhteensaLB_Click(object sender, EventArgs e)
         {
             //yhteensaLB.
+        }
+
+        private void poistakaikkiBT_Click(object sender, EventArgs e)
+        {
+            string nimike = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+            if (tilaus.poistaKokoTilaus(nimike))
+            {
+                ostosDG.DataSource = tilaus.haeTilaukset();
+                ostosDG.DataSource = tilaus.poistaKokoTilaus(nimike);
+                MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ostosDG.DataSource = tilaus.haeTilaukset();
+            }
         }
     }
 }

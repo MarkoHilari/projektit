@@ -72,15 +72,16 @@ namespace pizzatehtava
                 return false;
             }
         }
-        /*public bool lisaaJuoma(string tuote)
+        public bool poistaKokoTilaus(string nimike)
         {
-            MessageBox.Show(tuote + " " + "Lisätty ostoskoriin");
+            MessageBox.Show("Ostoskori tyhjennetty");
             MySqlCommand pyynto = new MySqlCommand();
-            string lisaaKysely = "INSERT INTO ostoskori (nimike, hinta) SELECT nimike, hinta FROM tuotteet WHERE nimike = @tuo";
+            string lisaaKysely = "DELETE FROM `ostoskori`";
             pyynto.CommandText = lisaaKysely;
             pyynto.Connection = yhdista.otaYhteys();
-            pyynto.Parameters.Add("@tuo", MySqlDbType.VarChar).Value = tuote;
+            pyynto.Parameters.Add("@nim", MySqlDbType.VarChar).Value = nimike;
             yhdista.avaaXhteys();
+            
             if (pyynto.ExecuteNonQuery() == 1)
             {
                 yhdista.suljeYhteys();
@@ -91,7 +92,7 @@ namespace pizzatehtava
                 yhdista.suljeYhteys();
                 return false;
             }
-        }*/
+        }
         public string haeSumma()
         {
             string summa = "0";

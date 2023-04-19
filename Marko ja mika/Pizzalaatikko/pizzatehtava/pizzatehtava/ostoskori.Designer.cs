@@ -43,6 +43,7 @@
             this.poistariBT = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.yhteensaLB = new System.Windows.Forms.Label();
+            this.poistakaikkiBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -213,6 +214,16 @@
             this.yhteensaLB.Visible = false;
             this.yhteensaLB.Click += new System.EventHandler(this.yhteensaLB_Click);
             // 
+            // poistakaikkiBT
+            // 
+            this.poistakaikkiBT.Location = new System.Drawing.Point(949, 218);
+            this.poistakaikkiBT.Name = "poistakaikkiBT";
+            this.poistakaikkiBT.Size = new System.Drawing.Size(75, 23);
+            this.poistakaikkiBT.TabIndex = 15;
+            this.poistakaikkiBT.Text = "Poista kaikki";
+            this.poistakaikkiBT.UseVisualStyleBackColor = true;
+            this.poistakaikkiBT.Click += new System.EventHandler(this.poistakaikkiBT_Click);
+            // 
             // ostoskori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -220,6 +231,7 @@
             this.BackgroundImage = global::pizzatehtava.Properties.Resources.food_and_drink_pizza_pizzas_tomato;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1179, 771);
+            this.Controls.Add(this.poistakaikkiBT);
             this.Controls.Add(this.yhteensaLB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.poistariBT);
@@ -261,5 +273,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label yhteensaLB;
+        private System.Windows.Forms.Button poistakaikkiBT;
     }
 }
