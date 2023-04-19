@@ -94,7 +94,7 @@ namespace pizzatehtava
         }*/
         public string haeSumma()
         {
-            string summa = "";
+            string summa = "0";
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand pyynto = new MySqlCommand();
