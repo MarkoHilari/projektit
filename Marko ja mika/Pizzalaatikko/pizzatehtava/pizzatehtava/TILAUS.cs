@@ -14,6 +14,7 @@ namespace pizzatehtava
     internal class TILAUS
     {
         YHDISTA yhdista = new YHDISTA();
+        
         public DataTable haeTilaukset()
         {
             MySqlCommand pyynto = new MySqlCommand("SELECT * FROM `ostoskori`", yhdista.otaYhteys());
@@ -91,26 +92,26 @@ namespace pizzatehtava
                 return false;
             }
         }*/
-        public String haeSumma()
+        public string haeSumma()
         {
-            
-            
-            //String vastaus  = "100 €";
-            MySqlCommand pyynto = new MySqlCommand("SELECT SUM(hinta) from ostoskori", yhdista.otaYhteys());
-            MySqlDataAdapter sovitin = new MySqlDataAdapter();
-            DataTable data = new DataTable();
-            /*MySqlDataReader data;
-            data = pyynto.ExecuteReader();
-            while (data.Read())
+            string summa = "";
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand pyynto = new MySqlCommand();
+            String kysely = "SELECT SUM(hinta) AS yhthinta from ostoskori";
+
+            pyynto.CommandText=kysely;
+            pyynto.Connection = yhdista.otaYhteys();
+
+            adapter.SelectCommand = pyynto;
+            adapter.Fill(table);
+            if(table.Rows.Count > 0 )
             {
-                vastaus = data[0].ToString(); 
+                summa = table.Rows[0]["yhthinta"].ToString();
             }
-            /*sovitin.SelectCommand = pyynto;
-            sovitin.Fill(data);*/
-            return data;
 
             //SELECT SUM(hinta) from ostoskori
-            
+            return summa;
         }
 
     }

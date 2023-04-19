@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,18 @@ namespace pizzatehtava
             yhteensaLB.Visible = true;
             yhteensaLB.Text = tilaus.haeSumma();
                         
+        }
+
+        public string lapelliTeksti
+        {
+            get
+            {
+                return this.yhteensaLB.Text;
+            }
+            set 
+            { 
+                this.yhteensaLB.Text = value;
+            }
         }
   
         private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
