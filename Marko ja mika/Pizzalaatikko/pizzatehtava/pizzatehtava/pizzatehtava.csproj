@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Juomat1.resx</DependentUpon>
     </Compile>
+    <Compile Include="kiitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kiitos.Designer.cs">
+      <DependentUpon>kiitos.cs</DependentUpon>
+    </Compile>
     <Compile Include="maksu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <EmbeddedResource Include="Juomat1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Juomat1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kiitos.resx">
+      <DependentUpon>kiitos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="maksu.resx">
       <DependentUpon>maksu.cs</DependentUpon>
@@ -131,6 +140,7 @@
   <ItemGroup>
     <None Include="kuvat\Bedroom.jpg" />
     <None Include="kuvat\Car.jpg" />
+    <None Include="kuvat\exit.png" />
     <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
     <None Include="kuvat\koti.png" />
     <Content Include="kuvat\mehmet-3.jpg" />
