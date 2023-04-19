@@ -74,7 +74,7 @@ namespace pizzatehtava
         }
         public bool poistaKokoTilaus(string nimike)
         {
-            MessageBox.Show("Ostoskori tyhjennetty");
+          //  MessageBox.Show("Ostoskori tyhjennetty");
             MySqlCommand pyynto = new MySqlCommand();
             string lisaaKysely = "DELETE FROM `ostoskori`";
             pyynto.CommandText = lisaaKysely;
