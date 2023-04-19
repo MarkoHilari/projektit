@@ -68,8 +68,8 @@ namespace pizzatehtava
         private void ostosBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ostoskori kori = new ostoskori();
-            kori.ShowDialog();
+            ostoskori kiitos = new ostoskori();
+            kiitos.ShowDialog();
             this.Close();
         }
     }
