@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Marko ja mika",
-    "\\Marko ja mika\\Hotellitehtävä",
-    "\\Marko ja mika\\Hotellitehtävä\\Hotellitehtävä",
-    "\\Marko ja mika\\Hotellitehtävä\\Hotellitehtävä\\Hotellitehtävä"
+    "\\Marko ja mika\\Pizzalaatikko",
+    "\\Marko ja mika\\Pizzalaatikko\\pizzatehtava"
   ],
-  "SelectedNode": "\\Marko ja mika\\Hotellitehtävä\\Hotellitehtävä\\Hotellitehtävä\\Form1.cs",
+  "SelectedNode": "\\Marko ja mika\\Pizzalaatikko\\pizzatehtava\\pizzatehtava.sln",
   "PreviewInSolutionExplorer": false
 }

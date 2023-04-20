@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace pizzatehtava
+namespace AutoVuokra
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace pizzatehtava
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Paaikkuna());
+            Application.Run(new Form1());
         }
     }
 }

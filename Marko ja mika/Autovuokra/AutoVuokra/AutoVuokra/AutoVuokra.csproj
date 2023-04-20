@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7EC56042-76E7-490D-9357-81EAABFD5A14}</ProjectGuid>
+    <ProjectGuid>{5B6D8DA2-E554-4FA5-A932-0858065BF7A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>pizzatehtava</RootNamespace>
-    <AssemblyName>pizzatehtava</AssemblyName>
+    <RootNamespace>AutoVuokra</RootNamespace>
+    <AssemblyName>AutoVuokra</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,73 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Juomat.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Juomat.Designer.cs">
-      <DependentUpon>Juomat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Juomat1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Juomat1.resx</DependentUpon>
-    </Compile>
-    <Compile Include="kiitos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="kiitos.Designer.cs">
-      <DependentUpon>kiitos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="maksu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="maksu.Designer.cs">
-      <DependentUpon>maksu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ostoskori.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ostoskori.Designer.cs">
-      <DependentUpon>ostoskori.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Paaikkuna.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Paaikkuna.Designer.cs">
-      <DependentUpon>Paaikkuna.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pizzat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pizzat.Designer.cs">
-      <DependentUpon>pizzat.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TILAUS.cs" />
-    <Compile Include="YHDISTA.cs" />
-    <EmbeddedResource Include="Juomat.resx">
-      <DependentUpon>Juomat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Juomat1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Juomat1.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="kiitos.resx">
-      <DependentUpon>kiitos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="maksu.resx">
-      <DependentUpon>maksu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ostoskori.resx">
-      <DependentUpon>ostoskori.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Paaikkuna.resx">
-      <DependentUpon>Paaikkuna.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pizzat.resx">
-      <DependentUpon>pizzat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -122,7 +62,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,18 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="kuvat\Bedroom.jpg" />
-    <None Include="kuvat\Car.jpg" />
-    <None Include="kuvat\exit.png" />
-    <Content Include="kuvat\food-and-drink-pizza-pizzas-tomato.jpg" />
-    <None Include="kuvat\koti.png" />
-    <Content Include="kuvat\mehmet-3.jpg" />
-    <None Include="kuvat\Pensas.jpg" />
-    <Content Include="kuvat\pizza car.png" />
-    <Content Include="kuvat\pizza.png" />
-    <None Include="Resources\pizza car.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
