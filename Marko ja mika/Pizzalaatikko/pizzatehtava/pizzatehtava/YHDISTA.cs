@@ -8,7 +8,7 @@ using System.Data;
 
 namespace pizzatehtava
 {
-    internal class YHDISTA
+    internal class YHDISTA      // yhteys sql
     {
         private MySqlConnection yhdista = new MySqlConnection("datasource= localhost; port=3306; username=root; password=; database=pizzakanta");
     
@@ -16,21 +16,15 @@ namespace pizzatehtava
         { 
             return yhdista;
         }
-        public void avaaYhteys()
+       
+        public void avaaXhteys()    // yhteyden avaaminen sql
         {
             if(yhdista.State == ConnectionState.Closed)
             {
                 yhdista.Open();
             }
         }
-        public void avaaXhteys()
-        {
-            if(yhdista.State == ConnectionState.Closed)
-            {
-                yhdista.Open();
-            }
-        }
-        public void suljeYhteys()
+        public void suljeYhteys()     // yhteyden sullkeminen sql
         {
             if(yhdista.State == ConnectionState.Open)
             {

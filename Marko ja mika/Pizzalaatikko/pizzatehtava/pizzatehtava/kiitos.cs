@@ -17,7 +17,7 @@ namespace pizzatehtava
             InitializeComponent();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e) // ohjelman lopetus nappi
         {
             Application.Exit();
         }
