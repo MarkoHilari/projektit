@@ -17,22 +17,14 @@ namespace pizzatehtava
             InitializeComponent();
         }
         TILAUS tilaus = new TILAUS();
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void pizzat_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void juomatBT_Click(object sender, EventArgs e)
+        private void juomatBT_Click(object sender, EventArgs e)   // Button juomasivulle
         {
             this.Hide();
             Juomat juoma = new Juomat();
@@ -41,24 +33,13 @@ namespace pizzatehtava
         }
         private void ostosBT_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide();                                            // button ostoskorille
             ostoskori ostos = new ostoskori();
             ostos.ShowDialog();
             this.Close();
         }
 
-        /*private void americanoCB_CheckedChanged(object sender, EventArgs e)
-        {
-            string pizza = americanoCB.Text;
-
-            if (tilaus.lisaaTilaus(pizza))
-            {
-                //MessageBox.Show("Toimii", "");
-            }
-            
-        }*/
-
-
+      // alla checkboxeja pizzojen lisäämiseen
 
         private void americanoCB_CheckedChanged(object sender, EventArgs e)
         {
@@ -70,11 +51,7 @@ namespace pizzatehtava
                 {
                                    
                 }
-
-            }
-          
-
-            
+            }                      
         }
 
         private void meheCB_CheckedChanged(object sender, EventArgs e)
@@ -104,8 +81,8 @@ namespace pizzatehtava
 
         private void meheSpCB_CheckedChanged(object sender, EventArgs e)
         {
-            string tuote = meheCB.Text;
-            if (meheCB.Checked == true)
+            string tuote = meheSpCB.Text;
+            if (meheSpCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(tuote))
                 {
@@ -130,8 +107,8 @@ namespace pizzatehtava
 
         private void speciSCB_CheckedChanged(object sender, EventArgs e)
         {
-            string tuote = meheSpCB.Text;
-            if (meheSpCB.Checked == true)
+            string tuote = speciSCB.Text;
+            if (speciSCB.Checked == true)
             {
                 if (tilaus.lisaaTilaus(tuote))
                 {
@@ -166,10 +143,10 @@ namespace pizzatehtava
 
             }
         }
-
+            // Aloitus sivulle palaamisen nappi
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide();                
             Paaikkuna paa = new Paaikkuna();
             paa.ShowDialog();
             this.Close();

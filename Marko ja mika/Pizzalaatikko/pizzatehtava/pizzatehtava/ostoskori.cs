@@ -31,25 +31,16 @@ namespace pizzatehtava
             ostosDG.DataSource = tilaus.haeTilaukset();
             ostosDG.AutoResizeColumns();
             yhteensaLB.Visible = true;
-            yhteensaLB.Text = tilaus.haeSumma();
+            yhteensaLB.Text = tilaus.haeSumma() + "€";
                         
         }
 
-        public string lapelliTeksti
-        {
-            get
-            {
-                return this.yhteensaLB.Text;
-            }
-            set 
-            { 
-                this.yhteensaLB.Text = value;
-            }
-        }
   
         private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
         {
-            string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+             string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+            
+
             if (tilaus.poistaTilaus(pizza))
             {
                 ostosDG.DataSource = tilaus.haeTilaukset();

@@ -15,7 +15,7 @@ namespace pizzatehtava
     {
         YHDISTA yhdista = new YHDISTA();
         
-        public DataTable haeTilaukset()
+        public DataTable haeTilaukset()     // ostoskorin sisällön lataaminen
         {
             MySqlCommand pyynto = new MySqlCommand("SELECT * FROM `ostoskori`", yhdista.otaYhteys());
             MySqlDataAdapter sovitin = new MySqlDataAdapter();
@@ -26,7 +26,7 @@ namespace pizzatehtava
             return data;
 
         }
-        public bool lisaaTilaus(string tuote)
+        public bool lisaaTilaus(string tuote)    // tuotteen lisäys
         {
             MessageBox.Show(tuote + " " + "Lisätty ostoskoriin");
             MySqlCommand pyynto = new MySqlCommand();
@@ -52,7 +52,7 @@ namespace pizzatehtava
         }
 
 
-        public bool poistaTilaus(string tuote)
+        public bool poistaTilaus(string tuote)      // yksittäisen tuotteen poisto
         {
             MessageBox.Show(tuote + "Poistettu ostoskorista");
             MySqlCommand pyynto = new MySqlCommand();
@@ -72,7 +72,7 @@ namespace pizzatehtava
                 return false;
             }
         }
-        public bool poistaKokoTilaus(string nimike)
+        public bool poistaKokoTilaus(string nimike)     // koko tilauksen poisto
         {
           //  MessageBox.Show("Ostoskori tyhjennetty");
             MySqlCommand pyynto = new MySqlCommand();
@@ -93,7 +93,7 @@ namespace pizzatehtava
                 return false;
             }
         }
-        public string haeSumma()
+        public string haeSumma()        //  hae summa yhteensä sql tieto kannasta ostoskoriin
         {
             string summa = "0";
             DataTable table = new DataTable();

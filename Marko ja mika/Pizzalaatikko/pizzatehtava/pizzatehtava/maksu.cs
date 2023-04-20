@@ -16,7 +16,7 @@ namespace pizzatehtava
         {
             InitializeComponent();
         }
-
+        // Maksu vaihtoehdot
         private void maksuCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (maksuCB.Text == "Pankkikortti")
@@ -39,20 +39,20 @@ namespace pizzatehtava
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Paaikkuna paa = new Paaikkuna();
+            Paaikkuna paa = new Paaikkuna();    // button pääikkunalle
             paa.ShowDialog();
             this.Close();
         }
 
         private void suljeBT_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit();         // button ohjelman sulkemiseen
         }
 
         private void pizzaBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            pizzat pizza = new pizzat();
+            pizzat pizza = new pizzat();    // button pizzasivulle
             pizza.ShowDialog();
             this.Close();
         }
@@ -60,16 +60,16 @@ namespace pizzatehtava
         private void juomatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Juomat juoma = new Juomat();
+            Juomat juoma = new Juomat();      // button juomasivulle
             juoma.ShowDialog();
             this.Close();
         }
 
         private void ostosBT_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            kiitos kiitos = new kiitos();
-            kiitos.ShowDialog();
+            this.Hide();    
+            kiitos kiitos = new kiitos();       // Button ostoskoriin
+            kiitos.ShowDialog();    
             this.Close();
         }
     }
