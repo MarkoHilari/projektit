@@ -80,22 +80,30 @@ namespace pizzatehtava
             pizza.ShowDialog();
             this.Close();
         }
-       
+
         private void tilaaBT_Click(object sender, EventArgs e)       // Tilaus
         {
-            string nimike = (ostosDG.CurrentRow.Cells[0].Value.ToString());
-            if (tilaus.poistaKokoTilaus(nimike))
+            try
             {
-                ostosDG.DataSource = tilaus.haeTilaukset();
-                ostosDG.DataSource = tilaus.poistaKokoTilaus(nimike);
-               // MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ostosDG.DataSource = tilaus.haeTilaukset();
+                //string nimike = (ostosDG.CurrentRow.Cells[0].Value.ToString());
+                string nimike = "";
+                if (tilaus.poistaKokoTilaus(nimike))
+                {
+                    ostosDG.DataSource = tilaus.haeTilaukset();
+                    ostosDG.DataSource = tilaus.poistaKokoTilaus(nimike);
+                    // MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ostosDG.DataSource = tilaus.haeTilaukset();
+                }
+                this.Hide();
+                maksu maksu = new maksu();
+                maksu.ShowDialog();
+                this.Close();
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-            this.Hide();
-            maksu maksu = new maksu();
-            maksu.ShowDialog();
-            this.Close();
-        }
+                
+         }
 
         private void pictureBox5_Click_1(object sender, EventArgs e)     // Pääikkuna
         {
@@ -110,16 +118,6 @@ namespace pizzatehtava
             //yhteensaLB.
         }
 
-        private void poistakaikkiBT_Click(object sender, EventArgs e)
-        {
-            string nimike = (ostosDG.CurrentRow.Cells[0].Value.ToString());
-            if (tilaus.poistaKokoTilaus(nimike))
-            {
-                ostosDG.DataSource = tilaus.haeTilaukset();
-                ostosDG.DataSource = tilaus.poistaKokoTilaus(nimike);
-                MessageBox.Show("Tuote poistettu", "Tuotteen poisto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ostosDG.DataSource = tilaus.haeTilaukset();
-            }
-        }
+        
     }
 }

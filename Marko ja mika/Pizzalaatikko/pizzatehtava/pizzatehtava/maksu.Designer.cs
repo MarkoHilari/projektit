@@ -509,14 +509,16 @@
             // 
             // ostosBT
             // 
-            this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ostosBT.BackColor = System.Drawing.Color.IndianRed;
+            this.ostosBT.Font = new System.Drawing.Font("Lucida Handwriting", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ostosBT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ostosBT.Location = new System.Drawing.Point(904, 18);
             this.ostosBT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ostosBT.Name = "ostosBT";
             this.ostosBT.Size = new System.Drawing.Size(182, 72);
             this.ostosBT.TabIndex = 3;
             this.ostosBT.Text = "Vahvista tilaus";
-            this.ostosBT.UseVisualStyleBackColor = true;
+            this.ostosBT.UseVisualStyleBackColor = false;
             this.ostosBT.Click += new System.EventHandler(this.ostosBT_Click);
             // 
             // pizzaBT
@@ -560,6 +562,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "maksu";
             this.Text = "maksu";
