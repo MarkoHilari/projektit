@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace Auto_vuokraus
 {
-    public partial class Form1 : Form
+    public partial class Loading : Form
     {
-        public Form1()
+        public Loading()
         {
             InitializeComponent();
+        }
+
+        int startpoint = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            startpoint += 1;
+            aloPB.Value = startpoint;
+            if(aloPB.Value == 100 ) 
+            {
+                aloPB.Value = 0;
+                timer1.Stop();
+                sisaankirjaus sisaan = new sisaankirjaus();
+                sisaan.Show();
+                this.Hide();
+            }
+        }
+
+        private void Loading_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }
