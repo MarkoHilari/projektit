@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AutoVuokra.Properties
+namespace Auto_vuokraus.Properties
 {
 
 

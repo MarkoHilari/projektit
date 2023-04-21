@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B6D8DA2-E554-4FA5-A932-0858065BF7A5}</ProjectGuid>
+    <ProjectGuid>{6E7D7A0E-19D8-4EE3-921C-E72FDA8CC124}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AutoVuokra</RootNamespace>
-    <AssemblyName>AutoVuokra</AssemblyName>
+    <RootNamespace>Auto_vuokraus</RootNamespace>
+    <AssemblyName>Auto_vuokraus</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

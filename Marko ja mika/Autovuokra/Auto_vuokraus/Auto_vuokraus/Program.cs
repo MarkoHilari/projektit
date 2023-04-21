@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AutoVuokra
+namespace Auto_vuokraus
 {
     internal static class Program
     {

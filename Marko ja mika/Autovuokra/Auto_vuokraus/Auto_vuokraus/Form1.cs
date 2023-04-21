@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AutoVuokra
+namespace Auto_vuokraus
 {
-    public partial class Lataus : Form
+    public partial class Form1 : Form
     {
-        public Lataus()
+        public Form1()
         {
             InitializeComponent();
         }
