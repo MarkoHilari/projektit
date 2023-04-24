@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.kayttajaTB = new System.Windows.Forms.TextBox();
             this.salaSanaTB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.kirjausBT = new System.Windows.Forms.Button();
+            this.tyhjennaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(660, 869);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 176);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(563, 340);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -119,16 +129,6 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Käyttäjätunnus:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 176);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(563, 340);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -157,37 +157,38 @@
             this.salaSanaTB.Size = new System.Drawing.Size(280, 36);
             this.salaSanaTB.TabIndex = 5;
             // 
-            // button1
+            // kirjausBT
             // 
-            this.button1.BackColor = System.Drawing.Color.Chocolate;
-            this.button1.Font = new System.Drawing.Font("Stencil", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(1013, 559);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 52);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Kirjaudu";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kirjausBT.BackColor = System.Drawing.Color.Chocolate;
+            this.kirjausBT.Font = new System.Drawing.Font("Stencil", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kirjausBT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.kirjausBT.Location = new System.Drawing.Point(1013, 559);
+            this.kirjausBT.Name = "kirjausBT";
+            this.kirjausBT.Size = new System.Drawing.Size(167, 52);
+            this.kirjausBT.TabIndex = 6;
+            this.kirjausBT.Text = "Kirjaudu";
+            this.kirjausBT.UseVisualStyleBackColor = false;
+            this.kirjausBT.Click += new System.EventHandler(this.kirjausBT_Click);
             // 
-            // button2
+            // tyhjennaBT
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.button2.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(1013, 660);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 43);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Tyhjennä";
-            this.button2.UseVisualStyleBackColor = false;
+            this.tyhjennaBT.BackColor = System.Drawing.Color.DarkSalmon;
+            this.tyhjennaBT.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tyhjennaBT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tyhjennaBT.Location = new System.Drawing.Point(1013, 660);
+            this.tyhjennaBT.Name = "tyhjennaBT";
+            this.tyhjennaBT.Size = new System.Drawing.Size(167, 43);
+            this.tyhjennaBT.TabIndex = 7;
+            this.tyhjennaBT.Text = "Tyhjennä";
+            this.tyhjennaBT.UseVisualStyleBackColor = false;
             // 
             // sisaankirjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1371, 869);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tyhjennaBT);
+            this.Controls.Add(this.kirjausBT);
             this.Controls.Add(this.salaSanaTB);
             this.Controls.Add(this.kayttajaTB);
             this.Controls.Add(this.label7);
@@ -219,7 +220,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox kayttajaTB;
         private System.Windows.Forms.TextBox salaSanaTB;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button kirjausBT;
+        private System.Windows.Forms.Button tyhjennaBT;
     }
 }
