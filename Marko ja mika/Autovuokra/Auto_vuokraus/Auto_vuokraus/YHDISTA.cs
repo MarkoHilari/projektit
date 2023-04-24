@@ -24,7 +24,7 @@ namespace Auto_vuokraus
                 yhdista.Open();
             }
         }
-        public void suljeYhteys()     // yhteyden sullkeminen sql
+        public void suljeYhteys()     // yhteyden sullkeminen sqlaaaaaan
         {
             if (yhdista.State == ConnectionState.Open)
             {
