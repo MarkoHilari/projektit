@@ -19,7 +19,7 @@ namespace Auto_vuokraus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();                                            // button ostoskorille
+            this.Hide();                                         
             autot autot = new autot();
             autot.ShowDialog();
             this.Close();
