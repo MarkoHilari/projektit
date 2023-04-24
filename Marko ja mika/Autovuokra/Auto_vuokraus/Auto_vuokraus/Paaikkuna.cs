@@ -16,5 +16,13 @@ namespace Auto_vuokraus
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();                                            // button ostoskorille
+            autot autot = new autot();
+            autot.ShowDialog();
+            this.Close();
+        }
     }
 }
