@@ -114,5 +114,20 @@
   <ItemGroup>
     <None Include="Pics\abstract-watercolor-vintage-illustration-md.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\sausage.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\pirssi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\ford1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\peel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\toijoti.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
