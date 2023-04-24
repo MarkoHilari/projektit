@@ -17,7 +17,7 @@ namespace Auto_vuokraus
             return yhdista;
         }
 
-        public void avaaXhteys()    // yhteyden avaaminen sqlaaaaaa
+        public void avaaXhteys()    // yhteyden avaaminen sql
         {
             if (yhdista.State == ConnectionState.Closed)
             {
