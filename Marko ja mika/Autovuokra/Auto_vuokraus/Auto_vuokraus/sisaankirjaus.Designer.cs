@@ -147,6 +147,7 @@
             this.kayttajaTB.Name = "kayttajaTB";
             this.kayttajaTB.Size = new System.Drawing.Size(280, 36);
             this.kayttajaTB.TabIndex = 4;
+            this.kayttajaTB.Text = "admin";
             // 
             // salaSanaTB
             // 
@@ -156,6 +157,7 @@
             this.salaSanaTB.Name = "salaSanaTB";
             this.salaSanaTB.Size = new System.Drawing.Size(280, 36);
             this.salaSanaTB.TabIndex = 5;
+            this.salaSanaTB.Text = "admin";
             // 
             // kirjausBT
             // 
@@ -181,6 +183,7 @@
             this.tyhjennaBT.TabIndex = 7;
             this.tyhjennaBT.Text = "Tyhjennä";
             this.tyhjennaBT.UseVisualStyleBackColor = false;
+            this.tyhjennaBT.Click += new System.EventHandler(this.tyhjennaBT_Click);
             // 
             // sisaankirjaus
             // 

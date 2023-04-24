@@ -25,7 +25,7 @@ namespace Auto_vuokraus
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand();
-            String kysely = "SELECT * FROM `kayttajat` WHERE `kayttajanimi`=@usn AND `salasana`=@pass";
+            String kysely = "SELECT * FROM `kayttaja` WHERE `user`=@usn AND `pass`=@pass";
 
             cmd.CommandText = kysely;
             cmd.Connection = yhdista.otaYhteys();
@@ -58,6 +58,12 @@ namespace Auto_vuokraus
                     MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy! ", "Tarkista käyttäjänimi tai salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void tyhjennaBT_Click(object sender, EventArgs e)
+        {
+            kayttajaTB.Text = "";
+            salaSanaTB.Text = "";
         }
     }
 }
