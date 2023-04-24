@@ -4,13 +4,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.data.MySqlClient;
+using MySql.Data.MySqlClient;
 namespace Auto_vuokraus
 {
 
     internal class YHDISTA      // yhteys sql
     {
-        private MySqlConnection yhdista = new MySqlConnection("datasource= localhost; port=3306; username=root; password=; database=pizzakanta");
+        private MySqlConnection yhdista = new MySqlConnection("datasource= localhost;port=3306;username=root;password=;database=loistovuokraus");
 
         public MySqlConnection otaYhteys()
         {
