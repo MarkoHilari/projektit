@@ -108,7 +108,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Pics\dasse.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Pics\abstract-watercolor-vintage-illustration-md.jpeg" />
   </ItemGroup>
