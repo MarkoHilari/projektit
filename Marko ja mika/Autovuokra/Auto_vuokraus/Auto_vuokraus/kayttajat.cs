@@ -20,8 +20,8 @@ namespace Auto_vuokraus
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            autot autot = new autot();
-            autot.ShowDialog();
+            Paaikkuna ikkuna = new Paaikkuna();
+            ikkuna.ShowDialog();
             this.Close();
         }
     }
