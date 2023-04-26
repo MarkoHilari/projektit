@@ -16,5 +16,37 @@ namespace Auto_vuokraus
         {
             InitializeComponent();
         }
+
+        private void asiakkaatBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            asiakkaat asiakkaat = new asiakkaat();
+            asiakkaat.ShowDialog();
+            this.Close();
+        }
+
+        private void vuokrallaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            vuokra asiakkaat = new asiakkaat();
+            asiakkaat.ShowDialog();
+            this.Close();
+        }
+
+        private void palautuneetBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+             asiakkaat = new asiakkaat();
+            asiakkaat.ShowDialog();
+            this.Close();
+        }
+
+        private void kayttajatBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            asiakkaat asiakkaat = new asiakkaat();
+            asiakkaat.ShowDialog();
+            this.Close();
+        }
     }
 }

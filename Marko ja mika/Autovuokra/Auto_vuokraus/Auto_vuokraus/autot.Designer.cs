@@ -33,11 +33,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.asiakkaatBT = new System.Windows.Forms.Button();
+            this.vuokrallaBT = new System.Windows.Forms.Button();
+            this.palautuneetBT = new System.Windows.Forms.Button();
+            this.kayttajatBT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -115,79 +114,69 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "LOISTOVUOKRAUS";
             // 
-            // button5
+            // asiakkaatBT
             // 
-            this.button5.BackColor = System.Drawing.Color.LawnGreen;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(372, 5);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(180, 38);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Asiakkaat";
-            this.button5.UseVisualStyleBackColor = false;
+            this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asiakkaatBT.Location = new System.Drawing.Point(372, 5);
+            this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiakkaatBT.Name = "asiakkaatBT";
+            this.asiakkaatBT.Size = new System.Drawing.Size(180, 38);
+            this.asiakkaatBT.TabIndex = 17;
+            this.asiakkaatBT.Text = "Asiakkaat";
+            this.asiakkaatBT.UseVisualStyleBackColor = false;
+            this.asiakkaatBT.Click += new System.EventHandler(this.asiakkaatBT_Click);
             // 
-            // button4
+            // vuokrallaBT
             // 
-            this.button4.BackColor = System.Drawing.Color.LawnGreen;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(617, 5);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 38);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Vuokralla";
-            this.button4.UseVisualStyleBackColor = false;
+            this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vuokrallaBT.Location = new System.Drawing.Point(617, 5);
+            this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vuokrallaBT.Name = "vuokrallaBT";
+            this.vuokrallaBT.Size = new System.Drawing.Size(180, 38);
+            this.vuokrallaBT.TabIndex = 16;
+            this.vuokrallaBT.Text = "Vuokralla";
+            this.vuokrallaBT.UseVisualStyleBackColor = false;
+            this.vuokrallaBT.Click += new System.EventHandler(this.vuokrallaBT_Click);
             // 
-            // button3
+            // palautuneetBT
             // 
-            this.button3.BackColor = System.Drawing.Color.LawnGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(861, 5);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 38);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Palautuneet";
-            this.button3.UseVisualStyleBackColor = false;
+            this.palautuneetBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.palautuneetBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.palautuneetBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.palautuneetBT.Location = new System.Drawing.Point(861, 5);
+            this.palautuneetBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.palautuneetBT.Name = "palautuneetBT";
+            this.palautuneetBT.Size = new System.Drawing.Size(180, 38);
+            this.palautuneetBT.TabIndex = 15;
+            this.palautuneetBT.Text = "Palautuneet";
+            this.palautuneetBT.UseVisualStyleBackColor = false;
+            this.palautuneetBT.Click += new System.EventHandler(this.palautuneetBT_Click);
             // 
-            // button2
+            // kayttajatBT
             // 
-            this.button2.BackColor = System.Drawing.Color.LawnGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1096, 5);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 38);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Käyttäjät";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LawnGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(131, 5);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 38);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Autot";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kayttajatBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.kayttajatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kayttajatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayttajatBT.Location = new System.Drawing.Point(1096, 5);
+            this.kayttajatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kayttajatBT.Name = "kayttajatBT";
+            this.kayttajatBT.Size = new System.Drawing.Size(180, 38);
+            this.kayttajatBT.TabIndex = 14;
+            this.kayttajatBT.Text = "Käyttäjät";
+            this.kayttajatBT.UseVisualStyleBackColor = false;
+            this.kayttajatBT.Click += new System.EventHandler(this.kayttajatBT_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LawnGreen;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.asiakkaatBT);
+            this.panel2.Controls.Add(this.kayttajatBT);
+            this.panel2.Controls.Add(this.vuokrallaBT);
+            this.panel2.Controls.Add(this.palautuneetBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 738);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -320,11 +309,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button asiakkaatBT;
+        private System.Windows.Forms.Button vuokrallaBT;
+        private System.Windows.Forms.Button palautuneetBT;
+        private System.Windows.Forms.Button kayttajatBT;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
