@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace Auto_vuokraus
 {
-    public partial class Paaikkuna : Form
+    public partial class asiakkaat : Form
     {
-        public Paaikkuna()
+        public asiakkaat()
         {
             InitializeComponent();
         }
 
-        
-        
-
-        private void asiakkaatBT_Click(object sender, EventArgs e)
+        private void tyhjennaAsBT_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            asiakkaat asiakkaat = new asiakkaat();
-            asiakkaat.ShowDialog();
-            this.Close();
+            eNimiTB.Text = string.Empty;
+            sNimiTB.Text = string.Empty;
+            osoiteTB.Text = string.Empty;
+            cityTB.Text = string.Empty;
+            pNroTB.Text = string.Empty;
+            emailTB.Text = string.Empty;
+            puhelinTB.Text = string.Empty;
         }
 
         private void carsBT_Click(object sender, EventArgs e)
