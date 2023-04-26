@@ -31,13 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.carsBT = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.kayttajatBT = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.asiakkaatBT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,17 +76,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "LOISTOVUOKRAUS";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
-            this.pictureBox1.Location = new System.Drawing.Point(262, 280);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1086, 598);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // carsBT
             // 
             this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
@@ -101,18 +90,19 @@
             this.carsBT.UseVisualStyleBackColor = false;
             this.carsBT.Click += new System.EventHandler(this.carsBT_Click);
             // 
-            // button2
+            // kayttajatBT
             // 
-            this.button2.BackColor = System.Drawing.Color.LawnGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1215, 222);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 48);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Käyttäjät";
-            this.button2.UseVisualStyleBackColor = false;
+            this.kayttajatBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.kayttajatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kayttajatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayttajatBT.Location = new System.Drawing.Point(1215, 222);
+            this.kayttajatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kayttajatBT.Name = "kayttajatBT";
+            this.kayttajatBT.Size = new System.Drawing.Size(202, 48);
+            this.kayttajatBT.TabIndex = 8;
+            this.kayttajatBT.Text = "Käyttäjät";
+            this.kayttajatBT.UseVisualStyleBackColor = false;
+            this.kayttajatBT.Click += new System.EventHandler(this.kayttajatBT_Click);
             // 
             // button3
             // 
@@ -164,6 +154,17 @@
             this.panel2.Size = new System.Drawing.Size(1621, 100);
             this.panel2.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
+            this.pictureBox1.Location = new System.Drawing.Point(262, 280);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1086, 598);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Paaikkuna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -174,7 +175,7 @@
             this.Controls.Add(this.asiakkaatBT);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.kayttajatBT);
             this.Controls.Add(this.carsBT);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -197,7 +198,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button carsBT;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button kayttajatBT;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button asiakkaatBT;

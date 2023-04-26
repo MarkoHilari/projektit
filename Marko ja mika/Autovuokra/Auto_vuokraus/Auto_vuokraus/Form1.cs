@@ -22,7 +22,7 @@ namespace Auto_vuokraus
         {
             startpoint += 1;
             aloPB.Value = startpoint;
-            if(aloPB.Value == 100 ) 
+            if(aloPB.Value == 1 ) 
             {
                 aloPB.Value = 0;
                 timer1.Stop();

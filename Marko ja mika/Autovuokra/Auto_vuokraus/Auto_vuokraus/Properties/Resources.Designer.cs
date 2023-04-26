@@ -83,6 +83,16 @@ namespace Auto_vuokraus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_5871704_1280 {
+            get {
+                object obj = ResourceManager.GetObject("exit-5871704_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ford1 {
             get {
                 object obj = ResourceManager.GetObject("ford1", resourceCulture);
