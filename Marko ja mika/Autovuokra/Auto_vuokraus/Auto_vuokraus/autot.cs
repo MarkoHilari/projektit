@@ -28,7 +28,7 @@ namespace Auto_vuokraus
         private void vuokrallaBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            vuokra asiakkaat = new asiakkaat();
+            asiakkaat asiakkaat = new asiakkaat();
             asiakkaat.ShowDialog();
             this.Close();
         }
@@ -36,7 +36,7 @@ namespace Auto_vuokraus
         private void palautuneetBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-             asiakkaat = new asiakkaat();
+            asiakkaat asiakkaat = new asiakkaat();
             asiakkaat.ShowDialog();
             this.Close();
         }
