@@ -81,7 +81,7 @@
             this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
             this.carsBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.carsBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsBT.Location = new System.Drawing.Point(129, 222);
+            this.carsBT.Location = new System.Drawing.Point(129, 215);
             this.carsBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.carsBT.Name = "carsBT";
             this.carsBT.Size = new System.Drawing.Size(202, 48);
@@ -95,7 +95,7 @@
             this.kayttajatBT.BackColor = System.Drawing.Color.LawnGreen;
             this.kayttajatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kayttajatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kayttajatBT.Location = new System.Drawing.Point(1215, 222);
+            this.kayttajatBT.Location = new System.Drawing.Point(1215, 215);
             this.kayttajatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kayttajatBT.Name = "kayttajatBT";
             this.kayttajatBT.Size = new System.Drawing.Size(202, 48);
@@ -109,7 +109,7 @@
             this.button3.BackColor = System.Drawing.Color.LawnGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(951, 222);
+            this.button3.Location = new System.Drawing.Point(951, 215);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(202, 48);
@@ -122,7 +122,7 @@
             this.button4.BackColor = System.Drawing.Color.LawnGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(676, 222);
+            this.button4.Location = new System.Drawing.Point(676, 215);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(202, 48);
@@ -135,7 +135,7 @@
             this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
             this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asiakkaatBT.Location = new System.Drawing.Point(400, 222);
+            this.asiakkaatBT.Location = new System.Drawing.Point(400, 215);
             this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.asiakkaatBT.Name = "asiakkaatBT";
             this.asiakkaatBT.Size = new System.Drawing.Size(202, 48);
