@@ -35,5 +35,13 @@ namespace Auto_vuokraus
             autot.ShowDialog();
             this.Close();
         }
+
+        private void kayttajatBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            kayttajat kayttajat = new kayttajat();
+            kayttajat.ShowDialog();
+            this.Close();
+        }
     }
 }

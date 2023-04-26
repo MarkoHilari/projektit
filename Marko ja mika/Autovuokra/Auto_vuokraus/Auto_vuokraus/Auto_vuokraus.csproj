@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="kayttajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayttajat.Designer.cs">
+      <DependentUpon>kayttajat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Paaikkuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayttajat.resx">
+      <DependentUpon>kayttajat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paaikkuna.resx">
       <DependentUpon>Paaikkuna.cs</DependentUpon>
@@ -140,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pics\toijoti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\exit-5871704_1280.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
