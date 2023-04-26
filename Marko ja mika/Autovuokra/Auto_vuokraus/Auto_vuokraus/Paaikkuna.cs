@@ -17,9 +17,20 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+        
+
+        private void asiakkaatBT_Click(object sender, EventArgs e)
         {
-            this.Hide();                                         
+            this.Hide();
+            autot autot = new autot();
+            autot.ShowDialog();
+            this.Close();
+        }
+
+        private void carsBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
             autot autot = new autot();
             autot.ShowDialog();
             this.Close();
