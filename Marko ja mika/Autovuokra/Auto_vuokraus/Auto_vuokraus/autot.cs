@@ -28,8 +28,8 @@ namespace Auto_vuokraus
         private void vuokrallaBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            asiakkaat asiakkaat = new asiakkaat();
-            asiakkaat.ShowDialog();
+            Vuokralla vuokralla = new Vuokralla();
+            vuokralla.ShowDialog();
             this.Close();
         }
 

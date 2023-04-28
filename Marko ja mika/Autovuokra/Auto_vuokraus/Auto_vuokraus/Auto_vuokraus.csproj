@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vuokralla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vuokralla.Designer.cs">
+      <DependentUpon>Vuokralla.cs</DependentUpon>
+    </Compile>
     <Compile Include="kayttajat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vuokralla.resx">
+      <DependentUpon>Vuokralla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="kayttajat.resx">
       <DependentUpon>kayttajat.cs</DependentUpon>
