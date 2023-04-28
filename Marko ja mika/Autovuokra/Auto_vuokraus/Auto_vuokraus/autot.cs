@@ -36,16 +36,16 @@ namespace Auto_vuokraus
         private void palautuneetBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            asiakkaat asiakkaat = new asiakkaat();
-            asiakkaat.ShowDialog();
+            palautuneet palautuneet = new palautuneet();
+            palautuneet.ShowDialog();
             this.Close();
         }
 
         private void kayttajatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            asiakkaat asiakkaat = new asiakkaat();
-            asiakkaat.ShowDialog();
+            kayttajat kayttajat = new kayttajat();
+            kayttajat.ShowDialog();
             this.Close();
         }
     }
