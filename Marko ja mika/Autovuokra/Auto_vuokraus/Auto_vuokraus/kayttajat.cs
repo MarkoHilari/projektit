@@ -12,6 +12,7 @@ namespace Auto_vuokraus
 {
     public partial class kayttajat : Form
     {
+        KAYTTAJA kayttaja = new KAYTTAJA();
         public kayttajat()
         {
             InitializeComponent();
@@ -23,6 +24,30 @@ namespace Auto_vuokraus
             Paaikkuna ikkuna = new Paaikkuna();
             ikkuna.ShowDialog();
             this.Close();
+        }
+
+        private void lisaaAsBT_Click(object sender, EventArgs e)
+        {
+            string id = idTB.Text;
+            string user = eNimiTB.Text;
+            string pass = salaTB.Text;
+            if(id.Trim().Equals("") || user.Trim().Equals("") || pass.Trim().Equals(""))
+            {
+                MessageBox.Show("Vaaditut kentät - id, etunimi, salasana", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
+                if(lisaaKayttaja)
+                {
+                    dataGridView1.DataSource = KAYTTAJA.haeKayttajat();
+                    MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Uusi käyttajä ei lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

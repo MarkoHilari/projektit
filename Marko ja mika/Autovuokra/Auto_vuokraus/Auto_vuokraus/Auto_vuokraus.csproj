@@ -67,6 +67,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KAYTTAJA.cs" />
     <Compile Include="Vuokralla.cs">
       <SubType>Form</SubType>
     </Compile>

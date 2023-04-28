@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,7 +38,7 @@
             this.tyhjennaAsBT = new System.Windows.Forms.Button();
             this.lisaaAsBT = new System.Windows.Forms.Button();
             this.sNimiTB = new System.Windows.Forms.TextBox();
-            this.pNroTB = new System.Windows.Forms.TextBox();
+            this.idTB = new System.Windows.Forms.TextBox();
             this.emailTB = new System.Windows.Forms.TextBox();
             this.puhelinTB = new System.Windows.Forms.TextBox();
             this.eNimiTB = new System.Windows.Forms.TextBox();
@@ -47,12 +48,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.salaTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1497, 198);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
+            this.pictureBox1.Location = new System.Drawing.Point(1367, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label5
             // 
@@ -139,6 +150,7 @@
             this.lisaaAsBT.TabIndex = 52;
             this.lisaaAsBT.Text = "Lisää käyttäjä";
             this.lisaaAsBT.UseVisualStyleBackColor = true;
+            this.lisaaAsBT.Click += new System.EventHandler(this.lisaaAsBT_Click);
             // 
             // sNimiTB
             // 
@@ -148,13 +160,13 @@
             this.sNimiTB.Size = new System.Drawing.Size(313, 30);
             this.sNimiTB.TabIndex = 51;
             // 
-            // pNroTB
+            // idTB
             // 
-            this.pNroTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pNroTB.Location = new System.Drawing.Point(197, 289);
-            this.pNroTB.Name = "pNroTB";
-            this.pNroTB.Size = new System.Drawing.Size(313, 30);
-            this.pNroTB.TabIndex = 48;
+            this.idTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idTB.Location = new System.Drawing.Point(197, 289);
+            this.idTB.Name = "idTB";
+            this.idTB.Size = new System.Drawing.Size(313, 30);
+            this.idTB.TabIndex = 48;
             // 
             // emailTB
             // 
@@ -240,13 +252,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(870, 526);
             this.dataGridView1.TabIndex = 56;
             // 
-            // textBox1
+            // salaTB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(197, 521);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 30);
-            this.textBox1.TabIndex = 58;
+            this.salaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salaTB.Location = new System.Drawing.Point(197, 521);
+            this.salaTB.Name = "salaTB";
+            this.salaTB.Size = new System.Drawing.Size(313, 30);
+            this.salaTB.TabIndex = 58;
             // 
             // label3
             // 
@@ -258,24 +270,13 @@
             this.label3.TabIndex = 57;
             this.label3.Text = "Salasana:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(1367, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // kayttajat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1497, 913);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.salaTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.muokkaaAsBT);
@@ -283,7 +284,7 @@
             this.Controls.Add(this.tyhjennaAsBT);
             this.Controls.Add(this.lisaaAsBT);
             this.Controls.Add(this.sNimiTB);
-            this.Controls.Add(this.pNroTB);
+            this.Controls.Add(this.idTB);
             this.Controls.Add(this.emailTB);
             this.Controls.Add(this.puhelinTB);
             this.Controls.Add(this.eNimiTB);
@@ -299,8 +300,8 @@
             this.Text = "kayttajat";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,7 +318,7 @@
         private System.Windows.Forms.Button tyhjennaAsBT;
         private System.Windows.Forms.Button lisaaAsBT;
         private System.Windows.Forms.TextBox sNimiTB;
-        private System.Windows.Forms.TextBox pNroTB;
+        private System.Windows.Forms.TextBox idTB;
         private System.Windows.Forms.TextBox emailTB;
         private System.Windows.Forms.TextBox puhelinTB;
         private System.Windows.Forms.TextBox eNimiTB;
@@ -327,7 +328,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox salaTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
