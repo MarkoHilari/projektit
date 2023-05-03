@@ -73,6 +73,7 @@
     <Compile Include="palautuneet.Designer.cs">
       <DependentUpon>palautuneet.cs</DependentUpon>
     </Compile>
+    <Compile Include="USERS.cs" />
     <Compile Include="Vuokralla.cs">
       <SubType>Form</SubType>
     </Compile>
