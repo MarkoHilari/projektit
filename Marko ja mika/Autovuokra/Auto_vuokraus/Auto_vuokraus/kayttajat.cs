@@ -12,7 +12,7 @@ namespace Auto_vuokraus
 {
     public partial class kayttajat : Form
     {
-        //KAYTTAJA kayttaja = new KAYTTAJA();
+        USERS kayttaja = new USERS();
         public kayttajat()
         {
             InitializeComponent();
