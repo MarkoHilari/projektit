@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Auto_vuokraus
 {
@@ -48,5 +49,16 @@ namespace Auto_vuokraus
             return table;
         }
 
+        public DataTable haeKalusto()
+        {
+            MySqlCommand komento = new MySqlCommand("SELECT `RekisteriNro`, `Merkki`, `Malli`, `Hinta`, `vapaa` FROM `kalusto`", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = komento;
+            adapter.Fill(table);
+
+
+        }
     }
 }

@@ -12,6 +12,8 @@ namespace Auto_vuokraus
 {
     public partial class Vuokralla : Form
     {
+        USERS users = new USERS();
+
         public Vuokralla()
         {
             InitializeComponent();
@@ -47,6 +49,11 @@ namespace Auto_vuokraus
             kayttajat kayttajat = new kayttajat();
             kayttajat.ShowDialog();
             this.Close();
+        }
+
+        private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            vuokrallaDG.DataSource = users.haeKalusto();
         }
     }
 }
