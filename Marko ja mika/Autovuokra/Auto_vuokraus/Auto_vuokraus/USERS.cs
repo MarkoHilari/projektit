@@ -58,6 +58,7 @@ namespace Auto_vuokraus
             adapter.SelectCommand = komento;
             adapter.Fill(table);
 
+            return table;
 
         }
     }
