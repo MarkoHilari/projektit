@@ -28,19 +28,19 @@ namespace Auto_vuokraus
 
         private void lisaaAsBT_Click(object sender, EventArgs e)
         {
-            string id = idTB.Text;
+            //int id = idTB.Text;
             string user = eNimiTB.Text;
             string pass = salaTB.Text;
-            if(id.Trim().Equals("") || user.Trim().Equals("") || pass.Trim().Equals(""))
+            if(user.Trim().Equals("") || pass.Trim().Equals(""))
             {
                 MessageBox.Show("Vaaditut kentät - id, etunimi, salasana", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(user, pass);
                 if(lisaaKayttaja)
                 {
-                    dataGridView1.DataSource = KAYTTAJA.haeKayttajat();
+                    dataGridView1.DataSource = kayttaja.haeKayttajat();
                     MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
