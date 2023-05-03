@@ -9,6 +9,7 @@ namespace Auto_vuokraus
 {
     internal class USERS
     {
+
         YHDISTA yhdista = new YHDISTA();
         public bool lisaaKayttaja(string id, string user, string pass)
         {
