@@ -28,7 +28,7 @@ namespace Auto_vuokraus
 
         private void lisaaAsBT_Click(object sender, EventArgs e)
         {
-            //int id = idTB.Text;
+            string id = idTB.Text;
             string user = eNimiTB.Text;
             string pass = salaTB.Text;
             if(user.Trim().Equals("") || pass.Trim().Equals(""))
@@ -37,7 +37,7 @@ namespace Auto_vuokraus
             }
             else
             {
-                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(user, pass);
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
                 if(lisaaKayttaja)
                 {
                     dataGridView1.DataSource = kayttaja.haeKayttajat();
