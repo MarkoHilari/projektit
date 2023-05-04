@@ -72,7 +72,7 @@ namespace Auto_vuokraus
 
             if (vapaa.Equals("KYLLÄ"))
             {
-                radioButtonYes.Checked = true;
+               // radioButtonYes.Checked = true;
             }
         }
     }
