@@ -52,7 +52,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void ratsuniRB_CheckedChanged(object sender, EventArgs e)
+       /* private void ratsuniRB_CheckedChanged(object sender, EventArgs e)
         {
             string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
 
@@ -60,6 +60,6 @@ namespace Auto_vuokraus
             {
                 radioButtonYes.Checked = true;
             }
-        }
+        }*/
     }
 }
