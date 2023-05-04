@@ -54,7 +54,7 @@ namespace Auto_vuokraus
 
         private void ratsuniRB_CheckedChanged(object sender, EventArgs e)
         {
-            string vapaa = vuokrallaDG.CurrentRow.Cells[3].Value.ToString();
+            string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
 
             if (vapaa.Equals("KYLLÄ"))
             {

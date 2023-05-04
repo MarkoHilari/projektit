@@ -65,5 +65,15 @@ namespace Auto_vuokraus
 
 
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
+
+            if (vapaa.Equals("KYLLÄ"))
+            {
+                radioButtonYes.Checked = true;
+            }
+        }
     }
 }
