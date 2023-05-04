@@ -61,6 +61,8 @@ namespace Auto_vuokraus
             vuokrallaDG.DataSource = users.haeKalusto();
            // vuokrallaDG.AutoResizeColumns();
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
+            vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
 
         }
     }

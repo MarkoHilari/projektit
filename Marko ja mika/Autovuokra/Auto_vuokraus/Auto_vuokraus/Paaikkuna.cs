@@ -43,5 +43,21 @@ namespace Auto_vuokraus
             kayttajat.ShowDialog();
             this.Close();
         }
+
+        private void vuokrallaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Vuokralla vuokralla = new Vuokralla();
+            vuokralla.ShowDialog();
+            this.Close();
+        }
+
+        private void palautuneetBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            palautuneet palautuneet = new palautuneet();
+            palautuneet.ShowDialog();
+            this.Close();
+        }
     }
 }

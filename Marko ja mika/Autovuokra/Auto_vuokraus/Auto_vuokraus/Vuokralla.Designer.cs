@@ -153,7 +153,7 @@
             this.vuokrallaDG.Name = "vuokrallaDG";
             this.vuokrallaDG.RowHeadersWidth = 51;
             this.vuokrallaDG.RowTemplate.Height = 24;
-            this.vuokrallaDG.Size = new System.Drawing.Size(761, 514);
+            this.vuokrallaDG.Size = new System.Drawing.Size(751, 514);
             this.vuokrallaDG.TabIndex = 20;
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 

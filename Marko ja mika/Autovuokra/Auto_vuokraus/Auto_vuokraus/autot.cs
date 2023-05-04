@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Auto_vuokraus
 {
+
     public partial class autot : Form
     {
+        Vuokralla vuokra = new Vuokralla();
+
         public autot()
         {
             InitializeComponent();
@@ -47,6 +50,16 @@ namespace Auto_vuokraus
             kayttajat kayttajat = new kayttajat();
             kayttajat.ShowDialog();
             this.Close();
+        }
+
+        private void ratsuniRB_CheckedChanged(object sender, EventArgs e)
+        {
+            string vapaa = vuokrallaDG.CurrentRow.Cells[3].Value.ToString();
+
+            if (vapaa.Equals("KYLLÄ"))
+            {
+                radioButtonYes.Checked = true;
+            }
         }
     }
 }
