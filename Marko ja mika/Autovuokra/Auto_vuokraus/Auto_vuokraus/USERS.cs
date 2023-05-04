@@ -16,7 +16,7 @@ namespace Auto_vuokraus
         public bool lisaaKayttaja(string id,string user, string pass)
         {
             MySqlCommand cmd = new MySqlCommand();
-            string kysely = "INSERT INTO `kayttaja`(`id`,`user`,`pass`) VALUES('@id','@user','@pass')";
+            string kysely = "INSERT INTO `kayttaja`(`id`,`user`,`pass`) VALUES(@id,@user,@pass)";
             cmd.CommandText = kysely;
             cmd.Connection = yhdista.otaYhteys();
             cmd.Parameters.Add ("@id", MySqlDbType.VarChar).Value = id;

@@ -25,7 +25,7 @@ namespace Auto_vuokraus
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand();
-            String kysely = "SELECT * FROM `kayttaja` WHERE `user`=@usn AND `pass`=@pass";
+            String kysely = "SELECT * FROM `kayttaja` WHERE user=@usn AND pass=@pass";
 
             cmd.CommandText = kysely;
             cmd.Connection = yhdista.otaYhteys();
