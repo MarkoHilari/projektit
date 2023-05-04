@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 namespace Auto_vuokraus
 {
 
-    internal class YHDISTA      // yhteys sql0
+    internal class YHDISTA      // yhteys sql
     {
         private MySqlConnection yhdista = new MySqlConnection("datasource= localhost;port=3306;username=root;password=;database=loistovuokraus");
 
