@@ -149,11 +149,11 @@
             // vuokrallaDG
             // 
             this.vuokrallaDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vuokrallaDG.Location = new System.Drawing.Point(12, 157);
+            this.vuokrallaDG.Location = new System.Drawing.Point(331, 152);
             this.vuokrallaDG.Name = "vuokrallaDG";
             this.vuokrallaDG.RowHeadersWidth = 51;
             this.vuokrallaDG.RowTemplate.Height = 24;
-            this.vuokrallaDG.Size = new System.Drawing.Size(1442, 492);
+            this.vuokrallaDG.Size = new System.Drawing.Size(761, 514);
             this.vuokrallaDG.TabIndex = 20;
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 
@@ -167,6 +167,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Vuokralla";
             this.Text = "Vuokralla";
+            this.Load += new System.EventHandler(this.Vuokralla_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
