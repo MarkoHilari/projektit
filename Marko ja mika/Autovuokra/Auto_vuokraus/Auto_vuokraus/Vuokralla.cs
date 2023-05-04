@@ -66,7 +66,7 @@ namespace Auto_vuokraus
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+      /*  private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
 
@@ -74,6 +74,6 @@ namespace Auto_vuokraus
             {
                // radioButtonYes.Checked = true;
             }
-        }
+        }*/
     }
 }
