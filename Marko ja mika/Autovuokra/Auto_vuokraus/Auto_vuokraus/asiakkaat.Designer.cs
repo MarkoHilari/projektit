@@ -37,7 +37,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.carsBT = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.asiakasDG = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,12 +52,13 @@
             this.cityTB = new System.Windows.Forms.TextBox();
             this.osoiteTB = new System.Windows.Forms.TextBox();
             this.sNimiTB = new System.Windows.Forms.TextBox();
-            this.lisaaAsBT = new System.Windows.Forms.Button();
+            this.lisaaAsiBT = new System.Windows.Forms.Button();
             this.tyhjennaAsBT = new System.Windows.Forms.Button();
             this.poistaAsBT = new System.Windows.Forms.Button();
             this.muokkaaAsBT = new System.Windows.Forms.Button();
+            this.idTB = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -170,15 +171,15 @@
             this.carsBT.UseVisualStyleBackColor = false;
             this.carsBT.Click += new System.EventHandler(this.carsBT_Click);
             // 
-            // dataGridView1
+            // asiakasDG
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(639, 306);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(870, 526);
-            this.dataGridView1.TabIndex = 19;
+            this.asiakasDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.asiakasDG.Location = new System.Drawing.Point(639, 306);
+            this.asiakasDG.Name = "asiakasDG";
+            this.asiakasDG.RowHeadersWidth = 62;
+            this.asiakasDG.RowTemplate.Height = 28;
+            this.asiakasDG.Size = new System.Drawing.Size(870, 526);
+            this.asiakasDG.TabIndex = 19;
             // 
             // label2
             // 
@@ -306,15 +307,16 @@
             this.sNimiTB.Size = new System.Drawing.Size(313, 30);
             this.sNimiTB.TabIndex = 33;
             // 
-            // lisaaAsBT
+            // lisaaAsiBT
             // 
-            this.lisaaAsBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lisaaAsBT.Location = new System.Drawing.Point(55, 664);
-            this.lisaaAsBT.Name = "lisaaAsBT";
-            this.lisaaAsBT.Size = new System.Drawing.Size(142, 59);
-            this.lisaaAsBT.TabIndex = 34;
-            this.lisaaAsBT.Text = "Lisää asiakas";
-            this.lisaaAsBT.UseVisualStyleBackColor = true;
+            this.lisaaAsiBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lisaaAsiBT.Location = new System.Drawing.Point(55, 664);
+            this.lisaaAsiBT.Name = "lisaaAsiBT";
+            this.lisaaAsiBT.Size = new System.Drawing.Size(142, 59);
+            this.lisaaAsiBT.TabIndex = 34;
+            this.lisaaAsiBT.Text = "Lisää asiakas";
+            this.lisaaAsiBT.UseVisualStyleBackColor = true;
+            this.lisaaAsiBT.Click += new System.EventHandler(this.lisaaAsiBT_Click);
             // 
             // tyhjennaAsBT
             // 
@@ -347,16 +349,25 @@
             this.muokkaaAsBT.Text = "Muokkaa asiakas";
             this.muokkaaAsBT.UseVisualStyleBackColor = true;
             // 
+            // idTB
+            // 
+            this.idTB.Location = new System.Drawing.Point(55, 274);
+            this.idTB.Name = "idTB";
+            this.idTB.Size = new System.Drawing.Size(100, 26);
+            this.idTB.TabIndex = 38;
+            this.idTB.Visible = false;
+            // 
             // asiakkaat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1521, 960);
+            this.Controls.Add(this.idTB);
             this.Controls.Add(this.muokkaaAsBT);
             this.Controls.Add(this.poistaAsBT);
             this.Controls.Add(this.tyhjennaAsBT);
-            this.Controls.Add(this.lisaaAsBT);
+            this.Controls.Add(this.lisaaAsiBT);
             this.Controls.Add(this.sNimiTB);
             this.Controls.Add(this.osoiteTB);
             this.Controls.Add(this.cityTB);
@@ -371,7 +382,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.asiakasDG);
             this.Controls.Add(this.asiakkaatBT);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -382,9 +393,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "asiakkaat";
             this.Text = "asiakkaat";
+            this.Load += new System.EventHandler(this.asiakkaat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,7 +413,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button carsBT;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView asiakasDG;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -416,9 +428,10 @@
         private System.Windows.Forms.TextBox cityTB;
         private System.Windows.Forms.TextBox osoiteTB;
         private System.Windows.Forms.TextBox sNimiTB;
-        private System.Windows.Forms.Button lisaaAsBT;
+        private System.Windows.Forms.Button lisaaAsiBT;
         private System.Windows.Forms.Button tyhjennaAsBT;
         private System.Windows.Forms.Button poistaAsBT;
         private System.Windows.Forms.Button muokkaaAsBT;
+        private System.Windows.Forms.TextBox idTB;
     }
 }
