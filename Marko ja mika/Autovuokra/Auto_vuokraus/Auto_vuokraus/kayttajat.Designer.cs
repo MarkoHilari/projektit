@@ -33,7 +33,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.muokkaaAsBT = new System.Windows.Forms.Button();
+            this.muokkaaKaBT = new System.Windows.Forms.Button();
             this.poistaAsBT = new System.Windows.Forms.Button();
             this.tyhjennaAsBT = new System.Windows.Forms.Button();
             this.lisaaAsBT = new System.Windows.Forms.Button();
@@ -111,15 +111,16 @@
             this.panel2.Size = new System.Drawing.Size(1497, 100);
             this.panel2.TabIndex = 14;
             // 
-            // muokkaaAsBT
+            // muokkaaKaBT
             // 
-            this.muokkaaAsBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.muokkaaAsBT.Location = new System.Drawing.Point(255, 619);
-            this.muokkaaAsBT.Name = "muokkaaAsBT";
-            this.muokkaaAsBT.Size = new System.Drawing.Size(142, 59);
-            this.muokkaaAsBT.TabIndex = 55;
-            this.muokkaaAsBT.Text = "Muokkaa käyttäjää";
-            this.muokkaaAsBT.UseVisualStyleBackColor = true;
+            this.muokkaaKaBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muokkaaKaBT.Location = new System.Drawing.Point(255, 619);
+            this.muokkaaKaBT.Name = "muokkaaKaBT";
+            this.muokkaaKaBT.Size = new System.Drawing.Size(142, 59);
+            this.muokkaaKaBT.TabIndex = 55;
+            this.muokkaaKaBT.Text = "Muokkaa käyttäjää";
+            this.muokkaaKaBT.UseVisualStyleBackColor = true;
+            this.muokkaaKaBT.Click += new System.EventHandler(this.muokkaaKaBT_Click);
             // 
             // poistaAsBT
             // 
@@ -244,6 +245,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(605, 230);
             this.dataGridView1.Name = "dataGridView1";
@@ -279,7 +281,7 @@
             this.Controls.Add(this.salaTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.muokkaaAsBT);
+            this.Controls.Add(this.muokkaaKaBT);
             this.Controls.Add(this.poistaAsBT);
             this.Controls.Add(this.tyhjennaAsBT);
             this.Controls.Add(this.lisaaAsBT);
@@ -298,6 +300,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "kayttajat";
             this.Text = "kayttajat";
+            this.Load += new System.EventHandler(this.kayttajat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -313,7 +316,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button muokkaaAsBT;
+        private System.Windows.Forms.Button muokkaaKaBT;
         private System.Windows.Forms.Button poistaAsBT;
         private System.Windows.Forms.Button tyhjennaAsBT;
         private System.Windows.Forms.Button lisaaAsBT;
