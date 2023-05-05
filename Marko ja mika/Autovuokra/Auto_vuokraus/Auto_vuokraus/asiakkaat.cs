@@ -71,7 +71,7 @@ namespace Auto_vuokraus
 
         private void asiakkaat_Load(object sender, EventArgs e)
         {
-            asiakasDG.DataSource = users.haeAsiakkaat();
+            asiakasDG.DataSource = users.haeAsiakkaat();//
         }
     }
 }
