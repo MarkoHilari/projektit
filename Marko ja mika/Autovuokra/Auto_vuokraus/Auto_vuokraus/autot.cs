@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Auto_vuokraus.Vuokralla;
 
 namespace Auto_vuokraus
 {
@@ -54,20 +53,9 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        public class FirstForm : Form
+        private void autot_Load(object sender, EventArgs e)
         {
-            // Käsittelijä painikkeelle, joka hakee DataGridin sisällön toiselta Formilta
-            private void button1_Click(object sender, EventArgs e)
-            {
-                // Luo toinen Formi
-                var secondForm = new SecondForm();
 
-                // Hae DataGridin sisältö toisesta Formista
-                DataTable gridContent = secondForm.GetGridContent();
-
-                // Aseta DataGridin sisältö ensimmäisen Formin DataGridiin
-                vuokrallaDG.DataSource = gridContent;
-            }
         }
     }
 }
