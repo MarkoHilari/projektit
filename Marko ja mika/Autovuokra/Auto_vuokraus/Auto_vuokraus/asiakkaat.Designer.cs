@@ -340,6 +340,7 @@
             this.poistaAsBT.TabIndex = 36;
             this.poistaAsBT.Text = "Poista asiakas";
             this.poistaAsBT.UseVisualStyleBackColor = true;
+            this.poistaAsBT.Click += new System.EventHandler(this.poistaAsBT_Click);
             // 
             // muokkaaAsBT
             // 
