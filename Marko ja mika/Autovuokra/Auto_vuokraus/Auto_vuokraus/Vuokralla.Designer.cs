@@ -37,7 +37,7 @@
             this.autotBT = new System.Windows.Forms.Button();
             this.palautuneetBT = new System.Windows.Forms.Button();
             this.vuokrallaDG = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioBT = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
@@ -156,26 +156,26 @@
             this.vuokrallaDG.RowTemplate.Height = 24;
             this.vuokrallaDG.Size = new System.Drawing.Size(751, 514);
             this.vuokrallaDG.TabIndex = 20;
+            this.vuokrallaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellClick);
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 
-            // radioButton1
+            // radioBT
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(81, 291);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 21;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioBT.AutoSize = true;
+            this.radioBT.Location = new System.Drawing.Point(81, 291);
+            this.radioBT.Name = "radioBT";
+            this.radioBT.Size = new System.Drawing.Size(103, 20);
+            this.radioBT.TabIndex = 21;
+            this.radioBT.TabStop = true;
+            this.radioBT.Text = "radioButton1";
+            this.radioBT.UseVisualStyleBackColor = true;
             // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1466, 762);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioBT);
             this.Controls.Add(this.vuokrallaDG);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -202,6 +202,6 @@
         private System.Windows.Forms.Button autotBT;
         private System.Windows.Forms.Button palautuneetBT;
         private System.Windows.Forms.DataGridView vuokrallaDG;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioBT;
     }
 }

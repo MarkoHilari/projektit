@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Auto_vuokraus.Vuokralla;
 
 namespace Auto_vuokraus
 {
@@ -14,6 +15,7 @@ namespace Auto_vuokraus
     public partial class autot : Form
     {
         Vuokralla vuokra = new Vuokralla();
+       
 
         public autot()
         {
@@ -52,14 +54,20 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void ratsuniRB_CheckedChanged(object sender, EventArgs e)
+        public class FirstForm : Form
         {
-            /*string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
-
-            if (vapaa.Equals("KYLLÄ"))
+            // Käsittelijä painikkeelle, joka hakee DataGridin sisällön toiselta Formilta
+            private void button1_Click(object sender, EventArgs e)
             {
-                radioButtonYes.Checked = true;
-            }*/
+                // Luo toinen Formi
+                var secondForm = new SecondForm();
+
+                // Hae DataGridin sisältö toisesta Formista
+                DataTable gridContent = secondForm.GetGridContent();
+
+                // Aseta DataGridin sisältö ensimmäisen Formin DataGridiin
+                vuokrallaDG.DataSource = gridContent;
+            }
         }
     }
 }
