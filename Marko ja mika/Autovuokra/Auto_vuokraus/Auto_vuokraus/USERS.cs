@@ -63,18 +63,22 @@ namespace Auto_vuokraus
 
         }
 
-        public bool muokkaaAsiakasta(int tunnus, string enimi, string snimi, string lahi, string posti)// VIELÄ KESKEN, POHJA VALMIINA
+        public bool muokkaaAsiakasta(int id, string enimi, string snimi, string osoite, string city, string pnro, string email, string puh )// VIELÄ KESKEN, POHJA VALMIINA
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaaKysely = "UPDATE `asiakas` SET `etu_nimi`='@enimi',`suku_nimi`='@snimi',`lahi_osoite`='@lahi',`postinro`='@pnro' WHERE `tunnus`='@id'";
+            string muokkaaKysely = "UPDATE `asiakkaat` SET eNimi='@enm',sNimi='@snm',osoite='@oso',city='@cit',pnro='@pno',email='@ema',puh='@puh' WHERE asiakasId= '@id'";
             komento.CommandText = muokkaaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@id,@enimi,@snimi,@lahi,@pnro)
-            komento.Parameters.Add("@id", MySqlDbType.Int32).Value = tunnus;
-            komento.Parameters.Add("@enimi", MySqlDbType.VarChar).Value = enimi;
-            komento.Parameters.Add("@snimi", MySqlDbType.VarChar).Value = snimi;
-            komento.Parameters.Add("@lahi", MySqlDbType.VarChar).Value = lahi;
-            komento.Parameters.Add("@pnro", MySqlDbType.VarChar).Value = posti;
+            komento.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = enimi;
+            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = snimi;
+            komento.Parameters.Add("@oso", MySqlDbType.VarChar).Value = osoite;
+            komento.Parameters.Add("@cit", MySqlDbType.VarChar).Value = city;
+            komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = pnro;
+            komento.Parameters.Add("@ema", MySqlDbType.VarChar).Value = email;
+            komento.Parameters.Add("@puh", MySqlDbType.VarChar).Value = puh;
+            MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
 
             yhdista.avaaXhteys();
 
