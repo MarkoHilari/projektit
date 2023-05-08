@@ -10,9 +10,11 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Auto_vuokraus
+
 {
     public partial class Vuokralla : Form
     {
+
         USERS users = new USERS();
 
        
@@ -65,13 +67,7 @@ namespace Auto_vuokraus
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        public class SecondForm : Form
-        {
-            public DataTable GetGridContent()
-            {
-                return vuokrallaDG.DataSource as DataTable;
-            }
-        }
+        
 
 
         private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -86,6 +82,26 @@ namespace Auto_vuokraus
             {
                 radioBT.Checked = false;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        public Bitmap GrayScaleFilter(Bitmap pictureBox_1)
+        {
+            Bitmap grayScale = new Bitmap(pictureBox_1.Width, pictureBox_1.Height);
+
+            for (Int32 y = 0; y < grayScale.Height; y++)
+                for (Int32 x = 0; x < grayScale.Width; x++)
+                {
+                    Color c = pictureBox_1.GetPixel(x, y);
+
+                    Int32 gs = (Int32)(c.R * 0.3 + c.G * 0.59 + c.B * 0.11);
+
+                    grayScale.SetPixel(x, y, Color.FromArgb(gs, gs, gs));
+                }
+            return grayScale;
         }
     }
 }

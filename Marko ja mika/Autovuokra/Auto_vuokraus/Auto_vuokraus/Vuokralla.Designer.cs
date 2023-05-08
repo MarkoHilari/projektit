@@ -38,9 +38,11 @@
             this.palautuneetBT = new System.Windows.Forms.Button();
             this.vuokrallaDG = new System.Windows.Forms.DataGridView();
             this.radioBT = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -49,7 +51,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Ravie", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Magenta;
-            this.label3.Location = new System.Drawing.Point(482, 19);
+            this.label3.Location = new System.Drawing.Point(733, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(462, 50);
             this.label3.TabIndex = 1;
@@ -64,14 +66,14 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1466, 139);
+            this.panel1.Size = new System.Drawing.Size(1993, 139);
             this.panel1.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(625, 83);
+            this.label2.Location = new System.Drawing.Point(876, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 29);
             this.label2.TabIndex = 2;
@@ -85,10 +87,10 @@
             this.panel2.Controls.Add(this.autotBT);
             this.panel2.Controls.Add(this.palautuneetBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 684);
+            this.panel2.Location = new System.Drawing.Point(0, 917);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1466, 78);
+            this.panel2.Size = new System.Drawing.Size(1993, 78);
             this.panel2.TabIndex = 19;
             // 
             // asiakkaatBT
@@ -150,7 +152,7 @@
             // vuokrallaDG
             // 
             this.vuokrallaDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vuokrallaDG.Location = new System.Drawing.Point(331, 152);
+            this.vuokrallaDG.Location = new System.Drawing.Point(595, 156);
             this.vuokrallaDG.Name = "vuokrallaDG";
             this.vuokrallaDG.RowHeadersWidth = 51;
             this.vuokrallaDG.RowTemplate.Height = 24;
@@ -162,7 +164,7 @@
             // radioBT
             // 
             this.radioBT.AutoSize = true;
-            this.radioBT.Location = new System.Drawing.Point(81, 291);
+            this.radioBT.Location = new System.Drawing.Point(676, 716);
             this.radioBT.Name = "radioBT";
             this.radioBT.Size = new System.Drawing.Size(103, 20);
             this.radioBT.TabIndex = 21;
@@ -170,22 +172,37 @@
             this.radioBT.Text = "radioButton1";
             this.radioBT.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.dasse;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 176);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 762);
+            this.ClientSize = new System.Drawing.Size(1993, 995);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioBT);
             this.Controls.Add(this.vuokrallaDG);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Vuokralla";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vuokralla";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Vuokralla_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +220,6 @@
         private System.Windows.Forms.Button palautuneetBT;
         private System.Windows.Forms.DataGridView vuokrallaDG;
         private System.Windows.Forms.RadioButton radioBT;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

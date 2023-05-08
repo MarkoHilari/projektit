@@ -39,7 +39,6 @@
             this.kayttajatBT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ratsuniRB = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -195,7 +194,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Tan;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.ratsuniRB);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -214,18 +212,6 @@
             this.groupBox1.Size = new System.Drawing.Size(1300, 556);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            // 
-            // ratsuniRB
-            // 
-            this.ratsuniRB.AutoSize = true;
-            this.ratsuniRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ratsuniRB.Location = new System.Drawing.Point(293, 120);
-            this.ratsuniRB.Name = "ratsuniRB";
-            this.ratsuniRB.Size = new System.Drawing.Size(85, 24);
-            this.ratsuniRB.TabIndex = 31;
-            this.ratsuniRB.TabStop = true;
-            this.ratsuniRB.Text = "VAPAA";
-            this.ratsuniRB.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -416,6 +402,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton ratsuniRB;
     }
 }
