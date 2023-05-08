@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Auto_vuokraus
 {
@@ -14,6 +15,7 @@ namespace Auto_vuokraus
     {
         USERS users = new USERS();
 
+       
         public Vuokralla()
         {
             InitializeComponent();
@@ -62,17 +64,27 @@ namespace Auto_vuokraus
            // vuokrallaDG.AutoResizeColumns();
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-
+        }
+        public class SecondForm : Form
+        {
+            public DataTable GetGridContent()
+            {
+                return vuokrallaDG.DataSource as DataTable;
+            }
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+
+        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
 
-            if (vapaa.Equals("KYLLÄ"))
+            if (vapaa.Equals("vapaa"))
             {
-               // radioButtonYes.Checked = true;
+                 radioBT.Checked = true;
+            }
+            else if (vapaa.Equals("varattu"))
+            {
+                radioBT.Checked = false;
             }
         }
     }

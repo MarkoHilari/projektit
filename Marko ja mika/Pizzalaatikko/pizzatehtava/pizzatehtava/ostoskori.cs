@@ -32,10 +32,13 @@ namespace pizzatehtava
             ostosDG.AutoResizeColumns();
             yhteensaLB.Visible = true;
             yhteensaLB.Text = tilaus.haeSumma() + "€";
-                        
+            this.ostosDG.DefaultCellStyle.Font = new Font("Aial", 13);
+
+            ostosDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
-  
+
         private void poistariBT_Click(object sender, EventArgs e)   // Poistamisnapin komennot yksittäisen tuotteen poistoon 
         {
              string pizza = (ostosDG.CurrentRow.Cells[0].Value.ToString());

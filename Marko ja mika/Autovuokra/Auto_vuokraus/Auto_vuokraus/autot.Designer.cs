@@ -39,6 +39,7 @@
             this.kayttajatBT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ratsuniRB = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ratsuniRB = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -215,6 +215,18 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // ratsuniRB
+            // 
+            this.ratsuniRB.AutoSize = true;
+            this.ratsuniRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ratsuniRB.Location = new System.Drawing.Point(293, 120);
+            this.ratsuniRB.Name = "ratsuniRB";
+            this.ratsuniRB.Size = new System.Drawing.Size(85, 24);
+            this.ratsuniRB.TabIndex = 31;
+            this.ratsuniRB.TabStop = true;
+            this.ratsuniRB.Text = "VAPAA";
+            this.ratsuniRB.UseVisualStyleBackColor = true;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -347,19 +359,6 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // ratsuniRB
-            // 
-            this.ratsuniRB.AutoSize = true;
-            this.ratsuniRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ratsuniRB.Location = new System.Drawing.Point(293, 120);
-            this.ratsuniRB.Name = "ratsuniRB";
-            this.ratsuniRB.Size = new System.Drawing.Size(85, 24);
-            this.ratsuniRB.TabIndex = 31;
-            this.ratsuniRB.TabStop = true;
-            this.ratsuniRB.Text = "VAPAA";
-            this.ratsuniRB.UseVisualStyleBackColor = true;
-            this.ratsuniRB.CheckedChanged += new System.EventHandler(this.ratsuniRB_CheckedChanged);
-            // 
             // autot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,6 +372,7 @@
             this.Controls.Add(this.label1);
             this.Name = "autot";
             this.Text = "autot";
+            this.Load += new System.EventHandler(this.autot_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
