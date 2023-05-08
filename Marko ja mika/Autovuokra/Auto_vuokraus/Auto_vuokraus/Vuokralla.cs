@@ -84,24 +84,7 @@ namespace Auto_vuokraus
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-        public Bitmap GrayScaleFilter(Bitmap pictureBox_1)
-        {
-            Bitmap grayScale = new Bitmap(pictureBox_1.Width, pictureBox_1.Height);
-
-            for (Int32 y = 0; y < grayScale.Height; y++)
-                for (Int32 x = 0; x < grayScale.Width; x++)
-                {
-                    Color c = pictureBox_1.GetPixel(x, y);
-
-                    Int32 gs = (Int32)(c.R * 0.3 + c.G * 0.59 + c.B * 0.11);
-
-                    grayScale.SetPixel(x, y, Color.FromArgb(gs, gs, gs));
-                }
-            return grayScale;
-        }
     }
 }
