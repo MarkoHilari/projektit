@@ -66,7 +66,7 @@ namespace Auto_vuokraus
         public bool muokkaaAsiakasta(int id, string enimi, string snimi, string osoite, string city, string pnro, string email, string puh )// VIELÄ KESKEN, POHJA VALMIINA
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaaKysely = "UPDATE `asiakkaat` SET eNimi='@enm',sNimi='@snm',osoite='@oso',city='@cit',pnro='@pno',email='@ema',puh='@puh' WHERE asiakasId= '@id'";
+            string muokkaaKysely = "UPDATE asiakkaat SET eNimi=@enm,sNimi=@snm,osoite=@oso,city=@cit,pnro=@pno,email=@ema,puh=@puh WHERE asiakasId= @id";
             komento.CommandText = muokkaaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@id,@enimi,@snimi,@lahi,@pnro)

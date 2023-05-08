@@ -96,9 +96,9 @@ namespace Auto_vuokraus
                 }
                 else
                 {
-                    Boolean lisaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);
+                    Boolean muokkaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);
 
-                    if (lisaaAsiakas)
+                    if (muokkaaAsiakas)
                     {
                         asiakasDG.DataSource = users.haeAsiakkaat();
 
