@@ -40,8 +40,8 @@ namespace Auto_vuokraus
                 Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
                 if(lisaaKayttaja)
                 {
-                    //dataGridView1.DataSource = kayttaja.haeKayttajat();
-                    //this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                    dataGridView1.DataSource = kayttaja.haeKayttajat();
+                    this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
                     MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

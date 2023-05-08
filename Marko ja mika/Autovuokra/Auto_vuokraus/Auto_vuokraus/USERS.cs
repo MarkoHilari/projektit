@@ -66,7 +66,7 @@ namespace Auto_vuokraus
         public bool muokkaaAsiakasta(int id, string enimi, string snimi, string osoite, string city, string pnro, string email, string puh )// VIELÄ KESKEN, POHJA VALMIINA
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaaKysely = "UPDATE `asiakkaat` SET eNimi='@enm',sNimi='@snm',osoite='@oso',city='@cit',pnro='@pno',email='@ema',puh='@puh' WHERE asiakasId= '@id'";
+            string muokkaaKysely = "UPDATE asiakkaat SET eNimi=@enm,sNimi=@snm,osoite=@oso,city=@cit,pnro=@pno,email=@ema,puh=@puh WHERE asiakasId= @id";
             komento.CommandText = muokkaaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@id,@enimi,@snimi,@lahi,@pnro)
@@ -135,6 +135,28 @@ namespace Auto_vuokraus
 
 
             return table;
+        }
+
+        public bool poistaAsiakas(int Aid)
+        {
+            MySqlCommand komento = new MySqlCommand();
+            string poista = "DELETE FROM `asiakkaat` WHERE `asiakasID`= @id";
+            komento.CommandText = poista;
+            komento.Connection = yhdista.otaYhteys();
+            komento.Parameters.Add("@id", MySqlDbType.Int32).Value = Aid;
+
+            yhdista.avaaXhteys();
+
+            if(komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
         }
     }
 }

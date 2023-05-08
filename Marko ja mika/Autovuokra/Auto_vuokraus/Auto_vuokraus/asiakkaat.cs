@@ -96,9 +96,9 @@ namespace Auto_vuokraus
                 }
                 else
                 {
-                    Boolean lisaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);
+                    Boolean muokkaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);
 
-                    if (lisaaAsiakas)
+                    if (muokkaaAsiakas)
                     {
                         asiakasDG.DataSource = users.haeAsiakkaat();
 
@@ -133,6 +133,28 @@ namespace Auto_vuokraus
         private void asiakasDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void poistaAsBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(idTB.Text);
+
+                if (users.poistaAsiakas(id))
+                {
+                    asiakasDG.DataSource = users.haeAsiakkaat();
+                    MessageBox.Show("Asiakas poistettu onnistuneesti", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error - Asiakasta ei poistettu", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
     
