@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,7 +85,29 @@ namespace Auto_vuokraus
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\dasse.jpg");
 
+            // Käy läpi jokainen pikseli kuvassa
+            for (int y = 0; y < image.Height; y++)
+            {
+                for (int x = 0; x < image.Width; x++)
+                {
+                    // Hae pikselin väri
+                    Color color = image.GetPixel(x, y);
+
+                    // Muunna väri mustavalkoiseksi
+                    int gray = (int)(0.299 * color.R + 0.587 * color.G + 0.114 * color.B);
+                    Color newColor = Color.FromArgb(gray, gray, gray);
+
+                    // Aseta uusi väri pikseliin
+                    image.SetPixel(x, y, newColor);
+                }
+            }
+
+            // Tallenna uusi kuva
+            image.("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\uusi_kuva.jpg");
+        }
     }
 }
