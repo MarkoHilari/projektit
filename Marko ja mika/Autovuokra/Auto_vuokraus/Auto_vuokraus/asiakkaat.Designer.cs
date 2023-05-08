@@ -180,6 +180,8 @@
             this.asiakasDG.RowTemplate.Height = 28;
             this.asiakasDG.Size = new System.Drawing.Size(870, 526);
             this.asiakasDG.TabIndex = 19;
+            this.asiakasDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.asiakasDG_CellClick);
+            this.asiakasDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.asiakasDG_CellContentClick);
             // 
             // label2
             // 
@@ -348,6 +350,7 @@
             this.muokkaaAsBT.TabIndex = 37;
             this.muokkaaAsBT.Text = "Muokkaa asiakas";
             this.muokkaaAsBT.UseVisualStyleBackColor = true;
+            this.muokkaaAsBT.Click += new System.EventHandler(this.muokkaaAsBT_Click);
             // 
             // idTB
             // 
@@ -355,7 +358,6 @@
             this.idTB.Name = "idTB";
             this.idTB.Size = new System.Drawing.Size(100, 26);
             this.idTB.TabIndex = 38;
-            this.idTB.Visible = false;
             // 
             // asiakkaat
             // 
