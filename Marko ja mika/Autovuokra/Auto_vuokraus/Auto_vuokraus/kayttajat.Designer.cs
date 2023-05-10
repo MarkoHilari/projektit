@@ -131,6 +131,7 @@
             this.poistaAsBT.TabIndex = 54;
             this.poistaAsBT.Text = "Poista käyttäjä";
             this.poistaAsBT.UseVisualStyleBackColor = true;
+            this.poistaAsBT.Click += new System.EventHandler(this.poistaAsBT_Click);
             // 
             // tyhjennaAsBT
             // 
@@ -141,6 +142,7 @@
             this.tyhjennaAsBT.TabIndex = 53;
             this.tyhjennaAsBT.Text = "Tyhjennä kentät";
             this.tyhjennaAsBT.UseVisualStyleBackColor = true;
+            this.tyhjennaAsBT.Click += new System.EventHandler(this.tyhjennaAsBT_Click);
             // 
             // lisaaAsBT
             // 
@@ -253,6 +255,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(870, 526);
             this.dataGridView1.TabIndex = 56;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // salaTB
             // 

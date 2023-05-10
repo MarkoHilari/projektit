@@ -29,19 +29,24 @@ namespace Auto_vuokraus
         private void lisaaAsBT_Click(object sender, EventArgs e)
         {
             string id = idTB.Text;
+            string eNimi = eNimiTB.Text;
+            string snimi = sNimiTB.Text;
+            string email = emailTB.Text;
+            string puh = puhelinTB.Text;
             string user = eNimiTB.Text;
             string pass = salaTB.Text;
-            if(user.Trim().Equals("") || pass.Trim().Equals(""))
+            if(eNimi.Trim().Equals("") || snimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
             {
-                MessageBox.Show("Vaaditut kentät - id, etunimi, salasana", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vaaditut kentät -  Etunimi, Sukunimi, email, Puhelin", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, eNimi, snimi, email, puh, user, pass);
                 if(lisaaKayttaja)
                 {
                     dataGridView1.DataSource = kayttaja.haeKayttajat();
                     this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                    
                     MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -59,7 +64,87 @@ namespace Auto_vuokraus
 
         private void muokkaaKaBT_Click(object sender, EventArgs e)
         {
+            string id = idTB.Text;
+            string eNimi = eNimiTB.Text;
+            string sNimi = sNimiTB.Text;
+            string email = emailTB.Text;
+            string puh = puhelinTB.Text;
+            string user = eNimiTB.Text;
+            string pass = salaTB.Text;
 
+            try
+            {
+                
+                if (eNimi.Trim().Equals("") || sNimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
+                {
+                    MessageBox.Show("Vaaditut kentät - Etunimi & Sukunimi + Osoite", "Tyhjä Kenttä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    Boolean muokkaaAsiakas = kayttaja.muokkaaKayttaja(id, eNimi, sNimi, email, puh, user, pass);
+
+                    if (muokkaaAsiakas)
+                    {
+                        dataGridView1.DataSource = kayttaja.haeKayttajat();
+
+                        MessageBox.Show("Asiakas tiedot päivitetty onnistuneesti", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error - Asiakasta ei päivitetty", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idTB.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            eNimiTB.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            sNimiTB.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            emailTB.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            puhelinTB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            /*pNroTB.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            emailTB.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            puhelinTB.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();*/
+        }
+
+        private void poistaAsBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id = idTB.Text;
+
+                if (kayttaja.poistaKayttaja(id))
+                {
+                    dataGridView1.DataSource = kayttaja.haeKayttajat();
+                    MessageBox.Show("Käyttäjä poistettu onnistuneesti", "Poista käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Käyttäjää ei poistettu", "Poista käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tyhjennaAsBT_Click(object sender, EventArgs e)
+        {
+            idTB.Text = "";
+            eNimiTB.Text = "";
+            sNimiTB.Text = "";
+            emailTB.Text = "";
+            puhelinTB.Text = "";
+            eNimiTB.Text = "";
+            salaTB.Text = "";
         }
     }
 }
