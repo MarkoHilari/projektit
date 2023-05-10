@@ -107,7 +107,7 @@ namespace Auto_vuokraus
             }
 
             // Tallenna uusi kuva
-            image.("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\uusi_kuva.jpg");
+           // image.("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\uusi_kuva.jpg");
         }
     }
 }

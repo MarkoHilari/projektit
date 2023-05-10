@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
+using Eramake;
+using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Auto_vuokraus
@@ -14,15 +16,23 @@ namespace Auto_vuokraus
     {
 
         YHDISTA yhdista = new YHDISTA();
-        public bool lisaaKayttaja(string id,string user, string pass)
+        public bool lisaaKayttaja(string id,string eNimi, string sNimi, string email,string puh, string user, string pass)
         {
             MySqlCommand cmd = new MySqlCommand();
-            string kysely = "INSERT INTO `kayttaja`(`id`,`user`,`pass`) VALUES(@id,@user,@pass)";
+            //string kysely = "INSERT INTO `kayttaja`(`id`,`user`,`pass`) VALUES(@id,@user,@pass)";
+            string kysely = "INSERT INTO `kayttaja`(`id`, `eNimi`, `sNimi`, `email`, `puh`, `user`, `pass`) VALUES (@id,@enm,@snm,@ema,@puh,@user,@pass)";
             cmd.CommandText = kysely;
+            string kt = eNimi.Substring(0, 3).ToLower() + sNimi.Substring(0, 5).ToLower();
             cmd.Connection = yhdista.otaYhteys();
             cmd.Parameters.Add ("@id", MySqlDbType.VarChar).Value = id;
-            cmd.Parameters.Add("@user", MySqlDbType.VarChar).Value = user;
-            cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = pass;
+            cmd.Parameters.Add("@enm", MySqlDbType.VarChar).Value = eNimi;
+            cmd.Parameters.Add("@snm", MySqlDbType.VarChar).Value = sNimi;
+            cmd.Parameters.Add("@ema", MySqlDbType.VarChar).Value = email;
+            cmd.Parameters.Add("@puh", MySqlDbType.VarChar).Value = puh;
+            cmd.Parameters.Add("@user", MySqlDbType.VarChar).Value = kt;
+            cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = eCryptography.Encrypt(luoSalasana());
+            MessageBox.Show("käyttäjätunnus: " + kt + "Salasanasi: " + luoSalasana());
+            
 
             yhdista.avaaXhteys();
             if (cmd.ExecuteNonQuery() == 1)
@@ -37,9 +47,23 @@ namespace Auto_vuokraus
             }
         }
 
+
+        public String luoSalasana()
+        {
+            char[] alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#€?0123456789".ToCharArray();
+            Random satunnaisluku = new Random();
+            String salasana = "";
+            for (int i = 0; i < 12; i++)
+            {
+                int indeksi = satunnaisluku.Next(alpha.Length);
+                salasana += alpha[indeksi];
+            }
+            return salasana;
+        }
+
         public DataTable haeKayttajat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT * FROM `kayttaja`", yhdista.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT `id`, `eNimi`, `sNimi`, `email`, `puh` FROM `kayttaja`", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 

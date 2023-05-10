@@ -29,19 +29,24 @@ namespace Auto_vuokraus
         private void lisaaAsBT_Click(object sender, EventArgs e)
         {
             string id = idTB.Text;
+            string eNimi = eNimiTB.Text;
+            string snimi = sNimiTB.Text;
+            string email = emailTB.Text;
+            string puh = puhelinTB.Text;
             string user = eNimiTB.Text;
             string pass = salaTB.Text;
-            if(user.Trim().Equals("") || pass.Trim().Equals(""))
+            if(eNimi.Trim().Equals("") || snimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
             {
-                MessageBox.Show("Vaaditut kentät - id, etunimi, salasana", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vaaditut kentät -  Etunimi, Sukunimi, email, Puhelin", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, user, pass);
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, eNimi, snimi, email, puh, user, pass);
                 if(lisaaKayttaja)
                 {
                     dataGridView1.DataSource = kayttaja.haeKayttajat();
                     this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                    
                     MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
