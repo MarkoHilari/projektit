@@ -17,8 +17,8 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        
-        
+
+
 
         private void asiakkaatBT_Click(object sender, EventArgs e)
         {

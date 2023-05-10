@@ -64,30 +64,54 @@ namespace Auto_vuokraus
         private void Vuokralla_Load(object sender, EventArgs e)
         {
             vuokrallaDG.DataSource = users.haeKalusto();
-           // vuokrallaDG.AutoResizeColumns();
+            // vuokrallaDG.AutoResizeColumns();
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            //   string auto = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
+            string tilanne = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
+
+            for (int auto = 0; auto < vuokrallaDG.Rows.Count; auto++)
+            {
+                string autot = vuokrallaDG.Rows[auto].Cells[0].Value.ToString();
+                if (autot.Equals("Ratsuni"))
+                {
+                    if (tilanne.Equals("vapaa"))
+                    {
+                        dassePB.Visible = true;
+                        dasse1PB.Visible = false;
+                    }
+
+                    else if (tilanne.Equals("varattu"))
+                    {
+                        dasse1PB.Visible = true;
+                        dassePB.Visible = false;
+                    }
+
+
+                    else if (autot.Equals("Peel"))
+                    {
+                        if (tilanne.Equals("vapaa"))
+                        {
+                            peelPB.Visible = true;
+                            peel1PB.Visible = false;
+                        }
+                        else if (tilanne.Equals("varattu"))
+                        {
+                            peel1PB.Visible = true;
+                            peelPB.Visible = false;
+                        }
+                    }
+
+                }
+
+            }
         }
         
 
-
-        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
+       /* private void button1_Click(object sender, EventArgs e)
         {
-            string vapaa = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
-
-            if (vapaa.Equals("vapaa"))
-            {
-                 radioBT.Checked = true;
-            }
-            else if (vapaa.Equals("varattu"))
-            {
-                radioBT.Checked = false;
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\dasse.jpg");
+            Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti.jpg");
 
             // Käy läpi jokainen pikseli kuvassa
             for (int y = 0; y < image.Height; y++)
@@ -107,7 +131,7 @@ namespace Auto_vuokraus
             }
 
             // Tallenna uusi kuva
-            image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\uusi_kuva.jpg");
-        }
+            image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
+        }*/
     }
 }

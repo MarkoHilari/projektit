@@ -172,5 +172,23 @@
   <ItemGroup>
     <None Include="Pics\exit-5871704_1280.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\dasse1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\ford.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\peel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\pirssi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\sausage1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\toijoti1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,28 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pirssi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\pirssi1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\peel1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit-5871704_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\exit-5871704_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dasse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pics\dasse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pirssi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\pirssi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ford1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\ford1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="peel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\peel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstract-watercolor-vintage-illustration-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\abstract-watercolor-vintage-illustration-md.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sausage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\sausage.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toijoti" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pics\toijoti.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit-5871704_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\exit-5871704_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ford" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\ford.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sausage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\sausage1.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\peel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sausage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\sausage.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pirssi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\pirssi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstract-watercolor-vintage-illustration-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\abstract-watercolor-vintage-illustration-md.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dasse1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\dasse1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ford1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\ford1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toijoti1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\toijoti1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
