@@ -47,6 +47,58 @@ namespace Auto_vuokraus
             }
         }
 
+        public bool muokkaaKayttaja(string id, string eNimi, string sNimi, string email, string puh, string user, string pass)// VIELÄ KESKEN, POHJA VALMIINA
+        {
+            MySqlCommand komento = new MySqlCommand();
+            string muokkaaKysely = "UPDATE `kayttaja` SET `eNimi`=@enm,`sNimi`=@snm,`email`=@ema,`puh`=@puh,`user`=@user,`pass`=@pass WHERE id= @id";
+            komento.CommandText = muokkaaKysely;
+            komento.Connection = yhdista.otaYhteys();
+            //@id,@enimi,@snimi,@lahi,@pnro)
+            komento.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            komento.Parameters.Add("@enm", MySqlDbType.VarChar).Value = eNimi;
+            komento.Parameters.Add("@snm", MySqlDbType.VarChar).Value = sNimi;
+            komento.Parameters.Add("@ema", MySqlDbType.VarChar).Value = email;
+            komento.Parameters.Add("@puh", MySqlDbType.VarChar).Value = puh;
+            komento.Parameters.Add("@user", MySqlDbType.VarChar).Value = user;
+            komento.Parameters.Add("@pass", MySqlDbType.VarChar).Value = pass;
+            //MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
+
+            yhdista.avaaXhteys();
+
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+
+            }
+        }
+
+        public bool poistaKayttaja(string id)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            string poista = "DELETE FROM `kayttaja` WHERE id=@id";
+            cmd.CommandText = poista;
+            cmd.Connection = yhdista.otaYhteys();
+            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+
+            yhdista.avaaXhteys();
+
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
 
         public String luoSalasana()
         {
@@ -102,7 +154,7 @@ namespace Auto_vuokraus
             komento.Parameters.Add("@pno", MySqlDbType.VarChar).Value = pnro;
             komento.Parameters.Add("@ema", MySqlDbType.VarChar).Value = email;
             komento.Parameters.Add("@puh", MySqlDbType.VarChar).Value = puh;
-            MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
+            //MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
 
             yhdista.avaaXhteys();
 
