@@ -31,7 +31,7 @@ namespace Auto_vuokraus
             cmd.Parameters.Add("@puh", MySqlDbType.VarChar).Value = puh;
             cmd.Parameters.Add("@user", MySqlDbType.VarChar).Value = kt;
             cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = eCryptography.Encrypt(luoSalasana());
-            MessageBox.Show("käyttäjätunnus: " + kt + "Salasanasi: " + luoSalasana());
+            MessageBox.Show("käyttäjätunnus: " + " " + kt + "Salasanasi: " + " " + luoSalasana());
             
 
             yhdista.avaaXhteys();
