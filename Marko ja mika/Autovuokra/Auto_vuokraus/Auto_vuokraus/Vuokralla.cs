@@ -59,6 +59,7 @@ namespace Auto_vuokraus
         private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             vuokrallaDG.DataSource = users.haeKalusto();
+
         }
 
         private void Vuokralla_Load(object sender, EventArgs e)
