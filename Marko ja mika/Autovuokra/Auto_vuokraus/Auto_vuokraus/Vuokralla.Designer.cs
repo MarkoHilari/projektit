@@ -49,6 +49,8 @@
             this.sausage1PB = new System.Windows.Forms.PictureBox();
             this.toyotaPB = new System.Windows.Forms.PictureBox();
             this.toyota1PB = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
@@ -87,7 +89,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2242, 174);
+            this.panel1.Size = new System.Drawing.Size(2265, 174);
             this.panel1.TabIndex = 6;
             // 
             // label2
@@ -108,10 +110,10 @@
             this.panel2.Controls.Add(this.autotBT);
             this.panel2.Controls.Add(this.palautuneetBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1146);
+            this.panel2.Location = new System.Drawing.Point(0, 1112);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2242, 98);
+            this.panel2.Size = new System.Drawing.Size(2265, 98);
             this.panel2.TabIndex = 19;
             // 
             // asiakkaatBT
@@ -315,11 +317,29 @@
             this.toyota1PB.TabStop = false;
             this.toyota1PB.Visible = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(1620, 569);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 35);
+            this.dateTimePicker1.TabIndex = 34;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(1922, 569);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 35);
+            this.dateTimePicker2.TabIndex = 35;
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2242, 1244);
+            this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.toyota1PB);
             this.Controls.Add(this.toyotaPB);
             this.Controls.Add(this.sausage1PB);
@@ -384,5 +404,7 @@
         private System.Windows.Forms.PictureBox sausage1PB;
         private System.Windows.Forms.PictureBox toyotaPB;
         private System.Windows.Forms.PictureBox toyota1PB;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
