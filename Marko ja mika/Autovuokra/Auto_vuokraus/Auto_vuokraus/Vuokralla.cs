@@ -69,43 +69,106 @@ namespace Auto_vuokraus
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             //string auto = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
-            string tilanne = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
+           
 
-            for (int auto = 0; auto < vuokrallaDG.Rows.Count; auto++)
-            {
-                string autot = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
-                if (auto.Equals("Ratsuni"))
+
+            string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
+            string ford = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
+            string toyoti = vuokrallaDG.Rows[2].Cells[1].Value.ToString();
+            string mosse = vuokrallaDG.Rows[3].Cells[1].Value.ToString();
+            string peel = vuokrallaDG.Rows[4].Cells[1].Value.ToString();
+            string dasse = vuokrallaDG.Rows[5].Cells[1].Value.ToString();
+
+            string tilanne = vuokrallaDG.Rows[0].Cells[4].Value.ToString();
+            string tilanne1 = vuokrallaDG.Rows[1].Cells[4].Value.ToString();
+            string tilanne2 = vuokrallaDG.Rows[2].Cells[4].Value.ToString();
+            string tilanne3 = vuokrallaDG.Rows[3].Cells[4].Value.ToString();
+            string tilanne4 = vuokrallaDG.Rows[4].Cells[4].Value.ToString();
+            string tilanne5 = vuokrallaDG.Rows[5].Cells[4].Value.ToString();
+
+            if (dasse.Equals("Ratsuni"))
                 {
-                    if (tilanne.Equals("vapaa"))
+                    if (tilanne5.Equals("vapaa"))
                     {
                         dassePB.Visible = true;
                         dasse1PB.Visible = false;
                     }
 
-                    else if (tilanne.Equals("varattu"))
+                    else if (tilanne5.Equals("varattu"))
                     {
                         dasse1PB.Visible = true;
                         dassePB.Visible = false;
                     }
 
 
-                    else if (auto.Equals("Peel"))
-                    {
-                        if (tilanne.Equals("vapaa"))
+                if (peel.Equals("Peel"))
+                {
+                        if (tilanne4.Equals("vapaa"))
                         {
                             peelPB.Visible = true;
                             peel1PB.Visible = false;
                         }
-                        else if (tilanne.Equals("varattu"))
+                        else if (tilanne4.Equals("varattu"))
                         {
                             peel1PB.Visible = true;
                             peelPB.Visible = false;
                         }
-                    }
-
                 }
-
+                if (makkara.Equals("Sausage"))
+                {
+                    if (tilanne.Equals("vapaa"))
+                    {
+                        sausagePB.Visible = true;
+                        sausage1PB.Visible = false;
+                    }
+                    else if (tilanne.Equals("varattu"))
+                    {
+                        sausage1PB.Visible = true;
+                        sausagePB.Visible = false;
+                    }
+                }
+                if (mosse.Equals("Mosse"))
+                {
+                    if (tilanne3.Equals("vapaa"))
+                    {
+                        mossePB.Visible = true;
+                        mosse1PB.Visible = false;
+                    }
+                    else if (tilanne3.Equals("varattu"))
+                    {
+                        mosse1PB.Visible = true;
+                        mossePB.Visible = false;
+                    }
+                }
+                if (ford.Equals("Ford"))
+                {
+                    if (tilanne1.Equals("vapaa"))
+                    {
+                        fordPB.Visible = true;
+                        fordPB1.Visible = false;
+                    }
+                    else if (tilanne1.Equals("varattu"))
+                    {
+                        fordPB1.Visible = true;
+                        fordPB.Visible = false;
+                    }
+                }
+                if (toyoti.Equals("Toyota"))
+                {
+                    if (tilanne2.Equals("vapaa"))
+                    {
+                        toyotaPB.Visible = true;
+                        toyota1PB.Visible = false;
+                    }
+                    else if (tilanne2.Equals("varattu"))
+                    {
+                        toyota1PB.Visible = true;
+                        toyotaPB.Visible = false;
+                    }
+                }
             }
+
+            
 
 
 

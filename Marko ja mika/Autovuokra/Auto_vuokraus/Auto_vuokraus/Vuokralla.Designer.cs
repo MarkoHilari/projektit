@@ -40,7 +40,7 @@
             this.dassePB = new System.Windows.Forms.PictureBox();
             this.dasse1PB = new System.Windows.Forms.PictureBox();
             this.fordPB = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fordPB1 = new System.Windows.Forms.PictureBox();
             this.peelPB = new System.Windows.Forms.PictureBox();
             this.peel1PB = new System.Windows.Forms.PictureBox();
             this.mossePB = new System.Windows.Forms.PictureBox();
@@ -57,7 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fordPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peelPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mossePB)).BeginInit();
@@ -218,16 +218,16 @@
             this.fordPB.TabStop = false;
             this.fordPB.Visible = false;
             // 
-            // pictureBox1
+            // fordPB1
             // 
-            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.ford;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 364);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.fordPB1.Image = global::Auto_vuokraus.Properties.Resources.ford;
+            this.fordPB1.Location = new System.Drawing.Point(67, 364);
+            this.fordPB1.Name = "fordPB1";
+            this.fordPB1.Size = new System.Drawing.Size(143, 121);
+            this.fordPB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fordPB1.TabIndex = 25;
+            this.fordPB1.TabStop = false;
+            this.fordPB1.Visible = false;
             // 
             // peelPB
             // 
@@ -348,7 +348,7 @@
             this.Controls.Add(this.mossePB);
             this.Controls.Add(this.peel1PB);
             this.Controls.Add(this.peelPB);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.fordPB1);
             this.Controls.Add(this.fordPB);
             this.Controls.Add(this.dasse1PB);
             this.Controls.Add(this.dassePB);
@@ -368,7 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fordPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peelPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mossePB)).EndInit();
@@ -395,7 +395,7 @@
         private System.Windows.Forms.PictureBox dassePB;
         private System.Windows.Forms.PictureBox dasse1PB;
         private System.Windows.Forms.PictureBox fordPB;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox fordPB1;
         private System.Windows.Forms.PictureBox peelPB;
         private System.Windows.Forms.PictureBox peel1PB;
         private System.Windows.Forms.PictureBox mossePB;
