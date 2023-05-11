@@ -18,7 +18,7 @@ namespace Auto_vuokraus
 
         USERS users = new USERS();
 
-       
+
         public Vuokralla()
         {
             InitializeComponent();
@@ -43,7 +43,7 @@ namespace Auto_vuokraus
         private void palautuneetBT_Click(object sender, EventArgs e)
         {
             this.Hide();
-            palautuneet palautuneet = new palautuneet();   
+            palautuneet palautuneet = new palautuneet();
             palautuneet.ShowDialog();
             this.Close();
         }
@@ -68,13 +68,13 @@ namespace Auto_vuokraus
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            //   string auto = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
+            //string auto = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
             string tilanne = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
 
             for (int auto = 0; auto < vuokrallaDG.Rows.Count; auto++)
             {
-                string autot = vuokrallaDG.Rows[auto].Cells[0].Value.ToString();
-                if (autot.Equals("Ratsuni"))
+                string autot = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
+                if (auto.Equals("Ratsuni"))
                 {
                     if (tilanne.Equals("vapaa"))
                     {
@@ -89,7 +89,7 @@ namespace Auto_vuokraus
                     }
 
 
-                    else if (autot.Equals("Peel"))
+                    else if (auto.Equals("Peel"))
                     {
                         if (tilanne.Equals("vapaa"))
                         {
@@ -106,32 +106,33 @@ namespace Auto_vuokraus
                 }
 
             }
+
+
+
+            /* private void button1_Click(object sender, EventArgs e)
+             {
+                 Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti.jpg");
+
+                 // Käy läpi jokainen pikseli kuvassa
+                 for (int y = 0; y < image.Height; y++)
+                 {
+                     for (int x = 0; x < image.Width; x++)
+                     {
+                         // Hae pikselin väri
+                         Color color = image.GetPixel(x, y);
+
+                         // Muunna väri mustavalkoiseksi
+                         int gray = (int)(0.299 * color.R + 0.587 * color.G + 0.114 * color.B);
+                         Color newColor = Color.FromArgb(gray, gray, gray);
+
+                         // Aseta uusi väri pikseliin
+                         image.SetPixel(x, y, newColor);
+                     }
+                 }
+
+                 // Tallenna uusi kuva
+                 image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
+             }*/
         }
-        
-
-       /* private void button1_Click(object sender, EventArgs e)
-        {
-            Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti.jpg");
-
-            // Käy läpi jokainen pikseli kuvassa
-            for (int y = 0; y < image.Height; y++)
-            {
-                for (int x = 0; x < image.Width; x++)
-                {
-                    // Hae pikselin väri
-                    Color color = image.GetPixel(x, y);
-
-                    // Muunna väri mustavalkoiseksi
-                    int gray = (int)(0.299 * color.R + 0.587 * color.G + 0.114 * color.B);
-                    Color newColor = Color.FromArgb(gray, gray, gray);
-
-                    // Aseta uusi väri pikseliin
-                    image.SetPixel(x, y, newColor);
-                }
-            }
-
-            // Tallenna uusi kuva
-            image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
-        }*/
     }
 }
