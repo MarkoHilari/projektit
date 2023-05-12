@@ -198,5 +198,12 @@ namespace Auto_vuokraus
                  image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
              }*/
         }
+
+        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rekTB.Text = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
+            malliTB.Text = vuokrallaDG.CurrentRow.Cells[2].Value.ToString();
+            merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
+        }
     }
 }
