@@ -59,6 +59,7 @@
             this.rekTB = new System.Windows.Forms.TextBox();
             this.merkkiTB = new System.Windows.Forms.TextBox();
             this.malliTB = new System.Windows.Forms.TextBox();
+            this.asijaCB = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
@@ -394,6 +395,7 @@
             // 
             // rekTB
             // 
+            this.rekTB.Enabled = false;
             this.rekTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rekTB.Location = new System.Drawing.Point(1407, 219);
             this.rekTB.Name = "rekTB";
@@ -402,6 +404,7 @@
             // 
             // merkkiTB
             // 
+            this.merkkiTB.Enabled = false;
             this.merkkiTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.merkkiTB.Location = new System.Drawing.Point(1407, 273);
             this.merkkiTB.Name = "merkkiTB";
@@ -410,17 +413,30 @@
             // 
             // malliTB
             // 
+            this.malliTB.Enabled = false;
             this.malliTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.malliTB.Location = new System.Drawing.Point(1407, 326);
             this.malliTB.Name = "malliTB";
             this.malliTB.Size = new System.Drawing.Size(230, 32);
             this.malliTB.TabIndex = 43;
             // 
+            // asijaCB
+            // 
+            this.asijaCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asijaCB.FormattingEnabled = true;
+            this.asijaCB.Location = new System.Drawing.Point(1783, 217);
+            this.asijaCB.Name = "asijaCB";
+            this.asijaCB.Size = new System.Drawing.Size(244, 37);
+            this.asijaCB.TabIndex = 44;
+            this.asijaCB.Text = "Valitse asijakas";
+            this.asijaCB.SelectedIndexChanged += new System.EventHandler(this.asijaCB_SelectedIndexChanged);
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.asijaCB);
             this.Controls.Add(this.malliTB);
             this.Controls.Add(this.merkkiTB);
             this.Controls.Add(this.rekTB);
@@ -506,5 +522,6 @@
         private System.Windows.Forms.TextBox rekTB;
         private System.Windows.Forms.TextBox merkkiTB;
         private System.Windows.Forms.TextBox malliTB;
+        private System.Windows.Forms.ComboBox asijaCB;
     }
 }

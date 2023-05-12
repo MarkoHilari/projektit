@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Eramake;
 using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Data.SqlClient;
 
 namespace Auto_vuokraus
 {
@@ -234,5 +235,7 @@ namespace Auto_vuokraus
                 return false;
             }
         }
+
+       
     }
 }
