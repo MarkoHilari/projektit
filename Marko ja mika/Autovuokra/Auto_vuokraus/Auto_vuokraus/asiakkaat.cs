@@ -156,6 +156,14 @@ namespace Auto_vuokraus
                 MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void kayttajaBT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            kayttajat kayttajat = new kayttajat();
+            kayttajat.ShowDialog();
+            this.Close();
+        }
     }
     
 }
