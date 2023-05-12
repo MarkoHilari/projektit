@@ -51,6 +51,14 @@
             this.toyota1PB = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.rekLB = new System.Windows.Forms.Label();
+            this.merkkiLB = new System.Windows.Forms.Label();
+            this.malliLB = new System.Windows.Forms.Label();
+            this.alku = new System.Windows.Forms.Label();
+            this.loppu = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
@@ -175,12 +183,12 @@
             // vuokrallaDG
             // 
             this.vuokrallaDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vuokrallaDG.Location = new System.Drawing.Point(669, 195);
+            this.vuokrallaDG.Location = new System.Drawing.Point(276, 212);
             this.vuokrallaDG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.vuokrallaDG.Name = "vuokrallaDG";
             this.vuokrallaDG.RowHeadersWidth = 51;
             this.vuokrallaDG.RowTemplate.Height = 24;
-            this.vuokrallaDG.Size = new System.Drawing.Size(845, 642);
+            this.vuokrallaDG.Size = new System.Drawing.Size(845, 311);
             this.vuokrallaDG.TabIndex = 20;
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 
@@ -320,7 +328,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1620, 569);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1437, 462);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 35);
             this.dateTimePicker1.TabIndex = 34;
@@ -328,16 +336,98 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(1922, 569);
+            this.dateTimePicker2.Location = new System.Drawing.Point(1739, 462);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 35);
             this.dateTimePicker2.TabIndex = 35;
+            // 
+            // rekLB
+            // 
+            this.rekLB.AutoSize = true;
+            this.rekLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rekLB.Location = new System.Drawing.Point(1248, 212);
+            this.rekLB.Name = "rekLB";
+            this.rekLB.Size = new System.Drawing.Size(123, 38);
+            this.rekLB.TabIndex = 36;
+            this.rekLB.Text = "Rek Nro:";
+            // 
+            // merkkiLB
+            // 
+            this.merkkiLB.AutoSize = true;
+            this.merkkiLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.merkkiLB.Location = new System.Drawing.Point(1263, 267);
+            this.merkkiLB.Name = "merkkiLB";
+            this.merkkiLB.Size = new System.Drawing.Size(108, 38);
+            this.merkkiLB.TabIndex = 37;
+            this.merkkiLB.Text = "Merkki:";
+            // 
+            // malliLB
+            // 
+            this.malliLB.AutoSize = true;
+            this.malliLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.malliLB.Location = new System.Drawing.Point(1288, 320);
+            this.malliLB.Name = "malliLB";
+            this.malliLB.Size = new System.Drawing.Size(83, 38);
+            this.malliLB.TabIndex = 38;
+            this.malliLB.Text = "Malli:";
+            // 
+            // alku
+            // 
+            this.alku.AutoSize = true;
+            this.alku.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alku.Location = new System.Drawing.Point(1475, 407);
+            this.alku.Name = "alku";
+            this.alku.Size = new System.Drawing.Size(111, 38);
+            this.alku.TabIndex = 39;
+            this.alku.Text = "Alkanut";
+            // 
+            // loppu
+            // 
+            this.loppu.AutoSize = true;
+            this.loppu.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loppu.Location = new System.Drawing.Point(1787, 407);
+            this.loppu.Name = "loppu";
+            this.loppu.Size = new System.Drawing.Size(110, 38);
+            this.loppu.TabIndex = 40;
+            this.loppu.Text = "Loppuu";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1407, 218);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(230, 32);
+            this.textBox1.TabIndex = 41;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(1407, 273);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(230, 32);
+            this.textBox2.TabIndex = 42;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(1407, 326);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(230, 32);
+            this.textBox3.TabIndex = 43;
             // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.loppu);
+            this.Controls.Add(this.alku);
+            this.Controls.Add(this.malliLB);
+            this.Controls.Add(this.merkkiLB);
+            this.Controls.Add(this.rekLB);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.toyota1PB);
@@ -378,6 +468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.toyotaPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toyota1PB)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -406,5 +497,13 @@
         private System.Windows.Forms.PictureBox toyota1PB;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label rekLB;
+        private System.Windows.Forms.Label merkkiLB;
+        private System.Windows.Forms.Label malliLB;
+        private System.Windows.Forms.Label alku;
+        private System.Windows.Forms.Label loppu;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
