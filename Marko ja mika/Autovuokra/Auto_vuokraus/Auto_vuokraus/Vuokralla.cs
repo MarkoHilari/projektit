@@ -72,6 +72,7 @@ namespace Auto_vuokraus
             
             
             DataTable table1 = new DataTable();
+            Fill(table1 );  
             asijaCB.DataSource = table1;
             asijaCB.DisplayMember = "Name";
             asijaCB.ValueMember = "";
