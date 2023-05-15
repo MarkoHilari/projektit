@@ -235,8 +235,8 @@ namespace Auto_vuokraus
                 return false;
             }
         }
-        public SqlDataReader haeAsija()
-        {
+        //public SqlDataReader haeAsija()
+        /*{
             SqlConnection connection = new SqlConnection();
             
             //string kysely = MySqlCommand("SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id", yhdista.otaYhteys());
@@ -257,7 +257,7 @@ namespace Auto_vuokraus
             }
 
             return command.ExecuteReader();
-        }
+        }*/
     }
 
 }

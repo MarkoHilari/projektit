@@ -164,14 +164,14 @@ namespace Auto_vuokraus
                 }
             }
 
-            using (SqlDataReader reader = users.haeAsija())
+            /*using (SqlDataReader reader = users.haeAsija())
             {
                 while (reader.Read())
                 {
                     string value = reader.GetString(0);
                     asijaCB.Items.Add(value);
                 }
-            }
+            }*/
             
             /*asijaCB.Items.Clear(); // ei pelitä
             DataTable dataTable = new DataTable();
