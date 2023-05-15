@@ -234,5 +234,10 @@ namespace Auto_vuokraus
                 return false;
             }
         }
+        /*public bool haeasija()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            string lisaa = 
+        }*/
     }
 }

@@ -199,11 +199,6 @@ namespace Auto_vuokraus
              }*/
         }
 
-        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            rekTB.Text = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
-            malliTB.Text = vuokrallaDG.CurrentRow.Cells[2].Value.ToString();
-            merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
-        }
+        
     }
 }

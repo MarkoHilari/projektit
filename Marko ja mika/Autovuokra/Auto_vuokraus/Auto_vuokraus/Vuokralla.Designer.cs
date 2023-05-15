@@ -56,9 +56,9 @@
             this.malliLB = new System.Windows.Forms.Label();
             this.alku = new System.Windows.Forms.Label();
             this.loppu = new System.Windows.Forms.Label();
-            this.rekTB = new System.Windows.Forms.TextBox();
-            this.merkkiTB = new System.Windows.Forms.TextBox();
-            this.malliTB = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
@@ -190,7 +190,6 @@
             this.vuokrallaDG.RowTemplate.Height = 24;
             this.vuokrallaDG.Size = new System.Drawing.Size(845, 311);
             this.vuokrallaDG.TabIndex = 20;
-            this.vuokrallaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellClick);
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 
             // dassePB
@@ -329,6 +328,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(1437, 462);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 35);
@@ -337,6 +337,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(1739, 462);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 35);
@@ -392,38 +393,38 @@
             this.loppu.TabIndex = 40;
             this.loppu.Text = "Loppuu";
             // 
-            // rekTB
+            // textBox1
             // 
-            this.rekTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rekTB.Location = new System.Drawing.Point(1407, 219);
-            this.rekTB.Name = "rekTB";
-            this.rekTB.Size = new System.Drawing.Size(230, 32);
-            this.rekTB.TabIndex = 41;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1407, 218);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(230, 32);
+            this.textBox1.TabIndex = 41;
             // 
-            // merkkiTB
+            // textBox2
             // 
-            this.merkkiTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.merkkiTB.Location = new System.Drawing.Point(1407, 273);
-            this.merkkiTB.Name = "merkkiTB";
-            this.merkkiTB.Size = new System.Drawing.Size(230, 32);
-            this.merkkiTB.TabIndex = 42;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(1407, 273);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(230, 32);
+            this.textBox2.TabIndex = 42;
             // 
-            // malliTB
+            // textBox3
             // 
-            this.malliTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.malliTB.Location = new System.Drawing.Point(1407, 326);
-            this.malliTB.Name = "malliTB";
-            this.malliTB.Size = new System.Drawing.Size(230, 32);
-            this.malliTB.TabIndex = 43;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(1407, 326);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(230, 32);
+            this.textBox3.TabIndex = 43;
             // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
-            this.Controls.Add(this.malliTB);
-            this.Controls.Add(this.merkkiTB);
-            this.Controls.Add(this.rekTB);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.loppu);
             this.Controls.Add(this.alku);
             this.Controls.Add(this.malliLB);
@@ -503,8 +504,8 @@
         private System.Windows.Forms.Label malliLB;
         private System.Windows.Forms.Label alku;
         private System.Windows.Forms.Label loppu;
-        private System.Windows.Forms.TextBox rekTB;
-        private System.Windows.Forms.TextBox merkkiTB;
-        private System.Windows.Forms.TextBox malliTB;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
