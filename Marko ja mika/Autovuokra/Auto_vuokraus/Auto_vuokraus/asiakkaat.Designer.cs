@@ -32,9 +32,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.asiakkaatBT = new System.Windows.Forms.Button();
             this.vuokrallaBT = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.kayttajaBT = new System.Windows.Forms.Button();
             this.carsBT = new System.Windows.Forms.Button();
             this.asiakasDG = new System.Windows.Forms.DataGridView();
@@ -58,6 +56,7 @@
             this.muokkaaAsBT = new System.Windows.Forms.Button();
             this.idTB = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +97,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LawnGreen;
+            this.panel2.Controls.Add(this.kayttajaBT);
+            this.panel2.Controls.Add(this.carsBT);
+            this.panel2.Controls.Add(this.vuokrallaBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 860);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -105,26 +107,12 @@
             this.panel2.Size = new System.Drawing.Size(1521, 100);
             this.panel2.TabIndex = 13;
             // 
-            // asiakkaatBT
-            // 
-            this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.asiakkaatBT.Enabled = false;
-            this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asiakkaatBT.Location = new System.Drawing.Point(384, 215);
-            this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiakkaatBT.Name = "asiakkaatBT";
-            this.asiakkaatBT.Size = new System.Drawing.Size(202, 48);
-            this.asiakkaatBT.TabIndex = 18;
-            this.asiakkaatBT.Text = "Asiakkaat";
-            this.asiakkaatBT.UseVisualStyleBackColor = false;
-            // 
             // vuokrallaBT
             // 
             this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
             this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vuokrallaBT.Location = new System.Drawing.Point(660, 215);
+            this.vuokrallaBT.Location = new System.Drawing.Point(670, 25);
             this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vuokrallaBT.Name = "vuokrallaBT";
             this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
@@ -132,25 +120,12 @@
             this.vuokrallaBT.Text = "Vuokralla";
             this.vuokrallaBT.UseVisualStyleBackColor = false;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LawnGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(935, 215);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 48);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Palautuneet";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // kayttajaBT
             // 
             this.kayttajaBT.BackColor = System.Drawing.Color.LawnGreen;
             this.kayttajaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kayttajaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kayttajaBT.Location = new System.Drawing.Point(1199, 215);
+            this.kayttajaBT.Location = new System.Drawing.Point(950, 25);
             this.kayttajaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kayttajaBT.Name = "kayttajaBT";
             this.kayttajaBT.Size = new System.Drawing.Size(202, 48);
@@ -164,7 +139,7 @@
             this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
             this.carsBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.carsBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsBT.Location = new System.Drawing.Point(113, 215);
+            this.carsBT.Location = new System.Drawing.Point(383, 25);
             this.carsBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.carsBT.Name = "carsBT";
             this.carsBT.Size = new System.Drawing.Size(202, 48);
@@ -388,11 +363,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.asiakasDG);
-            this.Controls.Add(this.asiakkaatBT);
-            this.Controls.Add(this.vuokrallaBT);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.kayttajaBT);
-            this.Controls.Add(this.carsBT);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -401,6 +371,7 @@
             this.Load += new System.EventHandler(this.asiakkaat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -413,9 +384,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button asiakkaatBT;
         private System.Windows.Forms.Button vuokrallaBT;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button kayttajaBT;
         private System.Windows.Forms.Button carsBT;
         private System.Windows.Forms.DataGridView asiakasDG;

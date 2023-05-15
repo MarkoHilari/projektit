@@ -35,7 +35,6 @@
             this.asiakkaatBT = new System.Windows.Forms.Button();
             this.kayttajatBT = new System.Windows.Forms.Button();
             this.autotBT = new System.Windows.Forms.Button();
-            this.palautuneetBT = new System.Windows.Forms.Button();
             this.vuokrallaDG = new System.Windows.Forms.DataGridView();
             this.dassePB = new System.Windows.Forms.PictureBox();
             this.dasse1PB = new System.Windows.Forms.PictureBox();
@@ -117,7 +116,6 @@
             this.panel2.Controls.Add(this.asiakkaatBT);
             this.panel2.Controls.Add(this.kayttajatBT);
             this.panel2.Controls.Add(this.autotBT);
-            this.panel2.Controls.Add(this.palautuneetBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1112);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -130,7 +128,7 @@
             this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
             this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asiakkaatBT.Location = new System.Drawing.Point(465, 25);
+            this.asiakkaatBT.Location = new System.Drawing.Point(717, 25);
             this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.asiakkaatBT.Name = "asiakkaatBT";
             this.asiakkaatBT.Size = new System.Drawing.Size(202, 48);
@@ -158,7 +156,7 @@
             this.autotBT.BackColor = System.Drawing.Color.LawnGreen;
             this.autotBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.autotBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autotBT.Location = new System.Drawing.Point(740, 25);
+            this.autotBT.Location = new System.Drawing.Point(992, 25);
             this.autotBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.autotBT.Name = "autotBT";
             this.autotBT.Size = new System.Drawing.Size(202, 48);
@@ -166,20 +164,6 @@
             this.autotBT.Text = "AUTOT";
             this.autotBT.UseVisualStyleBackColor = false;
             this.autotBT.Click += new System.EventHandler(this.autotBT_Click);
-            // 
-            // palautuneetBT
-            // 
-            this.palautuneetBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.palautuneetBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.palautuneetBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.palautuneetBT.Location = new System.Drawing.Point(1015, 25);
-            this.palautuneetBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.palautuneetBT.Name = "palautuneetBT";
-            this.palautuneetBT.Size = new System.Drawing.Size(202, 48);
-            this.palautuneetBT.TabIndex = 15;
-            this.palautuneetBT.Text = "Palautuneet";
-            this.palautuneetBT.UseVisualStyleBackColor = false;
-            this.palautuneetBT.Click += new System.EventHandler(this.palautuneetBT_Click);
             // 
             // vuokrallaDG
             // 
@@ -498,7 +482,6 @@
         private System.Windows.Forms.Button asiakkaatBT;
         private System.Windows.Forms.Button kayttajatBT;
         private System.Windows.Forms.Button autotBT;
-        private System.Windows.Forms.Button palautuneetBT;
         private System.Windows.Forms.DataGridView vuokrallaDG;
         private System.Windows.Forms.PictureBox dassePB;
         private System.Windows.Forms.PictureBox dasse1PB;

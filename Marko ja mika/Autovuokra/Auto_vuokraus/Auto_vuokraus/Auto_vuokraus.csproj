@@ -70,12 +70,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="palautuneet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="palautuneet.Designer.cs">
-      <DependentUpon>palautuneet.cs</DependentUpon>
-    </Compile>
     <Compile Include="USERS.cs" />
     <Compile Include="Vuokralla.cs">
       <SubType>Form</SubType>
@@ -112,9 +106,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="palautuneet.resx">
-      <DependentUpon>palautuneet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vuokralla.resx">
       <DependentUpon>Vuokralla.cs</DependentUpon>
