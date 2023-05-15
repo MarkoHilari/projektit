@@ -429,7 +429,6 @@
             this.asijaCB.Size = new System.Drawing.Size(244, 37);
             this.asijaCB.TabIndex = 44;
             this.asijaCB.Text = "Valitse asijakas";
-            this.asijaCB.SelectedIndexChanged += new System.EventHandler(this.asijaCB_SelectedIndexChanged);
             // 
             // Vuokralla
             // 

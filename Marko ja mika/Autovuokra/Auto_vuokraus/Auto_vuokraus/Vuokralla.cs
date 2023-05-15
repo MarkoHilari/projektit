@@ -71,11 +71,7 @@ namespace Auto_vuokraus
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             
             
-            DataTable table1 = new DataTable();
-            Fill(table1 );  
-            asijaCB.DataSource = table1;
-            asijaCB.DisplayMember = "Name";
-            asijaCB.ValueMember = "";
+            
 
 
             string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
@@ -174,8 +170,24 @@ namespace Auto_vuokraus
                 }
             }
 
+            using (SqlDataReader reader = users.haeAsija())
+            {
+                while (reader.Read())
+                {
+                    string value = reader.GetString(0);
+                    asijaCB.Items.Add(value);
+                }
+            }
             
+            /*asijaCB.Items.Clear(); // ei pelitä
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.Fill(dataTable);
 
+            foreach(DataRow dataRow in dataTable.Rows)
+            {
+                asijaCB.Items.Add(dataRow["Asiakas"]. ToString());
+            }*/
 
 
             /* private void button1_Click(object sender, EventArgs e)
@@ -211,16 +223,12 @@ namespace Auto_vuokraus
             merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
         }
 
-        private void asijaCB_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void asijaCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string j = "olen"; 
-            string o = "pelle";
 
-            asijaCB.DataSource = users.haeAsiakkaat();
 
+            asijaCB.DataSource = users.haeAsiakkaat();       
             
-            
-            
-        }
+        }*/
     }
 }

@@ -235,5 +235,29 @@ namespace Auto_vuokraus
                 return false;
             }
         }
+        public SqlDataReader haeAsija()
+        {
+            SqlConnection connection = new SqlConnection();
+            yhdista.avaaXhteys();
+
+            string kysely = "SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id";
+            SqlCommand command = new SqlCommand(kysely, connection);
+
+            yhdista.avaaXhteys();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                
+            }
+
+            return command.ExecuteReader();
+        }
     }
+
 }
