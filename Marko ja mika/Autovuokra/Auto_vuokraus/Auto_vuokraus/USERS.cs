@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Eramake;
 using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Data.SqlClient;
 
 namespace Auto_vuokraus
 {
@@ -233,14 +234,6 @@ namespace Auto_vuokraus
                 yhdista.suljeYhteys();
                 return false;
             }
-        }
-        public bool haeasija(int id)
-        {
-            MySqlCommand cmd = new MySqlCommand();
-            string lisaa = "SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id";
-            cmd.CommandText = lisaa;
-            cmd.Connection = yhdista.otaYhteys();
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
         }
     }
 }
