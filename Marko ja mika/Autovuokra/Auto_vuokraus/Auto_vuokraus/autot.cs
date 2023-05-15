@@ -37,13 +37,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void palautuneetBT_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            palautuneet palautuneet = new palautuneet();
-            palautuneet.ShowDialog();
-            this.Close();
-        }
+     
 
         private void kayttajatBT_Click(object sender, EventArgs e)
         {
