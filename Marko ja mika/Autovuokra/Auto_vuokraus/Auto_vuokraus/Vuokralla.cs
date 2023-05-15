@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Auto_vuokraus
     {
 
         USERS users = new USERS();
-
+        
 
         public Vuokralla()
         {
@@ -68,9 +69,13 @@ namespace Auto_vuokraus
             // vuokrallaDG.AutoResizeColumns();
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            //string auto = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
-           
+            
+            
+            DataTable table1 = new DataTable();
+            Fill(table1 );  
+            asijaCB.DataSource = table1;
+            asijaCB.DisplayMember = "Name";
+            asijaCB.ValueMember = "";
 
 
             string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
@@ -199,6 +204,23 @@ namespace Auto_vuokraus
              }*/
         }
 
-        
+        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rekTB.Text = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
+            malliTB.Text = vuokrallaDG.CurrentRow.Cells[2].Value.ToString();
+            merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
+        }
+
+        private void asijaCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string j = "olen"; 
+            string o = "pelle";
+
+            asijaCB.DataSource = users.haeAsiakkaat();
+
+            
+            
+            
+        }
     }
 }
