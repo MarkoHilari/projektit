@@ -424,7 +424,7 @@
             // 
             this.asijaCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asijaCB.FormattingEnabled = true;
-            this.asijaCB.Location = new System.Drawing.Point(1783, 217);
+            this.asijaCB.Location = new System.Drawing.Point(1794, 272);
             this.asijaCB.Name = "asijaCB";
             this.asijaCB.Size = new System.Drawing.Size(244, 37);
             this.asijaCB.TabIndex = 44;
