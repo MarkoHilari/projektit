@@ -234,10 +234,13 @@ namespace Auto_vuokraus
                 return false;
             }
         }
-        /*public bool haeasija()
+        public bool haeasija(int id)
         {
             MySqlCommand cmd = new MySqlCommand();
-            string lisaa = 
-        }*/
+            string lisaa = "SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id";
+            cmd.CommandText = lisaa;
+            cmd.Connection = yhdista.otaYhteys();
+            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+        }
     }
 }
