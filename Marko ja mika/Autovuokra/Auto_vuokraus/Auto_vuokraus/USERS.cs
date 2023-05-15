@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Eramake;
 using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Data.SqlClient;
 
 namespace Auto_vuokraus
 {
@@ -234,13 +235,29 @@ namespace Auto_vuokraus
                 return false;
             }
         }
-        public bool haeasija(int id)
+        public SqlDataReader haeAsija()
         {
-            MySqlCommand cmd = new MySqlCommand();
-            string lisaa = "SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id";
-            cmd.CommandText = lisaa;
-            cmd.Connection = yhdista.otaYhteys();
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            SqlConnection connection = new SqlConnection();
+            
+            //string kysely = MySqlCommand("SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id", yhdista.otaYhteys());
+            MySqlCommand command = new MySqlCommand("SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id", yhdista.otaYhteys());
+
+
+            yhdista.avaaXhteys();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                
+            }
+
+            return command.ExecuteReader();
         }
     }
+
 }
