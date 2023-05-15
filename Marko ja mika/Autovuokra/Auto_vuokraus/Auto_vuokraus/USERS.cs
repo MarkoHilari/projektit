@@ -238,10 +238,10 @@ namespace Auto_vuokraus
         public SqlDataReader haeAsija()
         {
             SqlConnection connection = new SqlConnection();
-            yhdista.avaaXhteys();
+            
+            //string kysely = MySqlCommand("SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id", yhdista.otaYhteys());
+            MySqlCommand command = new MySqlCommand("SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id", yhdista.otaYhteys());
 
-            string kysely = "SELECT `asiakasId`, `sNimi` FROM `asiakkaat` WHERE `asiakasId`=@id";
-            SqlCommand command = new SqlCommand(kysely, connection);
 
             yhdista.avaaXhteys();
 
