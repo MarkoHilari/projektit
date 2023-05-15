@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Auto_vuokraus
 
@@ -164,6 +166,26 @@ namespace Auto_vuokraus
                 }
             }
 
+            try
+            {
+
+                MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
+                string selectQuery = "SELECT * FROM asiakkaat" ;
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+                MySqlDataReader reader = command.ExecuteReader();
+                string kaikki = "";
+                
+                    while (reader.Read())
+                {
+                    kaikki = reader.GetString("sNimi");
+                    kaikki += " " + reader.GetString("eNimi");
+                    asijaCB.Items.Add(kaikki);
+                }
+            }
+            catch(Exception ex) { 
+                    MessageBox.Show(ex.Message);
+            }
             /*using (SqlDataReader reader = users.haeAsija())
             {
                 while (reader.Read())
