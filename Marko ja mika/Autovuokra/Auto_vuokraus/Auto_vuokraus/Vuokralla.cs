@@ -305,6 +305,9 @@ namespace Auto_vuokraus
         private void vuokraDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
+
+            alkuDTM.Value = vuokraDG.CurrentRow.Cells[2].Value.ToString();
+            loppuDTM.Value = vuokraDG.CurrentRow.Cells[1].Value.ToString();
         }
 
         private void muokkaavarBT_Click(object sender, EventArgs e)
