@@ -288,7 +288,7 @@ namespace Auto_vuokraus
 
         public DataTable haeVuokrat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT  `autoRek`, `merkki`, `malli`, `asiakas`, `varauspaiva`, `varausloppu` FROM `vuokraus` ", yhdista.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT `varausNro`, `autoRek`, `merkki`, `malli`, `asiakas`, `varauspaiva`, `varausloppu` FROM `vuokraus` ", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
@@ -299,5 +299,27 @@ namespace Auto_vuokraus
             return table;
         }
 
+        public bool poistaVaraus(int varausID)
+        {
+            MySqlCommand komento = new MySqlCommand();
+            string poistaKysely = "DELETE FROM `vuokraus` WHERE `varausNro`=@nro";
+            komento.CommandText = poistaKysely;
+            komento.Connection = yhdista.otaYhteys();
+            //@num
+            komento.Parameters.Add("@nro", MySqlDbType.Int32).Value = varausID;
+
+            yhdista.avaaXhteys();
+
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.asiakkaatBT = new System.Windows.Forms.Button();
@@ -59,11 +60,12 @@
             this.fordPB = new System.Windows.Forms.PictureBox();
             this.dasse1PB = new System.Windows.Forms.PictureBox();
             this.dassePB = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.varaaBT = new System.Windows.Forms.Button();
             this.varausNroTB = new System.Windows.Forms.TextBox();
             this.vuokraDG = new System.Windows.Forms.DataGridView();
+            this.poistavaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toyota1PB)).BeginInit();
@@ -78,7 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fordPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,6 +107,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2265, 174);
             this.panel1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
+            this.pictureBox1.Location = new System.Drawing.Point(2141, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -421,20 +432,10 @@
             this.dassePB.TabStop = false;
             this.dassePB.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(2141, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // varaaBT
             // 
             this.varaaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.varaaBT.Location = new System.Drawing.Point(1600, 800);
+            this.varaaBT.Location = new System.Drawing.Point(1482, 763);
             this.varaaBT.Name = "varaaBT";
             this.varaaBT.Size = new System.Drawing.Size(117, 35);
             this.varaaBT.TabIndex = 45;
@@ -448,7 +449,6 @@
             this.varausNroTB.Name = "varausNroTB";
             this.varausNroTB.Size = new System.Drawing.Size(235, 26);
             this.varausNroTB.TabIndex = 46;
-            this.varausNroTB.Visible = false;
             // 
             // vuokraDG
             // 
@@ -459,12 +459,25 @@
             this.vuokraDG.RowTemplate.Height = 28;
             this.vuokraDG.Size = new System.Drawing.Size(1076, 311);
             this.vuokraDG.TabIndex = 47;
+            this.vuokraDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokraDG_CellClick);
+            // 
+            // poistavaBT
+            // 
+            this.poistavaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poistavaBT.Location = new System.Drawing.Point(1701, 763);
+            this.poistavaBT.Name = "poistavaBT";
+            this.poistavaBT.Size = new System.Drawing.Size(117, 35);
+            this.poistavaBT.TabIndex = 48;
+            this.poistavaBT.Text = "Poista";
+            this.poistavaBT.UseVisualStyleBackColor = true;
+            this.poistavaBT.Click += new System.EventHandler(this.poistavaBT_Click);
             // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.poistavaBT);
             this.Controls.Add(this.vuokraDG);
             this.Controls.Add(this.varausNroTB);
             this.Controls.Add(this.varaaBT);
@@ -502,6 +515,7 @@
             this.Load += new System.EventHandler(this.Vuokralla_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toyota1PB)).EndInit();
@@ -516,7 +530,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fordPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -560,5 +573,6 @@
         private System.Windows.Forms.Button varaaBT;
         private System.Windows.Forms.TextBox varausNroTB;
         private System.Windows.Forms.DataGridView vuokraDG;
+        private System.Windows.Forms.Button poistavaBT;
     }
 }

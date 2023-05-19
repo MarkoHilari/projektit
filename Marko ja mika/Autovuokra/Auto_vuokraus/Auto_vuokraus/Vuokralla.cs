@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -272,5 +273,32 @@ namespace Auto_vuokraus
             }
         }
 
+        private void poistavaBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(varausNroTB.Text);
+
+                if (users.poistaVaraus(id))
+                {
+                    vuokraDG.DataSource = users.haeVuokrat();
+                    MessageBox.Show("Asiakas poistettu onnistuneesti", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error - Asiakasta ei poistettu", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void vuokraDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
+        }
     }
 }
