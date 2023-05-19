@@ -449,6 +449,7 @@
             this.varausNroTB.Name = "varausNroTB";
             this.varausNroTB.Size = new System.Drawing.Size(235, 26);
             this.varausNroTB.TabIndex = 46;
+            this.varausNroTB.Visible = false;
             // 
             // vuokraDG
             // 
