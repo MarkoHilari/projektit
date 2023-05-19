@@ -252,10 +252,16 @@ namespace Auto_vuokraus
             DateTime alku = alkuDTM.Value;
             DateTime loppu = loppuDTM.Value;
 
+            if (alku.Day < DateTime.Now.Day)
+            {
+                MessageBox.Show("Päivä pitää olla tämä päivä tai myöhempi", "Virheellinen sisäänkirjaamis päivä ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             if (rknro.Trim().Equals("") || malli.Trim().Equals("") || merk.Trim().Equals("") || asiakas.Trim().Equals(""))
             {
                 MessageBox.Show("Vaaditut kentät -  Ajoneuvo - Asiakastieto ", "lisää varaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
+
             else
             {
                 Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
@@ -300,5 +306,43 @@ namespace Auto_vuokraus
         {
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
         }
+
+        private void muokkaavarBT_Click(object sender, EventArgs e)
+        {
+        
+          
+          
+
+            try
+            {
+                int id = Convert.ToInt32(varausNroTB.Text);
+
+                DateTime alku = alkuDTM.Value;
+                DateTime loppu = loppuDTM.Value;
+                //id = Convert.ToInt32(varausNroTB.Text);
+               
+                if(alku < DateTime.Now)
+                {
+                    Boolean muokkaaVuokraus = users.muokkaaVuokraus(id, loppu, alku);
+
+                    if (muokkaaVuokraus)
+                    {
+                        vuokraDG.DataSource = users.haeVuokrat();
+
+                        MessageBox.Show("Asiakas tiedot päivitetty onnistuneesti", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error - Asiakasta ei päivitetty", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+      
     }
 }

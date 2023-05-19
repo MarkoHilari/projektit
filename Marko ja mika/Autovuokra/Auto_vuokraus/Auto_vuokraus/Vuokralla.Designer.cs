@@ -64,6 +64,7 @@
             this.varausNroTB = new System.Windows.Forms.TextBox();
             this.vuokraDG = new System.Windows.Forms.DataGridView();
             this.poistavaBT = new System.Windows.Forms.Button();
+            this.muokkaavarBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -473,11 +474,23 @@
             this.poistavaBT.UseVisualStyleBackColor = true;
             this.poistavaBT.Click += new System.EventHandler(this.poistavaBT_Click);
             // 
+            // muokkaavarBT
+            // 
+            this.muokkaavarBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muokkaavarBT.Location = new System.Drawing.Point(1482, 833);
+            this.muokkaavarBT.Name = "muokkaavarBT";
+            this.muokkaavarBT.Size = new System.Drawing.Size(117, 35);
+            this.muokkaavarBT.TabIndex = 49;
+            this.muokkaavarBT.Text = "Muokkaa";
+            this.muokkaavarBT.UseVisualStyleBackColor = true;
+            this.muokkaavarBT.Click += new System.EventHandler(this.muokkaavarBT_Click);
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.muokkaavarBT);
             this.Controls.Add(this.poistavaBT);
             this.Controls.Add(this.vuokraDG);
             this.Controls.Add(this.varausNroTB);
@@ -575,5 +588,6 @@
         private System.Windows.Forms.TextBox varausNroTB;
         private System.Windows.Forms.DataGridView vuokraDG;
         private System.Windows.Forms.Button poistavaBT;
+        private System.Windows.Forms.Button muokkaavarBT;
     }
 }

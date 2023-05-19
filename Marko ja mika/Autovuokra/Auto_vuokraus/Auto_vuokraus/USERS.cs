@@ -321,5 +321,32 @@ namespace Auto_vuokraus
                 return false;
             }
         }
+
+        public bool muokkaaVuokraus(int id, DateTime loppu, DateTime alku)
+        {
+            MySqlCommand komento = new MySqlCommand();
+            string muokkaaKysely = "UPDATE `vuokraus` SET `varausNro`=@vNro,`varauspaiva`=@alk,`varausloppu`=@lop";
+            komento.CommandText = muokkaaKysely;
+            komento.Connection = yhdista.otaYhteys();
+            //@id,@enimi,@snimi,@lahi,@pnro)
+            komento.Parameters.Add("@vNro", MySqlDbType.Int32).Value = id;
+            komento.Parameters.Add("@alk", MySqlDbType.Date).Value = alku;
+            komento.Parameters.Add("@lop", MySqlDbType.Date).Value = loppu;
+            //MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
+
+            yhdista.avaaXhteys();
+
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+
+            }
+        }
     }
 }
