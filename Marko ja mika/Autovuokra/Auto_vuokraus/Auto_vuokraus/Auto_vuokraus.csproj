@@ -185,5 +185,8 @@
   <ItemGroup>
     <None Include="Pics\toijoti1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\images.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

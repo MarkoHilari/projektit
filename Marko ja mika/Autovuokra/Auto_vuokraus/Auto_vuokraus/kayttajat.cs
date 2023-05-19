@@ -20,10 +20,7 @@ namespace Auto_vuokraus
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Paaikkuna ikkuna = new Paaikkuna();
-            ikkuna.ShowDialog();
-            this.Close();
+            Application.Exit();
         }
 
         private void lisaaAsBT_Click(object sender, EventArgs e)

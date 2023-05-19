@@ -36,20 +36,8 @@
             this.kayttajatBT = new System.Windows.Forms.Button();
             this.autotBT = new System.Windows.Forms.Button();
             this.vuokrallaDG = new System.Windows.Forms.DataGridView();
-            this.dassePB = new System.Windows.Forms.PictureBox();
-            this.dasse1PB = new System.Windows.Forms.PictureBox();
-            this.fordPB = new System.Windows.Forms.PictureBox();
-            this.fordPB1 = new System.Windows.Forms.PictureBox();
-            this.peelPB = new System.Windows.Forms.PictureBox();
-            this.peel1PB = new System.Windows.Forms.PictureBox();
-            this.mossePB = new System.Windows.Forms.PictureBox();
-            this.mosse1PB = new System.Windows.Forms.PictureBox();
-            this.sausagePB = new System.Windows.Forms.PictureBox();
-            this.sausage1PB = new System.Windows.Forms.PictureBox();
-            this.toyotaPB = new System.Windows.Forms.PictureBox();
-            this.toyota1PB = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.alkuDTM = new System.Windows.Forms.DateTimePicker();
+            this.loppuDTM = new System.Windows.Forms.DateTimePicker();
             this.rekLB = new System.Windows.Forms.Label();
             this.merkkiLB = new System.Windows.Forms.Label();
             this.malliLB = new System.Windows.Forms.Label();
@@ -59,21 +47,39 @@
             this.merkkiTB = new System.Windows.Forms.TextBox();
             this.malliTB = new System.Windows.Forms.TextBox();
             this.asijaCB = new System.Windows.Forms.ComboBox();
+            this.toyota1PB = new System.Windows.Forms.PictureBox();
+            this.toyotaPB = new System.Windows.Forms.PictureBox();
+            this.sausage1PB = new System.Windows.Forms.PictureBox();
+            this.sausagePB = new System.Windows.Forms.PictureBox();
+            this.mosse1PB = new System.Windows.Forms.PictureBox();
+            this.mossePB = new System.Windows.Forms.PictureBox();
+            this.peel1PB = new System.Windows.Forms.PictureBox();
+            this.peelPB = new System.Windows.Forms.PictureBox();
+            this.fordPB1 = new System.Windows.Forms.PictureBox();
+            this.fordPB = new System.Windows.Forms.PictureBox();
+            this.dasse1PB = new System.Windows.Forms.PictureBox();
+            this.dassePB = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.varaaBT = new System.Windows.Forms.Button();
+            this.varausNroTB = new System.Windows.Forms.TextBox();
+            this.vuokraDG = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fordPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peelPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mossePB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mosse1PB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sausagePB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sausage1PB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toyotaPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toyota1PB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toyotaPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sausage1PB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sausagePB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosse1PB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mossePB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peelPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -91,6 +97,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LawnGreen;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -178,154 +185,21 @@
             this.vuokrallaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellClick);
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
             // 
-            // dassePB
+            // alkuDTM
             // 
-            this.dassePB.Image = global::Auto_vuokraus.Properties.Resources.dasse;
-            this.dassePB.Location = new System.Drawing.Point(67, 212);
-            this.dassePB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dassePB.Name = "dassePB";
-            this.dassePB.Size = new System.Drawing.Size(143, 121);
-            this.dassePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dassePB.TabIndex = 22;
-            this.dassePB.TabStop = false;
-            this.dassePB.Visible = false;
+            this.alkuDTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alkuDTM.Location = new System.Drawing.Point(1399, 686);
+            this.alkuDTM.Name = "alkuDTM";
+            this.alkuDTM.Size = new System.Drawing.Size(200, 35);
+            this.alkuDTM.TabIndex = 34;
             // 
-            // dasse1PB
+            // loppuDTM
             // 
-            this.dasse1PB.Image = global::Auto_vuokraus.Properties.Resources.dasse1;
-            this.dasse1PB.Location = new System.Drawing.Point(67, 212);
-            this.dasse1PB.Name = "dasse1PB";
-            this.dasse1PB.Size = new System.Drawing.Size(143, 121);
-            this.dasse1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dasse1PB.TabIndex = 23;
-            this.dasse1PB.TabStop = false;
-            this.dasse1PB.Visible = false;
-            // 
-            // fordPB
-            // 
-            this.fordPB.Image = global::Auto_vuokraus.Properties.Resources.ford1;
-            this.fordPB.Location = new System.Drawing.Point(67, 364);
-            this.fordPB.Name = "fordPB";
-            this.fordPB.Size = new System.Drawing.Size(143, 121);
-            this.fordPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fordPB.TabIndex = 24;
-            this.fordPB.TabStop = false;
-            this.fordPB.Visible = false;
-            // 
-            // fordPB1
-            // 
-            this.fordPB1.Image = global::Auto_vuokraus.Properties.Resources.ford;
-            this.fordPB1.Location = new System.Drawing.Point(67, 364);
-            this.fordPB1.Name = "fordPB1";
-            this.fordPB1.Size = new System.Drawing.Size(143, 121);
-            this.fordPB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fordPB1.TabIndex = 25;
-            this.fordPB1.TabStop = false;
-            this.fordPB1.Visible = false;
-            // 
-            // peelPB
-            // 
-            this.peelPB.Image = global::Auto_vuokraus.Properties.Resources.peel;
-            this.peelPB.Location = new System.Drawing.Point(67, 520);
-            this.peelPB.Name = "peelPB";
-            this.peelPB.Size = new System.Drawing.Size(143, 121);
-            this.peelPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.peelPB.TabIndex = 26;
-            this.peelPB.TabStop = false;
-            this.peelPB.Visible = false;
-            // 
-            // peel1PB
-            // 
-            this.peel1PB.Image = global::Auto_vuokraus.Properties.Resources.peel1;
-            this.peel1PB.Location = new System.Drawing.Point(67, 520);
-            this.peel1PB.Name = "peel1PB";
-            this.peel1PB.Size = new System.Drawing.Size(143, 121);
-            this.peel1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.peel1PB.TabIndex = 27;
-            this.peel1PB.TabStop = false;
-            this.peel1PB.Visible = false;
-            // 
-            // mossePB
-            // 
-            this.mossePB.Image = global::Auto_vuokraus.Properties.Resources.pirssi;
-            this.mossePB.Location = new System.Drawing.Point(67, 677);
-            this.mossePB.Name = "mossePB";
-            this.mossePB.Size = new System.Drawing.Size(143, 121);
-            this.mossePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mossePB.TabIndex = 28;
-            this.mossePB.TabStop = false;
-            this.mossePB.Visible = false;
-            // 
-            // mosse1PB
-            // 
-            this.mosse1PB.Image = global::Auto_vuokraus.Properties.Resources.pirssi1;
-            this.mosse1PB.Location = new System.Drawing.Point(67, 677);
-            this.mosse1PB.Name = "mosse1PB";
-            this.mosse1PB.Size = new System.Drawing.Size(143, 121);
-            this.mosse1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mosse1PB.TabIndex = 29;
-            this.mosse1PB.TabStop = false;
-            this.mosse1PB.Visible = false;
-            // 
-            // sausagePB
-            // 
-            this.sausagePB.Image = global::Auto_vuokraus.Properties.Resources.sausage;
-            this.sausagePB.Location = new System.Drawing.Point(67, 833);
-            this.sausagePB.Name = "sausagePB";
-            this.sausagePB.Size = new System.Drawing.Size(143, 121);
-            this.sausagePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sausagePB.TabIndex = 30;
-            this.sausagePB.TabStop = false;
-            this.sausagePB.Visible = false;
-            // 
-            // sausage1PB
-            // 
-            this.sausage1PB.Image = global::Auto_vuokraus.Properties.Resources.sausage1;
-            this.sausage1PB.Location = new System.Drawing.Point(67, 833);
-            this.sausage1PB.Name = "sausage1PB";
-            this.sausage1PB.Size = new System.Drawing.Size(143, 121);
-            this.sausage1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sausage1PB.TabIndex = 31;
-            this.sausage1PB.TabStop = false;
-            this.sausage1PB.Visible = false;
-            // 
-            // toyotaPB
-            // 
-            this.toyotaPB.Image = global::Auto_vuokraus.Properties.Resources.toijoti;
-            this.toyotaPB.Location = new System.Drawing.Point(67, 988);
-            this.toyotaPB.Name = "toyotaPB";
-            this.toyotaPB.Size = new System.Drawing.Size(143, 121);
-            this.toyotaPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.toyotaPB.TabIndex = 32;
-            this.toyotaPB.TabStop = false;
-            this.toyotaPB.Visible = false;
-            // 
-            // toyota1PB
-            // 
-            this.toyota1PB.Image = global::Auto_vuokraus.Properties.Resources.toijoti1;
-            this.toyota1PB.Location = new System.Drawing.Point(67, 988);
-            this.toyota1PB.Name = "toyota1PB";
-            this.toyota1PB.Size = new System.Drawing.Size(143, 121);
-            this.toyota1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.toyota1PB.TabIndex = 33;
-            this.toyota1PB.TabStop = false;
-            this.toyota1PB.Visible = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1437, 462);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 35);
-            this.dateTimePicker1.TabIndex = 34;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(1739, 462);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 35);
-            this.dateTimePicker2.TabIndex = 35;
+            this.loppuDTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loppuDTM.Location = new System.Drawing.Point(1701, 686);
+            this.loppuDTM.Name = "loppuDTM";
+            this.loppuDTM.Size = new System.Drawing.Size(200, 35);
+            this.loppuDTM.TabIndex = 35;
             // 
             // rekLB
             // 
@@ -361,7 +235,7 @@
             // 
             this.alku.AutoSize = true;
             this.alku.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alku.Location = new System.Drawing.Point(1475, 407);
+            this.alku.Location = new System.Drawing.Point(1437, 631);
             this.alku.Name = "alku";
             this.alku.Size = new System.Drawing.Size(111, 38);
             this.alku.TabIndex = 39;
@@ -371,7 +245,7 @@
             // 
             this.loppu.AutoSize = true;
             this.loppu.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loppu.Location = new System.Drawing.Point(1787, 407);
+            this.loppu.Location = new System.Drawing.Point(1749, 631);
             this.loppu.Name = "loppu";
             this.loppu.Size = new System.Drawing.Size(110, 38);
             this.loppu.TabIndex = 40;
@@ -414,11 +288,186 @@
             this.asijaCB.TabIndex = 44;
             this.asijaCB.Text = "Valitse asijakas";
             // 
+            // toyota1PB
+            // 
+            this.toyota1PB.Image = global::Auto_vuokraus.Properties.Resources.toijoti1;
+            this.toyota1PB.Location = new System.Drawing.Point(67, 988);
+            this.toyota1PB.Name = "toyota1PB";
+            this.toyota1PB.Size = new System.Drawing.Size(143, 121);
+            this.toyota1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.toyota1PB.TabIndex = 33;
+            this.toyota1PB.TabStop = false;
+            this.toyota1PB.Visible = false;
+            // 
+            // toyotaPB
+            // 
+            this.toyotaPB.Image = global::Auto_vuokraus.Properties.Resources.toijoti;
+            this.toyotaPB.Location = new System.Drawing.Point(67, 988);
+            this.toyotaPB.Name = "toyotaPB";
+            this.toyotaPB.Size = new System.Drawing.Size(143, 121);
+            this.toyotaPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.toyotaPB.TabIndex = 32;
+            this.toyotaPB.TabStop = false;
+            this.toyotaPB.Visible = false;
+            // 
+            // sausage1PB
+            // 
+            this.sausage1PB.Image = global::Auto_vuokraus.Properties.Resources.sausage1;
+            this.sausage1PB.Location = new System.Drawing.Point(67, 833);
+            this.sausage1PB.Name = "sausage1PB";
+            this.sausage1PB.Size = new System.Drawing.Size(143, 121);
+            this.sausage1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sausage1PB.TabIndex = 31;
+            this.sausage1PB.TabStop = false;
+            this.sausage1PB.Visible = false;
+            // 
+            // sausagePB
+            // 
+            this.sausagePB.Image = global::Auto_vuokraus.Properties.Resources.sausage;
+            this.sausagePB.Location = new System.Drawing.Point(67, 833);
+            this.sausagePB.Name = "sausagePB";
+            this.sausagePB.Size = new System.Drawing.Size(143, 121);
+            this.sausagePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sausagePB.TabIndex = 30;
+            this.sausagePB.TabStop = false;
+            this.sausagePB.Visible = false;
+            // 
+            // mosse1PB
+            // 
+            this.mosse1PB.Image = global::Auto_vuokraus.Properties.Resources.pirssi1;
+            this.mosse1PB.Location = new System.Drawing.Point(67, 677);
+            this.mosse1PB.Name = "mosse1PB";
+            this.mosse1PB.Size = new System.Drawing.Size(143, 121);
+            this.mosse1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mosse1PB.TabIndex = 29;
+            this.mosse1PB.TabStop = false;
+            this.mosse1PB.Visible = false;
+            // 
+            // mossePB
+            // 
+            this.mossePB.Image = global::Auto_vuokraus.Properties.Resources.pirssi;
+            this.mossePB.Location = new System.Drawing.Point(67, 677);
+            this.mossePB.Name = "mossePB";
+            this.mossePB.Size = new System.Drawing.Size(143, 121);
+            this.mossePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mossePB.TabIndex = 28;
+            this.mossePB.TabStop = false;
+            this.mossePB.Visible = false;
+            // 
+            // peel1PB
+            // 
+            this.peel1PB.Image = global::Auto_vuokraus.Properties.Resources.peel1;
+            this.peel1PB.Location = new System.Drawing.Point(67, 520);
+            this.peel1PB.Name = "peel1PB";
+            this.peel1PB.Size = new System.Drawing.Size(143, 121);
+            this.peel1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.peel1PB.TabIndex = 27;
+            this.peel1PB.TabStop = false;
+            this.peel1PB.Visible = false;
+            // 
+            // peelPB
+            // 
+            this.peelPB.Image = global::Auto_vuokraus.Properties.Resources.peel;
+            this.peelPB.Location = new System.Drawing.Point(67, 520);
+            this.peelPB.Name = "peelPB";
+            this.peelPB.Size = new System.Drawing.Size(143, 121);
+            this.peelPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.peelPB.TabIndex = 26;
+            this.peelPB.TabStop = false;
+            this.peelPB.Visible = false;
+            // 
+            // fordPB1
+            // 
+            this.fordPB1.Image = global::Auto_vuokraus.Properties.Resources.ford;
+            this.fordPB1.Location = new System.Drawing.Point(67, 364);
+            this.fordPB1.Name = "fordPB1";
+            this.fordPB1.Size = new System.Drawing.Size(143, 121);
+            this.fordPB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fordPB1.TabIndex = 25;
+            this.fordPB1.TabStop = false;
+            this.fordPB1.Visible = false;
+            // 
+            // fordPB
+            // 
+            this.fordPB.Image = global::Auto_vuokraus.Properties.Resources.ford1;
+            this.fordPB.Location = new System.Drawing.Point(67, 364);
+            this.fordPB.Name = "fordPB";
+            this.fordPB.Size = new System.Drawing.Size(143, 121);
+            this.fordPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fordPB.TabIndex = 24;
+            this.fordPB.TabStop = false;
+            this.fordPB.Visible = false;
+            // 
+            // dasse1PB
+            // 
+            this.dasse1PB.Image = global::Auto_vuokraus.Properties.Resources.dasse1;
+            this.dasse1PB.Location = new System.Drawing.Point(67, 212);
+            this.dasse1PB.Name = "dasse1PB";
+            this.dasse1PB.Size = new System.Drawing.Size(143, 121);
+            this.dasse1PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dasse1PB.TabIndex = 23;
+            this.dasse1PB.TabStop = false;
+            this.dasse1PB.Visible = false;
+            // 
+            // dassePB
+            // 
+            this.dassePB.Image = global::Auto_vuokraus.Properties.Resources.dasse;
+            this.dassePB.Location = new System.Drawing.Point(67, 212);
+            this.dassePB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dassePB.Name = "dassePB";
+            this.dassePB.Size = new System.Drawing.Size(143, 121);
+            this.dassePB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dassePB.TabIndex = 22;
+            this.dassePB.TabStop = false;
+            this.dassePB.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
+            this.pictureBox1.Location = new System.Drawing.Point(2141, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // varaaBT
+            // 
+            this.varaaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.varaaBT.Location = new System.Drawing.Point(1600, 800);
+            this.varaaBT.Name = "varaaBT";
+            this.varaaBT.Size = new System.Drawing.Size(117, 35);
+            this.varaaBT.TabIndex = 45;
+            this.varaaBT.Text = "Varaa";
+            this.varaaBT.UseVisualStyleBackColor = true;
+            this.varaaBT.Click += new System.EventHandler(this.varaaBT_Click);
+            // 
+            // varausNroTB
+            // 
+            this.varausNroTB.Location = new System.Drawing.Point(1407, 398);
+            this.varausNroTB.Name = "varausNroTB";
+            this.varausNroTB.Size = new System.Drawing.Size(235, 26);
+            this.varausNroTB.TabIndex = 46;
+            this.varausNroTB.Visible = false;
+            // 
+            // vuokraDG
+            // 
+            this.vuokraDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vuokraDG.Location = new System.Drawing.Point(276, 705);
+            this.vuokraDG.Name = "vuokraDG";
+            this.vuokraDG.RowHeadersWidth = 62;
+            this.vuokraDG.RowTemplate.Height = 28;
+            this.vuokraDG.Size = new System.Drawing.Size(1076, 311);
+            this.vuokraDG.TabIndex = 47;
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.vuokraDG);
+            this.Controls.Add(this.varausNroTB);
+            this.Controls.Add(this.varaaBT);
             this.Controls.Add(this.asijaCB);
             this.Controls.Add(this.malliTB);
             this.Controls.Add(this.merkkiTB);
@@ -428,8 +477,8 @@
             this.Controls.Add(this.malliLB);
             this.Controls.Add(this.merkkiLB);
             this.Controls.Add(this.rekLB);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.loppuDTM);
+            this.Controls.Add(this.alkuDTM);
             this.Controls.Add(this.toyota1PB);
             this.Controls.Add(this.toyotaPB);
             this.Controls.Add(this.sausage1PB);
@@ -455,18 +504,20 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vuokrallaDG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fordPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peelPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mossePB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mosse1PB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sausagePB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sausage1PB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.toyotaPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toyota1PB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toyotaPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sausage1PB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sausagePB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosse1PB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mossePB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peel1PB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peelPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fordPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,8 +545,8 @@
         private System.Windows.Forms.PictureBox sausage1PB;
         private System.Windows.Forms.PictureBox toyotaPB;
         private System.Windows.Forms.PictureBox toyota1PB;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker alkuDTM;
+        private System.Windows.Forms.DateTimePicker loppuDTM;
         private System.Windows.Forms.Label rekLB;
         private System.Windows.Forms.Label merkkiLB;
         private System.Windows.Forms.Label malliLB;
@@ -505,5 +556,9 @@
         private System.Windows.Forms.TextBox merkkiTB;
         private System.Windows.Forms.TextBox malliTB;
         private System.Windows.Forms.ComboBox asijaCB;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button varaaBT;
+        private System.Windows.Forms.TextBox varausNroTB;
+        private System.Windows.Forms.DataGridView vuokraDG;
     }
 }

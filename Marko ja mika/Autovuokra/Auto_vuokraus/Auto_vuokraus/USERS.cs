@@ -258,6 +258,46 @@ namespace Auto_vuokraus
 
             return command.ExecuteReader();
         }*/
-    }
+        public bool lisaaVaraus(string id, string asiakas, string rknro, string merk, string malli, DateTime alku, DateTime loppu)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            string kysely = "INSERT INTO `vuokraus`(`varausNro`, `autoRek`, `merkki`, `malli`, `asiakas`, `varauspaiva`, `varausloppu`) VALUES (@id, @rek, @mer, @mal, @asi, @alk, @lop)";
+            cmd.CommandText = kysely;
+            cmd.Connection = yhdista.otaYhteys();
+            cmd.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;
+            cmd.Parameters.Add("@asi", MySqlDbType.VarChar).Value = asiakas;
+            cmd.Parameters.Add("@alk", MySqlDbType.Date).Value = alku;
+            cmd.Parameters.Add("@lop", MySqlDbType.Date).Value = loppu;
+            cmd.Parameters.Add("@rek", MySqlDbType.VarChar).Value = rknro;
+            cmd.Parameters.Add("@mer", MySqlDbType.VarChar).Value = merk;
+            cmd.Parameters.Add("@mal", MySqlDbType.VarChar).Value = malli;
 
+
+            yhdista.avaaXhteys();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+        }
+
+        public DataTable haeVuokrat()
+        {
+            MySqlCommand komento = new MySqlCommand("SELECT  `autoRek`, `merkki`, `malli`, `asiakas`, `varauspaiva`, `varausloppu` FROM `vuokraus` ", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = komento;
+            adapter.Fill(table);
+
+
+            return table;
+        }
+
+    }
 }

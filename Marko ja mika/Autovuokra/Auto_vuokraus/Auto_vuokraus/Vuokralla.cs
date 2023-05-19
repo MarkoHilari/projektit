@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Auto_vuokraus
@@ -65,9 +66,10 @@ namespace Auto_vuokraus
             // vuokrallaDG.AutoResizeColumns();
             this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
             vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            
-            
-            
+            vuokraDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            vuokraDG.DataSource = users.haeVuokrat();
+
+
 
 
             string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
@@ -239,12 +241,36 @@ namespace Auto_vuokraus
             merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
         }
 
-        /*private void asijaCB_SelectedIndexChanged(object sender, EventArgs e)
+        private void varaaBT_Click(object sender, EventArgs e)
         {
+            string id = varausNroTB.Text;
+            string asiakas = asijaCB.Text;
+            string rknro = rekTB.Text;
+            string malli = malliTB.Text;
+            string merk = merkkiTB.Text;
+            DateTime alku = alkuDTM.Value;
+            DateTime loppu = loppuDTM.Value;
 
+            if (rknro.Trim().Equals("") || malli.Trim().Equals("") || merk.Trim().Equals("") || asiakas.Trim().Equals(""))
+            {
+                MessageBox.Show("Vaaditut kentät -  Ajoneuvo - Asiakastieto ", "lisää varaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
+                if (lisaaVaraus)
+                {
+                    vuokraDG.DataSource = users.haeVuokrat();
+                    this.vuokraDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
 
-            asijaCB.DataSource = users.haeAsiakkaat();       
-            
-        }*/
+                    MessageBox.Show("Uusi varaus lisätty onnistuneesti", "Lisää varaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Uusi varaus ei lisätty onnistuneesti", "Lisää varaus", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
     }
 }
