@@ -307,8 +307,8 @@ namespace Auto_vuokraus
         {
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
 
-            alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[2].Value.ToString());
-            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[1].Value.ToString());
+            alkuDTM.Value = Co((DateTime)vuokraDG.CurrentRow.Cells[2].Value);
+            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[1].Value);
         }
         
         private void muokkaavarBT_Click(object sender, EventArgs e)
