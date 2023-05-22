@@ -313,34 +313,36 @@ namespace Auto_vuokraus
         
         private void muokkaavarBT_Click(object sender, EventArgs e)
         {
-        
-          
-          
 
             try
             {
                 int id = Convert.ToInt32(varausNroTB.Text);
-
+              
                 DateTime alku = alkuDTM.Value;
                 DateTime loppu = loppuDTM.Value;
                 //id = Convert.ToInt32(varausNroTB.Text);
                
                 if(alku < DateTime.Now)
                 {
-                    Boolean muokkaaVuokraus = users.muokkaaVuokraus(id, loppu, alku);
-
-                    if (muokkaaVuokraus)
+                    MessageBox.Show("Päivää", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (loppu < alku)
+                {
+                    MessageBox.Show("Helloo", "Tarks", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                }
+                else
+                {
+                    if(users.muokkaaVuokraus(id, alku, loppu)) 
                     {
-                        vuokraDG.DataSource = users.haeVuokrat();
-
-                        MessageBox.Show("Asiakas tiedot päivitetty onnistuneesti", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("päivee", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Error - Asiakasta ei päivitetty", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                        MessageBox.Show("looiiii", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                    
             }
             catch (Exception ex)
             {

@@ -325,14 +325,18 @@ namespace Auto_vuokraus
         public bool muokkaaVuokraus(int id, DateTime loppu, DateTime alku)
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaaKysely = "UPDATE `vuokraus` SET `varausNro`=@vNro,`varauspaiva`=@alk,`varausloppu`=@lop";
+            string muokkaaKysely = "UPDATE vuokraus SET varausNro=@vNro,varauspaiva=@alk,varausloppu=@lop WHERE varausNro=@vNro";
             komento.CommandText = muokkaaKysely;
             komento.Connection = yhdista.otaYhteys();
             //@id,@enimi,@snimi,@lahi,@pnro)
             komento.Parameters.Add("@vNro", MySqlDbType.Int32).Value = id;
+            
+            /*komento.Parameters.Add("@mer", MySqlDbType.Int32).Value = merkki;
+            komento.Parameters.Add("@mal", MySqlDbType.Int32).Value = malli;
+            komento.Parameters.Add("@asi", MySqlDbType.Int32).Value = asiakas;*/
             komento.Parameters.Add("@alk", MySqlDbType.Date).Value = alku;
             komento.Parameters.Add("@lop", MySqlDbType.Date).Value = loppu;
-            //MessageBox.Show(id + " " + enimi + " " + snimi + " " + osoite + " " + city + " " + pnro + " " + email + " " + puh);
+            MessageBox.Show(id + " " +loppu + " "+ alku);
 
             yhdista.avaaXhteys();
 
