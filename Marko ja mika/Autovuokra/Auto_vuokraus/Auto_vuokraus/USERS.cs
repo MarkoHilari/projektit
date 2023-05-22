@@ -288,7 +288,7 @@ namespace Auto_vuokraus
 
         public DataTable haeVuokrat()
         {
-            MySqlCommand komento = new MySqlCommand("SELECT `varausNro`, `autoRek`, `merkki`, `malli`, `asiakas`, `varauspaiva`, `varausloppu` FROM `vuokraus` ", yhdista.otaYhteys());
+            MySqlCommand komento = new MySqlCommand("SELECT varausNro, autoRek, merkki, malli, asiakas, varauspaiva, varausloppu FROM vuokraus ", yhdista.otaYhteys());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
