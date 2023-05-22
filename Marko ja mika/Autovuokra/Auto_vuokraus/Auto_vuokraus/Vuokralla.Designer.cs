@@ -455,7 +455,7 @@
             // vuokraDG
             // 
             this.vuokraDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vuokraDG.Location = new System.Drawing.Point(276, 705);
+            this.vuokraDG.Location = new System.Drawing.Point(276, 697);
             this.vuokraDG.Name = "vuokraDG";
             this.vuokraDG.RowHeadersWidth = 62;
             this.vuokraDG.RowTemplate.Height = 28;

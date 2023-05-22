@@ -267,6 +267,7 @@ namespace Auto_vuokraus
                 Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
                 if (lisaaVaraus)
                 {
+                    
                     vuokraDG.DataSource = users.haeVuokrat();
                     this.vuokraDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
 
@@ -306,10 +307,10 @@ namespace Auto_vuokraus
         {
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
 
-            alkuDTM.Value = vuokraDG.CurrentRow.Cells[2].Value.ToString();
-            loppuDTM.Value = vuokraDG.CurrentRow.Cells[1].Value.ToString();
+            alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[2].Value.ToString());
+            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[1].Value.ToString());
         }
-
+        
         private void muokkaavarBT_Click(object sender, EventArgs e)
         {
         
