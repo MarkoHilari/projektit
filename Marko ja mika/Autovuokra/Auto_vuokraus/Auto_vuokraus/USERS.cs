@@ -322,7 +322,7 @@ namespace Auto_vuokraus
             }
         }
 
-        public bool muokkaaVuokraus(int id, DateTime loppu, DateTime alku)
+        public bool muokkaaVuokraus(int id, DateTime alku, DateTime loppu)
         {
             MySqlCommand komento = new MySqlCommand();
             string muokkaaKysely = "UPDATE vuokraus SET varausNro=@vNro,varauspaiva=@alk,varausloppu=@lop WHERE varausNro=@vNro";
