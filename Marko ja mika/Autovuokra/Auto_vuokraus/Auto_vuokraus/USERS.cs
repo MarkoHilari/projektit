@@ -353,14 +353,17 @@ namespace Auto_vuokraus
             }
         }
 
-        public bool autoVapaa(int numero, String Kyllä_or_EI)
+        public bool autoVapaa(string numero, String vapaa_varattu)
         {
-            MySqlCommand komento = new MySqlCommand("UPDATE `huone` SET `vapaa`=@Kyllä_EI WHERE `numero`=@num", yhdista.otaYhteys());
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DataTable table = new DataTable();
+            MySqlCommand komento = new MySqlCommand();
+            string muokkaa = "UPDATE `kalusto` SET `vapaa`='@vap' WHERE `RekisteriNro`='@rno'";
+            komento.CommandText= muokkaa;
+            komento.Connection = yhdista.otaYhteys();
+            
+            
 
-          //  komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
-            komento.Parameters.Add("@Kyllä_EI", MySqlDbType.VarChar).Value = Kyllä_or_EI;
+            komento.Parameters.Add("@rno", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@vap", MySqlDbType.VarChar).Value = vapaa_varattu;
 
             yhdista.avaaXhteys();
 

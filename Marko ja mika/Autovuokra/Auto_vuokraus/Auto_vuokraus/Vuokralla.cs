@@ -267,9 +267,9 @@ namespace Auto_vuokraus
                 Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
                 if (lisaaVaraus)
                 {
-                    haeKalusto.kalusto(vapaa, "Varattu");
+                    vuokrallaDG.CurrentRow.Cells[4].Value = "vapaa";
                     vuokraDG.DataSource = users.haeVuokrat();
-                    this.vuokraDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                    
 
                     MessageBox.Show("Uusi varaus lisätty onnistuneesti", "Lisää varaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
