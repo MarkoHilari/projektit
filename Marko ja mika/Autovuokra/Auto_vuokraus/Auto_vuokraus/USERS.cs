@@ -352,5 +352,31 @@ namespace Auto_vuokraus
 
             }
         }
+
+        public bool autoVapaa(int numero, String Kyllä_or_EI)
+        {
+            MySqlCommand komento = new MySqlCommand("UPDATE `huone` SET `vapaa`=@Kyllä_EI WHERE `numero`=@num", yhdista.otaYhteys());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+          //  komento.Parameters.Add("@num", MySqlDbType.Int32).Value = numero;
+            komento.Parameters.Add("@Kyllä_EI", MySqlDbType.VarChar).Value = Kyllä_or_EI;
+
+            yhdista.avaaXhteys();
+
+            if (komento.ExecuteNonQuery() == 1)
+            {
+                yhdista.suljeYhteys();
+                return true;
+            }
+            else
+            {
+                yhdista.suljeYhteys();
+                return false;
+            }
+
+
+        }
+
     }
 }
