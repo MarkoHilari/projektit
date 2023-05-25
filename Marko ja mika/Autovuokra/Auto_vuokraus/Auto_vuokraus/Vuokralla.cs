@@ -308,10 +308,36 @@ namespace Auto_vuokraus
 
         private void vuokraDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
+
+            alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[5].Value);
+            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[6].Value);
+            varausPLB.Visible = true;
+
+            alkuDTM = alkuDTM.Value;
+            loppuDTM = loppuDTM.Value;
+
+            TimeSpan erotus = loppuDTM - alkuDTM);
+            int erotusPäivissä = (int)erotus.TotalDays;
+
+            //TimeSpan erotusPäivissä = loppuDTM.Value - alkuDTM.Value;
+
+            varausPLB.Text = erotusPäivissä.ToString();*/
+
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
 
             alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[5].Value);
             loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[6].Value);
+            varausPLB.Visible = true;
+
+            DateTime alkuDT = alkuDTM.Value;
+            DateTime loppuDT = loppuDTM.Value;
+
+            TimeSpan erotus = loppuDT - alkuDT;
+            int erotusPaivissa = (int)erotus.TotalDays;
+
+            varausPLB.Text = erotusPaivissa.ToString();
+
         }
         
         private void muokkaavarBT_Click(object sender, EventArgs e)

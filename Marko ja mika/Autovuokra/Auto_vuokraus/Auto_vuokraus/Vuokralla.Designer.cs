@@ -67,6 +67,8 @@
             this.muokkaavarBT = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.loppuSummaLB = new System.Windows.Forms.Label();
+            this.varausPLB = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -194,7 +196,7 @@
             this.vuokrallaDG.Name = "vuokrallaDG";
             this.vuokrallaDG.RowHeadersWidth = 51;
             this.vuokrallaDG.RowTemplate.Height = 24;
-            this.vuokrallaDG.Size = new System.Drawing.Size(845, 311);
+            this.vuokrallaDG.Size = new System.Drawing.Size(966, 311);
             this.vuokrallaDG.TabIndex = 20;
             this.vuokrallaDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellClick);
             this.vuokrallaDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokrallaDG_CellContentClick);
@@ -463,7 +465,7 @@
             this.vuokraDG.Name = "vuokraDG";
             this.vuokraDG.RowHeadersWidth = 62;
             this.vuokraDG.RowTemplate.Height = 28;
-            this.vuokraDG.Size = new System.Drawing.Size(1076, 311);
+            this.vuokraDG.Size = new System.Drawing.Size(1440, 311);
             this.vuokraDG.TabIndex = 47;
             this.vuokraDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vuokraDG_CellClick);
             // 
@@ -493,7 +495,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1410, 697);
+            this.label1.Location = new System.Drawing.Point(1772, 861);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(326, 38);
             this.label1.TabIndex = 50;
@@ -503,18 +505,40 @@
             // 
             this.loppuSummaLB.AutoSize = true;
             this.loppuSummaLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loppuSummaLB.Location = new System.Drawing.Point(1513, 769);
+            this.loppuSummaLB.Location = new System.Drawing.Point(1875, 933);
             this.loppuSummaLB.Name = "loppuSummaLB";
             this.loppuSummaLB.Size = new System.Drawing.Size(68, 38);
             this.loppuSummaLB.TabIndex = 51;
             this.loppuSummaLB.Text = "XXX";
             this.loppuSummaLB.Visible = false;
             // 
+            // varausPLB
+            // 
+            this.varausPLB.AutoSize = true;
+            this.varausPLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.varausPLB.Location = new System.Drawing.Point(1875, 769);
+            this.varausPLB.Name = "varausPLB";
+            this.varausPLB.Size = new System.Drawing.Size(68, 38);
+            this.varausPLB.TabIndex = 53;
+            this.varausPLB.Text = "XXX";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1772, 697);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(303, 38);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Varauspäivät yhteensä: ";
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.varausPLB);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.loppuSummaLB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.muokkaavarBT);
@@ -618,5 +642,7 @@
         private System.Windows.Forms.Button muokkaavarBT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label loppuSummaLB;
+        private System.Windows.Forms.Label varausPLB;
+        private System.Windows.Forms.Label label5;
     }
 }
