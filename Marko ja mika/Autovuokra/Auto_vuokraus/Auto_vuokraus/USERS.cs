@@ -382,4 +382,12 @@ namespace Auto_vuokraus
         }
 
     }
+        public bool HaeSumma()
+        {
+            string hinta = "0";
+            DataTable table = new DataTable();
+            MySqlDataAdapter liita = new MySqlDataAdapter();
+            MySqlCommand cmd = new MySqlCommand();
+            string kysely = 
+        }
 }

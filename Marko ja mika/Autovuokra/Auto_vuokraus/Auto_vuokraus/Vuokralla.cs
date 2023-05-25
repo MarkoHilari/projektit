@@ -264,10 +264,13 @@ namespace Auto_vuokraus
 
             else
             {
-                Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
-                if (lisaaVaraus)
+               string vapaako = vuokrallaDG.CurrentRow.Cells[4].Value.ToString();
+                MessageBox.Show(vapaako);
+                   
+                if (vapaako == "vapaa" )
                 {
-                    vuokrallaDG.CurrentRow.Cells[4].Value = "vapaa";
+                    Boolean lisaaVaraus = users.lisaaVaraus(id, asiakas, rknro, malli, merk, alku, loppu);
+
                     vuokraDG.DataSource = users.haeVuokrat();
                     
 

@@ -65,6 +65,8 @@
             this.vuokraDG = new System.Windows.Forms.DataGridView();
             this.poistavaBT = new System.Windows.Forms.Button();
             this.muokkaavarBT = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.loppuSummaLB = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -200,18 +202,20 @@
             // alkuDTM
             // 
             this.alkuDTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alkuDTM.Location = new System.Drawing.Point(1399, 686);
+            this.alkuDTM.Location = new System.Drawing.Point(1779, 326);
             this.alkuDTM.Name = "alkuDTM";
-            this.alkuDTM.Size = new System.Drawing.Size(200, 35);
+            this.alkuDTM.Size = new System.Drawing.Size(257, 35);
             this.alkuDTM.TabIndex = 34;
+            this.alkuDTM.Value = new System.DateTime(2023, 5, 25, 0, 0, 0, 0);
             // 
             // loppuDTM
             // 
             this.loppuDTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loppuDTM.Location = new System.Drawing.Point(1701, 686);
+            this.loppuDTM.Location = new System.Drawing.Point(1779, 427);
             this.loppuDTM.Name = "loppuDTM";
-            this.loppuDTM.Size = new System.Drawing.Size(200, 35);
+            this.loppuDTM.Size = new System.Drawing.Size(257, 35);
             this.loppuDTM.TabIndex = 35;
+            this.loppuDTM.Value = new System.DateTime(2023, 5, 25, 0, 0, 0, 0);
             // 
             // rekLB
             // 
@@ -247,7 +251,7 @@
             // 
             this.alku.AutoSize = true;
             this.alku.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alku.Location = new System.Drawing.Point(1437, 631);
+            this.alku.Location = new System.Drawing.Point(1841, 273);
             this.alku.Name = "alku";
             this.alku.Size = new System.Drawing.Size(111, 38);
             this.alku.TabIndex = 39;
@@ -257,7 +261,7 @@
             // 
             this.loppu.AutoSize = true;
             this.loppu.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loppu.Location = new System.Drawing.Point(1749, 631);
+            this.loppu.Location = new System.Drawing.Point(1829, 386);
             this.loppu.Name = "loppu";
             this.loppu.Size = new System.Drawing.Size(110, 38);
             this.loppu.TabIndex = 40;
@@ -294,9 +298,9 @@
             // 
             this.asijaCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.asijaCB.FormattingEnabled = true;
-            this.asijaCB.Location = new System.Drawing.Point(1794, 272);
+            this.asijaCB.Location = new System.Drawing.Point(1779, 219);
             this.asijaCB.Name = "asijaCB";
-            this.asijaCB.Size = new System.Drawing.Size(244, 37);
+            this.asijaCB.Size = new System.Drawing.Size(257, 37);
             this.asijaCB.TabIndex = 44;
             this.asijaCB.Text = "Valitse asijakas";
             // 
@@ -436,7 +440,7 @@
             // varaaBT
             // 
             this.varaaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.varaaBT.Location = new System.Drawing.Point(1482, 763);
+            this.varaaBT.Location = new System.Drawing.Point(1714, 497);
             this.varaaBT.Name = "varaaBT";
             this.varaaBT.Size = new System.Drawing.Size(117, 35);
             this.varaaBT.TabIndex = 45;
@@ -466,7 +470,7 @@
             // poistavaBT
             // 
             this.poistavaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poistavaBT.Location = new System.Drawing.Point(1701, 763);
+            this.poistavaBT.Location = new System.Drawing.Point(1998, 497);
             this.poistavaBT.Name = "poistavaBT";
             this.poistavaBT.Size = new System.Drawing.Size(117, 35);
             this.poistavaBT.TabIndex = 48;
@@ -477,7 +481,7 @@
             // muokkaavarBT
             // 
             this.muokkaavarBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.muokkaavarBT.Location = new System.Drawing.Point(1482, 833);
+            this.muokkaavarBT.Location = new System.Drawing.Point(1854, 497);
             this.muokkaavarBT.Name = "muokkaavarBT";
             this.muokkaavarBT.Size = new System.Drawing.Size(117, 35);
             this.muokkaavarBT.TabIndex = 49;
@@ -485,11 +489,34 @@
             this.muokkaavarBT.UseVisualStyleBackColor = true;
             this.muokkaavarBT.Click += new System.EventHandler(this.muokkaavarBT_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1410, 697);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 38);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "Varauksen loppusumma: ";
+            // 
+            // loppuSummaLB
+            // 
+            this.loppuSummaLB.AutoSize = true;
+            this.loppuSummaLB.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loppuSummaLB.Location = new System.Drawing.Point(1513, 769);
+            this.loppuSummaLB.Name = "loppuSummaLB";
+            this.loppuSummaLB.Size = new System.Drawing.Size(68, 38);
+            this.loppuSummaLB.TabIndex = 51;
+            this.loppuSummaLB.Text = "XXX";
+            this.loppuSummaLB.Visible = false;
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.loppuSummaLB);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.muokkaavarBT);
             this.Controls.Add(this.poistavaBT);
             this.Controls.Add(this.vuokraDG);
@@ -589,5 +616,7 @@
         private System.Windows.Forms.DataGridView vuokraDG;
         private System.Windows.Forms.Button poistavaBT;
         private System.Windows.Forms.Button muokkaavarBT;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label loppuSummaLB;
     }
 }
