@@ -263,7 +263,7 @@
             // 
             this.loppu.AutoSize = true;
             this.loppu.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loppu.Location = new System.Drawing.Point(1829, 386);
+            this.loppu.Location = new System.Drawing.Point(1841, 373);
             this.loppu.Name = "loppu";
             this.loppu.Size = new System.Drawing.Size(110, 38);
             this.loppu.TabIndex = 40;
