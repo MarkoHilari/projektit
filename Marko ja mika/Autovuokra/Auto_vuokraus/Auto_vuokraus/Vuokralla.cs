@@ -335,8 +335,12 @@ namespace Auto_vuokraus
 
             TimeSpan erotus = loppuDT - alkuDT;
             int erotusPaivissa = (int)erotus.TotalDays;
-
+            loppuSummaLB.Visible = true;
             varausPLB.Text = erotusPaivissa.ToString();
+            String rek = Convert.ToString(vuokraDG.CurrentRow.Cells[1].Value);
+            int summa = Convert.ToInt32(users.HaeSumma(rek));
+            MessageBox.Show(summa + "");
+            loppuSummaLB.Text = (int.Parse(varausPLB.Text)* summa).ToString();
 
         }
         

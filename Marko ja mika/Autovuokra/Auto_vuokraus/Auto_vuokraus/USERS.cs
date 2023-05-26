@@ -10,6 +10,7 @@ using Eramake;
 using System.Security.Cryptography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Data.SqlClient;
+using Auto_vuokraus;
 
 namespace Auto_vuokraus
 {
@@ -380,15 +381,23 @@ namespace Auto_vuokraus
 
 
         }
-
-    }
-        /*public bool HaeSumma()
+        public String HaeSumma(String rek)
         {
-            string hinta = "0";
+            MySqlCommand komento = new MySqlCommand("SELECT `Hinta` FROM `kalusto` WHERE `RekisteriNro`=@rek", yhdista.otaYhteys());
+            /*MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
-            MySqlDataAdapter liita = new MySqlDataAdapter();
-            MySqlCommand cmd = new MySqlCommand();
-            string kysely = "Tähän tulee selcect jotain";
 
-        }*/
+            adapter.SelectCommand = komento;
+            adapter.Fill(table);
+
+            return table;*/
+            komento.Parameters.Add("@rek", MySqlDbType.VarChar).Value = rek;
+            yhdista.avaaXhteys();
+            MySqlDataReader lukija = komento.ExecuteReader();
+            lukija.Read();
+            return lukija.GetValue(0).ToString();  
+
+        }
+    }
+   
 }
