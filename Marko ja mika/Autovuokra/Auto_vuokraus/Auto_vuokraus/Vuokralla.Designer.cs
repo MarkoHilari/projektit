@@ -521,6 +521,7 @@
             this.varausPLB.Size = new System.Drawing.Size(68, 38);
             this.varausPLB.TabIndex = 53;
             this.varausPLB.Text = "XXX";
+            this.varausPLB.Visible = false;
             // 
             // label5
             // 

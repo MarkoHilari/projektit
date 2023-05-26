@@ -339,7 +339,7 @@ namespace Auto_vuokraus
             varausPLB.Text = erotusPaivissa.ToString();
             String rek = Convert.ToString(vuokraDG.CurrentRow.Cells[1].Value);
             int summa = Convert.ToInt32(users.HaeSumma(rek));
-            MessageBox.Show(summa + "");
+            //MessageBox.Show(summa + "");
             loppuSummaLB.Text = (int.Parse(varausPLB.Text)* summa + "€").ToString();
 
         }
