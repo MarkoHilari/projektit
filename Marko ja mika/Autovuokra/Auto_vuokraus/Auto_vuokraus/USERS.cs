@@ -396,8 +396,10 @@ namespace Auto_vuokraus
 
             MySqlDataReader lukija = komento.ExecuteReader();
             lukija.Read();
-            return lukija.GetValue(0).ToString();  
-
+            string data = lukija.GetValue(0).ToString();
+            yhdista.suljeYhteys(); 
+            return data;
+            
         }
     }
    
