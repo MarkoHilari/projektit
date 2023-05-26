@@ -393,6 +393,7 @@ namespace Auto_vuokraus
             return table;*/
             komento.Parameters.Add("@rek", MySqlDbType.VarChar).Value = rek;
             yhdista.avaaXhteys();
+
             MySqlDataReader lukija = komento.ExecuteReader();
             lukija.Read();
             return lukija.GetValue(0).ToString();  
