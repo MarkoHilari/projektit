@@ -389,10 +389,9 @@ namespace Auto_vuokraus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String numero = "";
-            String vapaa_varattu = "";
-            Boolean vapaa = users.autoVapaa(Int32 numero, string);
-            MessageBox.Show(Convert.ToString(vapaa));
+            
+            MessageBox.Show("kukkuu");
+            button1.Text = "OK";
         }
     }
 }
