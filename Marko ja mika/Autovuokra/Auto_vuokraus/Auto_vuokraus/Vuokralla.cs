@@ -167,6 +167,10 @@ namespace Auto_vuokraus
                         toyotaPB.Visible = false;
                     }
                 }
+                string joku = vuokraDG.CurrentRow.Cells[1].Value.ToString();
+                string jokutoinen = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
+                MessageBox.Show(joku + jokutoinen);
+                
             }
 
             try
