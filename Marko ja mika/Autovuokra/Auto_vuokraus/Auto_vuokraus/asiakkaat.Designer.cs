@@ -32,9 +32,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.vuokrallaBT = new System.Windows.Forms.Button();
             this.kayttajaBT = new System.Windows.Forms.Button();
             this.carsBT = new System.Windows.Forms.Button();
+            this.vuokrallaBT = new System.Windows.Forms.Button();
             this.asiakasDG = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,14 +55,17 @@
             this.poistaAsBT = new System.Windows.Forms.Button();
             this.muokkaaAsBT = new System.Windows.Forms.Button();
             this.idTB = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LawnGreen;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -107,19 +110,6 @@
             this.panel2.Size = new System.Drawing.Size(1521, 100);
             this.panel2.TabIndex = 13;
             // 
-            // vuokrallaBT
-            // 
-            this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vuokrallaBT.Location = new System.Drawing.Point(670, 25);
-            this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vuokrallaBT.Name = "vuokrallaBT";
-            this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
-            this.vuokrallaBT.TabIndex = 17;
-            this.vuokrallaBT.Text = "Vuokralla";
-            this.vuokrallaBT.UseVisualStyleBackColor = false;
-            // 
             // kayttajaBT
             // 
             this.kayttajaBT.BackColor = System.Drawing.Color.LawnGreen;
@@ -147,6 +137,20 @@
             this.carsBT.Text = "Autot";
             this.carsBT.UseVisualStyleBackColor = false;
             this.carsBT.Click += new System.EventHandler(this.carsBT_Click);
+            // 
+            // vuokrallaBT
+            // 
+            this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vuokrallaBT.Location = new System.Drawing.Point(670, 25);
+            this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vuokrallaBT.Name = "vuokrallaBT";
+            this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
+            this.vuokrallaBT.TabIndex = 17;
+            this.vuokrallaBT.Text = "Vuokralla";
+            this.vuokrallaBT.UseVisualStyleBackColor = false;
+            this.vuokrallaBT.Click += new System.EventHandler(this.vuokrallaBT_Click);
             // 
             // asiakasDG
             // 
@@ -337,6 +341,17 @@
             this.idTB.Size = new System.Drawing.Size(100, 26);
             this.idTB.TabIndex = 38;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
+            this.pictureBox1.Location = new System.Drawing.Point(1391, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // asiakkaat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -373,6 +388,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,5 +423,6 @@
         private System.Windows.Forms.Button poistaAsBT;
         private System.Windows.Forms.Button muokkaaAsBT;
         private System.Windows.Forms.TextBox idTB;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

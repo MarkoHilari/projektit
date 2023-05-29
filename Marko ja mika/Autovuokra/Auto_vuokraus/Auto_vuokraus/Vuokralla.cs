@@ -389,9 +389,23 @@ namespace Auto_vuokraus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show("kukkuu");
-            button1.Text = "OK";
+            string vapaa = varattuRB.Text;
+            string vapaa_varattu = ;
+
+            if (users.autoVapaa(vapaa, vapaa_varattu)
+            {
+                MessageBox.Show("kukkuu");
+                users.autoVapaa(vapaa, vapaa_varattu);            
+            }
+            else
+            {
+                button1.Text = "OK";
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
