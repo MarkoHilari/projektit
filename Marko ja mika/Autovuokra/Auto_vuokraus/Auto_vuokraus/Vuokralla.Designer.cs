@@ -552,10 +552,10 @@
             this.vapaaRB.AutoSize = true;
             this.vapaaRB.Location = new System.Drawing.Point(538, 598);
             this.vapaaRB.Name = "vapaaRB";
-            this.vapaaRB.Size = new System.Drawing.Size(126, 24);
+            this.vapaaRB.Size = new System.Drawing.Size(77, 24);
             this.vapaaRB.TabIndex = 55;
             this.vapaaRB.TabStop = true;
-            this.vapaaRB.Text = "radioButton1";
+            this.vapaaRB.Text = "vapaa";
             this.vapaaRB.UseVisualStyleBackColor = true;
             // 
             // varattuRB
@@ -563,10 +563,10 @@
             this.varattuRB.AutoSize = true;
             this.varattuRB.Location = new System.Drawing.Point(538, 628);
             this.varattuRB.Name = "varattuRB";
-            this.varattuRB.Size = new System.Drawing.Size(126, 24);
+            this.varattuRB.Size = new System.Drawing.Size(83, 24);
             this.varattuRB.TabIndex = 56;
             this.varattuRB.TabStop = true;
-            this.varattuRB.Text = "radioButton2";
+            this.varattuRB.Text = "varattu";
             this.varattuRB.UseVisualStyleBackColor = true;
             // 
             // Vuokralla
