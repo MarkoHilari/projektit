@@ -70,6 +70,8 @@
             this.varausPLB = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.vapaaRB = new System.Windows.Forms.RadioButton();
+            this.varattuRB = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -545,11 +547,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // vapaaRB
+            // 
+            this.vapaaRB.AutoSize = true;
+            this.vapaaRB.Location = new System.Drawing.Point(538, 598);
+            this.vapaaRB.Name = "vapaaRB";
+            this.vapaaRB.Size = new System.Drawing.Size(126, 24);
+            this.vapaaRB.TabIndex = 55;
+            this.vapaaRB.TabStop = true;
+            this.vapaaRB.Text = "radioButton1";
+            this.vapaaRB.UseVisualStyleBackColor = true;
+            // 
+            // varattuRB
+            // 
+            this.varattuRB.AutoSize = true;
+            this.varattuRB.Location = new System.Drawing.Point(538, 628);
+            this.varattuRB.Name = "varattuRB";
+            this.varattuRB.Size = new System.Drawing.Size(126, 24);
+            this.varattuRB.TabIndex = 56;
+            this.varattuRB.TabStop = true;
+            this.varattuRB.Text = "radioButton2";
+            this.varattuRB.UseVisualStyleBackColor = true;
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.varattuRB);
+            this.Controls.Add(this.vapaaRB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.varausPLB);
             this.Controls.Add(this.label5);
@@ -659,5 +685,7 @@
         private System.Windows.Forms.Label varausPLB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton vapaaRB;
+        private System.Windows.Forms.RadioButton varattuRB;
     }
 }
