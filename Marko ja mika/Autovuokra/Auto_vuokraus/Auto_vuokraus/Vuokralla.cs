@@ -386,6 +386,13 @@ namespace Auto_vuokraus
                 MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-      
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String numero = "2";
+            String vapaa_varattu = "joo";
+            Boolean vapaa = users.autoVapaa(numero, vapaa_varattu);
+            MessageBox.Show(Convert.ToString(vapaa));
+        }
     }
 }
