@@ -405,14 +405,12 @@ namespace Auto_vuokraus
 
             int rowsAffected = command.ExecuteNonQuery();
 
-            if (vapaaRB.Checked == true)
+            if (vapaaRB.Checked)
             {
-                vapaa = "Kyllä";
                 MessageBox.Show("Tietue lisätty onnistuneesti.");
             }
             else if(varattuRB.Checked)
             {
-                vapaa = "Ei";
                 MessageBox.Show("Tietueen lisääminen epäonnistui.");
             }
 
