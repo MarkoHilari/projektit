@@ -357,7 +357,7 @@ namespace Auto_vuokraus
         public bool autoVapaa(string numero, String vapaa_varattu)
         {
             MySqlCommand komento = new MySqlCommand();
-            string muokkaa = "UPDATE `kalusto` SET `vapaa`='@vap' WHERE `RekisteriNro`='@rno'";
+            string muokkaa = "INSERT INTO `kalusto`(`RekisteriNro`,`vapaa`) VALUES (@rek,@vap)";
             komento.CommandText= muokkaa;
             komento.Connection = yhdista.otaYhteys();
             

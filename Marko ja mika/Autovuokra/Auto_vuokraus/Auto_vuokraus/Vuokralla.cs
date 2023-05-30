@@ -389,10 +389,62 @@ namespace Auto_vuokraus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string vapaa = varattuRB.Text;
-            string vapaa_varattu = ;
+            MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
+            string insertQuery = "UPDATE `kalusto` SET `vapaa`=@vap WHERE `RekisteriNro`=@rek";
+            con.Open();
+            MySqlCommand command = new MySqlCommand(insertQuery, con);
 
-            if (users.autoVapaa(vapaa, vapaa_varattu)
+            string numero = Convert.ToString(vuokrallaDG.CurrentRow.Cells[0].Value);
+            string vapaa = Convert.ToString(vapaaRB.Checked);
+            string varattu = varattuRB.Text;
+
+            command.Parameters.Add("@rek", MySqlDbType.String).Value = numero;
+            command.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa;
+            //command.Parameters.Add("@vap", MySqlDbType.String).Value = varattu;
+
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            if (vapaaRB.Checked == true)
+            {
+                vapaa = "Kyllä";
+                MessageBox.Show("Tietue lisätty onnistuneesti.");
+            }
+            else if(varattuRB.Checked)
+            {
+                vapaa = "Ei";
+                MessageBox.Show("Tietueen lisääminen epäonnistui.");
+            }
+
+            con.Close();
+            vuokrallaDG.DataSource = users.haeKalusto();
+
+            /*MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
+            string selectQuery = "INSERT INTO `kalusto`(`RekisteriNro`,`vapaa`) VALUES (@rek,@vap)";
+            con.Open();
+            MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+            string numero = Convert.ToString(vuokrallaDG.CurrentRow.Cells[0].Value);
+            string vapaa = vapaaRB.Text;
+            string varattu = varattuRB.Text;
+
+            command.Parameters.Add("@rek", MySqlDbType.String).Value = numero;
+            command.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa;
+            if(vapaaRB.Checked)
+            {
+                vapaa = "Vapaa";
+                MessageBox.Show(numero + " " + vapaa);
+            }
+            else if(varattuRB.Checked)
+            {
+                varattu = "Varattu";
+                MessageBox.Show(numero + " " + varattu);
+            }*/
+
+            /*string vapaa = varattuRB.Text;
+            string vapaa_varattu = "";
+
+            if (users.autoVapaa(vapaa, vapaa_varattu))
             {
                 MessageBox.Show("kukkuu");
                 users.autoVapaa(vapaa, vapaa_varattu);            
@@ -400,7 +452,7 @@ namespace Auto_vuokraus
             else
             {
                 button1.Text = "OK";
-            }
+            }*/
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -72,6 +72,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.vapaaRB = new System.Windows.Forms.RadioButton();
             this.varattuRB = new System.Windows.Forms.RadioButton();
+            this.vapaa_varattuGB = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -89,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).BeginInit();
+            this.vapaa_varattuGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -551,7 +553,7 @@
             // vapaaRB
             // 
             this.vapaaRB.AutoSize = true;
-            this.vapaaRB.Location = new System.Drawing.Point(538, 598);
+            this.vapaaRB.Location = new System.Drawing.Point(6, 25);
             this.vapaaRB.Name = "vapaaRB";
             this.vapaaRB.Size = new System.Drawing.Size(77, 24);
             this.vapaaRB.TabIndex = 55;
@@ -562,7 +564,7 @@
             // varattuRB
             // 
             this.varattuRB.AutoSize = true;
-            this.varattuRB.Location = new System.Drawing.Point(538, 628);
+            this.varattuRB.Location = new System.Drawing.Point(6, 55);
             this.varattuRB.Name = "varattuRB";
             this.varattuRB.Size = new System.Drawing.Size(83, 24);
             this.varattuRB.TabIndex = 56;
@@ -570,13 +572,23 @@
             this.varattuRB.Text = "varattu";
             this.varattuRB.UseVisualStyleBackColor = true;
             // 
+            // vapaa_varattuGB
+            // 
+            this.vapaa_varattuGB.Controls.Add(this.vapaaRB);
+            this.vapaa_varattuGB.Controls.Add(this.varattuRB);
+            this.vapaa_varattuGB.Location = new System.Drawing.Point(659, 567);
+            this.vapaa_varattuGB.Name = "vapaa_varattuGB";
+            this.vapaa_varattuGB.Size = new System.Drawing.Size(200, 100);
+            this.vapaa_varattuGB.TabIndex = 57;
+            this.vapaa_varattuGB.TabStop = false;
+            this.vapaa_varattuGB.Text = "groupBox1";
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
-            this.Controls.Add(this.varattuRB);
-            this.Controls.Add(this.vapaaRB);
+            this.Controls.Add(this.vapaa_varattuGB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.varausPLB);
             this.Controls.Add(this.label5);
@@ -637,6 +649,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).EndInit();
+            this.vapaa_varattuGB.ResumeLayout(false);
+            this.vapaa_varattuGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,5 +702,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton vapaaRB;
         private System.Windows.Forms.RadioButton varattuRB;
+        private System.Windows.Forms.GroupBox vapaa_varattuGB;
     }
 }
