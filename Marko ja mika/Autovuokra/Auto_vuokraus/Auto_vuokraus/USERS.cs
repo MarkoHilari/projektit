@@ -363,8 +363,8 @@ namespace Auto_vuokraus
             
             
 
-            komento.Parameters.Add("@rno", MySqlDbType.String).Value = numero;
-            komento.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa_varattu;
+            komento.Parameters.Add("@rno", MySqlDbType.VarChar).Value = numero;
+            komento.Parameters.Add("@vap", MySqlDbType.VarChar).Value = vapaa_varattu;
 
             yhdista.avaaXhteys();
 

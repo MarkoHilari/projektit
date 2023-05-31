@@ -167,10 +167,9 @@ namespace Auto_vuokraus
                         toyotaPB.Visible = false;
                     }
                 }
-                string joku = vuokraDG.CurrentRow.Cells[1].Value.ToString();
-                string jokutoinen = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
-                MessageBox.Show(joku + jokutoinen);
                 
+
+              
             }
 
             try
@@ -408,6 +407,7 @@ namespace Auto_vuokraus
             if (vapaaRB.Checked)
             {
                 MessageBox.Show("Tietue lisätty onnistuneesti.");
+               
             }
             else if(varattuRB.Checked)
             {
@@ -456,6 +456,49 @@ namespace Auto_vuokraus
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
+            string insertQuery = "UPDATE `kalusto` SET `vapaa`=@vap WHERE `RekisteriNro`=@rek";
+            con.Open();
+            MySqlCommand command = new MySqlCommand(insertQuery, con);
+
+            string numero = Convert.ToString(vuokrallaDG.CurrentRow.Cells[0].Value);
+            string vapaa = Convert.ToString(vapaaRB.Checked);
+            string varattu = varattuRB.Text;
+
+            command.Parameters.Add("@rek", MySqlDbType.String).Value = numero;
+            command.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa;
+
+            int rowCount = vuokraDG.Rows.Count;
+            
+            
+                // Iterate through each row
+                for (int i = 0; i < rowCount; i++)
+                {
+                    // Access the value of the first column in the current row
+                    DataGridViewRow row = vuokraDG.Rows[i];
+                    DataGridViewCell cell = row.Cells[1]; // Column index 0 represents the first column
+                    DataGridViewCell cell1 = row.Cells[5];
+                    // Retrieve the value from the cell
+                    string value = cell.Value?.ToString(); // Use ToString() to get the value as a string
+                    DateTime value1 = Convert.ToDateTime(cell1.Value.ToString());
+                    // Do something with the value (e.g., print it)
+                    MessageBox.Show(value + value1);
+                    if (value1 < DateTime.Now)
+                    {
+                    vapaa = ("vapaa"); 
+                    }
+                    else
+                    {
+                        MessageBox.Show("varattu");
+                    }
+                }
+            con.Close();
+            vuokrallaDG.DataSource = users.haeKalusto();
+
         }
     }
 }

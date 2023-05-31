@@ -73,6 +73,7 @@
             this.vapaaRB = new System.Windows.Forms.RadioButton();
             this.varattuRB = new System.Windows.Forms.RadioButton();
             this.vapaa_varattuGB = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -583,11 +584,22 @@
             this.vapaa_varattuGB.TabStop = false;
             this.vapaa_varattuGB.Text = "groupBox1";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(440, 592);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.vapaa_varattuGB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.varausPLB);
@@ -703,5 +715,6 @@
         private System.Windows.Forms.RadioButton vapaaRB;
         private System.Windows.Forms.RadioButton varattuRB;
         private System.Windows.Forms.GroupBox vapaa_varattuGB;
+        private System.Windows.Forms.Button button2;
     }
 }
