@@ -354,7 +354,7 @@ namespace Auto_vuokraus
             }
         }
 
-        public bool autoVapaa(string numero, String vapaa_varattu)
+        public bool autoVapaa(String numero, String vapaa_varattu)
         {
             MySqlCommand komento = new MySqlCommand();
             string muokkaa = "INSERT INTO `kalusto`(`RekisteriNro`,`vapaa`) VALUES (@rek,@vap)";

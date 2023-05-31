@@ -395,12 +395,21 @@ namespace Auto_vuokraus
             MySqlCommand command = new MySqlCommand(insertQuery, con);
 
             string numero = Convert.ToString(vuokrallaDG.CurrentRow.Cells[0].Value);
-            string vapaa = Convert.ToString(vapaaRB.Checked);
+            //string vapaa = Convert.ToString(vapaa_varattuGB.Checked);
+            string vapaa = vapaaRB.Checked ? "Vapaa" : "Varattu";
+
             string varattu = varattuRB.Text;
 
             command.Parameters.Add("@rek", MySqlDbType.String).Value = numero;
             command.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa;
             //command.Parameters.Add("@vap", MySqlDbType.String).Value = varattu;
+
+            alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[5].Value);
+            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[6].Value);
+            varausPLB.Visible = true;
+
+            DateTime alkuDT = alkuDTM.Value;
+            DateTime loppuDT = loppuDTM.Value;
 
 
             int rowsAffected = command.ExecuteNonQuery();
