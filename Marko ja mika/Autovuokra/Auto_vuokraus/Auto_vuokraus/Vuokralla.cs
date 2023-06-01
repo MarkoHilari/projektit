@@ -393,7 +393,7 @@ namespace Auto_vuokraus
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)//Exit kuvasta ohjelman sulku
         {
             Application.Exit();
         }
