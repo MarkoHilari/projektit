@@ -168,17 +168,17 @@ namespace Auto_vuokraus
                     }
                 }
 
-                // tästä lähtee
-
+                try
                 {
+
                     MySqlConnection con = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=loistovuokraus");
                     string updateQuery = "UPDATE `kalusto` SET `vapaa` = @vap WHERE `RekisteriNro` = @rek";
                     con.Open();
                     MySqlCommand command = new MySqlCommand(updateQuery, con);
 
                     int rowCount = vuokraDG.Rows.Count;
-                    MessageBox.Show(rowCount + "");
-                    for (int i = 0; i < rowCount-1; i++)
+                    
+                    for (int i = 0; i < rowCount - 1; i++)
                     {
                         DataGridViewRow row = vuokraDG.Rows[i];
                         DataGridViewCell cell = row.Cells[1];
@@ -186,7 +186,7 @@ namespace Auto_vuokraus
                         string rekisteriNro = cell.Value?.ToString();
                         DateTime value1 = Convert.ToDateTime(cell1.Value.ToString());
 
-                        MessageBox.Show(rekisteriNro);
+                        
                         if (value1 > DateTime.Now)
                         {
                             command.Parameters.Clear(); // Clear previously added parameters
@@ -224,6 +224,14 @@ namespace Auto_vuokraus
                     vuokrallaDG.DataSource = users.haeKalusto();
 
                 }
+
+
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                
 
             }
 
