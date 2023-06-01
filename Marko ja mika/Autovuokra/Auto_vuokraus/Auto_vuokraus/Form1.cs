@@ -17,12 +17,14 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        int startpoint = 0;
+        // Lataus sivun ajastin toiminto (progres bar) sekä kirjautumis sivulle siirtyminen
+
+        int startpoint = 70;            
         private void timer1_Tick(object sender, EventArgs e)
         {
             startpoint += 1;
             aloPB.Value = startpoint;
-            if(aloPB.Value == 1 ) 
+            if(aloPB.Value == 100 ) 
             {
                 aloPB.Value = 0;
                 timer1.Stop();

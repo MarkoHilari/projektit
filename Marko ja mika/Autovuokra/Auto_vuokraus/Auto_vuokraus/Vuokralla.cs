@@ -29,7 +29,7 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void autotBT_Click(object sender, EventArgs e)// Autot button painallus avaa autot välilehden
+        private void autotBT_Click(object sender, EventArgs e)
         {
             this.Hide();
             autot autot = new autot();
@@ -37,7 +37,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void asiakkaatBT_Click(object sender, EventArgs e)//Asiakkaat button painallus avaa asiakkaat välilehden
+        private void asiakkaatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
             asiakkaat asiakas = new asiakkaat();
@@ -47,7 +47,7 @@ namespace Auto_vuokraus
 
    
 
-        private void kayttajatBT_Click(object sender, EventArgs e)//Käyttäjät button painallus avaa käyttäjät välilehden
+        private void kayttajatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
             kayttajat kayttajat = new kayttajat();
@@ -55,24 +55,24 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)// Ladataan kalusto datagrid
+        private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             vuokrallaDG.DataSource = users.haeKalusto();
 
         }
 
-        private void Vuokralla_Load(object sender, EventArgs e)//Ladataan kalusto ja vuokrat kun sivu avataan
+        private void Vuokralla_Load(object sender, EventArgs e)
         {
             vuokrallaDG.DataSource = users.haeKalusto();
             // vuokrallaDG.AutoResizeColumns();
-            this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);//Fontti
-            vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Sovitetaan tiedot datagridille
+            this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
+            vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             vuokraDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             vuokraDG.DataSource = users.haeVuokrat();
 
 
 
-            //Luodaan muuttujat kuville, joissa on omat kuvansa vapaana tai varatulle autolle
+
             string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
             string ford = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
             string toyoti = vuokrallaDG.Rows[2].Cells[1].Value.ToString();
@@ -168,18 +168,17 @@ namespace Auto_vuokraus
                     }
                 }
 
-                // Haetaan tiedot datagridille onko auto vapaa vai ei, päivämäärän mukaan
-
+                try
                 {
-                    //Luodaan yhteys sql, jossa muutetaan kaluston tilannetta
+
                     MySqlConnection con = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=loistovuokraus");
                     string updateQuery = "UPDATE `kalusto` SET `vapaa` = @vap WHERE `RekisteriNro` = @rek";
                     con.Open();
                     MySqlCommand command = new MySqlCommand(updateQuery, con);
 
                     int rowCount = vuokraDG.Rows.Count;
-                    //MessageBox.Show(rowCount + "");
-                    for (int i = 0; i < rowCount-1; i++)
+                    
+                    for (int i = 0; i < rowCount - 1; i++)
                     {
                         DataGridViewRow row = vuokraDG.Rows[i];
                         DataGridViewCell cell = row.Cells[1];
@@ -187,16 +186,16 @@ namespace Auto_vuokraus
                         string rekisteriNro = cell.Value?.ToString();
                         DateTime value1 = Convert.ToDateTime(cell1.Value.ToString());
 
-                        MessageBox.Show(rekisteriNro);
+                        
                         if (value1 > DateTime.Now)
                         {
-                            command.Parameters.Clear(); // Tyhjentää edellisen haun syötön
+                            command.Parameters.Clear(); // Clear previously added parameters
                             command.Parameters.AddWithValue("@rek", rekisteriNro);
                             command.Parameters.AddWithValue("@vap", "vapaa");
                         }
                         else
                         {
-                            command.Parameters.Clear(); // Tyhjentää edellisen haun parametrin
+                            command.Parameters.Clear(); // Clear previously added parameters
                             command.Parameters.AddWithValue("@rek", rekisteriNro);
                             command.Parameters.AddWithValue("@vap", "varattu");
                         }
@@ -216,7 +215,7 @@ namespace Auto_vuokraus
 
                         if (isEmptyColumn)
                         {
-                            // Viimeisen tyhjän sarakkeen jälkeen pysäytys
+                            // Last empty column found, break out of the loop
                             break;
                         }
                     }
@@ -226,11 +225,19 @@ namespace Auto_vuokraus
 
                 }
 
+
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ID Virhe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                
+
             }
 
             try
             {
-                //Haetaan tiedot sql:stä asija comboboxiin, asiakkaat taulusta
+
                 MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
                 string selectQuery = "SELECT * FROM asiakkaat" ;
                 con.Open();
@@ -248,18 +255,60 @@ namespace Auto_vuokraus
             catch(Exception ex) { 
                     MessageBox.Show(ex.Message);
             }
+            /*using (SqlDataReader reader = users.haeAsija())
+            {
+                while (reader.Read())
+                {
+                    string value = reader.GetString(0);
+                    asijaCB.Items.Add(value);
+                }
+            }*/
             
-       
+            /*asijaCB.Items.Clear(); // ei pelitä
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.Fill(dataTable);
+
+            foreach(DataRow dataRow in dataTable.Rows)
+            {
+                asijaCB.Items.Add(dataRow["Asiakas"]. ToString());
+            }*/
+
+
+            /* private void button1_Click(object sender, EventArgs e)
+             {
+                 Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti.jpg");
+
+                 // Käy läpi jokainen pikseli kuvassa
+                 for (int y = 0; y < image.Height; y++)
+                 {
+                     for (int x = 0; x < image.Width; x++)
+                     {
+                         // Hae pikselin väri
+                         Color color = image.GetPixel(x, y);
+
+                         // Muunna väri mustavalkoiseksi
+                         int gray = (int)(0.299 * color.R + 0.587 * color.G + 0.114 * color.B);
+                         Color newColor = Color.FromArgb(gray, gray, gray);
+
+                         // Aseta uusi väri pikseliin
+                         image.SetPixel(x, y, newColor);
+                     }
+                 }
+
+                 // Tallenna uusi kuva
+                 image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
+             }*/
         }
 
-        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)//Haetaan tiedot textboxille datagrid cellclicillä
+        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             rekTB.Text = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
             malliTB.Text = vuokrallaDG.CurrentRow.Cells[2].Value.ToString();
             merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
         }
 
-        private void varaaBT_Click(object sender, EventArgs e)//Varauksen teko
+        private void varaaBT_Click(object sender, EventArgs e)
         {
             string id = varausNroTB.Text;
             string asiakas = asijaCB.Text;
