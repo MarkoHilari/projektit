@@ -177,8 +177,8 @@ namespace Auto_vuokraus
                     MySqlCommand command = new MySqlCommand(updateQuery, con);
 
                     int rowCount = vuokraDG.Rows.Count;
-
-                    for (int i = 0; i < rowCount; i++)
+                    MessageBox.Show(rowCount + "");
+                    for (int i = 0; i < rowCount-1; i++)
                     {
                         DataGridViewRow row = vuokraDG.Rows[i];
                         DataGridViewCell cell = row.Cells[1];
