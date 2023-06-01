@@ -56,10 +56,12 @@
             this.poistaAsBT = new System.Windows.Forms.Button();
             this.muokkaaAsBT = new System.Windows.Forms.Button();
             this.idTB = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -353,6 +355,17 @@
             this.idTB.TabIndex = 38;
             this.idTB.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(2403, 1241);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
             // asiakkaat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -381,6 +394,7 @@
             this.Controls.Add(this.asiakasDG);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "asiakkaat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -392,6 +406,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.asiakasDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,5 +442,6 @@
         private System.Windows.Forms.Button muokkaaAsBT;
         private System.Windows.Forms.TextBox idTB;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
