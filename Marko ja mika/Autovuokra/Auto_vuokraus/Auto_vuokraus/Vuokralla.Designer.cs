@@ -69,6 +69,7 @@
             this.loppuSummaLB = new System.Windows.Forms.Label();
             this.varausPLB = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -86,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -534,6 +536,17 @@
             this.label5.TabIndex = 52;
             this.label5.Text = "Varauspäivät yhteensä: ";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Auto_vuokraus.Properties.Resources.abstract_watercolor_vintage_illustration_md;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(2265, 1210);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 54;
+            this.pictureBox2.TabStop = false;
+            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -574,6 +587,7 @@
             this.Controls.Add(this.vuokrallaDG);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Vuokralla";
@@ -599,6 +613,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -647,5 +662,6 @@
         private System.Windows.Forms.Label loppuSummaLB;
         private System.Windows.Forms.Label varausPLB;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
