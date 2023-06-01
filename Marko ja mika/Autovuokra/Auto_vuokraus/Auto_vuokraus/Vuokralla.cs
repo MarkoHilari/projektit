@@ -29,7 +29,7 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void autotBT_Click(object sender, EventArgs e)
+        private void autotBT_Click(object sender, EventArgs e)//Autot button avaa autot välilehden ja sulkee vuokralla ikkunan
         {
             this.Hide();
             autot autot = new autot();
@@ -37,7 +37,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void asiakkaatBT_Click(object sender, EventArgs e)
+        private void asiakkaatBT_Click(object sender, EventArgs e)//Asiakas button avaa asiakas välilehden ja sulkee vuokralla ikkunan
         {
             this.Hide();
             asiakkaat asiakas = new asiakkaat();
@@ -47,7 +47,7 @@ namespace Auto_vuokraus
 
    
 
-        private void kayttajatBT_Click(object sender, EventArgs e)
+        private void kayttajatBT_Click(object sender, EventArgs e)//Käyttjä button avaa Käyttäjä välilehden ja sulkee vuokralla ikkunan
         {
             this.Hide();
             kayttajat kayttajat = new kayttajat();
@@ -55,24 +55,23 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void vuokrallaDG_CellContentClick(object sender, DataGridViewCellEventArgs e)//Lataa kaluston datagridiin
         {
             vuokrallaDG.DataSource = users.haeKalusto();
 
         }
 
-        private void Vuokralla_Load(object sender, EventArgs e)
+        private void Vuokralla_Load(object sender, EventArgs e)//Ladataan koko vuokralla ikkuna
         {
-            vuokrallaDG.DataSource = users.haeKalusto();
-            // vuokrallaDG.AutoResizeColumns();
-            this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
-            vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            vuokraDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            vuokraDG.DataSource = users.haeVuokrat();
+            vuokrallaDG.DataSource = users.haeKalusto();//Lataa kaluston datagridiin
+            this.vuokrallaDG.DefaultCellStyle.Font = new Font("Tahoma", 15);//Fontin muutos
+            vuokrallaDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Asetetaan datagridille oikean kokoiset sarakkeet
+            vuokraDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//Asetetaan datagridille oikean kokoiset sarakkeet
+            vuokraDG.DataSource = users.haeVuokrat();//Lataa vuokrat datagrid
 
 
 
-
+            //Luodaan muuttujat eri tilanteille, onko vapaa vai ei ja muuttaa alla eri kuville tiedot
             string makkara = vuokrallaDG.Rows[0].Cells[1].Value.ToString();
             string ford = vuokrallaDG.Rows[1].Cells[1].Value.ToString();
             string toyoti = vuokrallaDG.Rows[2].Cells[1].Value.ToString();
@@ -170,7 +169,7 @@ namespace Auto_vuokraus
 
                 try
                 {
-
+                    //Luodaan yhteys sql ja viedään tiedot onko auto vapaa vai ei päivämäärän mukaan
                     MySqlConnection con = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=loistovuokraus");
                     string updateQuery = "UPDATE `kalusto` SET `vapaa` = @vap WHERE `RekisteriNro` = @rek";
                     con.Open();
@@ -189,13 +188,13 @@ namespace Auto_vuokraus
                         
                         if (value1 > DateTime.Now)
                         {
-                            command.Parameters.Clear(); // Clear previously added parameters
+                            command.Parameters.Clear(); // Tyjentää edellisen kyselyn parametrit
                             command.Parameters.AddWithValue("@rek", rekisteriNro);
                             command.Parameters.AddWithValue("@vap", "vapaa");
                         }
                         else
                         {
-                            command.Parameters.Clear(); // Clear previously added parameters
+                            command.Parameters.Clear(); // Tyjentää edellisen kyselyn parametrit
                             command.Parameters.AddWithValue("@rek", rekisteriNro);
                             command.Parameters.AddWithValue("@vap", "varattu");
                         }
@@ -215,13 +214,13 @@ namespace Auto_vuokraus
 
                         if (isEmptyColumn)
                         {
-                            // Last empty column found, break out of the loop
+                            // Kun viimeinen tyhjä sarake on käyty läpi, pysäytys
                             break;
                         }
                     }
 
                     con.Close();
-                    vuokrallaDG.DataSource = users.haeKalusto();
+                    vuokrallaDG.DataSource = users.haeKalusto();//Ladataan kalusto datagrid
 
                 }
 
@@ -237,7 +236,7 @@ namespace Auto_vuokraus
 
             try
             {
-
+                //Haetaan asiakkaat asija comboboxiin
                 MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
                 string selectQuery = "SELECT * FROM asiakkaat" ;
                 con.Open();
@@ -255,60 +254,19 @@ namespace Auto_vuokraus
             catch(Exception ex) { 
                     MessageBox.Show(ex.Message);
             }
-            /*using (SqlDataReader reader = users.haeAsija())
-            {
-                while (reader.Read())
-                {
-                    string value = reader.GetString(0);
-                    asijaCB.Items.Add(value);
-                }
-            }*/
+           
             
-            /*asijaCB.Items.Clear(); // ei pelitä
-            DataTable dataTable = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter();
-            da.Fill(dataTable);
-
-            foreach(DataRow dataRow in dataTable.Rows)
-            {
-                asijaCB.Items.Add(dataRow["Asiakas"]. ToString());
-            }*/
-
-
-            /* private void button1_Click(object sender, EventArgs e)
-             {
-                 Bitmap image = new Bitmap("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti.jpg");
-
-                 // Käy läpi jokainen pikseli kuvassa
-                 for (int y = 0; y < image.Height; y++)
-                 {
-                     for (int x = 0; x < image.Width; x++)
-                     {
-                         // Hae pikselin väri
-                         Color color = image.GetPixel(x, y);
-
-                         // Muunna väri mustavalkoiseksi
-                         int gray = (int)(0.299 * color.R + 0.587 * color.G + 0.114 * color.B);
-                         Color newColor = Color.FromArgb(gray, gray, gray);
-
-                         // Aseta uusi väri pikseliin
-                         image.SetPixel(x, y, newColor);
-                     }
-                 }
-
-                 // Tallenna uusi kuva
-                 image.Save("C:\\Users\\mhuot\\source\\repos\\projektit\\Marko ja mika\\Autovuokra\\Auto_vuokraus\\Auto_vuokraus\\Pics\\toijoti1.jpg");
-             }*/
+           
         }
 
-        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void vuokrallaDG_CellClick(object sender, DataGridViewCellEventArgs e)//Haetaan tiedot textboxiin datagridistä
         {
             rekTB.Text = vuokrallaDG.CurrentRow.Cells[0].Value.ToString();
             malliTB.Text = vuokrallaDG.CurrentRow.Cells[2].Value.ToString();
             merkkiTB.Text = vuokrallaDG.CurrentRow.Cells[1].Value.ToString();
         }
 
-        private void varaaBT_Click(object sender, EventArgs e)
+        private void varaaBT_Click(object sender, EventArgs e)//Varauksen teko
         {
             string id = varausNroTB.Text;
             string asiakas = asijaCB.Text;
@@ -349,7 +307,7 @@ namespace Auto_vuokraus
             }
         }
 
-        private void poistavaBT_Click(object sender, EventArgs e)
+        private void poistavaBT_Click(object sender, EventArgs e)//Varauksen poisto
         {
             try
             {
@@ -374,21 +332,7 @@ namespace Auto_vuokraus
 
         private void vuokraDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
-
-            alkuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[5].Value);
-            loppuDTM.Value = Convert.ToDateTime(vuokraDG.CurrentRow.Cells[6].Value);
-            varausPLB.Visible = true;
-
-            alkuDTM = alkuDTM.Value;
-            loppuDTM = loppuDTM.Value;
-
-            TimeSpan erotus = loppuDTM - alkuDTM);
-            int erotusPäivissä = (int)erotus.TotalDays;
-
-            //TimeSpan erotusPäivissä = loppuDTM.Value - alkuDTM.Value;
-
-            varausPLB.Text = erotusPäivissä.ToString();*/
+            //Haetaan vuokrauksen hinta
 
             varausNroTB.Text = vuokraDG.CurrentRow.Cells[0].Value.ToString();
 
@@ -410,7 +354,7 @@ namespace Auto_vuokraus
             vuokraDG.DataSource = users.haeVuokrat();
         }
         
-        private void muokkaavarBT_Click(object sender, EventArgs e)
+        private void muokkaavarBT_Click(object sender, EventArgs e)//Varauksen muokkaus
         {
 
             try
@@ -423,22 +367,22 @@ namespace Auto_vuokraus
                
                 if(alku < DateTime.Now)
                 {
-                    MessageBox.Show("Päivää", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Päivä pitää olla tämä päivä tai myöhäisempi", "Päivämäärän tarkistus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (loppu < alku)
                 {
-                    MessageBox.Show("Helloo", "Tarks", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Loppumis ajankohta ei voi olla ennen aloitus päivää", "Päivämäärän tarkistus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
                 }
                 else
                 {
-                    if(users.muokkaaVuokraus(id, alku, loppu)) 
+                    if(users.muokkaaVuokraus(id, alku, loppu)) //Muokkaa varausta
                     {
-                        MessageBox.Show("päivee", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Muokkaus onnistunut", "Varauksen muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("looiiii", "Virhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Varausta ei muokattu", "Varauksen muokkaus", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                     
