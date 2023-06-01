@@ -72,6 +72,9 @@ namespace Auto_vuokraus
         private void asiakkaat_Load(object sender, EventArgs e)
         {
             asiakasDG.DataSource = users.haeAsiakkaat();//Ladataan asiakkaat datagridiin
+
+            this.asiakasDG.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                asiakasDG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void muokkaaAsBT_Click(object sender, EventArgs e)//Asiakkaiden muokkaaminen
