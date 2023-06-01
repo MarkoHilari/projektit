@@ -69,11 +69,6 @@
             this.loppuSummaLB = new System.Windows.Forms.Label();
             this.varausPLB = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.vapaaRB = new System.Windows.Forms.RadioButton();
-            this.varattuRB = new System.Windows.Forms.RadioButton();
-            this.vapaa_varattuGB = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -91,7 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).BeginInit();
-            this.vapaa_varattuGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -540,68 +534,11 @@
             this.label5.TabIndex = 52;
             this.label5.Text = "Varauspäivät yhteensä: ";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(976, 567);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 103);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Nappi muuttaa tiedon";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // vapaaRB
-            // 
-            this.vapaaRB.AutoSize = true;
-            this.vapaaRB.Location = new System.Drawing.Point(6, 25);
-            this.vapaaRB.Name = "vapaaRB";
-            this.vapaaRB.Size = new System.Drawing.Size(77, 24);
-            this.vapaaRB.TabIndex = 55;
-            this.vapaaRB.TabStop = true;
-            this.vapaaRB.Text = "vapaa";
-            this.vapaaRB.UseVisualStyleBackColor = true;
-            // 
-            // varattuRB
-            // 
-            this.varattuRB.AutoSize = true;
-            this.varattuRB.Location = new System.Drawing.Point(6, 55);
-            this.varattuRB.Name = "varattuRB";
-            this.varattuRB.Size = new System.Drawing.Size(83, 24);
-            this.varattuRB.TabIndex = 56;
-            this.varattuRB.TabStop = true;
-            this.varattuRB.Text = "varattu";
-            this.varattuRB.UseVisualStyleBackColor = true;
-            // 
-            // vapaa_varattuGB
-            // 
-            this.vapaa_varattuGB.Controls.Add(this.vapaaRB);
-            this.vapaa_varattuGB.Controls.Add(this.varattuRB);
-            this.vapaa_varattuGB.Location = new System.Drawing.Point(659, 567);
-            this.vapaa_varattuGB.Name = "vapaa_varattuGB";
-            this.vapaa_varattuGB.Size = new System.Drawing.Size(200, 100);
-            this.vapaa_varattuGB.TabIndex = 57;
-            this.vapaa_varattuGB.TabStop = false;
-            this.vapaa_varattuGB.Text = "groupBox1";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(440, 592);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 58;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Vuokralla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2265, 1210);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.vapaa_varattuGB);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.varausPLB);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.loppuSummaLB);
@@ -637,6 +574,7 @@
             this.Controls.Add(this.vuokrallaDG);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Vuokralla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -661,8 +599,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dasse1PB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dassePB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vuokraDG)).EndInit();
-            this.vapaa_varattuGB.ResumeLayout(false);
-            this.vapaa_varattuGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -711,10 +647,5 @@
         private System.Windows.Forms.Label loppuSummaLB;
         private System.Windows.Forms.Label varausPLB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton vapaaRB;
-        private System.Windows.Forms.RadioButton varattuRB;
-        private System.Windows.Forms.GroupBox vapaa_varattuGB;
-        private System.Windows.Forms.Button button2;
     }
 }
