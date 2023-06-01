@@ -18,7 +18,7 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void tyhjennaAsBT_Click(object sender, EventArgs e)
+        private void tyhjennaAsBT_Click(object sender, EventArgs e)//Tyhejnnä nappi tyhjentää kentät
         {
             eNimiTB.Text = string.Empty;
             sNimiTB.Text = string.Empty;
@@ -29,7 +29,7 @@ namespace Auto_vuokraus
             puhelinTB.Text = string.Empty;
         }
 
-        private void carsBT_Click(object sender, EventArgs e)
+        private void carsBT_Click(object sender, EventArgs e)//Autot buttonin painallus avaa autot välilehden
         {
             this.Hide();
             autot autot = new autot();
@@ -37,7 +37,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void lisaaAsiBT_Click(object sender, EventArgs e)
+        private void lisaaAsiBT_Click(object sender, EventArgs e)//Lisää asiakas luodaan tässä
         {
             string id = idTB.Text;
             string enimi = eNimiTB.Text;
@@ -47,19 +47,19 @@ namespace Auto_vuokraus
             string pnro = pNroTB.Text;
             string email = emailTB.Text;
             string puh = puhelinTB.Text;
-
+            //Käydään läpi että kaikki kentät on täytetty
             if(enimi.Trim().Equals("") || snimi.Trim().Equals("") || osoite.Trim().Equals("") || city.Trim().Equals("") ||
                 pnro.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
             {
-                MessageBox.Show("Täytä kaikki kentät", "Tyhjä kenttä!", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                MessageBox.Show("Täytä kaikki kentät", "Tyhjä kenttä!", MessageBoxButtons.OK, MessageBoxIcon.Error );// herja jos ei ole kentät täytetty
             }
             else
             {
-                Boolean lisaaAsiakas = users.lisaaAsiakas(id, enimi, snimi, osoite, city, pnro,email, puh);
+                Boolean lisaaAsiakas = users.lisaaAsiakas(id, enimi, snimi, osoite, city, pnro,email, puh);//Lisätään asiakas
 
                 if(lisaaAsiakas)
                 {
-                    asiakasDG.DataSource = users.haeAsiakkaat();
+                    asiakasDG.DataSource = users.haeAsiakkaat();//Haetaan asiakaslista
                     MessageBox.Show("Uusi asiakas lisätty onnistuneesti", "Lisää asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -71,10 +71,10 @@ namespace Auto_vuokraus
 
         private void asiakkaat_Load(object sender, EventArgs e)
         {
-            asiakasDG.DataSource = users.haeAsiakkaat();//
+            asiakasDG.DataSource = users.haeAsiakkaat();//Ladataan asiakkaat datagridiin
         }
 
-        private void muokkaaAsBT_Click(object sender, EventArgs e)
+        private void muokkaaAsBT_Click(object sender, EventArgs e)//Asiakkaiden muokkaaminen
         {
             int id = Convert.ToInt32(idTB.Text);
             string enimi = eNimiTB.Text;
@@ -89,18 +89,18 @@ namespace Auto_vuokraus
             {
                 id = Convert.ToInt32(idTB.Text);
                 if (enimi.Trim().Equals("") || snimi.Trim().Equals("") || osoite.Trim().Equals("") || city.Trim().Equals("") || pnro.Trim().Equals("")
-                     || email.Trim().Equals("") || puh.Trim().Equals(""))
+                     || email.Trim().Equals("") || puh.Trim().Equals(""))//Käydään läpi että kaikki kentät on täytetty
                 {
                     MessageBox.Show("Vaaditut kentät - Etunimi & Sukunimi + Osoite", "Tyhjä Kenttä", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
                 else
                 {
-                    Boolean muokkaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);
+                    Boolean muokkaaAsiakas = users.muokkaaAsiakasta(id, enimi, snimi, osoite, city, pnro, email, puh);//Asiakkaan muokkaus
 
                     if (muokkaaAsiakas)
                     {
-                        asiakasDG.DataSource = users.haeAsiakkaat();
+                        asiakasDG.DataSource = users.haeAsiakkaat();//Ladataan asiakkaat
 
                         MessageBox.Show("Asiakas tiedot päivitetty onnistuneesti", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -118,7 +118,7 @@ namespace Auto_vuokraus
 
         }
 
-        private void asiakasDG_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void asiakasDG_CellClick(object sender, DataGridViewCellEventArgs e)//Haetaan tiedot datagridistä textboxeihin
         {
             idTB.Text = asiakasDG.CurrentRow.Cells[0].Value.ToString();
             eNimiTB.Text = asiakasDG.CurrentRow.Cells[1].Value.ToString();
@@ -135,15 +135,15 @@ namespace Auto_vuokraus
 
         }
 
-        private void poistaAsBT_Click(object sender, EventArgs e)
+        private void poistaAsBT_Click(object sender, EventArgs e)// Asiakkaan poisto
         {
             try
             {
                 int id = Convert.ToInt32(idTB.Text);
 
-                if (users.poistaAsiakas(id))
+                if (users.poistaAsiakas(id))//poisto
                 {
-                    asiakasDG.DataSource = users.haeAsiakkaat();
+                    asiakasDG.DataSource = users.haeAsiakkaat();//Ladataan datagrid
                     MessageBox.Show("Asiakas poistettu onnistuneesti", "Poista asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -165,7 +165,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void vuokrallaBT_Click(object sender, EventArgs e)
+        private void vuokrallaBT_Click(object sender, EventArgs e)//Vuokralla button painallus avaa vuokralla välilehden
         {
             this.Hide();
             Vuokralla vuokralla = new Vuokralla();
@@ -173,7 +173,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)//exit kuvan painallus sulkee ohjelman
         {
             Application.Exit();
         }

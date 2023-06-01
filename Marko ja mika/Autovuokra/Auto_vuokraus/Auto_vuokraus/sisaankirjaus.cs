@@ -19,13 +19,13 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void kirjausBT_Click(object sender, EventArgs e)
+        private void kirjausBT_Click(object sender, EventArgs e)// Sisäänkirjautuminen
         {
             YHDISTA yhdista = new YHDISTA();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand();
-            String kysely = "SELECT * FROM `kayttaja` WHERE user=@usn AND pass=@pass";
+            String kysely = "SELECT * FROM `kayttaja` WHERE user=@usn AND pass=@pass";//Käydään läpi löytyykö tunnuksia
 
             cmd.CommandText = kysely;
             cmd.Connection = yhdista.otaYhteys();
@@ -36,7 +36,7 @@ namespace Auto_vuokraus
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
 
-            if (table.Rows.Count > 0)
+            if (table.Rows.Count > 0)//Jos käyttäjä löytyy avataan pääikkuna
             {
                 this.Hide();
                 Paaikkuna form2 = new Paaikkuna();
@@ -45,22 +45,22 @@ namespace Auto_vuokraus
             }
             else
             {
-                if (kayttajaTB.Text.Trim().Equals(""))
+                if (kayttajaTB.Text.Trim().Equals(""))//Käydään läpi onko käyttäjänimi kenttään asetettu tietoa
                 {
                     MessageBox.Show("Syötä käyttäjänimesi", "Tyhjä käyttäjänimi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (salaSanaTB.Text.Trim().Equals(""))
+                else if (salaSanaTB.Text.Trim().Equals(""))//Käydään läpi onko salasan kenttään asetettu tietoa
                 {
                     MessageBox.Show("Syötä salasana", "Tyhjä salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else
+                else//Kerrotaan jos käyttäjänimi tai salasana on virheellinen
                 {
                     MessageBox.Show("Käyttäjänimeä tai salasanaa ei löydy! ", "Tarkista käyttäjänimi tai salasana", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private void tyhjennaBT_Click(object sender, EventArgs e)
+        private void tyhjennaBT_Click(object sender, EventArgs e)//Tyhjennä käyttäjä ja salasana kentät
         {
             kayttajaTB.Text = "";
             salaSanaTB.Text = "";

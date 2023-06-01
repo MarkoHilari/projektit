@@ -17,12 +17,12 @@ namespace Auto_vuokraus
         {
             InitializeComponent();
         }
-
+        // Exit nappi painallus sulkee ohjelman
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // Asiakkaan lisääminen
         private void lisaaAsBT_Click(object sender, EventArgs e)
         {
             string id = idTB.Text;
@@ -32,17 +32,17 @@ namespace Auto_vuokraus
             string puh = puhelinTB.Text;
             string user = eNimiTB.Text;
             string pass = salaTB.Text;
-            if(eNimi.Trim().Equals("") || snimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
+            if(eNimi.Trim().Equals("") || snimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))// Vaaditut kentät tulee täyttää
             {
                 MessageBox.Show("Vaaditut kentät -  Etunimi, Sukunimi, email, Puhelin", "lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, eNimi, snimi, email, puh, user, pass);
+                Boolean lisaaKayttaja = kayttaja.lisaaKayttaja(id, eNimi, snimi, email, puh, user, pass);// Lisätään käyttäjä
                 if(lisaaKayttaja)
                 {
-                    dataGridView1.DataSource = kayttaja.haeKayttajat();
-                    this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
+                    dataGridView1.DataSource = kayttaja.haeKayttajat();//Päivitetään näkymä
+                    this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);//  Muutetaan fontti datagridiin
                     
                     MessageBox.Show("Uusi käyttajä lisätty onnistuneesti", "Lisää käyttäjä", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -55,11 +55,11 @@ namespace Auto_vuokraus
 
         private void kayttajat_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = kayttaja.haeKayttajat();
+            dataGridView1.DataSource = kayttaja.haeKayttajat();//Päivitetään näkymä kun sivu avataan
             this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
         }
 
-        private void muokkaaKaBT_Click(object sender, EventArgs e)
+        private void muokkaaKaBT_Click(object sender, EventArgs e)// Käyttäjän tietojen muokkaaminen
         {
             string id = idTB.Text;
             string eNimi = eNimiTB.Text;
@@ -72,18 +72,18 @@ namespace Auto_vuokraus
             try
             {
                 
-                if (eNimi.Trim().Equals("") || sNimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))
+                if (eNimi.Trim().Equals("") || sNimi.Trim().Equals("") || email.Trim().Equals("") || puh.Trim().Equals(""))//Tarkistu että kaikki vaaditut kentät täytetty
                 {
                     MessageBox.Show("Vaaditut kentät - Etunimi & Sukunimi + Osoite", "Tyhjä Kenttä", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
                 else
                 {
-                    Boolean muokkaaAsiakas = kayttaja.muokkaaKayttaja(id, eNimi, sNimi, email, puh, user, pass);
+                    Boolean muokkaaAsiakas = kayttaja.muokkaaKayttaja(id, eNimi, sNimi, email, puh, user, pass);// Muokataan käyttäjä
 
                     if (muokkaaAsiakas)
                     {
-                        dataGridView1.DataSource = kayttaja.haeKayttajat();
+                        dataGridView1.DataSource = kayttaja.haeKayttajat();//Ladataan uudelleen käyttäjä sivu
 
                         MessageBox.Show("Asiakas tiedot päivitetty onnistuneesti", "Muokkaa asiakas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -102,17 +102,16 @@ namespace Auto_vuokraus
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Haetaan text kenttiin tiedot datagridiltä
             idTB.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             eNimiTB.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             sNimiTB.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             emailTB.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             puhelinTB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            /*pNroTB.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            emailTB.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            puhelinTB.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();*/
+            
         }
 
-        private void poistaAsBT_Click(object sender, EventArgs e)
+        private void poistaAsBT_Click(object sender, EventArgs e)//Käyttäjän poisto
         {
             try
             {
@@ -133,7 +132,7 @@ namespace Auto_vuokraus
             }
         }
 
-        private void tyhjennaAsBT_Click(object sender, EventArgs e)
+        private void tyhjennaAsBT_Click(object sender, EventArgs e)//Kenttien tyhjennys tyhjennä button
         {
             idTB.Text = "";
             eNimiTB.Text = "";
@@ -144,7 +143,7 @@ namespace Auto_vuokraus
             salaTB.Text = "";
         }
 
-        private void carsBT_Click(object sender, EventArgs e)
+        private void carsBT_Click(object sender, EventArgs e)// Autot button painallus avaa autot välilehden(cars)
         {
             this.Hide();
             autot auto = new autot();
@@ -152,7 +151,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void asiakkaatBT_Click(object sender, EventArgs e)
+        private void asiakkaatBT_Click(object sender, EventArgs e)//Asiakkaat button painallus avaa asiakas välilehden
         {
             this.Hide();
             asiakkaat asiakas = new asiakkaat();
@@ -160,7 +159,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void vuokrallaBT_Click(object sender, EventArgs e)
+        private void vuokrallaBT_Click(object sender, EventArgs e)//Vuokralla button painallus avaa vuokralla välilehden
         {
             this.Hide();
             Vuokralla vuokra = new Vuokralla();

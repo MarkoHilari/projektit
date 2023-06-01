@@ -19,7 +19,7 @@ namespace Auto_vuokraus
 
 
 
-
+        // Asiakkaat button painallus avaa asiakkaat sivun
         private void asiakkaatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,7 +27,7 @@ namespace Auto_vuokraus
             asiakkaat.ShowDialog();
             this.Close();
         }
-
+        // Cars button painallus avaa autot välilehden
         private void carsBT_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -35,7 +35,7 @@ namespace Auto_vuokraus
             autot.ShowDialog();
             this.Close();
         }
-
+        //Käyttäjä button avaa käyttäjät välilehden
         private void kayttajatBT_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -43,7 +43,7 @@ namespace Auto_vuokraus
             kayttajat.ShowDialog();
             this.Close();
         }
-
+        // Vuokralla button avaa vuokralla välilehden
         private void vuokrallaBT_Click(object sender, EventArgs e)
         {
             this.Hide();
