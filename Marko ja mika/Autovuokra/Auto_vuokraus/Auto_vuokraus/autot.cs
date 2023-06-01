@@ -21,7 +21,7 @@ namespace Auto_vuokraus
             InitializeComponent();
         }
 
-        private void asiakkaatBT_Click(object sender, EventArgs e)
+        private void asiakkaatBT_Click(object sender, EventArgs e)  // asiakas sivun button
         {
             this.Hide();
             asiakkaat asiakkaat = new asiakkaat();
@@ -29,7 +29,7 @@ namespace Auto_vuokraus
             this.Close();
         }
 
-        private void vuokrallaBT_Click(object sender, EventArgs e)
+        private void vuokrallaBT_Click(object sender, EventArgs e)  // vuokralla sivun button
         {
             this.Hide();
             Vuokralla vuokralla = new Vuokralla();
@@ -39,7 +39,7 @@ namespace Auto_vuokraus
 
      
 
-        private void kayttajatBT_Click(object sender, EventArgs e)
+        private void kayttajatBT_Click(object sender, EventArgs e)  // käyttajat sivun button
         {
             this.Hide();
             kayttajat kayttajat = new kayttajat();
@@ -50,6 +50,11 @@ namespace Auto_vuokraus
         private void autot_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)      // ohjelman sulkemis button
+        {
+            Application.Exit();
         }
     }
 }

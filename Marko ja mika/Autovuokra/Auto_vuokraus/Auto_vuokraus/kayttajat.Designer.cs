@@ -33,6 +33,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.asiakkaatBT = new System.Windows.Forms.Button();
+            this.carsBT = new System.Windows.Forms.Button();
+            this.vuokrallaBT = new System.Windows.Forms.Button();
             this.muokkaaKaBT = new System.Windows.Forms.Button();
             this.poistaAsBT = new System.Windows.Forms.Button();
             this.tyhjennaAsBT = new System.Windows.Forms.Button();
@@ -50,9 +53,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.salaTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.asiakkaatBT = new System.Windows.Forms.Button();
-            this.carsBT = new System.Windows.Forms.Button();
-            this.vuokrallaBT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,13 +69,13 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1497, 198);
+            this.panel1.Size = new System.Drawing.Size(2390, 198);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(1367, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(2268, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -87,7 +87,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(703, 128);
+            this.label5.Location = new System.Drawing.Point(1097, 118);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 33);
             this.label5.TabIndex = 2;
@@ -99,7 +99,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Ravie", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Magenta;
-            this.label1.Location = new System.Drawing.Point(530, 51);
+            this.label1.Location = new System.Drawing.Point(924, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(561, 59);
             this.label1.TabIndex = 1;
@@ -112,11 +112,53 @@
             this.panel2.Controls.Add(this.carsBT);
             this.panel2.Controls.Add(this.vuokrallaBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 813);
+            this.panel2.Location = new System.Drawing.Point(0, 1151);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1497, 100);
+            this.panel2.Size = new System.Drawing.Size(2390, 100);
             this.panel2.TabIndex = 14;
+            // 
+            // asiakkaatBT
+            // 
+            this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asiakkaatBT.Location = new System.Drawing.Point(685, 25);
+            this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiakkaatBT.Name = "asiakkaatBT";
+            this.asiakkaatBT.Size = new System.Drawing.Size(202, 48);
+            this.asiakkaatBT.TabIndex = 15;
+            this.asiakkaatBT.Text = "Asiakkaat";
+            this.asiakkaatBT.UseVisualStyleBackColor = false;
+            this.asiakkaatBT.Click += new System.EventHandler(this.asiakkaatBT_Click);
+            // 
+            // carsBT
+            // 
+            this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.carsBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.carsBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carsBT.Location = new System.Drawing.Point(414, 25);
+            this.carsBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.carsBT.Name = "carsBT";
+            this.carsBT.Size = new System.Drawing.Size(202, 48);
+            this.carsBT.TabIndex = 12;
+            this.carsBT.Text = "Autot";
+            this.carsBT.UseVisualStyleBackColor = false;
+            this.carsBT.Click += new System.EventHandler(this.carsBT_Click);
+            // 
+            // vuokrallaBT
+            // 
+            this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
+            this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vuokrallaBT.Location = new System.Drawing.Point(961, 25);
+            this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vuokrallaBT.Name = "vuokrallaBT";
+            this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
+            this.vuokrallaBT.TabIndex = 14;
+            this.vuokrallaBT.Text = "Vuokralla";
+            this.vuokrallaBT.UseVisualStyleBackColor = false;
+            this.vuokrallaBT.Click += new System.EventHandler(this.vuokrallaBT_Click);
             // 
             // muokkaaKaBT
             // 
@@ -260,7 +302,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(870, 526);
+            this.dataGridView1.Size = new System.Drawing.Size(1385, 526);
             this.dataGridView1.TabIndex = 56;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -282,54 +324,12 @@
             this.label3.TabIndex = 57;
             this.label3.Text = "Salasana:";
             // 
-            // asiakkaatBT
-            // 
-            this.asiakkaatBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.asiakkaatBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.asiakkaatBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.asiakkaatBT.Location = new System.Drawing.Point(685, 25);
-            this.asiakkaatBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiakkaatBT.Name = "asiakkaatBT";
-            this.asiakkaatBT.Size = new System.Drawing.Size(202, 48);
-            this.asiakkaatBT.TabIndex = 15;
-            this.asiakkaatBT.Text = "Asiakkaat";
-            this.asiakkaatBT.UseVisualStyleBackColor = false;
-            this.asiakkaatBT.Click += new System.EventHandler(this.asiakkaatBT_Click);
-            // 
-            // carsBT
-            // 
-            this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.carsBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.carsBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsBT.Location = new System.Drawing.Point(414, 25);
-            this.carsBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.carsBT.Name = "carsBT";
-            this.carsBT.Size = new System.Drawing.Size(202, 48);
-            this.carsBT.TabIndex = 12;
-            this.carsBT.Text = "Autot";
-            this.carsBT.UseVisualStyleBackColor = false;
-            this.carsBT.Click += new System.EventHandler(this.carsBT_Click);
-            // 
-            // vuokrallaBT
-            // 
-            this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
-            this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vuokrallaBT.Location = new System.Drawing.Point(961, 25);
-            this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vuokrallaBT.Name = "vuokrallaBT";
-            this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
-            this.vuokrallaBT.TabIndex = 14;
-            this.vuokrallaBT.Text = "Vuokralla";
-            this.vuokrallaBT.UseVisualStyleBackColor = false;
-            this.vuokrallaBT.Click += new System.EventHandler(this.vuokrallaBT_Click);
-            // 
             // kayttajat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1497, 913);
+            this.ClientSize = new System.Drawing.Size(2390, 1251);
             this.Controls.Add(this.salaTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -352,6 +352,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "kayttajat";
             this.Text = "kayttajat";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.kayttajat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

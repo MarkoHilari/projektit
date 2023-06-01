@@ -72,13 +72,13 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1521, 198);
+            this.panel1.Size = new System.Drawing.Size(2403, 198);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Auto_vuokraus.Properties.Resources.exit_5871704_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(1391, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(2271, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,7 +90,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(703, 128);
+            this.label5.Location = new System.Drawing.Point(971, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(169, 33);
             this.label5.TabIndex = 2;
@@ -102,7 +102,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Ravie", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Magenta;
-            this.label1.Location = new System.Drawing.Point(530, 51);
+            this.label1.Location = new System.Drawing.Point(798, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(561, 59);
             this.label1.TabIndex = 1;
@@ -115,10 +115,10 @@
             this.panel2.Controls.Add(this.carsBT);
             this.panel2.Controls.Add(this.vuokrallaBT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 860);
+            this.panel2.Location = new System.Drawing.Point(0, 1141);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1521, 100);
+            this.panel2.Size = new System.Drawing.Size(2403, 100);
             this.panel2.TabIndex = 13;
             // 
             // kayttajaBT
@@ -126,7 +126,7 @@
             this.kayttajaBT.BackColor = System.Drawing.Color.LawnGreen;
             this.kayttajaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kayttajaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kayttajaBT.Location = new System.Drawing.Point(950, 25);
+            this.kayttajaBT.Location = new System.Drawing.Point(1234, 26);
             this.kayttajaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kayttajaBT.Name = "kayttajaBT";
             this.kayttajaBT.Size = new System.Drawing.Size(202, 48);
@@ -140,7 +140,7 @@
             this.carsBT.BackColor = System.Drawing.Color.LawnGreen;
             this.carsBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.carsBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsBT.Location = new System.Drawing.Point(383, 25);
+            this.carsBT.Location = new System.Drawing.Point(667, 26);
             this.carsBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.carsBT.Name = "carsBT";
             this.carsBT.Size = new System.Drawing.Size(202, 48);
@@ -154,7 +154,7 @@
             this.vuokrallaBT.BackColor = System.Drawing.Color.LawnGreen;
             this.vuokrallaBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vuokrallaBT.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vuokrallaBT.Location = new System.Drawing.Point(670, 25);
+            this.vuokrallaBT.Location = new System.Drawing.Point(954, 26);
             this.vuokrallaBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vuokrallaBT.Name = "vuokrallaBT";
             this.vuokrallaBT.Size = new System.Drawing.Size(202, 48);
@@ -170,7 +170,7 @@
             this.asiakasDG.Name = "asiakasDG";
             this.asiakasDG.RowHeadersWidth = 62;
             this.asiakasDG.RowTemplate.Height = 28;
-            this.asiakasDG.Size = new System.Drawing.Size(870, 526);
+            this.asiakasDG.Size = new System.Drawing.Size(1680, 526);
             this.asiakasDG.TabIndex = 19;
             this.asiakasDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.asiakasDG_CellClick);
             this.asiakasDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.asiakasDG_CellContentClick);
@@ -358,7 +358,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1521, 960);
+            this.ClientSize = new System.Drawing.Size(2403, 1241);
             this.Controls.Add(this.idTB);
             this.Controls.Add(this.muokkaaAsBT);
             this.Controls.Add(this.poistaAsBT);
@@ -385,6 +385,7 @@
             this.Name = "asiakkaat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "asiakkaat";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.asiakkaat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
