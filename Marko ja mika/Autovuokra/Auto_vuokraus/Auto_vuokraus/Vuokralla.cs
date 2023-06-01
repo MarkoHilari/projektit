@@ -167,9 +167,64 @@ namespace Auto_vuokraus
                         toyotaPB.Visible = false;
                     }
                 }
-                
 
-              
+                // tästä lähtee
+
+                {
+                    MySqlConnection con = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=loistovuokraus");
+                    string updateQuery = "UPDATE `kalusto` SET `vapaa` = @vap WHERE `RekisteriNro` = @rek";
+                    con.Open();
+                    MySqlCommand command = new MySqlCommand(updateQuery, con);
+
+                    int rowCount = vuokraDG.Rows.Count;
+
+                    for (int i = 0; i < rowCount; i++)
+                    {
+                        DataGridViewRow row = vuokraDG.Rows[i];
+                        DataGridViewCell cell = row.Cells[1];
+                        DataGridViewCell cell1 = row.Cells[5];
+                        string rekisteriNro = cell.Value?.ToString();
+                        DateTime value1 = Convert.ToDateTime(cell1.Value.ToString());
+
+                        MessageBox.Show(rekisteriNro);
+                        if (value1 > DateTime.Now)
+                        {
+                            command.Parameters.Clear(); // Clear previously added parameters
+                            command.Parameters.AddWithValue("@rek", rekisteriNro);
+                            command.Parameters.AddWithValue("@vap", "vapaa");
+                        }
+                        else
+                        {
+                            command.Parameters.Clear(); // Clear previously added parameters
+                            command.Parameters.AddWithValue("@rek", rekisteriNro);
+                            command.Parameters.AddWithValue("@vap", "varattu");
+                        }
+
+                        command.ExecuteNonQuery();
+
+                        bool isEmptyColumn = true;
+                        for (int column = 0; column < row.Cells.Count; column++)
+                        {
+                            DataGridViewCell dataCell = row.Cells[column];
+                            if (dataCell.Value != null && !string.IsNullOrEmpty(dataCell.Value.ToString()))
+                            {
+                                isEmptyColumn = false;
+                                break;
+                            }
+                        }
+
+                        if (isEmptyColumn)
+                        {
+                            // Last empty column found, break out of the loop
+                            break;
+                        }
+                    }
+
+                    con.Close();
+                    vuokrallaDG.DataSource = users.haeKalusto();
+
+                }
+
             }
 
             try
@@ -344,7 +399,7 @@ namespace Auto_vuokraus
             int summa = Convert.ToInt32(users.HaeSumma(rek));
             //MessageBox.Show(summa + "");
             loppuSummaLB.Text = (int.Parse(varausPLB.Text)* summa + "€").ToString();
-
+            vuokraDG.DataSource = users.haeVuokrat();
         }
         
         private void muokkaavarBT_Click(object sender, EventArgs e)
@@ -468,46 +523,6 @@ namespace Auto_vuokraus
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-            MySqlConnection con = new MySqlConnection("datasource = localhost; port = 3306; username = root; password =; database = loistovuokraus");
-            string insertQuery = "UPDATE `kalusto` SET `vapaa`=@vap WHERE `RekisteriNro`=@rek";
-            con.Open();
-            MySqlCommand command = new MySqlCommand(insertQuery, con);
-
-            string numero = Convert.ToString(vuokrallaDG.CurrentRow.Cells[0].Value);
-            string vapaa = Convert.ToString(vapaaRB.Checked);
-            string varattu = varattuRB.Text;
-
-            command.Parameters.Add("@rek", MySqlDbType.String).Value = numero;
-            command.Parameters.Add("@vap", MySqlDbType.String).Value = vapaa;
-
-            int rowCount = vuokraDG.Rows.Count;
-            
-            
-                // Iterate through each row
-                for (int i = 0; i < rowCount; i++)
-                {
-                    // Access the value of the first column in the current row
-                    DataGridViewRow row = vuokraDG.Rows[i];
-                    DataGridViewCell cell = row.Cells[1]; // Column index 0 represents the first column
-                    DataGridViewCell cell1 = row.Cells[5];
-                    // Retrieve the value from the cell
-                    string value = cell.Value?.ToString(); // Use ToString() to get the value as a string
-                    DateTime value1 = Convert.ToDateTime(cell1.Value.ToString());
-                    // Do something with the value (e.g., print it)
-                    MessageBox.Show(value + value1);
-                    if (value1 < DateTime.Now)
-                    {
-                    vapaa = ("vapaa"); 
-                    }
-                    else
-                    {
-                        MessageBox.Show("varattu");
-                    }
-                }
-            con.Close();
-            vuokrallaDG.DataSource = users.haeKalusto();
-
-        }
+        { }
     }
 }
