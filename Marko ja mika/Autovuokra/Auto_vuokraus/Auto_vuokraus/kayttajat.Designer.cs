@@ -164,10 +164,10 @@
             // 
             // muokkaaKaBT
             // 
-            this.muokkaaKaBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.muokkaaKaBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.muokkaaKaBT.Location = new System.Drawing.Point(255, 619);
             this.muokkaaKaBT.Name = "muokkaaKaBT";
-            this.muokkaaKaBT.Size = new System.Drawing.Size(142, 59);
+            this.muokkaaKaBT.Size = new System.Drawing.Size(142, 71);
             this.muokkaaKaBT.TabIndex = 55;
             this.muokkaaKaBT.Text = "Muokkaa käyttäjää";
             this.muokkaaKaBT.UseVisualStyleBackColor = true;
@@ -175,10 +175,10 @@
             // 
             // poistaAsBT
             // 
-            this.poistaAsBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poistaAsBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poistaAsBT.Location = new System.Drawing.Point(443, 619);
             this.poistaAsBT.Name = "poistaAsBT";
-            this.poistaAsBT.Size = new System.Drawing.Size(142, 59);
+            this.poistaAsBT.Size = new System.Drawing.Size(142, 71);
             this.poistaAsBT.TabIndex = 54;
             this.poistaAsBT.Text = "Poista käyttäjä";
             this.poistaAsBT.UseVisualStyleBackColor = true;
@@ -186,10 +186,10 @@
             // 
             // tyhjennaAsBT
             // 
-            this.tyhjennaAsBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tyhjennaAsBT.Location = new System.Drawing.Point(255, 717);
+            this.tyhjennaAsBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tyhjennaAsBT.Location = new System.Drawing.Point(255, 711);
             this.tyhjennaAsBT.Name = "tyhjennaAsBT";
-            this.tyhjennaAsBT.Size = new System.Drawing.Size(142, 59);
+            this.tyhjennaAsBT.Size = new System.Drawing.Size(142, 78);
             this.tyhjennaAsBT.TabIndex = 53;
             this.tyhjennaAsBT.Text = "Tyhjennä kentät";
             this.tyhjennaAsBT.UseVisualStyleBackColor = true;
@@ -197,10 +197,10 @@
             // 
             // lisaaAsBT
             // 
-            this.lisaaAsBT.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lisaaAsBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lisaaAsBT.Location = new System.Drawing.Point(65, 619);
             this.lisaaAsBT.Name = "lisaaAsBT";
-            this.lisaaAsBT.Size = new System.Drawing.Size(142, 59);
+            this.lisaaAsBT.Size = new System.Drawing.Size(142, 71);
             this.lisaaAsBT.TabIndex = 52;
             this.lisaaAsBT.Text = "Lisää käyttäjä";
             this.lisaaAsBT.UseVisualStyleBackColor = true;
@@ -259,10 +259,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(123, 289);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 24);
+            this.label8.Size = new System.Drawing.Size(42, 29);
             this.label8.TabIndex = 43;
             this.label8.Text = "ID:";
             // 
@@ -300,7 +300,7 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(605, 230);
+            this.dataGridView1.Location = new System.Drawing.Point(818, 250);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
